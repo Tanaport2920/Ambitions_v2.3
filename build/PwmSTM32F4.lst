@@ -1,0 +1,292 @@
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccsxrBoq.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"PwmSTM32F4.cpp"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/HALinterface/Src/PwmSTM32F4.cpp"
+  20              		.section	.text._ZN10PwmSTM32F4C2EP17TIM_HandleTypeDefm,"ax",%progbits
+  21              		.align	1
+  22              		.global	_ZN10PwmSTM32F4C2EP17TIM_HandleTypeDefm
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	_ZN10PwmSTM32F4C2EP17TIM_HandleTypeDefm:
+  28              		.fnstart
+  29              	.LVL0:
+  30              	.LFB240:
+   1:Core/HALinterface/Src/PwmSTM32F4.cpp **** #include "../Inc/PwmSTM32F4.hpp"
+   2:Core/HALinterface/Src/PwmSTM32F4.cpp **** #include "stm32f4xx_hal.h"
+   3:Core/HALinterface/Src/PwmSTM32F4.cpp **** 
+   4:Core/HALinterface/Src/PwmSTM32F4.cpp **** PwmSTM32F4::PwmSTM32F4(TIM_HandleTypeDef* htim, uint32_t channel)
+  31              		.loc 1 4 1 view -0
+  32              		.cfi_startproc
+  33              		@ args = 0, pretend = 0, frame = 0
+  34              		@ frame_needed = 0, uses_anonymous_args = 0
+  35              		@ link register save eliminated.
+  36              	.LBB2:
+   5:Core/HALinterface/Src/PwmSTM32F4.cpp ****     : m_htim(htim)
+  37              		.loc 1 5 7 is_stmt 0 view .LVU1
+  38 0000 0160     		str	r1, [r0]
+   6:Core/HALinterface/Src/PwmSTM32F4.cpp ****     , m_channel(channel)
+  39              		.loc 1 6 7 view .LVU2
+  40 0002 4260     		str	r2, [r0, #4]
+  41              	.LBE2:
+   7:Core/HALinterface/Src/PwmSTM32F4.cpp **** {
+   8:Core/HALinterface/Src/PwmSTM32F4.cpp **** }
+  42              		.loc 1 8 1 view .LVU3
+  43 0004 7047     		bx	lr
+  44              		.cfi_endproc
+  45              	.LFE240:
+  46              		.cantunwind
+  47              		.fnend
+  49              		.global	_ZN10PwmSTM32F4C1EP17TIM_HandleTypeDefm
+  50              		.thumb_set _ZN10PwmSTM32F4C1EP17TIM_HandleTypeDefm,_ZN10PwmSTM32F4C2EP17TIM_HandleTypeDefm
+  51              		.section	.text._ZN10PwmSTM32F45startEv,"ax",%progbits
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccsxrBoq.s 			page 2
+
+
+  52              		.align	1
+  53              		.global	_ZN10PwmSTM32F45startEv
+  54              		.syntax unified
+  55              		.thumb
+  56              		.thumb_func
+  58              	_ZN10PwmSTM32F45startEv:
+  59              		.fnstart
+  60              	.LVL1:
+  61              	.LFB242:
+   9:Core/HALinterface/Src/PwmSTM32F4.cpp **** 
+  10:Core/HALinterface/Src/PwmSTM32F4.cpp **** void PwmSTM32F4::start() {
+  62              		.loc 1 10 26 is_stmt 1 view -0
+  63              		.cfi_startproc
+  64              		@ args = 0, pretend = 0, frame = 0
+  65              		@ frame_needed = 0, uses_anonymous_args = 0
+  66              		.loc 1 10 26 is_stmt 0 view .LVU5
+  67 0000 08B5     		push	{r3, lr}
+  68              		.save {r3, lr}
+  69              	.LCFI0:
+  70              		.cfi_def_cfa_offset 8
+  71              		.cfi_offset 3, -8
+  72              		.cfi_offset 14, -4
+  11:Core/HALinterface/Src/PwmSTM32F4.cpp ****     HAL_TIM_PWM_Start(m_htim, m_channel);
+  73              		.loc 1 11 5 is_stmt 1 view .LVU6
+  74              		.loc 1 11 22 is_stmt 0 view .LVU7
+  75 0002 4168     		ldr	r1, [r0, #4]
+  76 0004 0068     		ldr	r0, [r0]
+  77              	.LVL2:
+  78              		.loc 1 11 22 view .LVU8
+  79 0006 FFF7FEFF 		bl	HAL_TIM_PWM_Start
+  80              	.LVL3:
+  12:Core/HALinterface/Src/PwmSTM32F4.cpp **** }
+  81              		.loc 1 12 1 view .LVU9
+  82 000a 08BD     		pop	{r3, pc}
+  83              		.cfi_endproc
+  84              	.LFE242:
+  85              		.fnend
+  87              		.section	.text._ZN10PwmSTM32F44stopEv,"ax",%progbits
+  88              		.align	1
+  89              		.global	_ZN10PwmSTM32F44stopEv
+  90              		.syntax unified
+  91              		.thumb
+  92              		.thumb_func
+  94              	_ZN10PwmSTM32F44stopEv:
+  95              		.fnstart
+  96              	.LVL4:
+  97              	.LFB243:
+  13:Core/HALinterface/Src/PwmSTM32F4.cpp **** 
+  14:Core/HALinterface/Src/PwmSTM32F4.cpp **** void PwmSTM32F4::stop() {
+  98              		.loc 1 14 25 is_stmt 1 view -0
+  99              		.cfi_startproc
+ 100              		@ args = 0, pretend = 0, frame = 0
+ 101              		@ frame_needed = 0, uses_anonymous_args = 0
+ 102              		.loc 1 14 25 is_stmt 0 view .LVU11
+ 103 0000 08B5     		push	{r3, lr}
+ 104              		.save {r3, lr}
+ 105              	.LCFI1:
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccsxrBoq.s 			page 3
+
+
+ 106              		.cfi_def_cfa_offset 8
+ 107              		.cfi_offset 3, -8
+ 108              		.cfi_offset 14, -4
+  15:Core/HALinterface/Src/PwmSTM32F4.cpp ****     HAL_TIM_PWM_Stop(m_htim, m_channel);
+ 109              		.loc 1 15 5 is_stmt 1 view .LVU12
+ 110              		.loc 1 15 21 is_stmt 0 view .LVU13
+ 111 0002 4168     		ldr	r1, [r0, #4]
+ 112 0004 0068     		ldr	r0, [r0]
+ 113              	.LVL5:
+ 114              		.loc 1 15 21 view .LVU14
+ 115 0006 FFF7FEFF 		bl	HAL_TIM_PWM_Stop
+ 116              	.LVL6:
+  16:Core/HALinterface/Src/PwmSTM32F4.cpp **** }
+ 117              		.loc 1 16 1 view .LVU15
+ 118 000a 08BD     		pop	{r3, pc}
+ 119              		.cfi_endproc
+ 120              	.LFE243:
+ 121              		.fnend
+ 123              		.section	.text._ZN10PwmSTM32F412setDutyCycleEf,"ax",%progbits
+ 124              		.align	1
+ 125              		.global	_ZN10PwmSTM32F412setDutyCycleEf
+ 126              		.syntax unified
+ 127              		.thumb
+ 128              		.thumb_func
+ 130              	_ZN10PwmSTM32F412setDutyCycleEf:
+ 131              		.fnstart
+ 132              	.LVL7:
+ 133              	.LFB244:
+  17:Core/HALinterface/Src/PwmSTM32F4.cpp **** 
+  18:Core/HALinterface/Src/PwmSTM32F4.cpp **** void PwmSTM32F4::setDutyCycle(float duty) {
+ 134              		.loc 1 18 43 is_stmt 1 view -0
+ 135              		.cfi_startproc
+ 136              		@ args = 0, pretend = 0, frame = 0
+ 137              		@ frame_needed = 0, uses_anonymous_args = 0
+ 138              		@ link register save eliminated.
+  19:Core/HALinterface/Src/PwmSTM32F4.cpp ****     // 入力を 0～m_maxDuty にクリップ
+  20:Core/HALinterface/Src/PwmSTM32F4.cpp ****     if (duty < 0.0f) {
+ 139              		.loc 1 20 5 view .LVU17
+ 140 0000 B5EEC00A 		vcmpe.f32	s0, #0
+ 141 0004 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 142 0008 09D4     		bmi	.L12
+  21:Core/HALinterface/Src/PwmSTM32F4.cpp ****         duty = 0.0f;
+  22:Core/HALinterface/Src/PwmSTM32F4.cpp ****     }
+  23:Core/HALinterface/Src/PwmSTM32F4.cpp ****     if (duty > 840.0f) {
+ 143              		.loc 1 23 5 view .LVU18
+ 144 000a DFED177A 		vldr.32	s15, .L16
+ 145 000e B4EEE70A 		vcmpe.f32	s0, s15
+ 146 0012 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 147 0016 04DD     		ble	.L7
+  24:Core/HALinterface/Src/PwmSTM32F4.cpp ****         duty = 840.0f;
+ 148              		.loc 1 24 14 is_stmt 0 view .LVU19
+ 149 0018 9FED130A 		vldr.32	s0, .L16
+ 150              	.LVL8:
+ 151              		.loc 1 24 14 view .LVU20
+ 152 001c 01E0     		b	.L7
+ 153              	.LVL9:
+ 154              	.L12:
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccsxrBoq.s 			page 4
+
+
+  21:Core/HALinterface/Src/PwmSTM32F4.cpp ****         duty = 0.0f;
+ 155              		.loc 1 21 14 view .LVU21
+ 156 001e 9FED130A 		vldr.32	s0, .L16+4
+ 157              	.LVL10:
+ 158              	.L7:
+  25:Core/HALinterface/Src/PwmSTM32F4.cpp ****     }
+  26:Core/HALinterface/Src/PwmSTM32F4.cpp **** 
+  27:Core/HALinterface/Src/PwmSTM32F4.cpp ****     // CCR = duty
+  28:Core/HALinterface/Src/PwmSTM32F4.cpp ****     __HAL_TIM_SET_COMPARE(m_htim, m_channel, (uint32_t)duty);
+ 159              		.loc 1 28 5 is_stmt 1 view .LVU22
+ 160 0022 4368     		ldr	r3, [r0, #4]
+ 161 0024 33B9     		cbnz	r3, .L8
+ 162              		.loc 1 28 5 is_stmt 0 discriminator 1 view .LVU23
+ 163 0026 0368     		ldr	r3, [r0]
+ 164 0028 1B68     		ldr	r3, [r3]
+ 165 002a BCEEC00A 		vcvt.u32.f32	s0, s0
+ 166              	.LVL11:
+ 167              		.loc 1 28 5 discriminator 1 view .LVU24
+ 168 002e 83ED0D0A 		vstr.32	s0, [r3, #52]	@ int
+ 169 0032 7047     		bx	lr
+ 170              	.LVL12:
+ 171              	.L8:
+ 172              		.loc 1 28 5 discriminator 2 view .LVU25
+ 173 0034 042B     		cmp	r3, #4
+ 174 0036 08D0     		beq	.L14
+ 175              		.loc 1 28 5 discriminator 4 view .LVU26
+ 176 0038 082B     		cmp	r3, #8
+ 177 003a 0DD0     		beq	.L15
+ 178              		.loc 1 28 5 discriminator 6 view .LVU27
+ 179 003c 0368     		ldr	r3, [r0]
+ 180 003e 1B68     		ldr	r3, [r3]
+ 181 0040 BCEEC00A 		vcvt.u32.f32	s0, s0
+ 182              	.LVL13:
+ 183              		.loc 1 28 5 discriminator 6 view .LVU28
+ 184 0044 83ED100A 		vstr.32	s0, [r3, #64]	@ int
+  29:Core/HALinterface/Src/PwmSTM32F4.cpp **** }
+ 185              		.loc 1 29 1 view .LVU29
+ 186 0048 7047     		bx	lr
+ 187              	.LVL14:
+ 188              	.L14:
+  28:Core/HALinterface/Src/PwmSTM32F4.cpp **** }
+ 189              		.loc 1 28 5 discriminator 3 view .LVU30
+ 190 004a 0368     		ldr	r3, [r0]
+ 191 004c 1B68     		ldr	r3, [r3]
+ 192 004e BCEEC00A 		vcvt.u32.f32	s0, s0
+ 193              	.LVL15:
+  28:Core/HALinterface/Src/PwmSTM32F4.cpp **** }
+ 194              		.loc 1 28 5 discriminator 3 view .LVU31
+ 195 0052 83ED0E0A 		vstr.32	s0, [r3, #56]	@ int
+ 196 0056 7047     		bx	lr
+ 197              	.LVL16:
+ 198              	.L15:
+  28:Core/HALinterface/Src/PwmSTM32F4.cpp **** }
+ 199              		.loc 1 28 5 discriminator 5 view .LVU32
+ 200 0058 0368     		ldr	r3, [r0]
+ 201 005a 1B68     		ldr	r3, [r3]
+ 202 005c BCEEC00A 		vcvt.u32.f32	s0, s0
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccsxrBoq.s 			page 5
+
+
+ 203              	.LVL17:
+  28:Core/HALinterface/Src/PwmSTM32F4.cpp **** }
+ 204              		.loc 1 28 5 discriminator 5 view .LVU33
+ 205 0060 83ED0F0A 		vstr.32	s0, [r3, #60]	@ int
+ 206 0064 7047     		bx	lr
+ 207              	.L17:
+ 208 0066 00BF     		.align	2
+ 209              	.L16:
+ 210 0068 00005244 		.word	1146224640
+ 211 006c 00000000 		.word	0
+ 212              		.cfi_endproc
+ 213              	.LFE244:
+ 214              		.cantunwind
+ 215              		.fnend
+ 217              		.text
+ 218              	.Letext0:
+ 219              		.file 2 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/machine/_default_types.h"
+ 220              		.file 3 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/sys/_stdint.h"
+ 221              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h"
+ 222              		.file 5 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
+ 223              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
+ 224              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h"
+ 225              		.file 8 "Core/HALinterface/Src/../Inc/PwmSTM32F4.hpp"
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccsxrBoq.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 PwmSTM32F4.cpp
+C:\Users\hanaj\AppData\Local\Temp\ccsxrBoq.s:21     .text._ZN10PwmSTM32F4C2EP17TIM_HandleTypeDefm:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccsxrBoq.s:27     .text._ZN10PwmSTM32F4C2EP17TIM_HandleTypeDefm:00000000 _ZN10PwmSTM32F4C2EP17TIM_HandleTypeDefm
+.ARM.exidx.text._ZN10PwmSTM32F4C2EP17TIM_HandleTypeDefm:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccsxrBoq.s:27     .text._ZN10PwmSTM32F4C2EP17TIM_HandleTypeDefm:00000000 _ZN10PwmSTM32F4C1EP17TIM_HandleTypeDefm
+C:\Users\hanaj\AppData\Local\Temp\ccsxrBoq.s:52     .text._ZN10PwmSTM32F45startEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccsxrBoq.s:58     .text._ZN10PwmSTM32F45startEv:00000000 _ZN10PwmSTM32F45startEv
+.ARM.extab.text._ZN10PwmSTM32F45startEv:00000000 $d
+.ARM.exidx.text._ZN10PwmSTM32F45startEv:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccsxrBoq.s:88     .text._ZN10PwmSTM32F44stopEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccsxrBoq.s:94     .text._ZN10PwmSTM32F44stopEv:00000000 _ZN10PwmSTM32F44stopEv
+.ARM.extab.text._ZN10PwmSTM32F44stopEv:00000000 $d
+.ARM.exidx.text._ZN10PwmSTM32F44stopEv:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccsxrBoq.s:124    .text._ZN10PwmSTM32F412setDutyCycleEf:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccsxrBoq.s:130    .text._ZN10PwmSTM32F412setDutyCycleEf:00000000 _ZN10PwmSTM32F412setDutyCycleEf
+C:\Users\hanaj\AppData\Local\Temp\ccsxrBoq.s:210    .text._ZN10PwmSTM32F412setDutyCycleEf:00000068 $d
+.ARM.exidx.text._ZN10PwmSTM32F412setDutyCycleEf:00000000 $d
+
+UNDEFINED SYMBOLS
+HAL_TIM_PWM_Start
+__aeabi_unwind_cpp_pr1
+HAL_TIM_PWM_Stop

@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "name": "STM32",
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "intelliSenseMode": "clang-x64",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include**",
+                "C:/Tools/arm-gnu-toolchain/lib/gcc/arm-none-eabi/13.2.1/include/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "STM32F405xx",
+                "USE_HAL_DRIVER",
+                "__weak=__attribute__((weak))"
+            ],
+            "compilerPath": "C:/Tools/arm-gnu-toolchain/bin/arm-none-eabi-gcc",
+            "browse": {
+                "path": [
+                    "${workspaceRoot}"
+                ]
+            },
+            "cStandard": "c17",
+            "cppStandard": "c++17"
+            
+        }
+    ],
+    "version": 4
+}

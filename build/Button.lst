@@ -1,0 +1,236 @@
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccOAtYNE.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"Button.cpp"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/Driver/Src/Button.cpp"
+  20              		.section	.text._ZN6ButtonC2EP5IGpiom,"ax",%progbits
+  21              		.align	1
+  22              		.global	_ZN6ButtonC2EP5IGpiom
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	_ZN6ButtonC2EP5IGpiom:
+  28              		.fnstart
+  29              	.LVL0:
+  30              	.LFB242:
+   1:Core/Driver/Src/Button.cpp **** #include "../Inc/button.hpp"
+   2:Core/Driver/Src/Button.cpp **** 
+   3:Core/Driver/Src/Button.cpp **** Button::Button(IGpio* gpio, uint32_t longPressThresholdMs)
+  31              		.loc 1 3 1 view -0
+  32              		.cfi_startproc
+  33              		@ args = 0, pretend = 0, frame = 0
+  34              		@ frame_needed = 0, uses_anonymous_args = 0
+  35              		@ link register save eliminated.
+  36              	.LBB2:
+   4:Core/Driver/Src/Button.cpp ****     : m_gpio(gpio)
+  37              		.loc 1 4 7 is_stmt 0 view .LVU1
+  38 0000 0160     		str	r1, [r0]
+   5:Core/Driver/Src/Button.cpp ****     , m_longPressThreshold(longPressThresholdMs)
+  39              		.loc 1 5 7 view .LVU2
+  40 0002 4260     		str	r2, [r0, #4]
+  41              	.LBE2:
+   6:Core/Driver/Src/Button.cpp **** {
+   7:Core/Driver/Src/Button.cpp ****     // 必要ならコンストラクタで初期化処理
+   8:Core/Driver/Src/Button.cpp **** }
+  42              		.loc 1 8 1 view .LVU3
+  43 0004 7047     		bx	lr
+  44              		.cfi_endproc
+  45              	.LFE242:
+  46              		.cantunwind
+  47              		.fnend
+  49              		.global	_ZN6ButtonC1EP5IGpiom
+  50              		.thumb_set _ZN6ButtonC1EP5IGpiom,_ZN6ButtonC2EP5IGpiom
+  51              		.section	.text._ZN6Button10checkStateEv,"ax",%progbits
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccOAtYNE.s 			page 2
+
+
+  52              		.align	1
+  53              		.global	_ZN6Button10checkStateEv
+  54              		.syntax unified
+  55              		.thumb
+  56              		.thumb_func
+  58              	_ZN6Button10checkStateEv:
+  59              		.fnstart
+  60              	.LVL1:
+  61              	.LFB244:
+   9:Core/Driver/Src/Button.cpp **** 
+  10:Core/Driver/Src/Button.cpp **** uint8_t Button::checkState()
+  11:Core/Driver/Src/Button.cpp **** {
+  62              		.loc 1 11 1 is_stmt 1 view -0
+  63              		.cfi_startproc
+  64              		@ args = 0, pretend = 0, frame = 0
+  65              		@ frame_needed = 0, uses_anonymous_args = 0
+  66              		.loc 1 11 1 is_stmt 0 view .LVU5
+  67 0000 38B5     		push	{r3, r4, r5, lr}
+  68              		.save {r3, r4, r5, lr}
+  69              	.LCFI0:
+  70              		.cfi_def_cfa_offset 16
+  71              		.cfi_offset 3, -16
+  72              		.cfi_offset 4, -12
+  73              		.cfi_offset 5, -8
+  74              		.cfi_offset 14, -4
+  75 0002 0446     		mov	r4, r0
+  12:Core/Driver/Src/Button.cpp ****     // ボタンが押されている(LOW)か確認
+  13:Core/Driver/Src/Button.cpp ****     if (!m_gpio->read()) { // 例: false == 押下
+  76              		.loc 1 13 5 is_stmt 1 view .LVU6
+  77              	.LBB3:
+  78              		.loc 1 13 10 is_stmt 0 view .LVU7
+  79 0004 0068     		ldr	r0, [r0]
+  80              	.LVL2:
+  81              		.loc 1 13 22 view .LVU8
+  82 0006 0368     		ldr	r3, [r0]
+  83 0008 1B69     		ldr	r3, [r3, #16]
+  84 000a 9847     		blx	r3
+  85              	.LVL3:
+  86              		.loc 1 13 5 discriminator 1 view .LVU9
+  87 000c 08B1     		cbz	r0, .L8
+  88              	.LBE3:
+  14:Core/Driver/Src/Button.cpp ****         // 押下開始時刻を記録
+  15:Core/Driver/Src/Button.cpp ****         uint32_t btnStartTime = HAL_GetTick();
+  16:Core/Driver/Src/Button.cpp **** 
+  17:Core/Driver/Src/Button.cpp ****         // ボタンが離される(=HIGH)まで待つ (ブロッキング)
+  18:Core/Driver/Src/Button.cpp ****         while (!m_gpio->read()) {
+  19:Core/Driver/Src/Button.cpp ****             // 必要ならここで小さなウェイトや
+  20:Core/Driver/Src/Button.cpp ****             // ウォッチドッグのリフレッシュなどを挟む
+  21:Core/Driver/Src/Button.cpp ****         }
+  22:Core/Driver/Src/Button.cpp ****         
+  23:Core/Driver/Src/Button.cpp ****         // 離されたタイミングの時刻
+  24:Core/Driver/Src/Button.cpp ****         uint32_t btnEndTime = HAL_GetTick();
+  25:Core/Driver/Src/Button.cpp ****         // 押下時間を計算
+  26:Core/Driver/Src/Button.cpp ****         uint32_t elapsed = btnEndTime - btnStartTime;
+  27:Core/Driver/Src/Button.cpp **** 
+  28:Core/Driver/Src/Button.cpp ****         // 閾値より短ければ On、長ければ LongOn
+  29:Core/Driver/Src/Button.cpp ****         if (elapsed < m_longPressThreshold) {
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccOAtYNE.s 			page 3
+
+
+  30:Core/Driver/Src/Button.cpp ****             return On;
+  31:Core/Driver/Src/Button.cpp ****         } else {
+  32:Core/Driver/Src/Button.cpp ****             return LongOn;
+  33:Core/Driver/Src/Button.cpp ****         }
+  34:Core/Driver/Src/Button.cpp ****     }
+  35:Core/Driver/Src/Button.cpp ****     // 押されていなければ Off
+  36:Core/Driver/Src/Button.cpp ****     return Off;
+  89              		.loc 1 36 12 view .LVU10
+  90 000e 0020     		movs	r0, #0
+  91              	.L3:
+  37:Core/Driver/Src/Button.cpp **** }
+  92              		.loc 1 37 1 view .LVU11
+  93 0010 38BD     		pop	{r3, r4, r5, pc}
+  94              	.LVL4:
+  95              	.L8:
+  96              	.LBB5:
+  97              	.LBB4:
+  15:Core/Driver/Src/Button.cpp **** 
+  98              		.loc 1 15 9 is_stmt 1 view .LVU12
+  15:Core/Driver/Src/Button.cpp **** 
+  99              		.loc 1 15 44 is_stmt 0 view .LVU13
+ 100 0012 FFF7FEFF 		bl	HAL_GetTick
+ 101              	.LVL5:
+ 102 0016 0546     		mov	r5, r0
+ 103              	.LVL6:
+  18:Core/Driver/Src/Button.cpp ****             // 必要ならここで小さなウェイトや
+ 104              		.loc 1 18 9 is_stmt 1 view .LVU14
+ 105              	.L4:
+  18:Core/Driver/Src/Button.cpp ****             // 必要ならここで小さなウェイトや
+ 106              		.loc 1 18 16 discriminator 1 view .LVU15
+  18:Core/Driver/Src/Button.cpp ****             // 必要ならここで小さなウェイトや
+ 107              		.loc 1 18 17 is_stmt 0 discriminator 1 view .LVU16
+ 108 0018 2068     		ldr	r0, [r4]
+  18:Core/Driver/Src/Button.cpp ****             // 必要ならここで小さなウェイトや
+ 109              		.loc 1 18 29 discriminator 1 view .LVU17
+ 110 001a 0368     		ldr	r3, [r0]
+ 111 001c 1B69     		ldr	r3, [r3, #16]
+ 112 001e 9847     		blx	r3
+ 113              	.LVL7:
+  18:Core/Driver/Src/Button.cpp ****             // 必要ならここで小さなウェイトや
+ 114              		.loc 1 18 16 discriminator 1 view .LVU18
+ 115 0020 0028     		cmp	r0, #0
+ 116 0022 F9D0     		beq	.L4
+  24:Core/Driver/Src/Button.cpp ****         // 押下時間を計算
+ 117              		.loc 1 24 9 is_stmt 1 view .LVU19
+  24:Core/Driver/Src/Button.cpp ****         // 押下時間を計算
+ 118              		.loc 1 24 42 is_stmt 0 view .LVU20
+ 119 0024 FFF7FEFF 		bl	HAL_GetTick
+ 120              	.LVL8:
+  26:Core/Driver/Src/Button.cpp **** 
+ 121              		.loc 1 26 9 is_stmt 1 view .LVU21
+  26:Core/Driver/Src/Button.cpp **** 
+ 122              		.loc 1 26 18 is_stmt 0 view .LVU22
+ 123 0028 401B     		subs	r0, r0, r5
+ 124              	.LVL9:
+  29:Core/Driver/Src/Button.cpp ****             return On;
+ 125              		.loc 1 29 9 is_stmt 1 view .LVU23
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccOAtYNE.s 			page 4
+
+
+  29:Core/Driver/Src/Button.cpp ****             return On;
+ 126              		.loc 1 29 23 is_stmt 0 view .LVU24
+ 127 002a 6368     		ldr	r3, [r4, #4]
+  29:Core/Driver/Src/Button.cpp ****             return On;
+ 128              		.loc 1 29 9 view .LVU25
+ 129 002c 8342     		cmp	r3, r0
+ 130 002e 01D9     		bls	.L6
+  30:Core/Driver/Src/Button.cpp ****         } else {
+ 131              		.loc 1 30 20 view .LVU26
+ 132 0030 0120     		movs	r0, #1
+ 133              	.LVL10:
+  30:Core/Driver/Src/Button.cpp ****         } else {
+ 134              		.loc 1 30 20 view .LVU27
+ 135 0032 EDE7     		b	.L3
+ 136              	.LVL11:
+ 137              	.L6:
+  32:Core/Driver/Src/Button.cpp ****         }
+ 138              		.loc 1 32 20 view .LVU28
+ 139 0034 0220     		movs	r0, #2
+ 140              	.LVL12:
+  32:Core/Driver/Src/Button.cpp ****         }
+ 141              		.loc 1 32 20 view .LVU29
+ 142 0036 EBE7     		b	.L3
+ 143              	.LBE4:
+ 144              	.LBE5:
+ 145              		.cfi_endproc
+ 146              	.LFE244:
+ 147              		.fnend
+ 149              		.text
+ 150              	.Letext0:
+ 151              		.file 2 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/machine/_default_types.h"
+ 152              		.file 3 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/sys/_stdint.h"
+ 153              		.file 4 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/stdint.h"
+ 154              		.file 5 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/cstdint"
+ 155              		.file 6 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/arm-none-eabi/thumb/v7e-m+fp/
+ 156              		.file 7 "Core/Driver/Src/../Inc/button.hpp"
+ 157              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccOAtYNE.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 Button.cpp
+C:\Users\hanaj\AppData\Local\Temp\ccOAtYNE.s:21     .text._ZN6ButtonC2EP5IGpiom:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccOAtYNE.s:27     .text._ZN6ButtonC2EP5IGpiom:00000000 _ZN6ButtonC2EP5IGpiom
+.ARM.exidx.text._ZN6ButtonC2EP5IGpiom:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccOAtYNE.s:27     .text._ZN6ButtonC2EP5IGpiom:00000000 _ZN6ButtonC1EP5IGpiom
+C:\Users\hanaj\AppData\Local\Temp\ccOAtYNE.s:52     .text._ZN6Button10checkStateEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccOAtYNE.s:58     .text._ZN6Button10checkStateEv:00000000 _ZN6Button10checkStateEv
+.ARM.exidx.text._ZN6Button10checkStateEv:00000000 $d
+
+UNDEFINED SYMBOLS
+HAL_GetTick
+__aeabi_unwind_cpp_pr0

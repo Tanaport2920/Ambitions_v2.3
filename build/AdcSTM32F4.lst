@@ -1,0 +1,469 @@
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"AdcSTM32F4.cpp"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/HALinterface/Src/AdcSTM32F4.cpp"
+  20              		.section	.text._ZN10AdcSTM32F4D2Ev,"axG",%progbits,_ZN10AdcSTM32F4D5Ev,comdat
+  21              		.align	1
+  22              		.weak	_ZN10AdcSTM32F4D2Ev
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	_ZN10AdcSTM32F4D2Ev:
+  28              		.fnstart
+  29              	.LVL0:
+  30              	.LFB253:
+  31              		.file 2 "Core/HALinterface/Src/../Inc/AdcSTM32F4.hpp"
+   1:Core/HALinterface/Src/../Inc/AdcSTM32F4.hpp **** #pragma once
+   2:Core/HALinterface/Src/../Inc/AdcSTM32F4.hpp **** 
+   3:Core/HALinterface/Src/../Inc/AdcSTM32F4.hpp **** #include "IAdc.hpp"
+   4:Core/HALinterface/Src/../Inc/AdcSTM32F4.hpp **** #include "stm32f4xx_hal.h"  // HAL関連のヘッダ
+   5:Core/HALinterface/Src/../Inc/AdcSTM32F4.hpp **** 
+   6:Core/HALinterface/Src/../Inc/AdcSTM32F4.hpp **** class AdcSTM32F4 : public IAdc {
+  32              		.loc 2 6 7 view -0
+  33              		.cfi_startproc
+  34              		@ args = 0, pretend = 0, frame = 0
+  35              		@ frame_needed = 0, uses_anonymous_args = 0
+  36              		@ link register save eliminated.
+  37              	.LBB18:
+  38              		.loc 2 6 7 is_stmt 0 view .LVU1
+  39 0000 024A     		ldr	r2, .L2
+  40 0002 0260     		str	r2, [r0]
+  41              	.LVL1:
+  42              	.LBB19:
+  43              	.LBI19:
+  44              		.file 3 "Core/HALinterface/Src/../Inc/IAdc.hpp"
+   1:Core/HALinterface/Src/../Inc/IAdc.hpp **** #pragma once
+   2:Core/HALinterface/Src/../Inc/IAdc.hpp **** 
+   3:Core/HALinterface/Src/../Inc/IAdc.hpp **** #include <cstdint>
+   4:Core/HALinterface/Src/../Inc/IAdc.hpp **** // ADC用インターフェース
+   5:Core/HALinterface/Src/../Inc/IAdc.hpp **** class IAdc {
+   6:Core/HALinterface/Src/../Inc/IAdc.hpp **** public:
+   7:Core/HALinterface/Src/../Inc/IAdc.hpp ****     virtual ~IAdc() = default;
+  45              		.loc 3 7 13 is_stmt 1 view .LVU2
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s 			page 2
+
+
+  46              	.LBB20:
+  47 0004 024A     		ldr	r2, .L2+4
+  48 0006 0260     		str	r2, [r0]
+  49              	.LVL2:
+  50              		.loc 3 7 13 is_stmt 0 view .LVU3
+  51              	.LBE20:
+  52              	.LBE19:
+  53              	.LBE18:
+  54              		.loc 2 6 7 view .LVU4
+  55 0008 7047     		bx	lr
+  56              	.L3:
+  57 000a 00BF     		.align	2
+  58              	.L2:
+  59 000c 08000000 		.word	_ZTV10AdcSTM32F4+8
+  60 0010 08000000 		.word	_ZTV4IAdc+8
+  61              		.cfi_endproc
+  62              	.LFE253:
+  63              		.cantunwind
+  64              		.fnend
+  66              		.weak	_ZN10AdcSTM32F4D1Ev
+  67              		.thumb_set _ZN10AdcSTM32F4D1Ev,_ZN10AdcSTM32F4D2Ev
+  68              		.section	.text._ZN10AdcSTM32F44readEh,"ax",%progbits
+  69              		.align	1
+  70              		.global	_ZN10AdcSTM32F44readEh
+  71              		.syntax unified
+  72              		.thumb
+  73              		.thumb_func
+  75              	_ZN10AdcSTM32F44readEh:
+  76              		.fnstart
+  77              	.LVL3:
+  78              	.LFB251:
+   1:Core/HALinterface/Src/AdcSTM32F4.cpp **** #include "../Inc/AdcSTM32F4.hpp"
+   2:Core/HALinterface/Src/AdcSTM32F4.cpp **** #include "stm32f4xx_hal.h"
+   3:Core/HALinterface/Src/AdcSTM32F4.cpp **** 
+   4:Core/HALinterface/Src/AdcSTM32F4.cpp **** AdcSTM32F4::AdcSTM32F4(ADC_HandleTypeDef* hadc)
+   5:Core/HALinterface/Src/AdcSTM32F4.cpp ****     : m_hadc(hadc)
+   6:Core/HALinterface/Src/AdcSTM32F4.cpp **** {
+   7:Core/HALinterface/Src/AdcSTM32F4.cpp ****     // 必要ならここで追加の初期化
+   8:Core/HALinterface/Src/AdcSTM32F4.cpp **** }
+   9:Core/HALinterface/Src/AdcSTM32F4.cpp **** 
+  10:Core/HALinterface/Src/AdcSTM32F4.cpp **** uint16_t AdcSTM32F4::read(uint8_t channel) {
+  79              		.loc 1 10 44 is_stmt 1 view -0
+  80              		.cfi_startproc
+  81              		@ args = 0, pretend = 0, frame = 16
+  82              		@ frame_needed = 0, uses_anonymous_args = 0
+  83              		.loc 1 10 44 is_stmt 0 view .LVU6
+  84 0000 10B5     		push	{r4, lr}
+  85              		.save {r4, lr}
+  86              	.LCFI0:
+  87              		.cfi_def_cfa_offset 8
+  88              		.cfi_offset 4, -8
+  89              		.cfi_offset 14, -4
+  90              		.pad #16
+  91 0002 84B0     		sub	sp, sp, #16
+  92              	.LCFI1:
+  93              		.cfi_def_cfa_offset 24
+  94 0004 0446     		mov	r4, r0
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s 			page 3
+
+
+  11:Core/HALinterface/Src/AdcSTM32F4.cpp ****     // 1. ADC チャンネルを設定
+  12:Core/HALinterface/Src/AdcSTM32F4.cpp ****     ADC_ChannelConfTypeDef sConfig = {0};
+  95              		.loc 1 12 5 is_stmt 1 view .LVU7
+  96              		.loc 1 12 28 is_stmt 0 view .LVU8
+  97 0006 0023     		movs	r3, #0
+  98 0008 0093     		str	r3, [sp]
+  99 000a 0193     		str	r3, [sp, #4]
+ 100 000c 0293     		str	r3, [sp, #8]
+ 101 000e 0393     		str	r3, [sp, #12]
+  13:Core/HALinterface/Src/AdcSTM32F4.cpp **** 
+  14:Core/HALinterface/Src/AdcSTM32F4.cpp ****     // channel に応じて ADC_CHANNEL_0, ADC_CHANNEL_1 などを切り替える
+  15:Core/HALinterface/Src/AdcSTM32F4.cpp ****     // (CubeMXなどで使っているチャンネル番号と対応づける)
+  16:Core/HALinterface/Src/AdcSTM32F4.cpp ****     switch (channel) {
+ 102              		.loc 1 16 5 is_stmt 1 view .LVU9
+ 103 0010 0129     		cmp	r1, #1
+ 104 0012 10D0     		beq	.L9
+ 105              	.L5:
+  17:Core/HALinterface/Src/AdcSTM32F4.cpp ****         case 0:
+  18:Core/HALinterface/Src/AdcSTM32F4.cpp ****             sConfig.Channel = ADC_CHANNEL_0;
+  19:Core/HALinterface/Src/AdcSTM32F4.cpp ****             break;
+  20:Core/HALinterface/Src/AdcSTM32F4.cpp ****         case 1:
+  21:Core/HALinterface/Src/AdcSTM32F4.cpp ****             sConfig.Channel = ADC_CHANNEL_1;
+  22:Core/HALinterface/Src/AdcSTM32F4.cpp ****             break;
+  23:Core/HALinterface/Src/AdcSTM32F4.cpp ****         // 必要に応じて追加...
+  24:Core/HALinterface/Src/AdcSTM32F4.cpp ****         default:
+  25:Core/HALinterface/Src/AdcSTM32F4.cpp ****             sConfig.Channel = ADC_CHANNEL_0; 
+  26:Core/HALinterface/Src/AdcSTM32F4.cpp ****             break;
+  27:Core/HALinterface/Src/AdcSTM32F4.cpp ****     }
+  28:Core/HALinterface/Src/AdcSTM32F4.cpp **** 
+  29:Core/HALinterface/Src/AdcSTM32F4.cpp ****     sConfig.Rank         = 1;  // シーケンス内での順位
+ 106              		.loc 1 29 5 view .LVU10
+ 107              		.loc 1 29 26 is_stmt 0 view .LVU11
+ 108 0014 0123     		movs	r3, #1
+ 109 0016 0193     		str	r3, [sp, #4]
+  30:Core/HALinterface/Src/AdcSTM32F4.cpp ****     sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES; // サンプリング時間(必要に応じて�
+ 110              		.loc 1 30 5 is_stmt 1 view .LVU12
+  31:Core/HALinterface/Src/AdcSTM32F4.cpp ****     HAL_ADC_ConfigChannel(m_hadc, &sConfig);
+ 111              		.loc 1 31 5 view .LVU13
+ 112              		.loc 1 31 26 is_stmt 0 view .LVU14
+ 113 0018 6946     		mov	r1, sp
+ 114              	.LVL4:
+ 115              		.loc 1 31 26 view .LVU15
+ 116 001a 6068     		ldr	r0, [r4, #4]
+ 117              	.LVL5:
+ 118              		.loc 1 31 26 view .LVU16
+ 119 001c FFF7FEFF 		bl	HAL_ADC_ConfigChannel
+ 120              	.LVL6:
+  32:Core/HALinterface/Src/AdcSTM32F4.cpp **** 
+  33:Core/HALinterface/Src/AdcSTM32F4.cpp ****     // 2. ADC開始
+  34:Core/HALinterface/Src/AdcSTM32F4.cpp ****     HAL_ADC_Start(m_hadc);
+ 121              		.loc 1 34 5 is_stmt 1 view .LVU17
+ 122              		.loc 1 34 18 is_stmt 0 view .LVU18
+ 123 0020 6068     		ldr	r0, [r4, #4]
+ 124 0022 FFF7FEFF 		bl	HAL_ADC_Start
+ 125              	.LVL7:
+  35:Core/HALinterface/Src/AdcSTM32F4.cpp **** 
+  36:Core/HALinterface/Src/AdcSTM32F4.cpp ****     // 3. 変換完了待ち
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s 			page 4
+
+
+  37:Core/HALinterface/Src/AdcSTM32F4.cpp ****     if (HAL_ADC_PollForConversion(m_hadc, 10) == HAL_OK) {
+ 126              		.loc 1 37 5 is_stmt 1 view .LVU19
+ 127              		.loc 1 37 34 is_stmt 0 view .LVU20
+ 128 0026 0A21     		movs	r1, #10
+ 129 0028 6068     		ldr	r0, [r4, #4]
+ 130 002a FFF7FEFF 		bl	HAL_ADC_PollForConversion
+ 131              	.LVL8:
+ 132              		.loc 1 37 5 discriminator 1 view .LVU21
+ 133 002e 28B1     		cbz	r0, .L10
+  38:Core/HALinterface/Src/AdcSTM32F4.cpp ****         // 4. 変換結果を取得 (12bit想定)
+  39:Core/HALinterface/Src/AdcSTM32F4.cpp ****         return static_cast<uint16_t>(HAL_ADC_GetValue(m_hadc));
+  40:Core/HALinterface/Src/AdcSTM32F4.cpp ****     }
+  41:Core/HALinterface/Src/AdcSTM32F4.cpp **** 
+  42:Core/HALinterface/Src/AdcSTM32F4.cpp ****     // 失敗したら0を返すなど
+  43:Core/HALinterface/Src/AdcSTM32F4.cpp ****     return 0;
+ 134              		.loc 1 43 12 view .LVU22
+ 135 0030 0020     		movs	r0, #0
+ 136              	.L6:
+  44:Core/HALinterface/Src/AdcSTM32F4.cpp **** }
+ 137              		.loc 1 44 1 view .LVU23
+ 138 0032 04B0     		add	sp, sp, #16
+ 139              	.LCFI2:
+ 140              		.cfi_remember_state
+ 141              		.cfi_def_cfa_offset 8
+ 142              		@ sp needed
+ 143 0034 10BD     		pop	{r4, pc}
+ 144              	.LVL9:
+ 145              	.L9:
+ 146              	.LCFI3:
+ 147              		.cfi_restore_state
+  20:Core/HALinterface/Src/AdcSTM32F4.cpp ****             sConfig.Channel = ADC_CHANNEL_1;
+ 148              		.loc 1 20 9 is_stmt 1 view .LVU24
+  21:Core/HALinterface/Src/AdcSTM32F4.cpp ****             break;
+ 149              		.loc 1 21 13 view .LVU25
+  21:Core/HALinterface/Src/AdcSTM32F4.cpp ****             break;
+ 150              		.loc 1 21 29 is_stmt 0 view .LVU26
+ 151 0036 0123     		movs	r3, #1
+ 152 0038 0093     		str	r3, [sp]
+  22:Core/HALinterface/Src/AdcSTM32F4.cpp ****         // 必要に応じて追加...
+ 153              		.loc 1 22 13 is_stmt 1 view .LVU27
+ 154 003a EBE7     		b	.L5
+ 155              	.LVL10:
+ 156              	.L10:
+  39:Core/HALinterface/Src/AdcSTM32F4.cpp ****     }
+ 157              		.loc 1 39 9 view .LVU28
+  39:Core/HALinterface/Src/AdcSTM32F4.cpp ****     }
+ 158              		.loc 1 39 54 is_stmt 0 view .LVU29
+ 159 003c 6068     		ldr	r0, [r4, #4]
+ 160 003e FFF7FEFF 		bl	HAL_ADC_GetValue
+ 161              	.LVL11:
+  39:Core/HALinterface/Src/AdcSTM32F4.cpp ****     }
+ 162              		.loc 1 39 62 discriminator 1 view .LVU30
+ 163 0042 80B2     		uxth	r0, r0
+  39:Core/HALinterface/Src/AdcSTM32F4.cpp ****     }
+ 164              		.loc 1 39 62 view .LVU31
+ 165 0044 F5E7     		b	.L6
+ 166              		.cfi_endproc
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s 			page 5
+
+
+ 167              	.LFE251:
+ 168              		.fnend
+ 170              		.section	.text._ZN10AdcSTM32F4D0Ev,"axG",%progbits,_ZN10AdcSTM32F4D5Ev,comdat
+ 171              		.align	1
+ 172              		.weak	_ZN10AdcSTM32F4D0Ev
+ 173              		.syntax unified
+ 174              		.thumb
+ 175              		.thumb_func
+ 177              	_ZN10AdcSTM32F4D0Ev:
+ 178              		.fnstart
+ 179              	.LVL12:
+ 180              	.LFB255:
+ 181              		.loc 2 6 7 is_stmt 1 view -0
+ 182              		.cfi_startproc
+ 183              		@ args = 0, pretend = 0, frame = 0
+ 184              		@ frame_needed = 0, uses_anonymous_args = 0
+ 185              		.loc 2 6 7 is_stmt 0 view .LVU33
+ 186 0000 10B5     		push	{r4, lr}
+ 187              	.LCFI4:
+ 188              		.cfi_def_cfa_offset 8
+ 189              		.cfi_offset 4, -8
+ 190              		.cfi_offset 14, -4
+ 191 0002 0446     		mov	r4, r0
+ 192              	.LVL13:
+ 193              	.LBB21:
+ 194              	.LBI21:
+ 195              		.loc 2 6 7 is_stmt 1 view .LVU34
+ 196              	.LBB22:
+ 197 0004 044B     		ldr	r3, .L13
+ 198 0006 0360     		str	r3, [r0]
+ 199              	.LVL14:
+ 200              	.LBB23:
+ 201              	.LBI23:
+ 202              		.loc 3 7 13 view .LVU35
+ 203              	.LBB24:
+ 204 0008 044B     		ldr	r3, .L13+4
+ 205 000a 0360     		str	r3, [r0]
+ 206              	.LVL15:
+ 207              		.loc 3 7 13 is_stmt 0 view .LVU36
+ 208              	.LBE24:
+ 209              	.LBE23:
+ 210              	.LBE22:
+ 211              	.LBE21:
+ 212              		.loc 2 6 7 discriminator 1 view .LVU37
+ 213 000c 0821     		movs	r1, #8
+ 214 000e FFF7FEFF 		bl	_ZdlPvj
+ 215              	.LVL16:
+ 216              		.loc 2 6 7 view .LVU38
+ 217 0012 2046     		mov	r0, r4
+ 218 0014 10BD     		pop	{r4, pc}
+ 219              	.LVL17:
+ 220              	.L14:
+ 221              		.loc 2 6 7 view .LVU39
+ 222 0016 00BF     		.align	2
+ 223              	.L13:
+ 224 0018 08000000 		.word	_ZTV10AdcSTM32F4+8
+ 225 001c 08000000 		.word	_ZTV4IAdc+8
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s 			page 6
+
+
+ 226              		.cfi_endproc
+ 227              	.LFE255:
+ 228              		.cantunwind
+ 229              		.fnend
+ 231              		.section	.text._ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef,"ax",%progbits
+ 232              		.align	1
+ 233              		.global	_ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef
+ 234              		.syntax unified
+ 235              		.thumb
+ 236              		.thumb_func
+ 238              	_ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef:
+ 239              		.fnstart
+ 240              	.LVL18:
+ 241              	.LFB249:
+   4:Core/HALinterface/Src/AdcSTM32F4.cpp ****     : m_hadc(hadc)
+ 242              		.loc 1 4 1 is_stmt 1 view -0
+ 243              		.cfi_startproc
+ 244              		@ args = 0, pretend = 0, frame = 0
+ 245              		@ frame_needed = 0, uses_anonymous_args = 0
+ 246              		@ link register save eliminated.
+ 247              	.LBB25:
+ 248              	.LBB26:
+ 249              	.LBI26:
+   5:Core/HALinterface/Src/../Inc/IAdc.hpp **** public:
+ 250              		.loc 3 5 7 view .LVU41
+ 251              	.LBB27:
+ 252 0000 024A     		ldr	r2, .L16
+ 253 0002 0260     		str	r2, [r0]
+ 254              	.LVL19:
+   5:Core/HALinterface/Src/../Inc/IAdc.hpp **** public:
+ 255              		.loc 3 5 7 is_stmt 0 view .LVU42
+ 256              	.LBE27:
+ 257              	.LBE26:
+   5:Core/HALinterface/Src/AdcSTM32F4.cpp **** {
+ 258              		.loc 1 5 18 discriminator 1 view .LVU43
+ 259 0004 024A     		ldr	r2, .L16+4
+ 260 0006 0260     		str	r2, [r0]
+   5:Core/HALinterface/Src/AdcSTM32F4.cpp **** {
+ 261              		.loc 1 5 7 discriminator 1 view .LVU44
+ 262 0008 4160     		str	r1, [r0, #4]
+ 263              	.LBE25:
+   8:Core/HALinterface/Src/AdcSTM32F4.cpp **** 
+ 264              		.loc 1 8 1 view .LVU45
+ 265 000a 7047     		bx	lr
+ 266              	.L17:
+ 267              		.align	2
+ 268              	.L16:
+ 269 000c 08000000 		.word	_ZTV4IAdc+8
+ 270 0010 08000000 		.word	_ZTV10AdcSTM32F4+8
+ 271              		.cfi_endproc
+ 272              	.LFE249:
+ 273              		.cantunwind
+ 274              		.fnend
+ 276              		.global	_ZN10AdcSTM32F4C1EP17ADC_HandleTypeDef
+ 277              		.thumb_set _ZN10AdcSTM32F4C1EP17ADC_HandleTypeDef,_ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef
+ 278              		.weak	_ZTS4IAdc
+ 279              		.section	.rodata._ZTS4IAdc,"aG",%progbits,_ZTS4IAdc,comdat
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s 			page 7
+
+
+ 280              		.align	2
+ 283              	_ZTS4IAdc:
+ 284 0000 34494164 		.ascii	"4IAdc\000"
+ 284      6300
+ 285              		.weak	_ZTI4IAdc
+ 286              		.section	.rodata._ZTI4IAdc,"aG",%progbits,_ZTI4IAdc,comdat
+ 287              		.align	2
+ 290              	_ZTI4IAdc:
+ 291 0000 08000000 		.word	_ZTVN10__cxxabiv117__class_type_infoE+8
+ 292 0004 00000000 		.word	_ZTS4IAdc
+ 293              		.global	_ZTS10AdcSTM32F4
+ 294              		.section	.rodata._ZTS10AdcSTM32F4,"a"
+ 295              		.align	2
+ 298              	_ZTS10AdcSTM32F4:
+ 299 0000 31304164 		.ascii	"10AdcSTM32F4\000"
+ 299      6353544D 
+ 299      33324634 
+ 299      00
+ 300              		.global	_ZTI10AdcSTM32F4
+ 301              		.section	.rodata._ZTI10AdcSTM32F4,"a"
+ 302              		.align	2
+ 305              	_ZTI10AdcSTM32F4:
+ 306 0000 08000000 		.word	_ZTVN10__cxxabiv120__si_class_type_infoE+8
+ 307 0004 00000000 		.word	_ZTS10AdcSTM32F4
+ 308 0008 00000000 		.word	_ZTI4IAdc
+ 309              		.weak	_ZTV4IAdc
+ 310              		.section	.rodata._ZTV4IAdc,"aG",%progbits,_ZTV4IAdc,comdat
+ 311              		.align	2
+ 314              	_ZTV4IAdc:
+ 315 0000 00000000 		.word	0
+ 316 0004 00000000 		.word	_ZTI4IAdc
+ 317 0008 00000000 		.word	0
+ 318 000c 00000000 		.word	0
+ 319 0010 00000000 		.word	__cxa_pure_virtual
+ 320              		.global	_ZTV10AdcSTM32F4
+ 321              		.section	.rodata._ZTV10AdcSTM32F4,"a"
+ 322              		.align	2
+ 325              	_ZTV10AdcSTM32F4:
+ 326 0000 00000000 		.word	0
+ 327 0004 00000000 		.word	_ZTI10AdcSTM32F4
+ 328 0008 00000000 		.word	_ZN10AdcSTM32F4D1Ev
+ 329 000c 00000000 		.word	_ZN10AdcSTM32F4D0Ev
+ 330 0010 00000000 		.word	_ZN10AdcSTM32F44readEh
+ 331              		.weak	__cxa_pure_virtual
+ 332              		.text
+ 333              	.Letext0:
+ 334              		.file 4 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/cstdint"
+ 335              		.file 5 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/arm-none-eabi/thumb/v7e-m+fp/
+ 336              		.file 6 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/machine/_default_types.h"
+ 337              		.file 7 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/sys/_stdint.h"
+ 338              		.file 8 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/stdint.h"
+ 339              		.file 9 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h"
+ 340              		.file 10 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h"
+ 341              		.file 11 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
+ 342              		.file 12 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
+ 343              		.file 13 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h"
+ 344              		.file 14 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s 			page 8
+
+
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s 			page 9
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 AdcSTM32F4.cpp
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:21     .text._ZN10AdcSTM32F4D2Ev:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:27     .text._ZN10AdcSTM32F4D2Ev:00000000 _ZN10AdcSTM32F4D2Ev
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:59     .text._ZN10AdcSTM32F4D2Ev:0000000c $d
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:325    .rodata._ZTV10AdcSTM32F4:00000000 _ZTV10AdcSTM32F4
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:314    .rodata._ZTV4IAdc:00000000 _ZTV4IAdc
+.ARM.exidx.text._ZN10AdcSTM32F4D2Ev:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:27     .text._ZN10AdcSTM32F4D2Ev:00000000 _ZN10AdcSTM32F4D1Ev
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:69     .text._ZN10AdcSTM32F44readEh:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:75     .text._ZN10AdcSTM32F44readEh:00000000 _ZN10AdcSTM32F44readEh
+.ARM.exidx.text._ZN10AdcSTM32F44readEh:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:171    .text._ZN10AdcSTM32F4D0Ev:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:177    .text._ZN10AdcSTM32F4D0Ev:00000000 _ZN10AdcSTM32F4D0Ev
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:224    .text._ZN10AdcSTM32F4D0Ev:00000018 $d
+.ARM.exidx.text._ZN10AdcSTM32F4D0Ev:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:232    .text._ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:238    .text._ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef:00000000 _ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:269    .text._ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef:0000000c $d
+.ARM.exidx.text._ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:238    .text._ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef:00000000 _ZN10AdcSTM32F4C1EP17ADC_HandleTypeDef
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:283    .rodata._ZTS4IAdc:00000000 _ZTS4IAdc
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:280    .rodata._ZTS4IAdc:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:290    .rodata._ZTI4IAdc:00000000 _ZTI4IAdc
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:287    .rodata._ZTI4IAdc:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:298    .rodata._ZTS10AdcSTM32F4:00000000 _ZTS10AdcSTM32F4
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:295    .rodata._ZTS10AdcSTM32F4:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:305    .rodata._ZTI10AdcSTM32F4:00000000 _ZTI10AdcSTM32F4
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:302    .rodata._ZTI10AdcSTM32F4:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:311    .rodata._ZTV4IAdc:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\cc3IrJz7.s:322    .rodata._ZTV10AdcSTM32F4:00000000 $d
+                           .group:00000000 _ZN10AdcSTM32F4D5Ev
+
+UNDEFINED SYMBOLS
+HAL_ADC_ConfigChannel
+HAL_ADC_Start
+HAL_ADC_PollForConversion
+HAL_ADC_GetValue
+__aeabi_unwind_cpp_pr0
+_ZdlPvj
+_ZTVN10__cxxabiv117__class_type_infoE
+_ZTVN10__cxxabiv120__si_class_type_infoE
+__cxa_pure_virtual

@@ -1,0 +1,11 @@
+{
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.env.windows": {
+        "LANG": "en_US.UTF-8"
+    },
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "compare": "cpp",
+        "cstdint": "cpp"
+    }
+}

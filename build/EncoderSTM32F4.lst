@@ -1,0 +1,549 @@
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"EncoderSTM32F4.cpp"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/HALinterface/Src/EncoderSTM32F4.cpp"
+  20              		.section	.text._ZNK14EncoderSTM32F48getCountEv,"ax",%progbits
+  21              		.align	1
+  22              		.global	_ZNK14EncoderSTM32F48getCountEv
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	_ZNK14EncoderSTM32F48getCountEv:
+  28              		.fnstart
+  29              	.LVL0:
+  30              	.LFB251:
+   1:Core/HALinterface/Src/EncoderSTM32F4.cpp **** #include "../Inc/EncoderSTM32F4.hpp"
+   2:Core/HALinterface/Src/EncoderSTM32F4.cpp **** #include "stm32f4xx_hal.h"
+   3:Core/HALinterface/Src/EncoderSTM32F4.cpp **** 
+   4:Core/HALinterface/Src/EncoderSTM32F4.cpp **** EncoderSTM32F4::EncoderSTM32F4(TIM_HandleTypeDef* htim)
+   5:Core/HALinterface/Src/EncoderSTM32F4.cpp ****     : m_htim(htim)
+   6:Core/HALinterface/Src/EncoderSTM32F4.cpp **** {
+   7:Core/HALinterface/Src/EncoderSTM32F4.cpp ****     // エンコーダモードで初期化後、カウントスタート
+   8:Core/HALinterface/Src/EncoderSTM32F4.cpp ****     // CubeMXのMX_TIMx_Init() で Encoder mode に設定しておく
+   9:Core/HALinterface/Src/EncoderSTM32F4.cpp ****     HAL_TIM_Encoder_Start(m_htim, TIM_CHANNEL_ALL);
+  10:Core/HALinterface/Src/EncoderSTM32F4.cpp **** }
+  11:Core/HALinterface/Src/EncoderSTM32F4.cpp **** 
+  12:Core/HALinterface/Src/EncoderSTM32F4.cpp **** int32_t EncoderSTM32F4::getCount() const {
+  31              		.loc 1 12 42 view -0
+  32              		.cfi_startproc
+  33              		@ args = 0, pretend = 0, frame = 0
+  34              		@ frame_needed = 0, uses_anonymous_args = 0
+  35              		@ link register save eliminated.
+  13:Core/HALinterface/Src/EncoderSTM32F4.cpp ****     // CNT レジスタを取得
+  14:Core/HALinterface/Src/EncoderSTM32F4.cpp ****     return static_cast<int32_t>(__HAL_TIM_GET_COUNTER(m_htim));
+  36              		.loc 1 14 5 view .LVU1
+  37              		.loc 1 14 33 is_stmt 0 view .LVU2
+  38 0000 4368     		ldr	r3, [r0, #4]
+  39 0002 1B68     		ldr	r3, [r3]
+  40 0004 586A     		ldr	r0, [r3, #36]
+  41              	.LVL1:
+  15:Core/HALinterface/Src/EncoderSTM32F4.cpp **** }
+  42              		.loc 1 15 1 view .LVU3
+  43 0006 7047     		bx	lr
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s 			page 2
+
+
+  44              		.cfi_endproc
+  45              	.LFE251:
+  46              		.cantunwind
+  47              		.fnend
+  49              		.section	.text._ZN14EncoderSTM32F410resetCountEv,"ax",%progbits
+  50              		.align	1
+  51              		.global	_ZN14EncoderSTM32F410resetCountEv
+  52              		.syntax unified
+  53              		.thumb
+  54              		.thumb_func
+  56              	_ZN14EncoderSTM32F410resetCountEv:
+  57              		.fnstart
+  58              	.LVL2:
+  59              	.LFB252:
+  16:Core/HALinterface/Src/EncoderSTM32F4.cpp **** 
+  17:Core/HALinterface/Src/EncoderSTM32F4.cpp **** void EncoderSTM32F4::resetCount() {
+  60              		.loc 1 17 35 is_stmt 1 view -0
+  61              		.cfi_startproc
+  62              		@ args = 0, pretend = 0, frame = 0
+  63              		@ frame_needed = 0, uses_anonymous_args = 0
+  64              		@ link register save eliminated.
+  18:Core/HALinterface/Src/EncoderSTM32F4.cpp ****     __HAL_TIM_SET_COUNTER(m_htim, 0);
+  65              		.loc 1 18 5 view .LVU5
+  66 0000 4368     		ldr	r3, [r0, #4]
+  67 0002 1B68     		ldr	r3, [r3]
+  68 0004 0022     		movs	r2, #0
+  69 0006 5A62     		str	r2, [r3, #36]
+  19:Core/HALinterface/Src/EncoderSTM32F4.cpp **** }
+  70              		.loc 1 19 1 is_stmt 0 view .LVU6
+  71 0008 7047     		bx	lr
+  72              		.cfi_endproc
+  73              	.LFE252:
+  74              		.cantunwind
+  75              		.fnend
+  77              		.section	.text._ZN14EncoderSTM32F4D2Ev,"axG",%progbits,_ZN14EncoderSTM32F4D5Ev,comdat
+  78              		.align	1
+  79              		.weak	_ZN14EncoderSTM32F4D2Ev
+  80              		.syntax unified
+  81              		.thumb
+  82              		.thumb_func
+  84              	_ZN14EncoderSTM32F4D2Ev:
+  85              		.fnstart
+  86              	.LVL3:
+  87              	.LFB256:
+  88              		.file 2 "Core/HALinterface/Src/../Inc/EncoderSTM32F4.hpp"
+   1:Core/HALinterface/Src/../Inc/EncoderSTM32F4.hpp **** #pragma once
+   2:Core/HALinterface/Src/../Inc/EncoderSTM32F4.hpp **** 
+   3:Core/HALinterface/Src/../Inc/EncoderSTM32F4.hpp **** #include "IEncoder.hpp"
+   4:Core/HALinterface/Src/../Inc/EncoderSTM32F4.hpp **** #include "stm32f4xx_hal.h"
+   5:Core/HALinterface/Src/../Inc/EncoderSTM32F4.hpp **** 
+   6:Core/HALinterface/Src/../Inc/EncoderSTM32F4.hpp **** class EncoderSTM32F4 : public IEncoder {
+  89              		.loc 2 6 7 is_stmt 1 view -0
+  90              		.cfi_startproc
+  91              		@ args = 0, pretend = 0, frame = 0
+  92              		@ frame_needed = 0, uses_anonymous_args = 0
+  93              		@ link register save eliminated.
+  94              	.LBB21:
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s 			page 3
+
+
+  95              		.loc 2 6 7 is_stmt 0 view .LVU8
+  96 0000 024A     		ldr	r2, .L4
+  97 0002 0260     		str	r2, [r0]
+  98              	.LVL4:
+  99              	.LBB22:
+ 100              	.LBI22:
+ 101              		.file 3 "Core/HALinterface/Src/../Inc/IEncoder.hpp"
+   1:Core/HALinterface/Src/../Inc/IEncoder.hpp **** #pragma once
+   2:Core/HALinterface/Src/../Inc/IEncoder.hpp **** 
+   3:Core/HALinterface/Src/../Inc/IEncoder.hpp **** #include <cstdint>
+   4:Core/HALinterface/Src/../Inc/IEncoder.hpp **** // エンコーダ用インターフェース
+   5:Core/HALinterface/Src/../Inc/IEncoder.hpp **** class IEncoder {
+   6:Core/HALinterface/Src/../Inc/IEncoder.hpp **** public:
+   7:Core/HALinterface/Src/../Inc/IEncoder.hpp ****     virtual ~IEncoder() = default;
+ 102              		.loc 3 7 13 is_stmt 1 view .LVU9
+ 103              	.LBB23:
+ 104 0004 024A     		ldr	r2, .L4+4
+ 105 0006 0260     		str	r2, [r0]
+ 106              	.LVL5:
+ 107              		.loc 3 7 13 is_stmt 0 view .LVU10
+ 108              	.LBE23:
+ 109              	.LBE22:
+ 110              	.LBE21:
+ 111              		.loc 2 6 7 view .LVU11
+ 112 0008 7047     		bx	lr
+ 113              	.L5:
+ 114 000a 00BF     		.align	2
+ 115              	.L4:
+ 116 000c 08000000 		.word	_ZTV14EncoderSTM32F4+8
+ 117 0010 08000000 		.word	_ZTV8IEncoder+8
+ 118              		.cfi_endproc
+ 119              	.LFE256:
+ 120              		.cantunwind
+ 121              		.fnend
+ 123              		.weak	_ZN14EncoderSTM32F4D1Ev
+ 124              		.thumb_set _ZN14EncoderSTM32F4D1Ev,_ZN14EncoderSTM32F4D2Ev
+ 125              		.section	.text._ZN14EncoderSTM32F4D0Ev,"axG",%progbits,_ZN14EncoderSTM32F4D5Ev,comdat
+ 126              		.align	1
+ 127              		.weak	_ZN14EncoderSTM32F4D0Ev
+ 128              		.syntax unified
+ 129              		.thumb
+ 130              		.thumb_func
+ 132              	_ZN14EncoderSTM32F4D0Ev:
+ 133              		.fnstart
+ 134              	.LVL6:
+ 135              	.LFB258:
+ 136              		.loc 2 6 7 is_stmt 1 view -0
+ 137              		.cfi_startproc
+ 138              		@ args = 0, pretend = 0, frame = 0
+ 139              		@ frame_needed = 0, uses_anonymous_args = 0
+ 140              		.loc 2 6 7 is_stmt 0 view .LVU13
+ 141 0000 10B5     		push	{r4, lr}
+ 142              	.LCFI0:
+ 143              		.cfi_def_cfa_offset 8
+ 144              		.cfi_offset 4, -8
+ 145              		.cfi_offset 14, -4
+ 146 0002 0446     		mov	r4, r0
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s 			page 4
+
+
+ 147              	.LVL7:
+ 148              	.LBB24:
+ 149              	.LBI24:
+ 150              		.loc 2 6 7 is_stmt 1 view .LVU14
+ 151              	.LBB25:
+ 152 0004 044B     		ldr	r3, .L8
+ 153 0006 0360     		str	r3, [r0]
+ 154              	.LVL8:
+ 155              	.LBB26:
+ 156              	.LBI26:
+ 157              		.loc 3 7 13 view .LVU15
+ 158              	.LBB27:
+ 159 0008 044B     		ldr	r3, .L8+4
+ 160 000a 0360     		str	r3, [r0]
+ 161              	.LVL9:
+ 162              		.loc 3 7 13 is_stmt 0 view .LVU16
+ 163              	.LBE27:
+ 164              	.LBE26:
+ 165              	.LBE25:
+ 166              	.LBE24:
+ 167              		.loc 2 6 7 discriminator 1 view .LVU17
+ 168 000c 0821     		movs	r1, #8
+ 169 000e FFF7FEFF 		bl	_ZdlPvj
+ 170              	.LVL10:
+ 171              		.loc 2 6 7 view .LVU18
+ 172 0012 2046     		mov	r0, r4
+ 173 0014 10BD     		pop	{r4, pc}
+ 174              	.LVL11:
+ 175              	.L9:
+ 176              		.loc 2 6 7 view .LVU19
+ 177 0016 00BF     		.align	2
+ 178              	.L8:
+ 179 0018 08000000 		.word	_ZTV14EncoderSTM32F4+8
+ 180 001c 08000000 		.word	_ZTV8IEncoder+8
+ 181              		.cfi_endproc
+ 182              	.LFE258:
+ 183              		.cantunwind
+ 184              		.fnend
+ 186              		.section	.text._ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef,"ax",%progbits
+ 187              		.align	1
+ 188              		.global	_ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef
+ 189              		.syntax unified
+ 190              		.thumb
+ 191              		.thumb_func
+ 193              	_ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef:
+ 194              		.fnstart
+ 195              	.LVL12:
+ 196              	.LFB249:
+   4:Core/HALinterface/Src/EncoderSTM32F4.cpp ****     : m_htim(htim)
+ 197              		.loc 1 4 1 is_stmt 1 view -0
+ 198              		.cfi_startproc
+ 199              		@ args = 0, pretend = 0, frame = 0
+ 200              		@ frame_needed = 0, uses_anonymous_args = 0
+   4:Core/HALinterface/Src/EncoderSTM32F4.cpp ****     : m_htim(htim)
+ 201              		.loc 1 4 1 is_stmt 0 view .LVU21
+ 202 0000 10B5     		push	{r4, lr}
+ 203              		.save {r4, lr}
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s 			page 5
+
+
+ 204              	.LCFI1:
+ 205              		.cfi_def_cfa_offset 8
+ 206              		.cfi_offset 4, -8
+ 207              		.cfi_offset 14, -4
+ 208 0002 0446     		mov	r4, r0
+ 209 0004 0846     		mov	r0, r1
+ 210              	.LVL13:
+ 211              	.LBB28:
+ 212              	.LBB29:
+ 213              	.LBI29:
+   5:Core/HALinterface/Src/../Inc/IEncoder.hpp **** public:
+ 214              		.loc 3 5 7 is_stmt 1 view .LVU22
+ 215              	.LBB30:
+ 216 0006 074B     		ldr	r3, .L16
+ 217 0008 2360     		str	r3, [r4]
+ 218              	.LVL14:
+   5:Core/HALinterface/Src/../Inc/IEncoder.hpp **** public:
+ 219              		.loc 3 5 7 is_stmt 0 view .LVU23
+ 220              	.LBE30:
+ 221              	.LBE29:
+   5:Core/HALinterface/Src/EncoderSTM32F4.cpp **** {
+ 222              		.loc 1 5 18 discriminator 1 view .LVU24
+ 223 000a 074B     		ldr	r3, .L16+4
+ 224 000c 2360     		str	r3, [r4]
+   5:Core/HALinterface/Src/EncoderSTM32F4.cpp **** {
+ 225              		.loc 1 5 7 discriminator 1 view .LVU25
+ 226 000e 6160     		str	r1, [r4, #4]
+   9:Core/HALinterface/Src/EncoderSTM32F4.cpp **** }
+ 227              		.loc 1 9 5 is_stmt 1 view .LVU26
+   9:Core/HALinterface/Src/EncoderSTM32F4.cpp **** }
+ 228              		.loc 1 9 26 is_stmt 0 view .LVU27
+ 229 0010 3C21     		movs	r1, #60
+ 230              	.LVL15:
+ 231              	.LEHB0:
+   9:Core/HALinterface/Src/EncoderSTM32F4.cpp **** }
+ 232              		.loc 1 9 26 view .LVU28
+ 233 0012 FFF7FEFF 		bl	HAL_TIM_Encoder_Start
+ 234              	.LVL16:
+ 235              	.LEHE0:
+   9:Core/HALinterface/Src/EncoderSTM32F4.cpp **** }
+ 236              		.loc 1 9 26 view .LVU29
+ 237 0016 03E0     		b	.L15
+ 238              	.L12:
+ 239              	.LVL17:
+ 240              	.LBB31:
+ 241              	.LBI31:
+ 242              		.loc 3 7 13 is_stmt 1 view .LVU30
+ 243              	.LBB32:
+ 244 0018 024B     		ldr	r3, .L16
+ 245 001a 2360     		str	r3, [r4]
+ 246              	.LVL18:
+ 247              	.LEHB1:
+ 248              		.loc 3 7 13 is_stmt 0 view .LVU31
+ 249 001c FFF7FEFF 		bl	__cxa_end_cleanup
+ 250              	.LVL19:
+ 251              	.LEHE1:
+ 252              	.L15:
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s 			page 6
+
+
+ 253              		.loc 3 7 13 view .LVU32
+ 254              	.LBE32:
+ 255              	.LBE31:
+ 256              	.LBE28:
+  10:Core/HALinterface/Src/EncoderSTM32F4.cpp **** 
+ 257              		.loc 1 10 1 view .LVU33
+ 258 0020 2046     		mov	r0, r4
+ 259 0022 10BD     		pop	{r4, pc}
+ 260              	.LVL20:
+ 261              	.L17:
+  10:Core/HALinterface/Src/EncoderSTM32F4.cpp **** 
+ 262              		.loc 1 10 1 view .LVU34
+ 263              		.align	2
+ 264              	.L16:
+ 265 0024 08000000 		.word	_ZTV8IEncoder+8
+ 266 0028 08000000 		.word	_ZTV14EncoderSTM32F4+8
+ 267              		.cfi_endproc
+ 268              	.LFE249:
+ 269              		.global	__gxx_personality_v0
+ 270              		.personality	__gxx_personality_v0
+ 271              		.handlerdata
+ 272              	.LLSDA249:
+ 273 0008 FF       		.byte	0xff
+ 274 0009 FF       		.byte	0xff
+ 275 000a 01       		.byte	0x1
+ 276 000b 08       		.uleb128 .LLSDACSE249-.LLSDACSB249
+ 277              	.LLSDACSB249:
+ 278 000c 12       		.uleb128 .LEHB0-.LFB249
+ 279 000d 04       		.uleb128 .LEHE0-.LEHB0
+ 280 000e 18       		.uleb128 .L12-.LFB249
+ 281 000f 00       		.uleb128 0
+ 282 0010 1C       		.uleb128 .LEHB1-.LFB249
+ 283 0011 04       		.uleb128 .LEHE1-.LEHB1
+ 284 0012 00       		.uleb128 0
+ 285 0013 00       		.uleb128 0
+ 286              	.LLSDACSE249:
+ 287              		.section	.text._ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef
+ 288              		.fnend
+ 290              		.global	_ZN14EncoderSTM32F4C1EP17TIM_HandleTypeDef
+ 291              		.thumb_set _ZN14EncoderSTM32F4C1EP17TIM_HandleTypeDef,_ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef
+ 292              		.section	.text._ZN14EncoderSTM32F45startEv,"ax",%progbits
+ 293              		.align	1
+ 294              		.global	_ZN14EncoderSTM32F45startEv
+ 295              		.syntax unified
+ 296              		.thumb
+ 297              		.thumb_func
+ 299              	_ZN14EncoderSTM32F45startEv:
+ 300              		.fnstart
+ 301              	.LVL21:
+ 302              	.LFB253:
+  20:Core/HALinterface/Src/EncoderSTM32F4.cpp **** 
+  21:Core/HALinterface/Src/EncoderSTM32F4.cpp **** void EncoderSTM32F4::start(){
+ 303              		.loc 1 21 29 is_stmt 1 view -0
+ 304              		.cfi_startproc
+ 305              		@ args = 0, pretend = 0, frame = 0
+ 306              		@ frame_needed = 0, uses_anonymous_args = 0
+ 307              		.loc 1 21 29 is_stmt 0 view .LVU36
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s 			page 7
+
+
+ 308 0000 08B5     		push	{r3, lr}
+ 309              		.save {r3, lr}
+ 310              	.LCFI2:
+ 311              		.cfi_def_cfa_offset 8
+ 312              		.cfi_offset 3, -8
+ 313              		.cfi_offset 14, -4
+  22:Core/HALinterface/Src/EncoderSTM32F4.cpp ****     HAL_TIM_Encoder_Start(m_htim, TIM_CHANNEL_ALL);
+ 314              		.loc 1 22 5 is_stmt 1 view .LVU37
+ 315              		.loc 1 22 26 is_stmt 0 view .LVU38
+ 316 0002 3C21     		movs	r1, #60
+ 317 0004 4068     		ldr	r0, [r0, #4]
+ 318              	.LVL22:
+ 319              		.loc 1 22 26 view .LVU39
+ 320 0006 FFF7FEFF 		bl	HAL_TIM_Encoder_Start
+ 321              	.LVL23:
+  23:Core/HALinterface/Src/EncoderSTM32F4.cpp **** }
+ 322              		.loc 1 23 1 view .LVU40
+ 323 000a 08BD     		pop	{r3, pc}
+ 324              		.cfi_endproc
+ 325              	.LFE253:
+ 326              		.fnend
+ 328              		.section	.text._ZN14EncoderSTM32F44stopEv,"ax",%progbits
+ 329              		.align	1
+ 330              		.global	_ZN14EncoderSTM32F44stopEv
+ 331              		.syntax unified
+ 332              		.thumb
+ 333              		.thumb_func
+ 335              	_ZN14EncoderSTM32F44stopEv:
+ 336              		.fnstart
+ 337              	.LVL24:
+ 338              	.LFB254:
+  24:Core/HALinterface/Src/EncoderSTM32F4.cpp **** 
+  25:Core/HALinterface/Src/EncoderSTM32F4.cpp **** void EncoderSTM32F4::stop(){
+ 339              		.loc 1 25 28 is_stmt 1 view -0
+ 340              		.cfi_startproc
+ 341              		@ args = 0, pretend = 0, frame = 0
+ 342              		@ frame_needed = 0, uses_anonymous_args = 0
+ 343              		.loc 1 25 28 is_stmt 0 view .LVU42
+ 344 0000 08B5     		push	{r3, lr}
+ 345              		.save {r3, lr}
+ 346              	.LCFI3:
+ 347              		.cfi_def_cfa_offset 8
+ 348              		.cfi_offset 3, -8
+ 349              		.cfi_offset 14, -4
+  26:Core/HALinterface/Src/EncoderSTM32F4.cpp ****     HAL_TIM_Encoder_Stop(m_htim, TIM_CHANNEL_ALL);
+ 350              		.loc 1 26 5 is_stmt 1 view .LVU43
+ 351              		.loc 1 26 25 is_stmt 0 view .LVU44
+ 352 0002 3C21     		movs	r1, #60
+ 353 0004 4068     		ldr	r0, [r0, #4]
+ 354              	.LVL25:
+ 355              		.loc 1 26 25 view .LVU45
+ 356 0006 FFF7FEFF 		bl	HAL_TIM_Encoder_Stop
+ 357              	.LVL26:
+  27:Core/HALinterface/Src/EncoderSTM32F4.cpp **** }
+ 358              		.loc 1 27 1 view .LVU46
+ 359 000a 08BD     		pop	{r3, pc}
+ 360              		.cfi_endproc
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s 			page 8
+
+
+ 361              	.LFE254:
+ 362              		.fnend
+ 364              		.weak	_ZTS8IEncoder
+ 365              		.section	.rodata._ZTS8IEncoder,"aG",%progbits,_ZTS8IEncoder,comdat
+ 366              		.align	2
+ 369              	_ZTS8IEncoder:
+ 370 0000 3849456E 		.ascii	"8IEncoder\000"
+ 370      636F6465 
+ 370      7200
+ 371              		.weak	_ZTI8IEncoder
+ 372              		.section	.rodata._ZTI8IEncoder,"aG",%progbits,_ZTI8IEncoder,comdat
+ 373              		.align	2
+ 376              	_ZTI8IEncoder:
+ 377 0000 08000000 		.word	_ZTVN10__cxxabiv117__class_type_infoE+8
+ 378 0004 00000000 		.word	_ZTS8IEncoder
+ 379              		.global	_ZTS14EncoderSTM32F4
+ 380              		.section	.rodata._ZTS14EncoderSTM32F4,"a"
+ 381              		.align	2
+ 384              	_ZTS14EncoderSTM32F4:
+ 385 0000 3134456E 		.ascii	"14EncoderSTM32F4\000"
+ 385      636F6465 
+ 385      7253544D 
+ 385      33324634 
+ 385      00
+ 386              		.global	_ZTI14EncoderSTM32F4
+ 387              		.section	.rodata._ZTI14EncoderSTM32F4,"a"
+ 388              		.align	2
+ 391              	_ZTI14EncoderSTM32F4:
+ 392 0000 08000000 		.word	_ZTVN10__cxxabiv120__si_class_type_infoE+8
+ 393 0004 00000000 		.word	_ZTS14EncoderSTM32F4
+ 394 0008 00000000 		.word	_ZTI8IEncoder
+ 395              		.weak	_ZTV8IEncoder
+ 396              		.section	.rodata._ZTV8IEncoder,"aG",%progbits,_ZTV8IEncoder,comdat
+ 397              		.align	2
+ 400              	_ZTV8IEncoder:
+ 401 0000 00000000 		.word	0
+ 402 0004 00000000 		.word	_ZTI8IEncoder
+ 403 0008 00000000 		.word	0
+ 404 000c 00000000 		.word	0
+ 405 0010 00000000 		.word	__cxa_pure_virtual
+ 406 0014 00000000 		.word	__cxa_pure_virtual
+ 407              		.global	_ZTV14EncoderSTM32F4
+ 408              		.section	.rodata._ZTV14EncoderSTM32F4,"a"
+ 409              		.align	2
+ 412              	_ZTV14EncoderSTM32F4:
+ 413 0000 00000000 		.word	0
+ 414 0004 00000000 		.word	_ZTI14EncoderSTM32F4
+ 415 0008 00000000 		.word	_ZN14EncoderSTM32F4D1Ev
+ 416 000c 00000000 		.word	_ZN14EncoderSTM32F4D0Ev
+ 417 0010 00000000 		.word	_ZNK14EncoderSTM32F48getCountEv
+ 418 0014 00000000 		.word	_ZN14EncoderSTM32F410resetCountEv
+ 419              		.weak	__cxa_pure_virtual
+ 420              		.text
+ 421              	.Letext0:
+ 422              		.file 4 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/cstdint"
+ 423              		.file 5 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/arm-none-eabi/thumb/v7e-m+fp/
+ 424              		.file 6 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/machine/_default_types.h"
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s 			page 9
+
+
+ 425              		.file 7 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/sys/_stdint.h"
+ 426              		.file 8 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/stdint.h"
+ 427              		.file 9 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h"
+ 428              		.file 10 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h"
+ 429              		.file 11 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
+ 430              		.file 12 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
+ 431              		.file 13 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h"
+ 432              		.file 14 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s 			page 10
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 EncoderSTM32F4.cpp
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:21     .text._ZNK14EncoderSTM32F48getCountEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:27     .text._ZNK14EncoderSTM32F48getCountEv:00000000 _ZNK14EncoderSTM32F48getCountEv
+.ARM.exidx.text._ZNK14EncoderSTM32F48getCountEv:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:50     .text._ZN14EncoderSTM32F410resetCountEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:56     .text._ZN14EncoderSTM32F410resetCountEv:00000000 _ZN14EncoderSTM32F410resetCountEv
+.ARM.exidx.text._ZN14EncoderSTM32F410resetCountEv:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:78     .text._ZN14EncoderSTM32F4D2Ev:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:84     .text._ZN14EncoderSTM32F4D2Ev:00000000 _ZN14EncoderSTM32F4D2Ev
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:116    .text._ZN14EncoderSTM32F4D2Ev:0000000c $d
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:412    .rodata._ZTV14EncoderSTM32F4:00000000 _ZTV14EncoderSTM32F4
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:400    .rodata._ZTV8IEncoder:00000000 _ZTV8IEncoder
+.ARM.exidx.text._ZN14EncoderSTM32F4D2Ev:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:84     .text._ZN14EncoderSTM32F4D2Ev:00000000 _ZN14EncoderSTM32F4D1Ev
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:126    .text._ZN14EncoderSTM32F4D0Ev:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:132    .text._ZN14EncoderSTM32F4D0Ev:00000000 _ZN14EncoderSTM32F4D0Ev
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:179    .text._ZN14EncoderSTM32F4D0Ev:00000018 $d
+.ARM.exidx.text._ZN14EncoderSTM32F4D0Ev:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:187    .text._ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:193    .text._ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef:00000000 _ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:265    .text._ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef:00000024 $d
+.ARM.extab.text._ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef:00000000 $d
+.ARM.exidx.text._ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:193    .text._ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef:00000000 _ZN14EncoderSTM32F4C1EP17TIM_HandleTypeDef
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:293    .text._ZN14EncoderSTM32F45startEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:299    .text._ZN14EncoderSTM32F45startEv:00000000 _ZN14EncoderSTM32F45startEv
+.ARM.extab.text._ZN14EncoderSTM32F45startEv:00000000 $d
+.ARM.exidx.text._ZN14EncoderSTM32F45startEv:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:329    .text._ZN14EncoderSTM32F44stopEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:335    .text._ZN14EncoderSTM32F44stopEv:00000000 _ZN14EncoderSTM32F44stopEv
+.ARM.extab.text._ZN14EncoderSTM32F44stopEv:00000000 $d
+.ARM.exidx.text._ZN14EncoderSTM32F44stopEv:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:369    .rodata._ZTS8IEncoder:00000000 _ZTS8IEncoder
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:366    .rodata._ZTS8IEncoder:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:376    .rodata._ZTI8IEncoder:00000000 _ZTI8IEncoder
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:373    .rodata._ZTI8IEncoder:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:384    .rodata._ZTS14EncoderSTM32F4:00000000 _ZTS14EncoderSTM32F4
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:381    .rodata._ZTS14EncoderSTM32F4:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:391    .rodata._ZTI14EncoderSTM32F4:00000000 _ZTI14EncoderSTM32F4
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:388    .rodata._ZTI14EncoderSTM32F4:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:397    .rodata._ZTV8IEncoder:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccn1jHsh.s:409    .rodata._ZTV14EncoderSTM32F4:00000000 $d
+                           .group:00000000 _ZN14EncoderSTM32F4D5Ev
+
+UNDEFINED SYMBOLS
+_ZdlPvj
+HAL_TIM_Encoder_Start
+__cxa_end_cleanup
+__gxx_personality_v0
+__aeabi_unwind_cpp_pr1
+HAL_TIM_Encoder_Stop
+_ZTVN10__cxxabiv117__class_type_infoE
+_ZTVN10__cxxabiv120__si_class_type_infoE
+__cxa_pure_virtual

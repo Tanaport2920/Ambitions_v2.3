@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "type": "shell",
+    "echoCommand": true,
+    "tasks": [
+        {
+            "label": "Build project",
+            "command": "make",
+            "args": [
+                "all",
+                "GCC_PATH=C:\\Tools\\arm-gnu-toolchain\\bin"
+            ],
+            "options": {
+                "env": {
+                    "PATH": "C:\\Tools\\make-3.81-bin\\bin"
+                }
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Clean project",
+            "command": "powershell -Command Remove-Item",
+            "args": [
+                "${workspaceFolder}\\build",
+                "-Recurse"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        }
+    ]
+}

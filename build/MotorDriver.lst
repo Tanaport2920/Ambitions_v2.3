@@ -1,0 +1,496 @@
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"MotorDriver.cpp"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/Driver/Src/MotorDriver.cpp"
+  20              		.section	.text._ZN11MotorDriverC2EP10PwmSTM32F4P11GpioSTM32F4S3_f,"ax",%progbits
+  21              		.align	1
+  22              		.global	_ZN11MotorDriverC2EP10PwmSTM32F4P11GpioSTM32F4S3_f
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	_ZN11MotorDriverC2EP10PwmSTM32F4P11GpioSTM32F4S3_f:
+  28              		.fnstart
+  29              	.LVL0:
+  30              	.LFB912:
+   1:Core/Driver/Src/MotorDriver.cpp **** #include "../Inc/MotorDriver.hpp"
+   2:Core/Driver/Src/MotorDriver.cpp **** #include <algorithm>  // std::clamp (C++17以降)
+   3:Core/Driver/Src/MotorDriver.cpp **** 
+   4:Core/Driver/Src/MotorDriver.cpp **** // コンストラクタ
+   5:Core/Driver/Src/MotorDriver.cpp **** MotorDriver::MotorDriver(
+  31              		.loc 1 5 1 view -0
+  32              		.cfi_startproc
+  33              		@ args = 0, pretend = 0, frame = 0
+  34              		@ frame_needed = 0, uses_anonymous_args = 0
+  35              		@ link register save eliminated.
+  36              	.LBB2:
+   6:Core/Driver/Src/MotorDriver.cpp ****     PwmSTM32F4* pwm,
+   7:Core/Driver/Src/MotorDriver.cpp ****     GpioSTM32F4* in1,
+   8:Core/Driver/Src/MotorDriver.cpp ****     GpioSTM32F4* in2,
+   9:Core/Driver/Src/MotorDriver.cpp ****     float counterMax
+  10:Core/Driver/Src/MotorDriver.cpp **** )
+  11:Core/Driver/Src/MotorDriver.cpp **** : m_pwm(pwm)
+  37              		.loc 1 11 3 is_stmt 0 view .LVU1
+  38 0000 0160     		str	r1, [r0]
+  12:Core/Driver/Src/MotorDriver.cpp **** , m_in1(in1)
+  39              		.loc 1 12 3 view .LVU2
+  40 0002 8260     		str	r2, [r0, #8]
+  13:Core/Driver/Src/MotorDriver.cpp **** , m_in2(in2)
+  41              		.loc 1 13 3 view .LVU3
+  42 0004 C360     		str	r3, [r0, #12]
+  14:Core/Driver/Src/MotorDriver.cpp **** , m_counterMax(counterMax)
+  43              		.loc 1 14 3 view .LVU4
+  44 0006 80ED040A 		vstr.32	s0, [r0, #16]
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s 			page 2
+
+
+  45              	.LBE2:
+  15:Core/Driver/Src/MotorDriver.cpp **** {
+  16:Core/Driver/Src/MotorDriver.cpp **** }
+  46              		.loc 1 16 1 view .LVU5
+  47 000a 7047     		bx	lr
+  48              		.cfi_endproc
+  49              	.LFE912:
+  50              		.cantunwind
+  51              		.fnend
+  53              		.global	_ZN11MotorDriverC1EP10PwmSTM32F4P11GpioSTM32F4S3_f
+  54              		.thumb_set _ZN11MotorDriverC1EP10PwmSTM32F4P11GpioSTM32F4S3_f,_ZN11MotorDriverC2EP10PwmSTM32F4P11G
+  55              		.section	.text._ZN11MotorDriver9clockwiseEf,"ax",%progbits
+  56              		.align	1
+  57              		.global	_ZN11MotorDriver9clockwiseEf
+  58              		.syntax unified
+  59              		.thumb
+  60              		.thumb_func
+  62              	_ZN11MotorDriver9clockwiseEf:
+  63              		.fnstart
+  64              	.LVL1:
+  65              	.LFB914:
+  17:Core/Driver/Src/MotorDriver.cpp **** 
+  18:Core/Driver/Src/MotorDriver.cpp **** // 時計回り
+  19:Core/Driver/Src/MotorDriver.cpp **** void MotorDriver::clockwise(float duty) {
+  66              		.loc 1 19 41 is_stmt 1 view -0
+  67              		.cfi_startproc
+  68              		@ args = 0, pretend = 0, frame = 0
+  69              		@ frame_needed = 0, uses_anonymous_args = 0
+  70              		.loc 1 19 41 is_stmt 0 view .LVU7
+  71 0000 10B5     		push	{r4, lr}
+  72              		.save {r4, lr}
+  73              	.LCFI0:
+  74              		.cfi_def_cfa_offset 8
+  75              		.cfi_offset 4, -8
+  76              		.cfi_offset 14, -4
+  77 0002 2DED028B 		vpush.64	{d8}
+  78              		.vsave {d8}
+  79              	.LCFI1:
+  80              		.cfi_def_cfa_offset 16
+  81              		.cfi_offset 80, -16
+  82              		.cfi_offset 81, -12
+  83 0006 0446     		mov	r4, r0
+  20:Core/Driver/Src/MotorDriver.cpp ****     if (duty < 0.0f)  duty = 0.0f;
+  84              		.loc 1 20 5 is_stmt 1 view .LVU8
+  85 0008 B5EEC00A 		vcmpe.f32	s0, #0
+  86 000c F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+  87 0010 0BD4     		bmi	.L4
+  88 0012 B0EE408A 		vmov.f32	s16, s0
+  21:Core/Driver/Src/MotorDriver.cpp ****     if (duty > 1.0f)  duty = 1.0f;
+  89              		.loc 1 21 5 view .LVU9
+  90 0016 F7EE007A 		vmov.f32	s15, #1.0e+0
+  91 001a B4EEE70A 		vcmpe.f32	s0, s15
+  92 001e F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+  93 0022 04DD     		ble	.L3
+  94              		.loc 1 21 28 is_stmt 0 discriminator 1 view .LVU10
+  95 0024 B7EE008A 		vmov.f32	s16, #1.0e+0
+  96 0028 01E0     		b	.L3
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s 			page 3
+
+
+  97              	.L4:
+  20:Core/Driver/Src/MotorDriver.cpp ****     if (duty < 0.0f)  duty = 0.0f;
+  98              		.loc 1 20 28 discriminator 1 view .LVU11
+  99 002a 9FED0A8A 		vldr.32	s16, .L7
+ 100              	.L3:
+ 101              	.LVL2:
+  22:Core/Driver/Src/MotorDriver.cpp **** 
+  23:Core/Driver/Src/MotorDriver.cpp ****     // 例: IN1 = Low, IN2 = High
+  24:Core/Driver/Src/MotorDriver.cpp ****     m_in1->setLow();
+ 102              		.loc 1 24 5 is_stmt 1 view .LVU12
+ 103 002e A068     		ldr	r0, [r4, #8]
+ 104              	.LVL3:
+ 105              		.loc 1 24 18 is_stmt 0 view .LVU13
+ 106 0030 0368     		ldr	r3, [r0]
+ 107 0032 DB68     		ldr	r3, [r3, #12]
+ 108 0034 9847     		blx	r3
+ 109              	.LVL4:
+  25:Core/Driver/Src/MotorDriver.cpp ****     m_in2->setHigh();
+ 110              		.loc 1 25 5 is_stmt 1 view .LVU14
+ 111 0036 E068     		ldr	r0, [r4, #12]
+ 112              		.loc 1 25 19 is_stmt 0 view .LVU15
+ 113 0038 0368     		ldr	r3, [r0]
+ 114 003a 9B68     		ldr	r3, [r3, #8]
+ 115 003c 9847     		blx	r3
+ 116              	.LVL5:
+  26:Core/Driver/Src/MotorDriver.cpp **** 
+  27:Core/Driver/Src/MotorDriver.cpp ****     float ccrVal = duty * m_counterMax;
+ 117              		.loc 1 27 5 is_stmt 1 view .LVU16
+ 118              		.loc 1 27 27 is_stmt 0 view .LVU17
+ 119 003e 94ED040A 		vldr.32	s0, [r4, #16]
+ 120              	.LVL6:
+  28:Core/Driver/Src/MotorDriver.cpp ****     m_pwm->setDutyCycle(ccrVal);
+ 121              		.loc 1 28 5 is_stmt 1 view .LVU18
+ 122              		.loc 1 28 24 is_stmt 0 view .LVU19
+ 123 0042 20EE080A 		vmul.f32	s0, s0, s16
+ 124              	.LVL7:
+ 125              		.loc 1 28 24 view .LVU20
+ 126 0046 2068     		ldr	r0, [r4]
+ 127 0048 FFF7FEFF 		bl	_ZN10PwmSTM32F412setDutyCycleEf
+ 128              	.LVL8:
+  29:Core/Driver/Src/MotorDriver.cpp **** }
+ 129              		.loc 1 29 1 view .LVU21
+ 130 004c BDEC028B 		vldm	sp!, {d8}
+ 131              	.LCFI2:
+ 132              		.cfi_restore 80
+ 133              		.cfi_restore 81
+ 134              		.cfi_def_cfa_offset 8
+ 135              	.LVL9:
+ 136              		.loc 1 29 1 view .LVU22
+ 137 0050 10BD     		pop	{r4, pc}
+ 138              	.LVL10:
+ 139              	.L8:
+ 140              		.loc 1 29 1 view .LVU23
+ 141 0052 00BF     		.align	2
+ 142              	.L7:
+ 143 0054 00000000 		.word	0
+ 144              		.cfi_endproc
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s 			page 4
+
+
+ 145              	.LFE914:
+ 146              		.fnend
+ 148              		.section	.text._ZN11MotorDriver16counterClockwiseEf,"ax",%progbits
+ 149              		.align	1
+ 150              		.global	_ZN11MotorDriver16counterClockwiseEf
+ 151              		.syntax unified
+ 152              		.thumb
+ 153              		.thumb_func
+ 155              	_ZN11MotorDriver16counterClockwiseEf:
+ 156              		.fnstart
+ 157              	.LVL11:
+ 158              	.LFB915:
+  30:Core/Driver/Src/MotorDriver.cpp **** 
+  31:Core/Driver/Src/MotorDriver.cpp **** // 反時計回り
+  32:Core/Driver/Src/MotorDriver.cpp **** void MotorDriver::counterClockwise(float duty) {
+ 159              		.loc 1 32 48 is_stmt 1 view -0
+ 160              		.cfi_startproc
+ 161              		@ args = 0, pretend = 0, frame = 0
+ 162              		@ frame_needed = 0, uses_anonymous_args = 0
+ 163              		.loc 1 32 48 is_stmt 0 view .LVU25
+ 164 0000 10B5     		push	{r4, lr}
+ 165              		.save {r4, lr}
+ 166              	.LCFI3:
+ 167              		.cfi_def_cfa_offset 8
+ 168              		.cfi_offset 4, -8
+ 169              		.cfi_offset 14, -4
+ 170 0002 2DED028B 		vpush.64	{d8}
+ 171              		.vsave {d8}
+ 172              	.LCFI4:
+ 173              		.cfi_def_cfa_offset 16
+ 174              		.cfi_offset 80, -16
+ 175              		.cfi_offset 81, -12
+ 176 0006 0446     		mov	r4, r0
+  33:Core/Driver/Src/MotorDriver.cpp ****     if (duty < 0.0f)  duty = 0.0f;
+ 177              		.loc 1 33 5 is_stmt 1 view .LVU26
+ 178 0008 B5EEC00A 		vcmpe.f32	s0, #0
+ 179 000c F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 180 0010 0BD4     		bmi	.L11
+ 181 0012 B0EE408A 		vmov.f32	s16, s0
+  34:Core/Driver/Src/MotorDriver.cpp ****     if (duty > 1.0f)  duty = 1.0f;
+ 182              		.loc 1 34 5 view .LVU27
+ 183 0016 F7EE007A 		vmov.f32	s15, #1.0e+0
+ 184 001a B4EEE70A 		vcmpe.f32	s0, s15
+ 185 001e F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 186 0022 04DD     		ble	.L10
+ 187              		.loc 1 34 28 is_stmt 0 discriminator 1 view .LVU28
+ 188 0024 B7EE008A 		vmov.f32	s16, #1.0e+0
+ 189 0028 01E0     		b	.L10
+ 190              	.L11:
+  33:Core/Driver/Src/MotorDriver.cpp ****     if (duty < 0.0f)  duty = 0.0f;
+ 191              		.loc 1 33 28 discriminator 1 view .LVU29
+ 192 002a 9FED0A8A 		vldr.32	s16, .L14
+ 193              	.L10:
+ 194              	.LVL12:
+  35:Core/Driver/Src/MotorDriver.cpp **** 
+  36:Core/Driver/Src/MotorDriver.cpp ****     // 例: IN1 = High, IN2 = Low
+  37:Core/Driver/Src/MotorDriver.cpp ****     m_in1->setHigh();
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s 			page 5
+
+
+ 195              		.loc 1 37 5 is_stmt 1 view .LVU30
+ 196 002e A068     		ldr	r0, [r4, #8]
+ 197              	.LVL13:
+ 198              		.loc 1 37 19 is_stmt 0 view .LVU31
+ 199 0030 0368     		ldr	r3, [r0]
+ 200 0032 9B68     		ldr	r3, [r3, #8]
+ 201 0034 9847     		blx	r3
+ 202              	.LVL14:
+  38:Core/Driver/Src/MotorDriver.cpp ****     m_in2->setLow();
+ 203              		.loc 1 38 5 is_stmt 1 view .LVU32
+ 204 0036 E068     		ldr	r0, [r4, #12]
+ 205              		.loc 1 38 18 is_stmt 0 view .LVU33
+ 206 0038 0368     		ldr	r3, [r0]
+ 207 003a DB68     		ldr	r3, [r3, #12]
+ 208 003c 9847     		blx	r3
+ 209              	.LVL15:
+  39:Core/Driver/Src/MotorDriver.cpp **** 
+  40:Core/Driver/Src/MotorDriver.cpp ****     float ccrVal = duty * m_counterMax;
+ 210              		.loc 1 40 5 is_stmt 1 view .LVU34
+ 211              		.loc 1 40 27 is_stmt 0 view .LVU35
+ 212 003e 94ED040A 		vldr.32	s0, [r4, #16]
+ 213              	.LVL16:
+  41:Core/Driver/Src/MotorDriver.cpp ****     m_pwm->setDutyCycle(ccrVal);
+ 214              		.loc 1 41 5 is_stmt 1 view .LVU36
+ 215              		.loc 1 41 24 is_stmt 0 view .LVU37
+ 216 0042 20EE080A 		vmul.f32	s0, s0, s16
+ 217              	.LVL17:
+ 218              		.loc 1 41 24 view .LVU38
+ 219 0046 2068     		ldr	r0, [r4]
+ 220 0048 FFF7FEFF 		bl	_ZN10PwmSTM32F412setDutyCycleEf
+ 221              	.LVL18:
+  42:Core/Driver/Src/MotorDriver.cpp **** }
+ 222              		.loc 1 42 1 view .LVU39
+ 223 004c BDEC028B 		vldm	sp!, {d8}
+ 224              	.LCFI5:
+ 225              		.cfi_restore 80
+ 226              		.cfi_restore 81
+ 227              		.cfi_def_cfa_offset 8
+ 228              	.LVL19:
+ 229              		.loc 1 42 1 view .LVU40
+ 230 0050 10BD     		pop	{r4, pc}
+ 231              	.LVL20:
+ 232              	.L15:
+ 233              		.loc 1 42 1 view .LVU41
+ 234 0052 00BF     		.align	2
+ 235              	.L14:
+ 236 0054 00000000 		.word	0
+ 237              		.cfi_endproc
+ 238              	.LFE915:
+ 239              		.fnend
+ 241              		.section	.text._ZN11MotorDriver5brakeEv,"ax",%progbits
+ 242              		.align	1
+ 243              		.global	_ZN11MotorDriver5brakeEv
+ 244              		.syntax unified
+ 245              		.thumb
+ 246              		.thumb_func
+ 248              	_ZN11MotorDriver5brakeEv:
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s 			page 6
+
+
+ 249              		.fnstart
+ 250              	.LVL21:
+ 251              	.LFB916:
+  43:Core/Driver/Src/MotorDriver.cpp **** 
+  44:Core/Driver/Src/MotorDriver.cpp **** // ブレーキ
+  45:Core/Driver/Src/MotorDriver.cpp **** void MotorDriver::brake() {
+ 252              		.loc 1 45 27 is_stmt 1 view -0
+ 253              		.cfi_startproc
+ 254              		@ args = 0, pretend = 0, frame = 0
+ 255              		@ frame_needed = 0, uses_anonymous_args = 0
+ 256              		.loc 1 45 27 is_stmt 0 view .LVU43
+ 257 0000 10B5     		push	{r4, lr}
+ 258              		.save {r4, lr}
+ 259              	.LCFI6:
+ 260              		.cfi_def_cfa_offset 8
+ 261              		.cfi_offset 4, -8
+ 262              		.cfi_offset 14, -4
+ 263 0002 0446     		mov	r4, r0
+  46:Core/Driver/Src/MotorDriver.cpp ****     // 例: IN1=High, IN2=High
+  47:Core/Driver/Src/MotorDriver.cpp ****     m_in1->setHigh();
+ 264              		.loc 1 47 5 is_stmt 1 view .LVU44
+ 265 0004 8068     		ldr	r0, [r0, #8]
+ 266              	.LVL22:
+ 267              		.loc 1 47 19 is_stmt 0 view .LVU45
+ 268 0006 0368     		ldr	r3, [r0]
+ 269 0008 9B68     		ldr	r3, [r3, #8]
+ 270 000a 9847     		blx	r3
+ 271              	.LVL23:
+  48:Core/Driver/Src/MotorDriver.cpp ****     m_in2->setHigh();
+ 272              		.loc 1 48 5 is_stmt 1 view .LVU46
+ 273 000c E068     		ldr	r0, [r4, #12]
+ 274              		.loc 1 48 19 is_stmt 0 view .LVU47
+ 275 000e 0368     		ldr	r3, [r0]
+ 276 0010 9B68     		ldr	r3, [r3, #8]
+ 277 0012 9847     		blx	r3
+ 278              	.LVL24:
+  49:Core/Driver/Src/MotorDriver.cpp ****     // 必要なら PWMを0%にするか停止する
+  50:Core/Driver/Src/MotorDriver.cpp ****     m_pwm->setDutyCycle(0.0f);
+ 279              		.loc 1 50 5 is_stmt 1 view .LVU48
+ 280              		.loc 1 50 24 is_stmt 0 view .LVU49
+ 281 0014 9FED020A 		vldr.32	s0, .L18
+ 282 0018 2068     		ldr	r0, [r4]
+ 283 001a FFF7FEFF 		bl	_ZN10PwmSTM32F412setDutyCycleEf
+ 284              	.LVL25:
+  51:Core/Driver/Src/MotorDriver.cpp ****     // m_pwm->stop(); // stop()を定義しているなら
+  52:Core/Driver/Src/MotorDriver.cpp **** }
+ 285              		.loc 1 52 1 view .LVU50
+ 286 001e 10BD     		pop	{r4, pc}
+ 287              	.LVL26:
+ 288              	.L19:
+ 289              		.loc 1 52 1 view .LVU51
+ 290              		.align	2
+ 291              	.L18:
+ 292 0020 00000000 		.word	0
+ 293              		.cfi_endproc
+ 294              	.LFE916:
+ 295              		.fnend
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s 			page 7
+
+
+ 297              		.section	.text._ZN11MotorDriver7setDutyEf,"ax",%progbits
+ 298              		.align	1
+ 299              		.global	_ZN11MotorDriver7setDutyEf
+ 300              		.syntax unified
+ 301              		.thumb
+ 302              		.thumb_func
+ 304              	_ZN11MotorDriver7setDutyEf:
+ 305              		.fnstart
+ 306              	.LVL27:
+ 307              	.LFB917:
+  53:Core/Driver/Src/MotorDriver.cpp **** 
+  54:Core/Driver/Src/MotorDriver.cpp **** // setDuty : -1.0 ~ +1.0
+  55:Core/Driver/Src/MotorDriver.cpp **** void MotorDriver::setDuty(float duty) {
+ 308              		.loc 1 55 39 is_stmt 1 view -0
+ 309              		.cfi_startproc
+ 310              		@ args = 0, pretend = 0, frame = 0
+ 311              		@ frame_needed = 0, uses_anonymous_args = 0
+ 312              		.loc 1 55 39 is_stmt 0 view .LVU53
+ 313 0000 08B5     		push	{r3, lr}
+ 314              		.save {r3, lr}
+ 315              	.LCFI7:
+ 316              		.cfi_def_cfa_offset 8
+ 317              		.cfi_offset 3, -8
+ 318              		.cfi_offset 14, -4
+  56:Core/Driver/Src/MotorDriver.cpp ****     // 小数点取り扱いに注意
+  57:Core/Driver/Src/MotorDriver.cpp ****     // 例: duty < 0 → 時計回り, duty > 0 → 反時計回り, 0 → ブレーキ
+  58:Core/Driver/Src/MotorDriver.cpp ****     if (duty > 0.0f) {
+ 319              		.loc 1 58 5 is_stmt 1 view .LVU54
+ 320 0002 B5EEC00A 		vcmpe.f32	s0, #0
+ 321 0006 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 322 000a 07DC     		bgt	.L31
+  59:Core/Driver/Src/MotorDriver.cpp ****         counterClockwise(duty);  // 正→反時計
+  60:Core/Driver/Src/MotorDriver.cpp ****     }
+  61:Core/Driver/Src/MotorDriver.cpp ****     else if (duty < 0.0f) {
+ 323              		.loc 1 61 10 view .LVU55
+ 324 000c B5EEC00A 		vcmpe.f32	s0, #0
+ 325 0010 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 326 0014 05D4     		bmi	.L32
+  62:Core/Driver/Src/MotorDriver.cpp ****         clockwise(-duty);        // 負→時計回り
+  63:Core/Driver/Src/MotorDriver.cpp ****     }
+  64:Core/Driver/Src/MotorDriver.cpp ****     else {
+  65:Core/Driver/Src/MotorDriver.cpp ****         brake();
+ 327              		.loc 1 65 9 view .LVU56
+ 328              		.loc 1 65 14 is_stmt 0 view .LVU57
+ 329 0016 FFF7FEFF 		bl	_ZN11MotorDriver5brakeEv
+ 330              	.LVL28:
+  66:Core/Driver/Src/MotorDriver.cpp ****     }
+  67:Core/Driver/Src/MotorDriver.cpp **** }
+ 331              		.loc 1 67 1 view .LVU58
+ 332 001a 01E0     		b	.L20
+ 333              	.LVL29:
+ 334              	.L31:
+  59:Core/Driver/Src/MotorDriver.cpp ****     }
+ 335              		.loc 1 59 9 is_stmt 1 view .LVU59
+  59:Core/Driver/Src/MotorDriver.cpp ****     }
+ 336              		.loc 1 59 25 is_stmt 0 view .LVU60
+ 337 001c FFF7FEFF 		bl	_ZN11MotorDriver16counterClockwiseEf
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s 			page 8
+
+
+ 338              	.LVL30:
+ 339              	.L20:
+ 340              		.loc 1 67 1 view .LVU61
+ 341 0020 08BD     		pop	{r3, pc}
+ 342              	.LVL31:
+ 343              	.L32:
+  62:Core/Driver/Src/MotorDriver.cpp ****         clockwise(-duty);        // 負→時計回り
+ 344              		.loc 1 62 9 is_stmt 1 view .LVU62
+  62:Core/Driver/Src/MotorDriver.cpp ****         clockwise(-duty);        // 負→時計回り
+ 345              		.loc 1 62 18 is_stmt 0 view .LVU63
+ 346 0022 B1EE400A 		vneg.f32	s0, s0
+ 347              	.LVL32:
+  62:Core/Driver/Src/MotorDriver.cpp ****         clockwise(-duty);        // 負→時計回り
+ 348              		.loc 1 62 18 view .LVU64
+ 349 0026 FFF7FEFF 		bl	_ZN11MotorDriver9clockwiseEf
+ 350              	.LVL33:
+  62:Core/Driver/Src/MotorDriver.cpp ****         clockwise(-duty);        // 負→時計回り
+ 351              		.loc 1 62 18 view .LVU65
+ 352 002a F9E7     		b	.L20
+ 353              		.cfi_endproc
+ 354              	.LFE917:
+ 355              		.fnend
+ 357              		.text
+ 358              	.Letext0:
+ 359              		.file 2 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/machine/_default_types.h"
+ 360              		.file 3 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/sys/_stdint.h"
+ 361              		.file 4 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/stdint.h"
+ 362              		.file 5 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h"
+ 363              		.file 6 "C:/Tools/arm-gnu-toolchain/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h"
+ 364              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
+ 365              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
+ 366              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h"
+ 367              		.file 10 "Core/Driver/Src/../Inc/../../HALinterface/Inc/PwmSTM32F4.hpp"
+ 368              		.file 11 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/cstdint"
+ 369              		.file 12 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/type_traits"
+ 370              		.file 13 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/debug/debug.h"
+ 371              		.file 14 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/arm-none-eabi/thumb/v7e-m+fp
+ 372              		.file 15 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/bits/algorithmfwd.h"
+ 373              		.file 16 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/cstdlib"
+ 374              		.file 17 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/bits/predefined_ops.h"
+ 375              		.file 18 "Core/Driver/Src/../Inc/MotorDriver.hpp"
+ 376              		.file 19 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/stdlib.h"
+ 377              		.file 20 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/pstl/execution_defs.h"
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s 			page 9
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 MotorDriver.cpp
+C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s:21     .text._ZN11MotorDriverC2EP10PwmSTM32F4P11GpioSTM32F4S3_f:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s:27     .text._ZN11MotorDriverC2EP10PwmSTM32F4P11GpioSTM32F4S3_f:00000000 _ZN11MotorDriverC2EP10PwmSTM32F4P11GpioSTM32F4S3_f
+.ARM.exidx.text._ZN11MotorDriverC2EP10PwmSTM32F4P11GpioSTM32F4S3_f:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s:27     .text._ZN11MotorDriverC2EP10PwmSTM32F4P11GpioSTM32F4S3_f:00000000 _ZN11MotorDriverC1EP10PwmSTM32F4P11GpioSTM32F4S3_f
+C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s:56     .text._ZN11MotorDriver9clockwiseEf:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s:62     .text._ZN11MotorDriver9clockwiseEf:00000000 _ZN11MotorDriver9clockwiseEf
+C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s:143    .text._ZN11MotorDriver9clockwiseEf:00000054 $d
+.ARM.exidx.text._ZN11MotorDriver9clockwiseEf:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s:149    .text._ZN11MotorDriver16counterClockwiseEf:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s:155    .text._ZN11MotorDriver16counterClockwiseEf:00000000 _ZN11MotorDriver16counterClockwiseEf
+C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s:236    .text._ZN11MotorDriver16counterClockwiseEf:00000054 $d
+.ARM.exidx.text._ZN11MotorDriver16counterClockwiseEf:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s:242    .text._ZN11MotorDriver5brakeEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s:248    .text._ZN11MotorDriver5brakeEv:00000000 _ZN11MotorDriver5brakeEv
+C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s:292    .text._ZN11MotorDriver5brakeEv:00000020 $d
+.ARM.exidx.text._ZN11MotorDriver5brakeEv:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s:298    .text._ZN11MotorDriver7setDutyEf:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\cc06QOuP.s:304    .text._ZN11MotorDriver7setDutyEf:00000000 _ZN11MotorDriver7setDutyEf
+.ARM.extab.text._ZN11MotorDriver7setDutyEf:00000000 $d
+.ARM.exidx.text._ZN11MotorDriver7setDutyEf:00000000 $d
+
+UNDEFINED SYMBOLS
+_ZN10PwmSTM32F412setDutyCycleEf
+__aeabi_unwind_cpp_pr0
+__aeabi_unwind_cpp_pr1

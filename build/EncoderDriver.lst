@@ -1,0 +1,280 @@
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccggHsmf.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"EncoderDriver.cpp"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/Driver/Src/EncoderDriver.cpp"
+  20              		.section	.text._ZN13EncoderDriverC2EP14EncoderSTM32F4b,"ax",%progbits
+  21              		.align	1
+  22              		.global	_ZN13EncoderDriverC2EP14EncoderSTM32F4b
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	_ZN13EncoderDriverC2EP14EncoderSTM32F4b:
+  28              		.fnstart
+  29              	.LVL0:
+  30              	.LFB1184:
+   1:Core/Driver/Src/EncoderDriver.cpp **** #include <math.h>
+   2:Core/Driver/Src/EncoderDriver.cpp **** #include "../Inc/EncoderDriver.hpp"
+   3:Core/Driver/Src/EncoderDriver.cpp **** #include "stm32f4xx_hal.h"
+   4:Core/Driver/Src/EncoderDriver.cpp **** #include "../../params.h"  // MPP, dt, ReductionRation, ENC_RES_HALF, ENC_RES_MAX が定義され�
+   5:Core/Driver/Src/EncoderDriver.cpp **** 
+   6:Core/Driver/Src/EncoderDriver.cpp **** // コンストラクタ
+   7:Core/Driver/Src/EncoderDriver.cpp **** EncoderDriver::EncoderDriver(EncoderSTM32F4* encoder, bool inverted)
+  31              		.loc 1 7 1 view -0
+  32              		.cfi_startproc
+  33              		@ args = 0, pretend = 0, frame = 0
+  34              		@ frame_needed = 0, uses_anonymous_args = 0
+  35              		.loc 1 7 1 is_stmt 0 view .LVU1
+  36 0000 10B5     		push	{r4, lr}
+  37              		.save {r4, lr}
+  38              	.LCFI0:
+  39              		.cfi_def_cfa_offset 8
+  40              		.cfi_offset 4, -8
+  41              		.cfi_offset 14, -4
+  42 0002 0446     		mov	r4, r0
+  43 0004 0846     		mov	r0, r1
+  44              	.LVL1:
+  45              	.LBB2:
+   8:Core/Driver/Src/EncoderDriver.cpp ****     : m_encoder(encoder)
+  46              		.loc 1 8 7 view .LVU2
+  47 0006 2160     		str	r1, [r4]
+   9:Core/Driver/Src/EncoderDriver.cpp ****     , m_inverted(inverted)
+  48              		.loc 1 9 7 view .LVU3
+  49 0008 2271     		strb	r2, [r4, #4]
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccggHsmf.s 			page 2
+
+
+  10:Core/Driver/Src/EncoderDriver.cpp **** {
+  11:Core/Driver/Src/EncoderDriver.cpp ****     // 初回のカウンタ値を取得しておく
+  12:Core/Driver/Src/EncoderDriver.cpp ****     m_prevCount = m_encoder->getCount();
+  50              		.loc 1 12 5 is_stmt 1 view .LVU4
+  51              		.loc 1 12 38 is_stmt 0 view .LVU5
+  52 000a 0B68     		ldr	r3, [r1]
+  53 000c 9B68     		ldr	r3, [r3, #8]
+  54 000e 9847     		blx	r3
+  55              	.LVL2:
+  56              		.loc 1 12 17 discriminator 1 view .LVU6
+  57 0010 A060     		str	r0, [r4, #8]
+  58              	.LBE2:
+  13:Core/Driver/Src/EncoderDriver.cpp **** }
+  59              		.loc 1 13 1 view .LVU7
+  60 0012 2046     		mov	r0, r4
+  61 0014 10BD     		pop	{r4, pc}
+  62              		.loc 1 13 1 view .LVU8
+  63              		.cfi_endproc
+  64              	.LFE1184:
+  65              		.fnend
+  67              		.global	_ZN13EncoderDriverC1EP14EncoderSTM32F4b
+  68              		.thumb_set _ZN13EncoderDriverC1EP14EncoderSTM32F4b,_ZN13EncoderDriverC2EP14EncoderSTM32F4b
+  69              		.section	.text._ZN13EncoderDriver12readVelocityEv,"ax",%progbits
+  70              		.align	1
+  71              		.global	_ZN13EncoderDriver12readVelocityEv
+  72              		.syntax unified
+  73              		.thumb
+  74              		.thumb_func
+  76              	_ZN13EncoderDriver12readVelocityEv:
+  77              		.fnstart
+  78              	.LVL3:
+  79              	.LFB1186:
+  14:Core/Driver/Src/EncoderDriver.cpp **** 
+  15:Core/Driver/Src/EncoderDriver.cpp **** float EncoderDriver::readVelocity() {
+  80              		.loc 1 15 37 is_stmt 1 view -0
+  81              		.cfi_startproc
+  82              		@ args = 0, pretend = 0, frame = 0
+  83              		@ frame_needed = 0, uses_anonymous_args = 0
+  84              		.loc 1 15 37 is_stmt 0 view .LVU10
+  85 0000 10B5     		push	{r4, lr}
+  86              		.save {r4, lr}
+  87              	.LCFI1:
+  88              		.cfi_def_cfa_offset 8
+  89              		.cfi_offset 4, -8
+  90              		.cfi_offset 14, -4
+  91 0002 0446     		mov	r4, r0
+  16:Core/Driver/Src/EncoderDriver.cpp ****     // 現在のカウンタ値を取得
+  17:Core/Driver/Src/EncoderDriver.cpp ****     int32_t currentCount = m_encoder->getCount();
+  92              		.loc 1 17 5 is_stmt 1 view .LVU11
+  93              		.loc 1 17 28 is_stmt 0 view .LVU12
+  94 0004 0068     		ldr	r0, [r0]
+  95              	.LVL4:
+  96              		.loc 1 17 47 view .LVU13
+  97 0006 0368     		ldr	r3, [r0]
+  98 0008 9B68     		ldr	r3, [r3, #8]
+  99 000a 9847     		blx	r3
+ 100              	.LVL5:
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccggHsmf.s 			page 3
+
+
+  18:Core/Driver/Src/EncoderDriver.cpp ****     int32_t diff = 0;
+ 101              		.loc 1 18 5 is_stmt 1 view .LVU14
+  19:Core/Driver/Src/EncoderDriver.cpp **** 
+  20:Core/Driver/Src/EncoderDriver.cpp ****     // 右側エンコーダの場合： diff = current - previous
+  21:Core/Driver/Src/EncoderDriver.cpp ****     // 左側の場合は反転： diff = previous - current
+  22:Core/Driver/Src/EncoderDriver.cpp ****     if (m_inverted) {
+ 102              		.loc 1 22 5 view .LVU15
+ 103              		.loc 1 22 9 is_stmt 0 view .LVU16
+ 104 000c 2379     		ldrb	r3, [r4, #4]	@ zero_extendqisi2
+ 105              		.loc 1 22 5 view .LVU17
+ 106 000e E3B1     		cbz	r3, .L4
+  23:Core/Driver/Src/EncoderDriver.cpp ****         diff = m_prevCount - currentCount;
+ 107              		.loc 1 23 9 is_stmt 1 view .LVU18
+ 108              		.loc 1 23 16 is_stmt 0 view .LVU19
+ 109 0010 A368     		ldr	r3, [r4, #8]
+ 110              		.loc 1 23 14 view .LVU20
+ 111 0012 1B1A     		subs	r3, r3, r0
+ 112              	.LVL6:
+ 113              	.L5:
+  24:Core/Driver/Src/EncoderDriver.cpp ****     } else {
+  25:Core/Driver/Src/EncoderDriver.cpp ****         diff = currentCount - m_prevCount;
+  26:Core/Driver/Src/EncoderDriver.cpp ****     }
+  27:Core/Driver/Src/EncoderDriver.cpp **** 
+  28:Core/Driver/Src/EncoderDriver.cpp ****     // ラップアラウンド（カウンタのオーバーフローまたはアンダーフロ�
+  29:Core/Driver/Src/EncoderDriver.cpp ****     // ※ ENC_RES_HALF, ENC_RES_MAX は params.h に定義されているとする
+  30:Core/Driver/Src/EncoderDriver.cpp ****     if ((diff > ENC_RES_HALF || diff < -ENC_RES_HALF) && m_prevCount > ENC_RES_HALF) {
+ 114              		.loc 1 30 5 is_stmt 1 view .LVU21
+ 115              		.loc 1 30 30 is_stmt 0 view .LVU22
+ 116 0014 03F50052 		add	r2, r3, #8192
+ 117              		.loc 1 30 5 view .LVU23
+ 118 0018 B2F5804F 		cmp	r2, #16384
+ 119 001c 07D9     		bls	.L6
+ 120              		.loc 1 30 58 discriminator 1 view .LVU24
+ 121 001e A368     		ldr	r3, [r4, #8]
+ 122              	.LVL7:
+ 123              		.loc 1 30 55 discriminator 1 view .LVU25
+ 124 0020 B3F5005F 		cmp	r3, #8192
+ 125 0024 14DD     		ble	.L7
+  31:Core/Driver/Src/EncoderDriver.cpp ****         diff = ((ENC_RES_MAX - 1) - m_prevCount) + currentCount;
+ 126              		.loc 1 31 9 is_stmt 1 view .LVU26
+ 127              		.loc 1 31 35 is_stmt 0 view .LVU27
+ 128 0026 C3F57F53 		rsb	r3, r3, #16320
+ 129 002a 3F33     		adds	r3, r3, #63
+ 130              		.loc 1 31 14 view .LVU28
+ 131 002c 0344     		add	r3, r3, r0
+ 132              	.LVL8:
+ 133              	.L6:
+  32:Core/Driver/Src/EncoderDriver.cpp ****     }
+  33:Core/Driver/Src/EncoderDriver.cpp ****     else if ((diff > ENC_RES_HALF || diff < -ENC_RES_HALF) && m_prevCount <= ENC_RES_HALF) {
+  34:Core/Driver/Src/EncoderDriver.cpp ****         diff = m_prevCount + ((ENC_RES_MAX - 1) - currentCount);
+  35:Core/Driver/Src/EncoderDriver.cpp ****     }
+  36:Core/Driver/Src/EncoderDriver.cpp ****     
+  37:Core/Driver/Src/EncoderDriver.cpp ****     // 更新：次回計算用に現在値を保存
+  38:Core/Driver/Src/EncoderDriver.cpp ****     m_prevCount = currentCount;
+ 134              		.loc 1 38 5 is_stmt 1 view .LVU29
+ 135              		.loc 1 38 17 is_stmt 0 view .LVU30
+ 136 002e A060     		str	r0, [r4, #8]
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccggHsmf.s 			page 4
+
+
+  39:Core/Driver/Src/EncoderDriver.cpp ****     
+  40:Core/Driver/Src/EncoderDriver.cpp ****     // 速度換算： (diff * MPP) / (dt * ReductionRation)
+  41:Core/Driver/Src/EncoderDriver.cpp ****     float velocity = ((float)diff * MPP) / (dt * ReductionRation);
+ 137              		.loc 1 41 5 is_stmt 1 view .LVU31
+ 138              		.loc 1 41 23 is_stmt 0 view .LVU32
+ 139 0030 07EE903A 		vmov	s15, r3	@ int
+ 140 0034 F8EEE77A 		vcvt.f32.s32	s15, s15
+ 141              		.loc 1 41 35 view .LVU33
+ 142 0038 9FED087A 		vldr.32	s14, .L9
+ 143 003c 67EE877A 		vmul.f32	s15, s15, s14
+ 144              	.LVL9:
+  42:Core/Driver/Src/EncoderDriver.cpp ****     return velocity;
+ 145              		.loc 1 42 5 is_stmt 1 view .LVU34
+  43:Core/Driver/Src/EncoderDriver.cpp **** }
+ 146              		.loc 1 43 1 is_stmt 0 view .LVU35
+ 147 0040 9FED070A 		vldr.32	s0, .L9+4
+ 148 0044 87EE800A 		vdiv.f32	s0, s15, s0
+ 149              	.LVL10:
+ 150              		.loc 1 43 1 view .LVU36
+ 151 0048 10BD     		pop	{r4, pc}
+ 152              	.LVL11:
+ 153              	.L4:
+  25:Core/Driver/Src/EncoderDriver.cpp ****     }
+ 154              		.loc 1 25 9 is_stmt 1 view .LVU37
+  25:Core/Driver/Src/EncoderDriver.cpp ****     }
+ 155              		.loc 1 25 31 is_stmt 0 view .LVU38
+ 156 004a A368     		ldr	r3, [r4, #8]
+  25:Core/Driver/Src/EncoderDriver.cpp ****     }
+ 157              		.loc 1 25 14 view .LVU39
+ 158 004c C31A     		subs	r3, r0, r3
+ 159              	.LVL12:
+  25:Core/Driver/Src/EncoderDriver.cpp ****     }
+ 160              		.loc 1 25 14 view .LVU40
+ 161 004e E1E7     		b	.L5
+ 162              	.LVL13:
+ 163              	.L7:
+  33:Core/Driver/Src/EncoderDriver.cpp ****         diff = m_prevCount + ((ENC_RES_MAX - 1) - currentCount);
+ 164              		.loc 1 33 10 is_stmt 1 view .LVU41
+  34:Core/Driver/Src/EncoderDriver.cpp ****     }
+ 165              		.loc 1 34 9 view .LVU42
+  34:Core/Driver/Src/EncoderDriver.cpp ****     }
+ 166              		.loc 1 34 49 is_stmt 0 view .LVU43
+ 167 0050 C0F57F52 		rsb	r2, r0, #16320
+ 168              	.LVL14:
+  34:Core/Driver/Src/EncoderDriver.cpp ****     }
+ 169              		.loc 1 34 49 view .LVU44
+ 170 0054 3F32     		adds	r2, r2, #63
+  34:Core/Driver/Src/EncoderDriver.cpp ****     }
+ 171              		.loc 1 34 14 view .LVU45
+ 172 0056 1344     		add	r3, r3, r2
+ 173              	.LVL15:
+  34:Core/Driver/Src/EncoderDriver.cpp ****     }
+ 174              		.loc 1 34 14 view .LVU46
+ 175 0058 E9E7     		b	.L6
+ 176              	.L10:
+ 177 005a 00BF     		.align	2
+ 178              	.L9:
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccggHsmf.s 			page 5
+
+
+ 179 005c F7209936 		.word	916005111
+ 180 0060 35A6493B 		.word	994682421
+ 181              		.cfi_endproc
+ 182              	.LFE1186:
+ 183              		.fnend
+ 185              		.text
+ 186              	.Letext0:
+ 187              		.file 2 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/cmath"
+ 188              		.file 3 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/type_traits"
+ 189              		.file 4 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/debug/debug.h"
+ 190              		.file 5 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/bits/std_abs.h"
+ 191              		.file 6 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/cstdint"
+ 192              		.file 7 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/arm-none-eabi/thumb/v7e-m+fp/
+ 193              		.file 8 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/bits/predefined_ops.h"
+ 194              		.file 9 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/machine/_default_types.h"
+ 195              		.file 10 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/math.h"
+ 196              		.file 11 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/math.h"
+ 197              		.file 12 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/sys/_stdint.h"
+ 198              		.file 13 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/stdint.h"
+ 199              		.file 14 "Core/Driver/Src/../Inc/EncoderDriver.hpp"
+ 200              		.file 15 "Core/Driver/Src/../../params.h"
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccggHsmf.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 EncoderDriver.cpp
+C:\Users\hanaj\AppData\Local\Temp\ccggHsmf.s:21     .text._ZN13EncoderDriverC2EP14EncoderSTM32F4b:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccggHsmf.s:27     .text._ZN13EncoderDriverC2EP14EncoderSTM32F4b:00000000 _ZN13EncoderDriverC2EP14EncoderSTM32F4b
+.ARM.exidx.text._ZN13EncoderDriverC2EP14EncoderSTM32F4b:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccggHsmf.s:27     .text._ZN13EncoderDriverC2EP14EncoderSTM32F4b:00000000 _ZN13EncoderDriverC1EP14EncoderSTM32F4b
+C:\Users\hanaj\AppData\Local\Temp\ccggHsmf.s:70     .text._ZN13EncoderDriver12readVelocityEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccggHsmf.s:76     .text._ZN13EncoderDriver12readVelocityEv:00000000 _ZN13EncoderDriver12readVelocityEv
+C:\Users\hanaj\AppData\Local\Temp\ccggHsmf.s:179    .text._ZN13EncoderDriver12readVelocityEv:0000005c $d
+.ARM.exidx.text._ZN13EncoderDriver12readVelocityEv:00000000 $d
+
+UNDEFINED SYMBOLS
+__aeabi_unwind_cpp_pr0
