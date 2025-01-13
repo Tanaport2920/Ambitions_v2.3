@@ -1,0 +1,833 @@
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"LEDController.cpp"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/Driver/Src/LEDController.cpp"
+  20              		.section	.text._ZN13LEDControllerC2EP11GpioSTM32F4S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_,"ax",%progbits
+  21              		.align	1
+  22              		.global	_ZN13LEDControllerC2EP11GpioSTM32F4S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	_ZN13LEDControllerC2EP11GpioSTM32F4S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_:
+  28              		.fnstart
+  29              	.LVL0:
+  30              	.LFB242:
+   1:Core/Driver/Src/LEDController.cpp **** #include "../Inc/LEDController.hpp"
+   2:Core/Driver/Src/LEDController.cpp **** 
+   3:Core/Driver/Src/LEDController.cpp **** // コンストラクタ
+   4:Core/Driver/Src/LEDController.cpp **** LEDController::LEDController(
+  31              		.loc 1 4 1 view -0
+  32              		.cfi_startproc
+  33              		@ args = 32, pretend = 0, frame = 0
+  34              		@ frame_needed = 0, uses_anonymous_args = 0
+  35              		@ link register save eliminated.
+  36              	.LBB2:
+   5:Core/Driver/Src/LEDController.cpp ****     GpioSTM32F4* sensorLED_FL,
+   6:Core/Driver/Src/LEDController.cpp ****     GpioSTM32F4* sensorLED_FR,
+   7:Core/Driver/Src/LEDController.cpp ****     GpioSTM32F4* sensorLED_R,
+   8:Core/Driver/Src/LEDController.cpp ****     GpioSTM32F4* sensorLED_L,
+   9:Core/Driver/Src/LEDController.cpp ****     GpioSTM32F4* led_FL,
+  10:Core/Driver/Src/LEDController.cpp ****     GpioSTM32F4* led_FR,
+  11:Core/Driver/Src/LEDController.cpp ****     GpioSTM32F4* led_R,
+  12:Core/Driver/Src/LEDController.cpp ****     GpioSTM32F4* led_L,
+  13:Core/Driver/Src/LEDController.cpp ****     GpioSTM32F4* modeLED1,
+  14:Core/Driver/Src/LEDController.cpp ****     GpioSTM32F4* modeLED2,
+  15:Core/Driver/Src/LEDController.cpp ****     GpioSTM32F4* modeLED3
+  16:Core/Driver/Src/LEDController.cpp **** )
+  17:Core/Driver/Src/LEDController.cpp **** : m_sensorLED_FL(sensorLED_FL)
+  37              		.loc 1 17 3 is_stmt 0 view .LVU1
+  38 0000 0160     		str	r1, [r0]
+  18:Core/Driver/Src/LEDController.cpp **** , m_sensorLED_FR(sensorLED_FR)
+  39              		.loc 1 18 3 view .LVU2
+  40 0002 4260     		str	r2, [r0, #4]
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s 			page 2
+
+
+  19:Core/Driver/Src/LEDController.cpp **** , m_sensorLED_R(sensorLED_R)
+  41              		.loc 1 19 3 view .LVU3
+  42 0004 8360     		str	r3, [r0, #8]
+  20:Core/Driver/Src/LEDController.cpp **** , m_sensorLED_L(sensorLED_L)
+  43              		.loc 1 20 3 view .LVU4
+  44 0006 009B     		ldr	r3, [sp]
+  45              	.LVL1:
+  46              		.loc 1 20 3 view .LVU5
+  47 0008 C360     		str	r3, [r0, #12]
+  21:Core/Driver/Src/LEDController.cpp **** , m_led_FL(led_FL)
+  48              		.loc 1 21 3 view .LVU6
+  49 000a 019B     		ldr	r3, [sp, #4]
+  50 000c 0361     		str	r3, [r0, #16]
+  22:Core/Driver/Src/LEDController.cpp **** , m_led_FR(led_FR)
+  51              		.loc 1 22 3 view .LVU7
+  52 000e 029B     		ldr	r3, [sp, #8]
+  53 0010 4361     		str	r3, [r0, #20]
+  23:Core/Driver/Src/LEDController.cpp **** , m_led_R(led_R)
+  54              		.loc 1 23 3 view .LVU8
+  55 0012 039B     		ldr	r3, [sp, #12]
+  56 0014 8361     		str	r3, [r0, #24]
+  24:Core/Driver/Src/LEDController.cpp **** , m_led_L(led_L)
+  57              		.loc 1 24 3 view .LVU9
+  58 0016 049B     		ldr	r3, [sp, #16]
+  59 0018 C361     		str	r3, [r0, #28]
+  25:Core/Driver/Src/LEDController.cpp **** , m_modeLED1(modeLED1)
+  60              		.loc 1 25 3 view .LVU10
+  61 001a 059B     		ldr	r3, [sp, #20]
+  62 001c 0362     		str	r3, [r0, #32]
+  26:Core/Driver/Src/LEDController.cpp **** , m_modeLED2(modeLED2)
+  63              		.loc 1 26 3 view .LVU11
+  64 001e 069B     		ldr	r3, [sp, #24]
+  65 0020 4362     		str	r3, [r0, #36]
+  27:Core/Driver/Src/LEDController.cpp **** , m_modeLED3(modeLED3)
+  66              		.loc 1 27 3 view .LVU12
+  67 0022 079B     		ldr	r3, [sp, #28]
+  68 0024 8362     		str	r3, [r0, #40]
+  69              	.LBE2:
+  28:Core/Driver/Src/LEDController.cpp **** {
+  29:Core/Driver/Src/LEDController.cpp **** }
+  70              		.loc 1 29 1 view .LVU13
+  71 0026 7047     		bx	lr
+  72              		.cfi_endproc
+  73              	.LFE242:
+  74              		.cantunwind
+  75              		.fnend
+  77              		.global	_ZN13LEDControllerC1EP11GpioSTM32F4S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_
+  78              		.thumb_set _ZN13LEDControllerC1EP11GpioSTM32F4S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_,_ZN13LEDControllerC2E
+  79              		.section	.text._ZN13LEDController12setSensorLEDEbbbb,"ax",%progbits
+  80              		.align	1
+  81              		.global	_ZN13LEDController12setSensorLEDEbbbb
+  82              		.syntax unified
+  83              		.thumb
+  84              		.thumb_func
+  86              	_ZN13LEDController12setSensorLEDEbbbb:
+  87              		.fnstart
+  88              	.LVL2:
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s 			page 3
+
+
+  89              	.LFB244:
+  30:Core/Driver/Src/LEDController.cpp **** 
+  31:Core/Driver/Src/LEDController.cpp **** // センサLEDの制御
+  32:Core/Driver/Src/LEDController.cpp **** void LEDController::setSensorLED(bool fl, bool fr, bool r, bool l) {
+  90              		.loc 1 32 68 is_stmt 1 view -0
+  91              		.cfi_startproc
+  92              		@ args = 4, pretend = 0, frame = 0
+  93              		@ frame_needed = 0, uses_anonymous_args = 0
+  94              		.loc 1 32 68 is_stmt 0 view .LVU15
+  95 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+  96              		.save {r3, r4, r5, r6, r7, lr}
+  97              	.LCFI0:
+  98              		.cfi_def_cfa_offset 24
+  99              		.cfi_offset 3, -24
+ 100              		.cfi_offset 4, -20
+ 101              		.cfi_offset 5, -16
+ 102              		.cfi_offset 6, -12
+ 103              		.cfi_offset 7, -8
+ 104              		.cfi_offset 14, -4
+ 105 0002 0446     		mov	r4, r0
+ 106 0004 1646     		mov	r6, r2
+ 107 0006 1D46     		mov	r5, r3
+ 108 0008 9DF81870 		ldrb	r7, [sp, #24]	@ zero_extendqisi2
+  33:Core/Driver/Src/LEDController.cpp ****     if (fl) m_sensorLED_FL->setHigh(); 
+ 109              		.loc 1 33 5 is_stmt 1 view .LVU16
+ 110 000c 99B1     		cbz	r1, .L3
+ 111              		.loc 1 33 13 discriminator 1 view .LVU17
+ 112 000e 0068     		ldr	r0, [r0]
+ 113              	.LVL3:
+ 114              		.loc 1 33 36 is_stmt 0 discriminator 1 view .LVU18
+ 115 0010 0368     		ldr	r3, [r0]
+ 116              	.LVL4:
+ 117              		.loc 1 33 36 discriminator 1 view .LVU19
+ 118 0012 9B68     		ldr	r3, [r3, #8]
+ 119 0014 9847     		blx	r3
+ 120              	.LVL5:
+ 121              	.L4:
+  34:Core/Driver/Src/LEDController.cpp ****     else m_sensorLED_FL->setLow();
+  35:Core/Driver/Src/LEDController.cpp ****     if (fr) m_sensorLED_FR->setHigh(); 
+ 122              		.loc 1 35 5 is_stmt 1 view .LVU20
+ 123 0016 9EB1     		cbz	r6, .L5
+ 124              		.loc 1 35 13 discriminator 1 view .LVU21
+ 125 0018 6068     		ldr	r0, [r4, #4]
+ 126              		.loc 1 35 36 is_stmt 0 discriminator 1 view .LVU22
+ 127 001a 0368     		ldr	r3, [r0]
+ 128 001c 9B68     		ldr	r3, [r3, #8]
+ 129 001e 9847     		blx	r3
+ 130              	.LVL6:
+ 131              	.L6:
+  36:Core/Driver/Src/LEDController.cpp ****     else m_sensorLED_FR->setLow();
+  37:Core/Driver/Src/LEDController.cpp ****     if (r)  m_sensorLED_R->setHigh();  
+ 132              		.loc 1 37 5 is_stmt 1 view .LVU23
+ 133 0020 9DB1     		cbz	r5, .L7
+ 134              		.loc 1 37 13 discriminator 1 view .LVU24
+ 135 0022 A068     		ldr	r0, [r4, #8]
+ 136              		.loc 1 37 35 is_stmt 0 discriminator 1 view .LVU25
+ 137 0024 0368     		ldr	r3, [r0]
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s 			page 4
+
+
+ 138 0026 9B68     		ldr	r3, [r3, #8]
+ 139 0028 9847     		blx	r3
+ 140              	.LVL7:
+ 141              	.L8:
+  38:Core/Driver/Src/LEDController.cpp ****     else m_sensorLED_R->setLow();
+  39:Core/Driver/Src/LEDController.cpp ****     if (l)  m_sensorLED_L->setHigh();  
+ 142              		.loc 1 39 5 is_stmt 1 view .LVU26
+ 143 002a 9FB1     		cbz	r7, .L9
+ 144              		.loc 1 39 13 discriminator 1 view .LVU27
+ 145 002c E068     		ldr	r0, [r4, #12]
+ 146              		.loc 1 39 35 is_stmt 0 discriminator 1 view .LVU28
+ 147 002e 0368     		ldr	r3, [r0]
+ 148 0030 9B68     		ldr	r3, [r3, #8]
+ 149 0032 9847     		blx	r3
+ 150              	.LVL8:
+ 151              	.L2:
+  40:Core/Driver/Src/LEDController.cpp ****     else m_sensorLED_L->setLow();
+  41:Core/Driver/Src/LEDController.cpp **** }
+ 152              		.loc 1 41 1 view .LVU29
+ 153 0034 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 154              	.LVL9:
+ 155              	.L3:
+  34:Core/Driver/Src/LEDController.cpp ****     if (fr) m_sensorLED_FR->setHigh(); 
+ 156              		.loc 1 34 10 is_stmt 1 view .LVU30
+ 157 0036 0068     		ldr	r0, [r0]
+ 158              	.LVL10:
+  34:Core/Driver/Src/LEDController.cpp ****     if (fr) m_sensorLED_FR->setHigh(); 
+ 159              		.loc 1 34 32 is_stmt 0 view .LVU31
+ 160 0038 0368     		ldr	r3, [r0]
+ 161              	.LVL11:
+  34:Core/Driver/Src/LEDController.cpp ****     if (fr) m_sensorLED_FR->setHigh(); 
+ 162              		.loc 1 34 32 view .LVU32
+ 163 003a DB68     		ldr	r3, [r3, #12]
+ 164 003c 9847     		blx	r3
+ 165              	.LVL12:
+  34:Core/Driver/Src/LEDController.cpp ****     if (fr) m_sensorLED_FR->setHigh(); 
+ 166              		.loc 1 34 32 view .LVU33
+ 167 003e EAE7     		b	.L4
+ 168              	.L5:
+  36:Core/Driver/Src/LEDController.cpp ****     if (r)  m_sensorLED_R->setHigh();  
+ 169              		.loc 1 36 10 is_stmt 1 view .LVU34
+ 170 0040 6068     		ldr	r0, [r4, #4]
+  36:Core/Driver/Src/LEDController.cpp ****     if (r)  m_sensorLED_R->setHigh();  
+ 171              		.loc 1 36 32 is_stmt 0 view .LVU35
+ 172 0042 0368     		ldr	r3, [r0]
+ 173 0044 DB68     		ldr	r3, [r3, #12]
+ 174 0046 9847     		blx	r3
+ 175              	.LVL13:
+ 176 0048 EAE7     		b	.L6
+ 177              	.L7:
+  38:Core/Driver/Src/LEDController.cpp ****     if (l)  m_sensorLED_L->setHigh();  
+ 178              		.loc 1 38 10 is_stmt 1 view .LVU36
+ 179 004a A068     		ldr	r0, [r4, #8]
+  38:Core/Driver/Src/LEDController.cpp ****     if (l)  m_sensorLED_L->setHigh();  
+ 180              		.loc 1 38 31 is_stmt 0 view .LVU37
+ 181 004c 0368     		ldr	r3, [r0]
+ 182 004e DB68     		ldr	r3, [r3, #12]
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s 			page 5
+
+
+ 183 0050 9847     		blx	r3
+ 184              	.LVL14:
+ 185 0052 EAE7     		b	.L8
+ 186              	.L9:
+  40:Core/Driver/Src/LEDController.cpp **** }
+ 187              		.loc 1 40 10 is_stmt 1 view .LVU38
+ 188 0054 E068     		ldr	r0, [r4, #12]
+  40:Core/Driver/Src/LEDController.cpp **** }
+ 189              		.loc 1 40 31 is_stmt 0 view .LVU39
+ 190 0056 0368     		ldr	r3, [r0]
+ 191 0058 DB68     		ldr	r3, [r3, #12]
+ 192 005a 9847     		blx	r3
+ 193              	.LVL15:
+ 194              		.loc 1 41 1 view .LVU40
+ 195 005c EAE7     		b	.L2
+ 196              		.cfi_endproc
+ 197              	.LFE244:
+ 198              		.fnend
+ 200              		.section	.text._ZN13LEDController11sensorLEDOnEv,"ax",%progbits
+ 201              		.align	1
+ 202              		.global	_ZN13LEDController11sensorLEDOnEv
+ 203              		.syntax unified
+ 204              		.thumb
+ 205              		.thumb_func
+ 207              	_ZN13LEDController11sensorLEDOnEv:
+ 208              		.fnstart
+ 209              	.LVL16:
+ 210              	.LFB245:
+  42:Core/Driver/Src/LEDController.cpp **** 
+  43:Core/Driver/Src/LEDController.cpp **** void LEDController::sensorLEDOn() {
+ 211              		.loc 1 43 35 is_stmt 1 view -0
+ 212              		.cfi_startproc
+ 213              		@ args = 0, pretend = 0, frame = 0
+ 214              		@ frame_needed = 0, uses_anonymous_args = 0
+ 215              		.loc 1 43 35 is_stmt 0 view .LVU42
+ 216 0000 00B5     		push	{lr}
+ 217              		.save {lr}
+ 218              	.LCFI1:
+ 219              		.cfi_def_cfa_offset 4
+ 220              		.cfi_offset 14, -4
+ 221              		.pad #12
+ 222 0002 83B0     		sub	sp, sp, #12
+ 223              	.LCFI2:
+ 224              		.cfi_def_cfa_offset 16
+  44:Core/Driver/Src/LEDController.cpp ****     setSensorLED(true, true, true, true);
+ 225              		.loc 1 44 5 is_stmt 1 view .LVU43
+ 226              		.loc 1 44 17 is_stmt 0 view .LVU44
+ 227 0004 0121     		movs	r1, #1
+ 228 0006 0091     		str	r1, [sp]
+ 229 0008 0B46     		mov	r3, r1
+ 230 000a 0A46     		mov	r2, r1
+ 231 000c FFF7FEFF 		bl	_ZN13LEDController12setSensorLEDEbbbb
+ 232              	.LVL17:
+  45:Core/Driver/Src/LEDController.cpp **** }
+ 233              		.loc 1 45 1 view .LVU45
+ 234 0010 03B0     		add	sp, sp, #12
+ 235              	.LCFI3:
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s 			page 6
+
+
+ 236              		.cfi_def_cfa_offset 4
+ 237              		@ sp needed
+ 238 0012 5DF804FB 		ldr	pc, [sp], #4
+ 239              		.cfi_endproc
+ 240              	.LFE245:
+ 241              		.fnend
+ 243              		.section	.text._ZN13LEDController12sensorLEDOffEv,"ax",%progbits
+ 244              		.align	1
+ 245              		.global	_ZN13LEDController12sensorLEDOffEv
+ 246              		.syntax unified
+ 247              		.thumb
+ 248              		.thumb_func
+ 250              	_ZN13LEDController12sensorLEDOffEv:
+ 251              		.fnstart
+ 252              	.LVL18:
+ 253              	.LFB246:
+  46:Core/Driver/Src/LEDController.cpp **** 
+  47:Core/Driver/Src/LEDController.cpp **** void LEDController::sensorLEDOff() {
+ 254              		.loc 1 47 36 is_stmt 1 view -0
+ 255              		.cfi_startproc
+ 256              		@ args = 0, pretend = 0, frame = 0
+ 257              		@ frame_needed = 0, uses_anonymous_args = 0
+ 258              		.loc 1 47 36 is_stmt 0 view .LVU47
+ 259 0000 00B5     		push	{lr}
+ 260              		.save {lr}
+ 261              	.LCFI4:
+ 262              		.cfi_def_cfa_offset 4
+ 263              		.cfi_offset 14, -4
+ 264              		.pad #12
+ 265 0002 83B0     		sub	sp, sp, #12
+ 266              	.LCFI5:
+ 267              		.cfi_def_cfa_offset 16
+  48:Core/Driver/Src/LEDController.cpp ****     setSensorLED(false, false, false, false);
+ 268              		.loc 1 48 5 is_stmt 1 view .LVU48
+ 269              		.loc 1 48 17 is_stmt 0 view .LVU49
+ 270 0004 0021     		movs	r1, #0
+ 271 0006 0091     		str	r1, [sp]
+ 272 0008 0B46     		mov	r3, r1
+ 273 000a 0A46     		mov	r2, r1
+ 274 000c FFF7FEFF 		bl	_ZN13LEDController12setSensorLEDEbbbb
+ 275              	.LVL19:
+  49:Core/Driver/Src/LEDController.cpp **** }
+ 276              		.loc 1 49 1 view .LVU50
+ 277 0010 03B0     		add	sp, sp, #12
+ 278              	.LCFI6:
+ 279              		.cfi_def_cfa_offset 4
+ 280              		@ sp needed
+ 281 0012 5DF804FB 		ldr	pc, [sp], #4
+ 282              		.cfi_endproc
+ 283              	.LFE246:
+ 284              		.fnend
+ 286              		.section	.text._ZN13LEDController6setLEDEbbbb,"ax",%progbits
+ 287              		.align	1
+ 288              		.global	_ZN13LEDController6setLEDEbbbb
+ 289              		.syntax unified
+ 290              		.thumb
+ 291              		.thumb_func
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s 			page 7
+
+
+ 293              	_ZN13LEDController6setLEDEbbbb:
+ 294              		.fnstart
+ 295              	.LVL20:
+ 296              	.LFB247:
+  50:Core/Driver/Src/LEDController.cpp **** 
+  51:Core/Driver/Src/LEDController.cpp **** // 通常LEDの制御
+  52:Core/Driver/Src/LEDController.cpp **** void LEDController::setLED(bool fl, bool fr, bool r, bool l) {
+ 297              		.loc 1 52 62 is_stmt 1 view -0
+ 298              		.cfi_startproc
+ 299              		@ args = 4, pretend = 0, frame = 0
+ 300              		@ frame_needed = 0, uses_anonymous_args = 0
+ 301              		.loc 1 52 62 is_stmt 0 view .LVU52
+ 302 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+ 303              		.save {r3, r4, r5, r6, r7, lr}
+ 304              	.LCFI7:
+ 305              		.cfi_def_cfa_offset 24
+ 306              		.cfi_offset 3, -24
+ 307              		.cfi_offset 4, -20
+ 308              		.cfi_offset 5, -16
+ 309              		.cfi_offset 6, -12
+ 310              		.cfi_offset 7, -8
+ 311              		.cfi_offset 14, -4
+ 312 0002 0446     		mov	r4, r0
+ 313 0004 1646     		mov	r6, r2
+ 314 0006 1D46     		mov	r5, r3
+ 315 0008 9DF81870 		ldrb	r7, [sp, #24]	@ zero_extendqisi2
+  53:Core/Driver/Src/LEDController.cpp ****     if (fl) m_led_FL->setHigh(); 
+ 316              		.loc 1 53 5 is_stmt 1 view .LVU53
+ 317 000c 99B1     		cbz	r1, .L17
+ 318              		.loc 1 53 13 discriminator 1 view .LVU54
+ 319 000e 0069     		ldr	r0, [r0, #16]
+ 320              	.LVL21:
+ 321              		.loc 1 53 30 is_stmt 0 discriminator 1 view .LVU55
+ 322 0010 0368     		ldr	r3, [r0]
+ 323              	.LVL22:
+ 324              		.loc 1 53 30 discriminator 1 view .LVU56
+ 325 0012 9B68     		ldr	r3, [r3, #8]
+ 326 0014 9847     		blx	r3
+ 327              	.LVL23:
+ 328              	.L18:
+  54:Core/Driver/Src/LEDController.cpp ****     else m_led_FL->setLow();
+  55:Core/Driver/Src/LEDController.cpp ****     if (fr) m_led_FR->setHigh(); 
+ 329              		.loc 1 55 5 is_stmt 1 view .LVU57
+ 330 0016 9EB1     		cbz	r6, .L19
+ 331              		.loc 1 55 13 discriminator 1 view .LVU58
+ 332 0018 6069     		ldr	r0, [r4, #20]
+ 333              		.loc 1 55 30 is_stmt 0 discriminator 1 view .LVU59
+ 334 001a 0368     		ldr	r3, [r0]
+ 335 001c 9B68     		ldr	r3, [r3, #8]
+ 336 001e 9847     		blx	r3
+ 337              	.LVL24:
+ 338              	.L20:
+  56:Core/Driver/Src/LEDController.cpp ****     else m_led_FR->setLow();
+  57:Core/Driver/Src/LEDController.cpp ****     if (r)  m_led_R->setHigh();  
+ 339              		.loc 1 57 5 is_stmt 1 view .LVU60
+ 340 0020 9DB1     		cbz	r5, .L21
+ 341              		.loc 1 57 13 discriminator 1 view .LVU61
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s 			page 8
+
+
+ 342 0022 A069     		ldr	r0, [r4, #24]
+ 343              		.loc 1 57 29 is_stmt 0 discriminator 1 view .LVU62
+ 344 0024 0368     		ldr	r3, [r0]
+ 345 0026 9B68     		ldr	r3, [r3, #8]
+ 346 0028 9847     		blx	r3
+ 347              	.LVL25:
+ 348              	.L22:
+  58:Core/Driver/Src/LEDController.cpp ****     else m_led_R->setLow();
+  59:Core/Driver/Src/LEDController.cpp ****     if (l)  m_led_L->setHigh();  
+ 349              		.loc 1 59 5 is_stmt 1 view .LVU63
+ 350 002a 9FB1     		cbz	r7, .L23
+ 351              		.loc 1 59 13 discriminator 1 view .LVU64
+ 352 002c E069     		ldr	r0, [r4, #28]
+ 353              		.loc 1 59 29 is_stmt 0 discriminator 1 view .LVU65
+ 354 002e 0368     		ldr	r3, [r0]
+ 355 0030 9B68     		ldr	r3, [r3, #8]
+ 356 0032 9847     		blx	r3
+ 357              	.LVL26:
+ 358              	.L16:
+  60:Core/Driver/Src/LEDController.cpp ****     else m_led_L->setLow();
+  61:Core/Driver/Src/LEDController.cpp **** }
+ 359              		.loc 1 61 1 view .LVU66
+ 360 0034 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 361              	.LVL27:
+ 362              	.L17:
+  54:Core/Driver/Src/LEDController.cpp ****     if (fr) m_led_FR->setHigh(); 
+ 363              		.loc 1 54 10 is_stmt 1 view .LVU67
+ 364 0036 0069     		ldr	r0, [r0, #16]
+ 365              	.LVL28:
+  54:Core/Driver/Src/LEDController.cpp ****     if (fr) m_led_FR->setHigh(); 
+ 366              		.loc 1 54 26 is_stmt 0 view .LVU68
+ 367 0038 0368     		ldr	r3, [r0]
+ 368              	.LVL29:
+  54:Core/Driver/Src/LEDController.cpp ****     if (fr) m_led_FR->setHigh(); 
+ 369              		.loc 1 54 26 view .LVU69
+ 370 003a DB68     		ldr	r3, [r3, #12]
+ 371 003c 9847     		blx	r3
+ 372              	.LVL30:
+  54:Core/Driver/Src/LEDController.cpp ****     if (fr) m_led_FR->setHigh(); 
+ 373              		.loc 1 54 26 view .LVU70
+ 374 003e EAE7     		b	.L18
+ 375              	.L19:
+  56:Core/Driver/Src/LEDController.cpp ****     if (r)  m_led_R->setHigh();  
+ 376              		.loc 1 56 10 is_stmt 1 view .LVU71
+ 377 0040 6069     		ldr	r0, [r4, #20]
+  56:Core/Driver/Src/LEDController.cpp ****     if (r)  m_led_R->setHigh();  
+ 378              		.loc 1 56 26 is_stmt 0 view .LVU72
+ 379 0042 0368     		ldr	r3, [r0]
+ 380 0044 DB68     		ldr	r3, [r3, #12]
+ 381 0046 9847     		blx	r3
+ 382              	.LVL31:
+ 383 0048 EAE7     		b	.L20
+ 384              	.L21:
+  58:Core/Driver/Src/LEDController.cpp ****     if (l)  m_led_L->setHigh();  
+ 385              		.loc 1 58 10 is_stmt 1 view .LVU73
+ 386 004a A069     		ldr	r0, [r4, #24]
+  58:Core/Driver/Src/LEDController.cpp ****     if (l)  m_led_L->setHigh();  
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s 			page 9
+
+
+ 387              		.loc 1 58 25 is_stmt 0 view .LVU74
+ 388 004c 0368     		ldr	r3, [r0]
+ 389 004e DB68     		ldr	r3, [r3, #12]
+ 390 0050 9847     		blx	r3
+ 391              	.LVL32:
+ 392 0052 EAE7     		b	.L22
+ 393              	.L23:
+  60:Core/Driver/Src/LEDController.cpp **** }
+ 394              		.loc 1 60 10 is_stmt 1 view .LVU75
+ 395 0054 E069     		ldr	r0, [r4, #28]
+  60:Core/Driver/Src/LEDController.cpp **** }
+ 396              		.loc 1 60 25 is_stmt 0 view .LVU76
+ 397 0056 0368     		ldr	r3, [r0]
+ 398 0058 DB68     		ldr	r3, [r3, #12]
+ 399 005a 9847     		blx	r3
+ 400              	.LVL33:
+ 401              		.loc 1 61 1 view .LVU77
+ 402 005c EAE7     		b	.L16
+ 403              		.cfi_endproc
+ 404              	.LFE247:
+ 405              		.fnend
+ 407              		.section	.text._ZN13LEDController12turnAllLEDOnEv,"ax",%progbits
+ 408              		.align	1
+ 409              		.global	_ZN13LEDController12turnAllLEDOnEv
+ 410              		.syntax unified
+ 411              		.thumb
+ 412              		.thumb_func
+ 414              	_ZN13LEDController12turnAllLEDOnEv:
+ 415              		.fnstart
+ 416              	.LVL34:
+ 417              	.LFB248:
+  62:Core/Driver/Src/LEDController.cpp **** 
+  63:Core/Driver/Src/LEDController.cpp **** void LEDController::turnAllLEDOn() {
+ 418              		.loc 1 63 36 is_stmt 1 view -0
+ 419              		.cfi_startproc
+ 420              		@ args = 0, pretend = 0, frame = 0
+ 421              		@ frame_needed = 0, uses_anonymous_args = 0
+ 422              		.loc 1 63 36 is_stmt 0 view .LVU79
+ 423 0000 00B5     		push	{lr}
+ 424              		.save {lr}
+ 425              	.LCFI8:
+ 426              		.cfi_def_cfa_offset 4
+ 427              		.cfi_offset 14, -4
+ 428              		.pad #12
+ 429 0002 83B0     		sub	sp, sp, #12
+ 430              	.LCFI9:
+ 431              		.cfi_def_cfa_offset 16
+  64:Core/Driver/Src/LEDController.cpp ****     setLED(true, true, true, true);
+ 432              		.loc 1 64 5 is_stmt 1 view .LVU80
+ 433              		.loc 1 64 11 is_stmt 0 view .LVU81
+ 434 0004 0121     		movs	r1, #1
+ 435 0006 0091     		str	r1, [sp]
+ 436 0008 0B46     		mov	r3, r1
+ 437 000a 0A46     		mov	r2, r1
+ 438 000c FFF7FEFF 		bl	_ZN13LEDController6setLEDEbbbb
+ 439              	.LVL35:
+  65:Core/Driver/Src/LEDController.cpp **** }
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s 			page 10
+
+
+ 440              		.loc 1 65 1 view .LVU82
+ 441 0010 03B0     		add	sp, sp, #12
+ 442              	.LCFI10:
+ 443              		.cfi_def_cfa_offset 4
+ 444              		@ sp needed
+ 445 0012 5DF804FB 		ldr	pc, [sp], #4
+ 446              		.cfi_endproc
+ 447              	.LFE248:
+ 448              		.fnend
+ 450              		.section	.text._ZN13LEDController13turnAllLEDOffEv,"ax",%progbits
+ 451              		.align	1
+ 452              		.global	_ZN13LEDController13turnAllLEDOffEv
+ 453              		.syntax unified
+ 454              		.thumb
+ 455              		.thumb_func
+ 457              	_ZN13LEDController13turnAllLEDOffEv:
+ 458              		.fnstart
+ 459              	.LVL36:
+ 460              	.LFB249:
+  66:Core/Driver/Src/LEDController.cpp **** 
+  67:Core/Driver/Src/LEDController.cpp **** void LEDController::turnAllLEDOff() {
+ 461              		.loc 1 67 37 is_stmt 1 view -0
+ 462              		.cfi_startproc
+ 463              		@ args = 0, pretend = 0, frame = 0
+ 464              		@ frame_needed = 0, uses_anonymous_args = 0
+ 465              		.loc 1 67 37 is_stmt 0 view .LVU84
+ 466 0000 00B5     		push	{lr}
+ 467              		.save {lr}
+ 468              	.LCFI11:
+ 469              		.cfi_def_cfa_offset 4
+ 470              		.cfi_offset 14, -4
+ 471              		.pad #12
+ 472 0002 83B0     		sub	sp, sp, #12
+ 473              	.LCFI12:
+ 474              		.cfi_def_cfa_offset 16
+  68:Core/Driver/Src/LEDController.cpp ****     setLED(false, false, false, false);
+ 475              		.loc 1 68 5 is_stmt 1 view .LVU85
+ 476              		.loc 1 68 11 is_stmt 0 view .LVU86
+ 477 0004 0021     		movs	r1, #0
+ 478 0006 0091     		str	r1, [sp]
+ 479 0008 0B46     		mov	r3, r1
+ 480 000a 0A46     		mov	r2, r1
+ 481 000c FFF7FEFF 		bl	_ZN13LEDController6setLEDEbbbb
+ 482              	.LVL37:
+  69:Core/Driver/Src/LEDController.cpp **** }
+ 483              		.loc 1 69 1 view .LVU87
+ 484 0010 03B0     		add	sp, sp, #12
+ 485              	.LCFI13:
+ 486              		.cfi_def_cfa_offset 4
+ 487              		@ sp needed
+ 488 0012 5DF804FB 		ldr	pc, [sp], #4
+ 489              		.cfi_endproc
+ 490              	.LFE249:
+ 491              		.fnend
+ 493              		.section	.text._ZN13LEDController10setModeLEDEh,"ax",%progbits
+ 494              		.align	1
+ 495              		.global	_ZN13LEDController10setModeLEDEh
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s 			page 11
+
+
+ 496              		.syntax unified
+ 497              		.thumb
+ 498              		.thumb_func
+ 500              	_ZN13LEDController10setModeLEDEh:
+ 501              		.fnstart
+ 502              	.LVL38:
+ 503              	.LFB250:
+  70:Core/Driver/Src/LEDController.cpp **** 
+  71:Core/Driver/Src/LEDController.cpp **** // モードLEDの制御
+  72:Core/Driver/Src/LEDController.cpp **** void LEDController::setModeLED(uint8_t mode) {
+ 504              		.loc 1 72 46 is_stmt 1 view -0
+ 505              		.cfi_startproc
+ 506              		@ args = 0, pretend = 0, frame = 0
+ 507              		@ frame_needed = 0, uses_anonymous_args = 0
+ 508              		.loc 1 72 46 is_stmt 0 view .LVU89
+ 509 0000 10B5     		push	{r4, lr}
+ 510              		.save {r4, lr}
+ 511              	.LCFI14:
+ 512              		.cfi_def_cfa_offset 8
+ 513              		.cfi_offset 4, -8
+ 514              		.cfi_offset 14, -4
+ 515 0002 0446     		mov	r4, r0
+  73:Core/Driver/Src/LEDController.cpp ****     n = mode;
+ 516              		.loc 1 73 5 is_stmt 1 view .LVU90
+ 517              		.loc 1 73 7 is_stmt 0 view .LVU91
+ 518 0004 80F82F10 		strb	r1, [r0, #47]
+  74:Core/Driver/Src/LEDController.cpp ****     for(uint8_t i=0; n>0; i++){
+ 519              		.loc 1 74 5 is_stmt 1 view .LVU92
+ 520              	.LVL39:
+ 521              	.LBB3:
+ 522              		.loc 1 74 17 is_stmt 0 view .LVU93
+ 523 0008 0022     		movs	r2, #0
+ 524              		.loc 1 74 5 view .LVU94
+ 525 000a 09E0     		b	.L31
+ 526              	.LVL40:
+ 527              	.L32:
+  75:Core/Driver/Src/LEDController.cpp ****         bit[i]= n%2;
+ 528              		.loc 1 75 9 is_stmt 1 view .LVU95
+ 529              		.loc 1 75 18 is_stmt 0 view .LVU96
+ 530 000c 03F00100 		and	r0, r3, #1
+ 531              		.loc 1 75 15 view .LVU97
+ 532 0010 A118     		adds	r1, r4, r2
+ 533 0012 81F82C00 		strb	r0, [r1, #44]
+  76:Core/Driver/Src/LEDController.cpp ****         n /= 2;
+ 534              		.loc 1 76 9 is_stmt 1 view .LVU98
+ 535              		.loc 1 76 11 is_stmt 0 view .LVU99
+ 536 0016 5B08     		lsrs	r3, r3, #1
+ 537 0018 84F82F30 		strb	r3, [r4, #47]
+  74:Core/Driver/Src/LEDController.cpp ****     for(uint8_t i=0; n>0; i++){
+ 538              		.loc 1 74 5 is_stmt 1 discriminator 3 view .LVU100
+ 539 001c 0132     		adds	r2, r2, #1
+ 540              	.LVL41:
+  74:Core/Driver/Src/LEDController.cpp ****     for(uint8_t i=0; n>0; i++){
+ 541              		.loc 1 74 5 is_stmt 0 discriminator 3 view .LVU101
+ 542 001e D2B2     		uxtb	r2, r2
+ 543              	.LVL42:
+ 544              	.L31:
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s 			page 12
+
+
+  74:Core/Driver/Src/LEDController.cpp ****     for(uint8_t i=0; n>0; i++){
+ 545              		.loc 1 74 23 is_stmt 1 discriminator 1 view .LVU102
+  74:Core/Driver/Src/LEDController.cpp ****     for(uint8_t i=0; n>0; i++){
+ 546              		.loc 1 74 22 is_stmt 0 discriminator 1 view .LVU103
+ 547 0020 94F82F30 		ldrb	r3, [r4, #47]	@ zero_extendqisi2
+  74:Core/Driver/Src/LEDController.cpp ****     for(uint8_t i=0; n>0; i++){
+ 548              		.loc 1 74 23 discriminator 1 view .LVU104
+ 549 0024 002B     		cmp	r3, #0
+ 550 0026 F1D1     		bne	.L32
+ 551              	.LBE3:
+  77:Core/Driver/Src/LEDController.cpp ****     }
+  78:Core/Driver/Src/LEDController.cpp ****     // まず全消灯
+  79:Core/Driver/Src/LEDController.cpp ****     m_modeLED1->setLow();
+ 552              		.loc 1 79 5 is_stmt 1 view .LVU105
+ 553 0028 206A     		ldr	r0, [r4, #32]
+ 554              		.loc 1 79 23 is_stmt 0 view .LVU106
+ 555 002a 0368     		ldr	r3, [r0]
+ 556 002c DB68     		ldr	r3, [r3, #12]
+ 557 002e 9847     		blx	r3
+ 558              	.LVL43:
+  80:Core/Driver/Src/LEDController.cpp ****     m_modeLED2->setLow();
+ 559              		.loc 1 80 5 is_stmt 1 view .LVU107
+ 560 0030 606A     		ldr	r0, [r4, #36]
+ 561              		.loc 1 80 23 is_stmt 0 view .LVU108
+ 562 0032 0368     		ldr	r3, [r0]
+ 563 0034 DB68     		ldr	r3, [r3, #12]
+ 564 0036 9847     		blx	r3
+ 565              	.LVL44:
+  81:Core/Driver/Src/LEDController.cpp ****     m_modeLED3->setLow();
+ 566              		.loc 1 81 5 is_stmt 1 view .LVU109
+ 567 0038 A06A     		ldr	r0, [r4, #40]
+ 568              		.loc 1 81 23 is_stmt 0 view .LVU110
+ 569 003a 0368     		ldr	r3, [r0]
+ 570 003c DB68     		ldr	r3, [r3, #12]
+ 571 003e 9847     		blx	r3
+ 572              	.LVL45:
+  82:Core/Driver/Src/LEDController.cpp **** 
+  83:Core/Driver/Src/LEDController.cpp ****     if(bit[0]) m_modeLED1->setHigh();
+ 573              		.loc 1 83 5 is_stmt 1 view .LVU111
+ 574              		.loc 1 83 13 is_stmt 0 view .LVU112
+ 575 0040 94F82C30 		ldrb	r3, [r4, #44]	@ zero_extendqisi2
+ 576              		.loc 1 83 5 view .LVU113
+ 577 0044 93B1     		cbz	r3, .L33
+ 578              		.loc 1 83 16 is_stmt 1 discriminator 1 view .LVU114
+ 579 0046 206A     		ldr	r0, [r4, #32]
+ 580              		.loc 1 83 35 is_stmt 0 discriminator 1 view .LVU115
+ 581 0048 0368     		ldr	r3, [r0]
+ 582 004a 9B68     		ldr	r3, [r3, #8]
+ 583 004c 9847     		blx	r3
+ 584              	.LVL46:
+ 585              	.L34:
+  84:Core/Driver/Src/LEDController.cpp ****     else m_modeLED1->setLow();
+  85:Core/Driver/Src/LEDController.cpp ****     if(bit[1]) m_modeLED2->setHigh();
+ 586              		.loc 1 85 5 is_stmt 1 view .LVU116
+ 587              		.loc 1 85 13 is_stmt 0 view .LVU117
+ 588 004e 94F82D30 		ldrb	r3, [r4, #45]	@ zero_extendqisi2
+ 589              		.loc 1 85 5 view .LVU118
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s 			page 13
+
+
+ 590 0052 83B1     		cbz	r3, .L35
+ 591              		.loc 1 85 16 is_stmt 1 discriminator 1 view .LVU119
+ 592 0054 606A     		ldr	r0, [r4, #36]
+ 593              		.loc 1 85 35 is_stmt 0 discriminator 1 view .LVU120
+ 594 0056 0368     		ldr	r3, [r0]
+ 595 0058 9B68     		ldr	r3, [r3, #8]
+ 596 005a 9847     		blx	r3
+ 597              	.LVL47:
+ 598              	.L36:
+  86:Core/Driver/Src/LEDController.cpp ****     else m_modeLED2->setLow();
+  87:Core/Driver/Src/LEDController.cpp ****     if(bit[2])m_modeLED3->setHigh();
+ 599              		.loc 1 87 5 is_stmt 1 view .LVU121
+ 600              		.loc 1 87 13 is_stmt 0 view .LVU122
+ 601 005c 94F82E30 		ldrb	r3, [r4, #46]	@ zero_extendqisi2
+ 602              		.loc 1 87 5 view .LVU123
+ 603 0060 73B1     		cbz	r3, .L37
+ 604              		.loc 1 87 15 is_stmt 1 discriminator 1 view .LVU124
+ 605 0062 A06A     		ldr	r0, [r4, #40]
+ 606              		.loc 1 87 34 is_stmt 0 discriminator 1 view .LVU125
+ 607 0064 0368     		ldr	r3, [r0]
+ 608 0066 9B68     		ldr	r3, [r3, #8]
+ 609 0068 9847     		blx	r3
+ 610              	.LVL48:
+ 611              	.L30:
+  88:Core/Driver/Src/LEDController.cpp ****     else m_modeLED3->setLow();
+  89:Core/Driver/Src/LEDController.cpp **** }...
+ 612              		.loc 1 89 1 view .LVU126
+ 613 006a 10BD     		pop	{r4, pc}
+ 614              	.LVL49:
+ 615              	.L33:
+  84:Core/Driver/Src/LEDController.cpp ****     else m_modeLED1->setLow();
+ 616              		.loc 1 84 10 is_stmt 1 view .LVU127
+ 617 006c 206A     		ldr	r0, [r4, #32]
+  84:Core/Driver/Src/LEDController.cpp ****     else m_modeLED1->setLow();
+ 618              		.loc 1 84 28 is_stmt 0 view .LVU128
+ 619 006e 0368     		ldr	r3, [r0]
+ 620 0070 DB68     		ldr	r3, [r3, #12]
+ 621 0072 9847     		blx	r3
+ 622              	.LVL50:
+ 623 0074 EBE7     		b	.L34
+ 624              	.L35:
+  86:Core/Driver/Src/LEDController.cpp ****     else m_modeLED2->setLow();
+ 625              		.loc 1 86 10 is_stmt 1 view .LVU129
+ 626 0076 606A     		ldr	r0, [r4, #36]
+  86:Core/Driver/Src/LEDController.cpp ****     else m_modeLED2->setLow();
+ 627              		.loc 1 86 28 is_stmt 0 view .LVU130
+ 628 0078 0368     		ldr	r3, [r0]
+ 629 007a DB68     		ldr	r3, [r3, #12]
+ 630 007c 9847     		blx	r3
+ 631              	.LVL51:
+ 632 007e EDE7     		b	.L36
+ 633              	.L37:
+  88:Core/Driver/Src/LEDController.cpp ****     else m_modeLED3->setLow();
+ 634              		.loc 1 88 10 is_stmt 1 view .LVU131
+ 635 0080 A06A     		ldr	r0, [r4, #40]
+  88:Core/Driver/Src/LEDController.cpp ****     else m_modeLED3->setLow();
+ 636              		.loc 1 88 28 is_stmt 0 view .LVU132
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s 			page 14
+
+
+ 637 0082 0368     		ldr	r3, [r0]
+ 638 0084 DB68     		ldr	r3, [r3, #12]
+ 639 0086 9847     		blx	r3
+ 640              	.LVL52:
+ 641              		.loc 1 89 1 view .LVU133
+ 642 0088 EFE7     		b	.L30
+ 643              		.cfi_endproc
+ 644              	.LFE250:
+ 645              		.fnend
+ 647              		.text
+ 648              	.Letext0:
+ 649              		.file 2 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/cstdint"
+ 650              		.file 3 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/arm-none-eabi/thumb/v7e-m+fp/
+ 651              		.file 4 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/machine/_default_types.h"
+ 652              		.file 5 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/sys/_stdint.h"
+ 653              		.file 6 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/stdint.h"
+ 654              		.file 7 "Core/Driver/Src/../Inc/LEDController.hpp"
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s 			page 15
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 LEDController.cpp
+C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s:21     .text._ZN13LEDControllerC2EP11GpioSTM32F4S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s:27     .text._ZN13LEDControllerC2EP11GpioSTM32F4S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_:00000000 _ZN13LEDControllerC2EP11GpioSTM32F4S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_
+.ARM.exidx.text._ZN13LEDControllerC2EP11GpioSTM32F4S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s:27     .text._ZN13LEDControllerC2EP11GpioSTM32F4S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_:00000000 _ZN13LEDControllerC1EP11GpioSTM32F4S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_
+C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s:80     .text._ZN13LEDController12setSensorLEDEbbbb:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s:86     .text._ZN13LEDController12setSensorLEDEbbbb:00000000 _ZN13LEDController12setSensorLEDEbbbb
+.ARM.exidx.text._ZN13LEDController12setSensorLEDEbbbb:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s:201    .text._ZN13LEDController11sensorLEDOnEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s:207    .text._ZN13LEDController11sensorLEDOnEv:00000000 _ZN13LEDController11sensorLEDOnEv
+.ARM.exidx.text._ZN13LEDController11sensorLEDOnEv:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s:244    .text._ZN13LEDController12sensorLEDOffEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s:250    .text._ZN13LEDController12sensorLEDOffEv:00000000 _ZN13LEDController12sensorLEDOffEv
+.ARM.exidx.text._ZN13LEDController12sensorLEDOffEv:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s:287    .text._ZN13LEDController6setLEDEbbbb:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s:293    .text._ZN13LEDController6setLEDEbbbb:00000000 _ZN13LEDController6setLEDEbbbb
+.ARM.exidx.text._ZN13LEDController6setLEDEbbbb:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s:408    .text._ZN13LEDController12turnAllLEDOnEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s:414    .text._ZN13LEDController12turnAllLEDOnEv:00000000 _ZN13LEDController12turnAllLEDOnEv
+.ARM.exidx.text._ZN13LEDController12turnAllLEDOnEv:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s:451    .text._ZN13LEDController13turnAllLEDOffEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s:457    .text._ZN13LEDController13turnAllLEDOffEv:00000000 _ZN13LEDController13turnAllLEDOffEv
+.ARM.exidx.text._ZN13LEDController13turnAllLEDOffEv:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s:494    .text._ZN13LEDController10setModeLEDEh:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccV0P22h.s:500    .text._ZN13LEDController10setModeLEDEh:00000000 _ZN13LEDController10setModeLEDEh
+.ARM.exidx.text._ZN13LEDController10setModeLEDEh:00000000 $d
+
+UNDEFINED SYMBOLS
+__aeabi_unwind_cpp_pr0

@@ -48,6 +48,8 @@ C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/ha
                               C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o) (__stdio_exit_handler)
 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fwalk.o)
                               C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o) (_fwalk_sglue)
+C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-printf.o)
+                              build/IMUDriver.o (printf)
 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
                               C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o) (__sread)
 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
@@ -82,8 +84,40 @@ C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/ha
                               C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-malloc.o) (_free_r)
 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-on_exit_args.o)
                               C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-cxa_atexit.o) (__on_exit_args)
+C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+                              C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-printf.o) (_vfprintf_r)
+C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
+                              C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o) (_printf_i)
 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
                               C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o) (_fflush_r)
+C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fvwrite.o)
+                              C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o) (__sfvwrite_r)
+C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wbuf.o)
+                              C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o) (__swbuf_r)
+C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wsetup.o)
+                              C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o) (__swsetup_r)
+C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memmove.o)
+                              C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fvwrite.o) (memmove)
+C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memchr.o)
+                              C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o) (memchr)
+C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
+                              C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fvwrite.o) (memcpy)
+C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reallocr.o)
+                              C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fvwrite.o) (_realloc_r)
+C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-makebuf.o)
+                              C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wsetup.o) (__smakebuf_r)
+C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fstatr.o)
+                              C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-makebuf.o) (_fstat_r)
+C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-isattyr.o)
+                              C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-makebuf.o) (_isatty_r)
+C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-msizer.o)
+                              C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reallocr.o) (_malloc_usable_size_r)
+C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+                              build/IMUDriver.o (__aeabi_dmul)
+C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+                              build/IMUDriver.o (__aeabi_f2d)
+C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+                              build/IMUDriver.o (__aeabi_d2f)
 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
                               build/stm32f4xx_hal_rcc.o (__aeabi_uldivmod)
 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
@@ -96,8 +130,6 @@ C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/ha
                               C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o) (__gnu_unwind_execute)
 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
                               C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o) (__aeabi_ldiv0)
-C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
-                              C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o) (memcpy)
 
 Discarded input sections
 
@@ -1276,6 +1308,73 @@ Discarded input sections
                 0x00000000        0x0 build/PwmSTM32F4.o
  .ARM.exidx.text._ZN10PwmSTM32F412setDutyCycleEf
                 0x00000000        0x8 build/PwmSTM32F4.o
+ .group         0x00000000       0x2c build/SPISTM32F4.o
+ .group         0x00000000        0x8 build/SPISTM32F4.o
+ .group         0x00000000        0xc build/SPISTM32F4.o
+ .group         0x00000000        0xc build/SPISTM32F4.o
+ .text          0x00000000        0x0 build/SPISTM32F4.o
+ .data          0x00000000        0x0 build/SPISTM32F4.o
+ .bss           0x00000000        0x0 build/SPISTM32F4.o
+ .text._ZN10SPISTM32F4D2Ev
+                0x00000000       0x14 build/SPISTM32F4.o
+ .ARM.extab.text._ZN10SPISTM32F4D2Ev
+                0x00000000        0x0 build/SPISTM32F4.o
+ .ARM.exidx.text._ZN10SPISTM32F4D2Ev
+                0x00000000        0x8 build/SPISTM32F4.o
+ .text._ZN10SPISTM32F415resetChipSelectEv
+                0x00000000        0xe build/SPISTM32F4.o
+ .ARM.extab.text._ZN10SPISTM32F415resetChipSelectEv
+                0x00000000        0xc build/SPISTM32F4.o
+ .ARM.exidx.text._ZN10SPISTM32F415resetChipSelectEv
+                0x00000000        0x8 build/SPISTM32F4.o
+ .text._ZN10SPISTM32F413setChipSelectEv
+                0x00000000        0xe build/SPISTM32F4.o
+ .ARM.extab.text._ZN10SPISTM32F413setChipSelectEv
+                0x00000000        0xc build/SPISTM32F4.o
+ .ARM.exidx.text._ZN10SPISTM32F413setChipSelectEv
+                0x00000000        0x8 build/SPISTM32F4.o
+ .text._ZN10SPISTM32F415transmitReceiveEPhS0_tm
+                0x00000000       0x12 build/SPISTM32F4.o
+ .ARM.extab.text._ZN10SPISTM32F415transmitReceiveEPhS0_tm
+                0x00000000        0x0 build/SPISTM32F4.o
+ .ARM.exidx.text._ZN10SPISTM32F415transmitReceiveEPhS0_tm
+                0x00000000        0x8 build/SPISTM32F4.o
+ .text._ZN10SPISTM32F4D0Ev
+                0x00000000       0x20 build/SPISTM32F4.o
+ .ARM.extab.text._ZN10SPISTM32F4D0Ev
+                0x00000000        0x0 build/SPISTM32F4.o
+ .ARM.exidx.text._ZN10SPISTM32F4D0Ev
+                0x00000000        0x8 build/SPISTM32F4.o
+ .text._ZN10SPISTM32F4C2EP19__SPI_HandleTypeDefP12GPIO_TypeDeft
+                0x00000000       0x20 build/SPISTM32F4.o
+ .ARM.extab.text._ZN10SPISTM32F4C2EP19__SPI_HandleTypeDefP12GPIO_TypeDeft
+                0x00000000        0x0 build/SPISTM32F4.o
+ .ARM.exidx.text._ZN10SPISTM32F4C2EP19__SPI_HandleTypeDefP12GPIO_TypeDeft
+                0x00000000        0x8 build/SPISTM32F4.o
+ .rodata._ZTS4ISpi
+                0x00000000        0x6 build/SPISTM32F4.o
+ .rodata._ZTI4ISpi
+                0x00000000        0x8 build/SPISTM32F4.o
+ .rodata._ZTS10SPISTM32F4
+                0x00000000        0xd build/SPISTM32F4.o
+ .rodata._ZTI10SPISTM32F4
+                0x00000000        0xc build/SPISTM32F4.o
+ .rodata._ZTV4ISpi
+                0x00000000       0x1c build/SPISTM32F4.o
+ .rodata._ZTV10SPISTM32F4
+                0x00000000       0x1c build/SPISTM32F4.o
+ .debug_info    0x00000000      0xea7 build/SPISTM32F4.o
+ .debug_abbrev  0x00000000      0x382 build/SPISTM32F4.o
+ .debug_loc     0x00000000      0x249 build/SPISTM32F4.o
+ .debug_aranges
+                0x00000000       0x48 build/SPISTM32F4.o
+ .debug_ranges  0x00000000       0x38 build/SPISTM32F4.o
+ .debug_line    0x00000000      0x2b7 build/SPISTM32F4.o
+ .debug_str     0x00000000      0xaf1 build/SPISTM32F4.o
+ .comment       0x00000000       0x45 build/SPISTM32F4.o
+ .debug_frame   0x00000000       0xa4 build/SPISTM32F4.o
+ .ARM.attributes
+                0x00000000       0x34 build/SPISTM32F4.o
  .group         0x00000000       0x2c build/TimerSTM32F4.o
  .group         0x00000000        0x8 build/TimerSTM32F4.o
  .group         0x00000000        0xc build/TimerSTM32F4.o
@@ -1374,6 +1473,165 @@ Discarded input sections
  .debug_frame   0x00000000       0x40 build/EncoderDriver.o
  .ARM.attributes
                 0x00000000       0x34 build/EncoderDriver.o
+ .text          0x00000000        0x0 build/IMUDriver.o
+ .data          0x00000000        0x0 build/IMUDriver.o
+ .bss           0x00000000        0x0 build/IMUDriver.o
+ .text._ZN3ImuC2EP4ISpi
+                0x00000000        0x8 build/IMUDriver.o
+ .ARM.extab.text._ZN3ImuC2EP4ISpi
+                0x00000000        0x0 build/IMUDriver.o
+ .ARM.exidx.text._ZN3ImuC2EP4ISpi
+                0x00000000        0x8 build/IMUDriver.o
+ .text._ZN3Imu12SpiReadBytesEh
+                0x00000000       0x44 build/IMUDriver.o
+ .ARM.extab.text._ZN3Imu12SpiReadBytesEh
+                0x00000000        0x0 build/IMUDriver.o
+ .ARM.exidx.text._ZN3Imu12SpiReadBytesEh
+                0x00000000        0x8 build/IMUDriver.o
+ .text._ZN3Imu13SpiWriteBytesEhh
+                0x00000000       0x40 build/IMUDriver.o
+ .ARM.extab.text._ZN3Imu13SpiWriteBytesEhh
+                0x00000000        0x0 build/IMUDriver.o
+ .ARM.exidx.text._ZN3Imu13SpiWriteBytesEhh
+                0x00000000        0x8 build/IMUDriver.o
+ .rodata._ZN3Imu12Lsm6dsrErrorEh.str1.4
+                0x00000000       0x22 build/IMUDriver.o
+ .text._ZN3Imu12Lsm6dsrErrorEh
+                0x00000000       0x10 build/IMUDriver.o
+ .ARM.extab.text._ZN3Imu12Lsm6dsrErrorEh
+                0x00000000        0xc build/IMUDriver.o
+ .ARM.exidx.text._ZN3Imu12Lsm6dsrErrorEh
+                0x00000000        0x8 build/IMUDriver.o
+ .rodata._ZN3Imu14Lsm6dsrPowerOnEv.str1.4
+                0x00000000       0x12 build/IMUDriver.o
+ .text._ZN3Imu14Lsm6dsrPowerOnEv
+                0x00000000       0x58 build/IMUDriver.o
+ .ARM.extab.text._ZN3Imu14Lsm6dsrPowerOnEv
+                0x00000000        0x0 build/IMUDriver.o
+ .ARM.exidx.text._ZN3Imu14Lsm6dsrPowerOnEv
+                0x00000000        0x8 build/IMUDriver.o
+ .text._ZN3Imu16Lsm6dsrReadGyroZEv
+                0x00000000       0x5c build/IMUDriver.o
+ .ARM.extab.text._ZN3Imu16Lsm6dsrReadGyroZEv
+                0x00000000        0x0 build/IMUDriver.o
+ .ARM.exidx.text._ZN3Imu16Lsm6dsrReadGyroZEv
+                0x00000000        0x8 build/IMUDriver.o
+ .rodata._ZN3Imu12gyro_get_refEv.str1.4
+                0x00000000       0x14 build/IMUDriver.o
+ .text._ZN3Imu12gyro_get_refEv
+                0x00000000       0x80 build/IMUDriver.o
+ .ARM.extab.text._ZN3Imu12gyro_get_refEv
+                0x00000000        0x0 build/IMUDriver.o
+ .ARM.exidx.text._ZN3Imu12gyro_get_refEv
+                0x00000000        0x8 build/IMUDriver.o
+ .debug_info    0x00000000     0x1316 build/IMUDriver.o
+ .debug_abbrev  0x00000000      0x428 build/IMUDriver.o
+ .debug_loc     0x00000000      0x3d0 build/IMUDriver.o
+ .debug_aranges
+                0x00000000       0x50 build/IMUDriver.o
+ .debug_ranges  0x00000000       0x40 build/IMUDriver.o
+ .debug_line    0x00000000      0x54c build/IMUDriver.o
+ .debug_str     0x00000000      0x7cd build/IMUDriver.o
+ .comment       0x00000000       0x45 build/IMUDriver.o
+ .debug_frame   0x00000000       0xdc build/IMUDriver.o
+ .ARM.attributes
+                0x00000000       0x34 build/IMUDriver.o
+ .text          0x00000000        0x0 build/LEDController.o
+ .data          0x00000000        0x0 build/LEDController.o
+ .bss           0x00000000        0x0 build/LEDController.o
+ .text._ZN13LEDControllerC2EP11GpioSTM32F4S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_
+                0x00000000       0x28 build/LEDController.o
+ .ARM.extab.text._ZN13LEDControllerC2EP11GpioSTM32F4S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_
+                0x00000000        0x0 build/LEDController.o
+ .ARM.exidx.text._ZN13LEDControllerC2EP11GpioSTM32F4S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_
+                0x00000000        0x8 build/LEDController.o
+ .text._ZN13LEDController12setSensorLEDEbbbb
+                0x00000000       0x5e build/LEDController.o
+ .ARM.extab.text._ZN13LEDController12setSensorLEDEbbbb
+                0x00000000        0x0 build/LEDController.o
+ .ARM.exidx.text._ZN13LEDController12setSensorLEDEbbbb
+                0x00000000        0x8 build/LEDController.o
+ .text._ZN13LEDController11sensorLEDOnEv
+                0x00000000       0x16 build/LEDController.o
+ .ARM.extab.text._ZN13LEDController11sensorLEDOnEv
+                0x00000000        0x0 build/LEDController.o
+ .ARM.exidx.text._ZN13LEDController11sensorLEDOnEv
+                0x00000000        0x8 build/LEDController.o
+ .text._ZN13LEDController12sensorLEDOffEv
+                0x00000000       0x16 build/LEDController.o
+ .ARM.extab.text._ZN13LEDController12sensorLEDOffEv
+                0x00000000        0x0 build/LEDController.o
+ .ARM.exidx.text._ZN13LEDController12sensorLEDOffEv
+                0x00000000        0x8 build/LEDController.o
+ .text._ZN13LEDController6setLEDEbbbb
+                0x00000000       0x5e build/LEDController.o
+ .ARM.extab.text._ZN13LEDController6setLEDEbbbb
+                0x00000000        0x0 build/LEDController.o
+ .ARM.exidx.text._ZN13LEDController6setLEDEbbbb
+                0x00000000        0x8 build/LEDController.o
+ .text._ZN13LEDController12turnAllLEDOnEv
+                0x00000000       0x16 build/LEDController.o
+ .ARM.extab.text._ZN13LEDController12turnAllLEDOnEv
+                0x00000000        0x0 build/LEDController.o
+ .ARM.exidx.text._ZN13LEDController12turnAllLEDOnEv
+                0x00000000        0x8 build/LEDController.o
+ .text._ZN13LEDController13turnAllLEDOffEv
+                0x00000000       0x16 build/LEDController.o
+ .ARM.extab.text._ZN13LEDController13turnAllLEDOffEv
+                0x00000000        0x0 build/LEDController.o
+ .ARM.exidx.text._ZN13LEDController13turnAllLEDOffEv
+                0x00000000        0x8 build/LEDController.o
+ .text._ZN13LEDController10setModeLEDEh
+                0x00000000       0x8a build/LEDController.o
+ .ARM.extab.text._ZN13LEDController10setModeLEDEh
+                0x00000000        0x0 build/LEDController.o
+ .ARM.exidx.text._ZN13LEDController10setModeLEDEh
+                0x00000000        0x8 build/LEDController.o
+ .debug_info    0x00000000      0xa13 build/LEDController.o
+ .debug_abbrev  0x00000000      0x21e build/LEDController.o
+ .debug_loc     0x00000000      0x4d8 build/LEDController.o
+ .debug_aranges
+                0x00000000       0x58 build/LEDController.o
+ .debug_ranges  0x00000000       0x48 build/LEDController.o
+ .debug_line    0x00000000      0x491 build/LEDController.o
+ .debug_str     0x00000000      0x69d build/LEDController.o
+ .comment       0x00000000       0x45 build/LEDController.o
+ .debug_frame   0x00000000       0xe8 build/LEDController.o
+ .ARM.attributes
+                0x00000000       0x34 build/LEDController.o
+ .text          0x00000000        0x0 build/PhotoSensor.o
+ .data          0x00000000        0x0 build/PhotoSensor.o
+ .bss           0x00000000        0x0 build/PhotoSensor.o
+ .text._ZN11PhotoSensorC2EP17ADC_HandleTypeDefPtm
+                0x00000000        0x8 build/PhotoSensor.o
+ .ARM.extab.text._ZN11PhotoSensorC2EP17ADC_HandleTypeDefPtm
+                0x00000000        0x0 build/PhotoSensor.o
+ .ARM.exidx.text._ZN11PhotoSensorC2EP17ADC_HandleTypeDefPtm
+                0x00000000        0x8 build/PhotoSensor.o
+ .text._ZN11PhotoSensor5startEv
+                0x00000000        0xe build/PhotoSensor.o
+ .ARM.extab.text._ZN11PhotoSensor5startEv
+                0x00000000        0xc build/PhotoSensor.o
+ .ARM.exidx.text._ZN11PhotoSensor5startEv
+                0x00000000        0x8 build/PhotoSensor.o
+ .text._ZNK11PhotoSensor8getValueEm
+                0x00000000       0x12 build/PhotoSensor.o
+ .ARM.extab.text._ZNK11PhotoSensor8getValueEm
+                0x00000000        0x0 build/PhotoSensor.o
+ .ARM.exidx.text._ZNK11PhotoSensor8getValueEm
+                0x00000000        0x8 build/PhotoSensor.o
+ .debug_info    0x00000000      0x88f build/PhotoSensor.o
+ .debug_abbrev  0x00000000      0x22d build/PhotoSensor.o
+ .debug_loc     0x00000000       0x99 build/PhotoSensor.o
+ .debug_aranges
+                0x00000000       0x30 build/PhotoSensor.o
+ .debug_ranges  0x00000000       0x20 build/PhotoSensor.o
+ .debug_line    0x00000000      0x20d build/PhotoSensor.o
+ .debug_str     0x00000000      0x776 build/PhotoSensor.o
+ .comment       0x00000000       0x45 build/PhotoSensor.o
+ .debug_frame   0x00000000       0x48 build/PhotoSensor.o
+ .ARM.attributes
+                0x00000000       0x34 build/PhotoSensor.o
  .text          0x00000000       0x14 build/startup_stm32f405xx.o
  .data          0x00000000        0x0 build/startup_stm32f405xx.o
  .bss           0x00000000        0x0 build/startup_stm32f405xx.o
@@ -1557,6 +1815,15 @@ Discarded input sections
  .debug_frame   0x00000000       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fwalk.o)
  .ARM.attributes
                 0x00000000       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fwalk.o)
+ .text          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-printf.o)
+ .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-printf.o)
+ .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-printf.o)
+ .text._printf_r
+                0x00000000       0x1c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-printf.o)
+ .text.printf   0x00000000       0x24 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-printf.o)
+ .debug_frame   0x00000000       0x6c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-printf.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-printf.o)
  .text          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
  .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
  .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
@@ -1691,6 +1958,36 @@ Discarded input sections
                 0x00000000      0x108 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-on_exit_args.o)
  .ARM.attributes
                 0x00000000       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-on_exit_args.o)
+ .text          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+ .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+ .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+ .text.__sfputc_r
+                0x00000000       0x2e C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+ .text.__sfputs_r
+                0x00000000       0x24 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+ .text.__sprint_r
+                0x00000000       0x1a C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+ .rodata._vfprintf_r.str1.1
+                0x00000000       0x11 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+ .text._vfprintf_r
+                0x00000000      0x230 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+ .text.vfprintf
+                0x00000000       0x14 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+ .debug_frame   0x00000000       0xa8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+ .text          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
+ .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
+ .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
+ .text._printf_common
+                0x00000000       0xda C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
+ .rodata._printf_i.str1.1
+                0x00000000       0x22 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
+ .text._printf_i
+                0x00000000      0x23c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
+ .debug_frame   0x00000000       0x60 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
  .text          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
  .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
  .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
@@ -1702,6 +1999,117 @@ Discarded input sections
  .debug_frame   0x00000000       0x5c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
  .ARM.attributes
                 0x00000000       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+ .text          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fvwrite.o)
+ .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fvwrite.o)
+ .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fvwrite.o)
+ .text.__sfvwrite_r
+                0x00000000      0x298 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fvwrite.o)
+ .debug_frame   0x00000000       0x3c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fvwrite.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fvwrite.o)
+ .text          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wbuf.o)
+ .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wbuf.o)
+ .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wbuf.o)
+ .text.__swbuf_r
+                0x00000000       0x7c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wbuf.o)
+ .text.__swbuf  0x00000000       0x10 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wbuf.o)
+ .debug_frame   0x00000000       0x40 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wbuf.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wbuf.o)
+ .text          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wsetup.o)
+ .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wsetup.o)
+ .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wsetup.o)
+ .text.__swsetup_r
+                0x00000000       0xac C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wsetup.o)
+ .debug_frame   0x00000000       0x2c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wsetup.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wsetup.o)
+ .text          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memmove.o)
+ .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memmove.o)
+ .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memmove.o)
+ .text.memmove  0x00000000       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memmove.o)
+ .debug_frame   0x00000000       0x28 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memmove.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memmove.o)
+ .text          0x00000000       0xa0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memchr.o)
+ .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memchr.o)
+ .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memchr.o)
+ .ARM.extab     0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memchr.o)
+ .ARM.exidx     0x00000000        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memchr.o)
+ .debug_line_str
+                0x00000000       0xe1 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memchr.o)
+ .eh_frame      0x00000000       0x50 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memchr.o)
+ .ARM.attributes
+                0x00000000       0x1c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memchr.o)
+ .text          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
+ .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
+ .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
+ .text          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reallocr.o)
+ .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reallocr.o)
+ .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reallocr.o)
+ .text._realloc_r
+                0x00000000       0x5c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reallocr.o)
+ .debug_frame   0x00000000       0x3c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reallocr.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reallocr.o)
+ .text          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-makebuf.o)
+ .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-makebuf.o)
+ .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-makebuf.o)
+ .text.__swhatbuf_r
+                0x00000000       0x4c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-makebuf.o)
+ .text.__smakebuf_r
+                0x00000000       0x78 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-makebuf.o)
+ .debug_frame   0x00000000       0x58 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-makebuf.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-makebuf.o)
+ .text          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fstatr.o)
+ .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fstatr.o)
+ .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fstatr.o)
+ .text._fstat_r
+                0x00000000       0x24 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fstatr.o)
+ .debug_frame   0x00000000       0x2c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fstatr.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fstatr.o)
+ .text          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-isattyr.o)
+ .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-isattyr.o)
+ .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-isattyr.o)
+ .text._isatty_r
+                0x00000000       0x20 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-isattyr.o)
+ .debug_frame   0x00000000       0x2c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-isattyr.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-isattyr.o)
+ .text          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-msizer.o)
+ .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-msizer.o)
+ .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-msizer.o)
+ .text._malloc_usable_size_r
+                0x00000000       0x10 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-msizer.o)
+ .debug_frame   0x00000000       0x20 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-msizer.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-msizer.o)
+ .text          0x00000000      0x254 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .debug_line_str
+                0x00000000       0xce C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .debug_frame   0x00000000       0x30 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .ARM.attributes
+                0x00000000       0x22 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .text          0x00000000      0x378 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_line_str
+                0x00000000       0xce C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00000000       0xac C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x00000000       0x22 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .text          0x00000000       0xa0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .debug_line_str
+                0x00000000       0xce C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .debug_frame   0x00000000       0x24 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .ARM.attributes
+                0x00000000       0x22 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
  .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
  .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
  .text          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
@@ -1799,9 +2207,6 @@ Discarded input sections
                 0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
  .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
- .text          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
- .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
- .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
  .text          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtend.o
  .data          0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtend.o
  .bss           0x00000000        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtend.o
@@ -1859,10 +2264,14 @@ LOAD build/AdcSTM32F4.o
 LOAD build/EncoderSTM32F4.o
 LOAD build/GpioSTM32F4.o
 LOAD build/PwmSTM32F4.o
+LOAD build/SPISTM32F4.o
 LOAD build/TimerSTM32F4.o
 LOAD build/Button.o
 LOAD build/MotorDriver.o
 LOAD build/EncoderDriver.o
+LOAD build/IMUDriver.o
+LOAD build/LEDController.o
+LOAD build/PhotoSensor.o
 LOAD build/startup_stm32f405xx.o
 LOAD C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libnosys.a
 LOAD C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a
@@ -2528,95 +2937,95 @@ LOAD C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+
                 0x08005a0a                __retarget_lock_release_recursive
  .text._free_r  0x08005a0c       0x94 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
                 0x08005a0c                _free_r
+ .text.memcpy   0x08005aa0       0x1c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
+                0x08005aa0                memcpy
  .text.__udivmoddi4
-                0x08005aa0      0x2bc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
-                0x08005aa0                __udivmoddi4
+                0x08005abc      0x2bc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x08005abc                __udivmoddi4
  .text.selfrel_offset31
-                0x08005d5c       0x14 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08005d78       0x14 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text.search_EIT_table
-                0x08005d70       0x68 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08005d8c       0x68 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text.__gnu_unwind_get_pr_addr
-                0x08005dd8       0x28 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08005df4       0x28 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text.get_eit_entry
-                0x08005e00       0x98 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08005e1c       0x98 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text.restore_non_core_regs
-                0x08005e98       0x58 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08005eb4       0x58 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text._Unwind_decode_typeinfo_ptr.constprop.0
-                0x08005ef0        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08005f0c        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text._Unwind_DebugHook
-                0x08005efc        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08005f18        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text.unwind_phase2
-                0x08005f00       0x3c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08005f1c       0x3c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text.unwind_phase2_forced
-                0x08005f3c       0xd8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08005f58       0xd8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text.__gnu_Unwind_RaiseException
-                0x08006014       0x68 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x08006014                __gnu_Unwind_RaiseException
+                0x08006030       0x68 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006030                __gnu_Unwind_RaiseException
  .text.__gnu_Unwind_ForcedUnwind
-                0x0800607c       0x10 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x0800607c                __gnu_Unwind_ForcedUnwind
+                0x08006098       0x10 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006098                __gnu_Unwind_ForcedUnwind
  .text.__gnu_Unwind_Resume
-                0x0800608c       0x44 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x0800608c                __gnu_Unwind_Resume
+                0x080060a8       0x44 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080060a8                __gnu_Unwind_Resume
  .text.__gnu_Unwind_Resume_or_Rethrow
-                0x080060d0       0x14 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x080060d0                __gnu_Unwind_Resume_or_Rethrow
+                0x080060ec       0x14 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080060ec                __gnu_Unwind_Resume_or_Rethrow
  .text._Unwind_Complete
-                0x080060e4        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x080060e4                _Unwind_Complete
+                0x08006100        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006100                _Unwind_Complete
  .text._Unwind_VRS_Get
-                0x080060e8       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x080060e8                _Unwind_VRS_Get
+                0x08006104       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006104                _Unwind_VRS_Get
  .text._Unwind_GetGR
-                0x0800611c       0x1c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006138       0x1c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text._Unwind_VRS_Set
-                0x08006138       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x08006138                _Unwind_VRS_Set
+                0x08006154       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006154                _Unwind_VRS_Set
  .text._Unwind_SetGR
-                0x0800616c       0x18 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006188       0x18 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text.__gnu_Unwind_Backtrace
-                0x08006184       0x84 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x08006184                __gnu_Unwind_Backtrace
+                0x080061a0       0x84 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080061a0                __gnu_Unwind_Backtrace
  .text.__gnu_unwind_pr_common
-                0x08006208      0x2a4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006224      0x2a4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text.__aeabi_unwind_cpp_pr0
-                0x080064ac        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x080064ac                __aeabi_unwind_cpp_pr0
+                0x080064c8        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080064c8                __aeabi_unwind_cpp_pr0
  .text.__aeabi_unwind_cpp_pr1
-                0x080064b4        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x080064b4                __aeabi_unwind_cpp_pr1
+                0x080064d0        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080064d0                __aeabi_unwind_cpp_pr1
  .text.__aeabi_unwind_cpp_pr2
-                0x080064bc        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x080064bc                __aeabi_unwind_cpp_pr2
+                0x080064d8        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080064d8                __aeabi_unwind_cpp_pr2
  .text._Unwind_VRS_Pop
-                0x080064c4      0x2f0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x080064c4                _Unwind_VRS_Pop
+                0x080064e0      0x2f0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080064e0                _Unwind_VRS_Pop
  .text.next_unwind_byte
-                0x080067b4       0x38 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x080067d0       0x38 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
  .text._Unwind_GetGR.constprop.0
-                0x080067ec       0x1c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x08006808       0x1c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
  .text.unwind_UCB_from_context
-                0x08006808        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x08006824        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
  .text.__gnu_unwind_execute
-                0x0800680c      0x2fc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
-                0x0800680c                __gnu_unwind_execute
+                0x08006828      0x2fc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x08006828                __gnu_unwind_execute
  .text.__gnu_unwind_frame
-                0x08006b08       0x2c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
-                0x08006b08                __gnu_unwind_frame
+                0x08006b24       0x2c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x08006b24                __gnu_unwind_frame
  .text._Unwind_GetRegionStart
-                0x08006b34        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
-                0x08006b34                _Unwind_GetRegionStart
+                0x08006b50        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x08006b50                _Unwind_GetRegionStart
  .text._Unwind_GetLanguageSpecificData
-                0x08006b40       0x14 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
-                0x08006b40                _Unwind_GetLanguageSpecificData
+                0x08006b5c       0x14 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x08006b5c                _Unwind_GetLanguageSpecificData
  .text.unlikely._Unwind_GetDataRelBase
-                0x08006b54        0x6 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
-                0x08006b54                _Unwind_GetDataRelBase
+                0x08006b70        0x6 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x08006b70                _Unwind_GetDataRelBase
  .text.unlikely._Unwind_GetTextRelBase
-                0x08006b5a        0x6 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
-                0x08006b5a                _Unwind_GetTextRelBase
- .text.memcpy   0x08006b60       0x1c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
-                0x08006b60                memcpy
+                0x08006b76        0x6 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x08006b76                _Unwind_GetTextRelBase
  *(.glue_7)
  .glue_7        0x08006b7c        0x0 linker stubs
  *(.glue_7t)
@@ -3374,19 +3783,19 @@ LOAD C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+
  .ARM.attributes
                 0x00000bf7       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
  .ARM.attributes
-                0x00000c2b       0x22 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+                0x00000c2b       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
  .ARM.attributes
-                0x00000c4d       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x00000c5f       0x22 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
  .ARM.attributes
-                0x00000c81       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x00000c81       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
  .ARM.attributes
-                0x00000cb5       0x22 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(libunwind.o)
+                0x00000cb5       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .ARM.attributes
-                0x00000cd7       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x00000ce9       0x22 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(libunwind.o)
  .ARM.attributes
-                0x00000d0b       0x22 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+                0x00000d0b       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
  .ARM.attributes
-                0x00000d2d       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
+                0x00000d3f       0x22 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
  .ARM.attributes
                 0x00000d61       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtend.o
  .ARM.attributes
@@ -3712,11 +4121,11 @@ LOAD C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+
  .debug_frame   0x00003630       0xb0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
  .debug_frame   0x000036e0       0x20 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-strcmp.o)
  .debug_frame   0x00003700       0x38 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
- .debug_frame   0x00003738       0x2c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x00003764       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
- .debug_frame   0x00003798      0x2c8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
- .debug_frame   0x00003a60      0x104 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
- .debug_frame   0x00003b64       0x28 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
+ .debug_frame   0x00003738       0x28 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
+ .debug_frame   0x00003760       0x2c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x0000378c       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x000037c0      0x2c8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+ .debug_frame   0x00003a88      0x104 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
 
 .debug_line_str
                 0x00000000      0x1cb
@@ -3869,6 +4278,7 @@ HAL_ADC_PollForEvent                              build/stm32f4xx_hal_adc.o
 HAL_ADC_Start                                     build/stm32f4xx_hal_adc.o
                                                   build/AdcSTM32F4.o
 HAL_ADC_Start_DMA                                 build/stm32f4xx_hal_adc.o
+                                                  build/PhotoSensor.o
 HAL_ADC_Start_IT                                  build/stm32f4xx_hal_adc.o
 HAL_ADC_Stop                                      build/stm32f4xx_hal_adc.o
 HAL_ADC_Stop_DMA                                  build/stm32f4xx_hal_adc.o
@@ -3911,6 +4321,7 @@ HAL_DMA_Start_IT                                  build/stm32f4xx_hal_dma.o
 HAL_DMA_UnRegisterCallback                        build/stm32f4xx_hal_dma.o
 HAL_DeInit                                        build/stm32f4xx_hal.o
 HAL_Delay                                         build/stm32f4xx_hal.o
+                                                  build/IMUDriver.o
                                                   build/main.o
 HAL_DisableCompensationCell                       build/stm32f4xx_hal.o
 HAL_EXTI_ClearConfigLine                          build/stm32f4xx_hal_exti.o
@@ -3955,6 +4366,7 @@ HAL_GPIO_ReadPin                                  build/stm32f4xx_hal_gpio.o
                                                   build/GpioSTM32F4.o
 HAL_GPIO_TogglePin                                build/stm32f4xx_hal_gpio.o
 HAL_GPIO_WritePin                                 build/stm32f4xx_hal_gpio.o
+                                                  build/SPISTM32F4.o
                                                   build/GpioSTM32F4.o
                                                   build/gpio.o
 HAL_GetDEVID                                      build/stm32f4xx_hal.o
@@ -4072,6 +4484,7 @@ HAL_SPI_RxCpltCallback                            build/stm32f4xx_hal_spi.o
 HAL_SPI_RxHalfCpltCallback                        build/stm32f4xx_hal_spi.o
 HAL_SPI_Transmit                                  build/stm32f4xx_hal_spi.o
 HAL_SPI_TransmitReceive                           build/stm32f4xx_hal_spi.o
+                                                  build/SPISTM32F4.o
 HAL_SPI_TransmitReceive_DMA                       build/stm32f4xx_hal_spi.o
 HAL_SPI_TransmitReceive_IT                        build/stm32f4xx_hal_spi.o
 HAL_SPI_Transmit_DMA                              build/stm32f4xx_hal_spi.o
@@ -4245,6 +4658,23 @@ I2C2_ER_IRQHandler                                build/startup_stm32f405xx.o
 I2C2_EV_IRQHandler                                build/startup_stm32f405xx.o
 I2C3_ER_IRQHandler                                build/startup_stm32f405xx.o
 I2C3_EV_IRQHandler                                build/startup_stm32f405xx.o
+Imu::Imu(ISpi*)                                   build/IMUDriver.o
+Imu::Imu(ISpi*)                                   build/IMUDriver.o
+Imu::Lsm6dsrError(unsigned char)                  build/IMUDriver.o
+Imu::Lsm6dsrPowerOn()                             build/IMUDriver.o
+Imu::Lsm6dsrReadGyroZ()                           build/IMUDriver.o
+Imu::SpiReadBytes(unsigned char)                  build/IMUDriver.o
+Imu::SpiWriteBytes(unsigned char, unsigned char)  build/IMUDriver.o
+Imu::gyro_get_ref()                               build/IMUDriver.o
+LEDController::LEDController(GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*) build/LEDController.o
+LEDController::LEDController(GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*) build/LEDController.o
+LEDController::sensorLEDOff()                     build/LEDController.o
+LEDController::sensorLEDOn()                      build/LEDController.o
+LEDController::setLED(bool, bool, bool, bool)     build/LEDController.o
+LEDController::setModeLED(unsigned char)          build/LEDController.o
+LEDController::setSensorLED(bool, bool, bool, bool) build/LEDController.o
+LEDController::turnAllLEDOff()                    build/LEDController.o
+LEDController::turnAllLEDOn()                     build/LEDController.o
 MX_ADC1_Init                                      build/adc.o
                                                   build/main.o
 MX_ADC2_Init                                      build/adc.o
@@ -4288,9 +4718,13 @@ OTG_HS_IRQHandler                                 build/startup_stm32f405xx.o
 OTG_HS_WKUP_IRQHandler                            build/startup_stm32f405xx.o
 PVD_IRQHandler                                    build/startup_stm32f405xx.o
 PendSV_Handler                                    build/stm32f4xx_it.o
-PwmSTM32F4::PwmSTM32F4(TIM_HandleTypeDef*, unsigned long) build/PwmSTM32F4.o
+PhotoSensor::PhotoSensor(ADC_HandleTypeDef*, unsigned short*, unsigned long) build/PhotoSensor.o
+PhotoSensor::PhotoSensor(ADC_HandleTypeDef*, unsigned short*, unsigned long) build/PhotoSensor.o
+PhotoSensor::getValue(unsigned long) const        build/PhotoSensor.o
+PhotoSensor::start()                              build/PhotoSensor.o
 PwmSTM32F4::PwmSTM32F4(TIM_HandleTypeDef*, unsigned long) build/PwmSTM32F4.o
                                                   build/main.o
+PwmSTM32F4::PwmSTM32F4(TIM_HandleTypeDef*, unsigned long) build/PwmSTM32F4.o
 PwmSTM32F4::setDutyCycle(float)                   build/PwmSTM32F4.o
                                                   build/MotorDriver.o
 PwmSTM32F4::start()                               build/PwmSTM32F4.o
@@ -4303,6 +4737,14 @@ SDIO_IRQHandler                                   build/startup_stm32f405xx.o
 SPI1_IRQHandler                                   build/startup_stm32f405xx.o
 SPI2_IRQHandler                                   build/startup_stm32f405xx.o
 SPI3_IRQHandler                                   build/startup_stm32f405xx.o
+SPISTM32F4::SPISTM32F4(__SPI_HandleTypeDef*, GPIO_TypeDef*, unsigned short) build/SPISTM32F4.o
+SPISTM32F4::SPISTM32F4(__SPI_HandleTypeDef*, GPIO_TypeDef*, unsigned short) build/SPISTM32F4.o
+SPISTM32F4::resetChipSelect()                     build/SPISTM32F4.o
+SPISTM32F4::setChipSelect()                       build/SPISTM32F4.o
+SPISTM32F4::transmitReceive(unsigned char*, unsigned char*, unsigned short, unsigned long) build/SPISTM32F4.o
+SPISTM32F4::~SPISTM32F4()                         build/SPISTM32F4.o
+SPISTM32F4::~SPISTM32F4()                         build/SPISTM32F4.o
+SPISTM32F4::~SPISTM32F4()                         build/SPISTM32F4.o
 SVC_Handler                                       build/stm32f4xx_it.o
 SysTick_Handler                                   build/stm32f4xx_it.o
 SystemClock_Config()                              build/main.o
@@ -4354,8 +4796,8 @@ TIM_OC2_SetConfig                                 build/stm32f4xx_hal_tim.o
 TIM_TI1_SetConfig                                 build/stm32f4xx_hal_tim.o
                                                   build/stm32f4xx_hal_tim_ex.o
 TimerSTM32F4::TimerSTM32F4(TIM_HandleTypeDef*)    build/TimerSTM32F4.o
-                                                  build/main.o
 TimerSTM32F4::TimerSTM32F4(TIM_HandleTypeDef*)    build/TimerSTM32F4.o
+                                                  build/main.o
 TimerSTM32F4::onInterrupt()                       build/TimerSTM32F4.o
 TimerSTM32F4::setCallback(void (*)())             build/TimerSTM32F4.o
 TimerSTM32F4::start()                             build/TimerSTM32F4.o
@@ -4411,24 +4853,44 @@ ___Unwind_ForcedUnwind                            C:/Tools/arm-gnu-toolchain/bin
 ___Unwind_RaiseException                          C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(libunwind.o)
 ___Unwind_Resume                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(libunwind.o)
 ___Unwind_Resume_or_Rethrow                       C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(libunwind.o)
+__adddf3                                          C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
 __aeabi_atexit                                    C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(atexit_arm.o)
                                                   build/main.o
+__aeabi_d2f                                       C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+                                                  build/IMUDriver.o
+__aeabi_dadd                                      C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_dmul                                      C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+                                                  build/IMUDriver.o
+__aeabi_drsub                                     C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_dsub                                      C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_f2d                                       C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+                                                  build/IMUDriver.o
+__aeabi_i2d                                       C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
 __aeabi_idiv0                                     C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+__aeabi_l2d                                       C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
 __aeabi_ldiv0                                     C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+__aeabi_ui2d                                      C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_ul2d                                      C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
 __aeabi_uldivmod                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
                                                   build/stm32f4xx_hal_rcc.o
 __aeabi_unwind_cpp_pr0                            C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                                                  build/LEDController.o
+                                                  build/IMUDriver.o
                                                   build/EncoderDriver.o
                                                   build/MotorDriver.o
                                                   build/Button.o
+                                                  build/SPISTM32F4.o
                                                   build/AdcSTM32F4.o
                                                   build/main.o
 __aeabi_unwind_cpp_pr1                            C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                                                  build/PhotoSensor.o
+                                                  build/IMUDriver.o
                                                   build/MotorDriver.o
                                                   build/TimerSTM32F4.o
+                                                  build/SPISTM32F4.o
                                                   build/PwmSTM32F4.o
                                                   build/GpioSTM32F4.o
                                                   build/EncoderSTM32F4.o
@@ -4466,6 +4928,7 @@ __cxa_guard_release                               C:/Tools/arm-gnu-toolchain/bin
                                                   build/main.o
 __cxa_pure_virtual                                C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_exception.o)
                                                   build/TimerSTM32F4.o
+                                                  build/SPISTM32F4.o
                                                   build/GpioSTM32F4.o
                                                   build/EncoderSTM32F4.o
                                                   build/AdcSTM32F4.o
@@ -4483,8 +4946,8 @@ __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*,
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
 __cxxabiv1::__class_type_info::~__class_type_info() C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
 __cxxabiv1::__class_type_info::~__class_type_info() C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
-__cxxabiv1::__class_type_info::~__class_type_info() C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
+__cxxabiv1::__class_type_info::~__class_type_info() C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
 __cxxabiv1::__forced_unwind::~__forced_unwind()   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_exception.o)
 __cxxabiv1::__forced_unwind::~__forced_unwind()   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_exception.o)
 __cxxabiv1::__forced_unwind::~__forced_unwind()   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_exception.o)
@@ -4514,6 +4977,11 @@ __errno                                           C:/Tools/arm-gnu-toolchain/bin
                                                   build/sysmem.o
 __exidx_end                                       C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
 __exidx_start                                     C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+__extendsfdf2                                     C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__floatdidf                                       C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__floatsidf                                       C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__floatundidf                                     C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__floatunsidf                                     C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
 __fp_lock_all                                     C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
 __fp_unlock_all                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
 __gnu_Unwind_Backtrace                            C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
@@ -4582,6 +5050,7 @@ __malloc_sbrk_start                               C:/Tools/arm-gnu-toolchain/bin
 __malloc_unlock                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+__muldf3                                          C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
 __on_exit_args                                    C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-on_exit_args.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-cxa_atexit.o)
 __preinit_array_end                               C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
@@ -4592,6 +5061,7 @@ __restore_core_regs                               C:/Tools/arm-gnu-toolchain/bin
 __retarget_lock_acquire                           C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
 __retarget_lock_acquire_recursive                 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
 __retarget_lock_close                             C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
@@ -4602,6 +5072,7 @@ __retarget_lock_init_recursive                    C:/Tools/arm-gnu-toolchain/bin
 __retarget_lock_release                           C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
 __retarget_lock_release_recursive                 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
 __retarget_lock_try_acquire                       C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
@@ -4615,12 +5086,21 @@ __sflush_r                                        C:/Tools/arm-gnu-toolchain/bin
 __sfp                                             C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
 __sfp_lock_acquire                                C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
 __sfp_lock_release                                C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+__sfputs_r                                        C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+__sfvwrite_r                                      C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fvwrite.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
 __sglue                                           C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
 __sigtramp                                        C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signal.o)
 __sigtramp_r                                      C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signal.o)
 __sinit                                           C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wsetup.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wbuf.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+__smakebuf_r                                      C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-makebuf.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wsetup.o)
+__sprint_r                                        C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
 __sread                                           C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
 __sseek                                           C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
@@ -4628,8 +5108,18 @@ __sseek                                           C:/Tools/arm-gnu-toolchain/bin
 __stack                                           C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crt0.o
 __stdio_exit_handler                              C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o)
+__subdf3                                          C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__swbuf                                           C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wbuf.o)
+__swbuf_r                                         C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wbuf.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+__swhatbuf_r                                      C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-makebuf.o)
 __swrite                                          C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+__swsetup_r                                       C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wsetup.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wbuf.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fvwrite.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+__truncdfsf2                                      C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
 __udivmoddi4                                      C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
 _close                                            build/syscalls.o
@@ -4646,14 +5136,22 @@ _exit                                             build/syscalls.o
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-abort.o)
 _fflush_r                                         C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wbuf.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fvwrite.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
 _fini                                             C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crti.o
 _fork                                             build/syscalls.o
 _free_r                                           C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reallocr.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wsetup.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fvwrite.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-malloc.o)
 _fstat                                            build/syscalls.o
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fstatr.o)
+_fstat_r                                          C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fstatr.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-makebuf.o)
 _fwalk_sglue                                      C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fwalk.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
@@ -4665,16 +5163,24 @@ _impure_data                                      C:/Tools/arm-gnu-toolchain/bin
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
 _impure_ptr                                       C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wsetup.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wbuf.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signal.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-printf.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-malloc.o)
 _init                                             C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crti.o
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
 _init_signal                                      C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signal.o)
 _init_signal_r                                    C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signal.o)
+_iprintf_r                                        C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-printf.o)
 _isatty                                           build/syscalls.o
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-isattyr.o)
+_isatty_r                                         C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-isattyr.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-makebuf.o)
 _kill                                             build/syscalls.o
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signalr.o)
 _kill_r                                           C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signalr.o)
@@ -4686,15 +5192,27 @@ _lseek_r                                          C:/Tools/arm-gnu-toolchain/bin
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
 _mainCRTStartup                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crt0.o
 _malloc_r                                         C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-makebuf.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reallocr.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fvwrite.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signal.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-malloc.o)
+_malloc_usable_size_r                             C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-msizer.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reallocr.o)
 _open                                             build/syscalls.o
+_printf_common                                    C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
+_printf_float                                     C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+_printf_i                                         C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+_printf_r                                         C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-printf.o)
 _raise_r                                          C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signal.o)
 _read                                             build/syscalls.o
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o)
 _read_r                                           C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+_realloc_r                                        C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reallocr.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fvwrite.o)
 _reclaim_reent                                    C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
 _sbrk                                             build/sysmem.o
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
@@ -4709,6 +5227,9 @@ _start                                            C:/Tools/arm-gnu-toolchain/bin
 _stat                                             build/syscalls.o
 _times                                            build/syscalls.o
 _unlink                                           build/syscalls.o
+_vfiprintf_r                                      C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+_vfprintf_r                                       C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-printf.o)
 _wait                                             build/syscalls.o
 _write                                            build/syscalls.o
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o)
@@ -4741,6 +5262,8 @@ assert_failed                                     build/main.o
 atexit                                            C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crt0.o
 environ                                           build/syscalls.o
 errno                                             C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-isattyr.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fstatr.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signalr.o)
@@ -4778,12 +5301,21 @@ htim4                                             build/tim.o
 htim5                                             build/tim.o
                                                   build/main.o
 initialise_monitor_handles                        build/syscalls.o
+iprintf                                           C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-printf.o)
 main                                              build/main.o
                                                   build/startup_stm32f405xx.o
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crt0.o
 malloc                                            C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-malloc.o)
+memchr                                            C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memchr.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fvwrite.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
 memcpy                                            C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reallocr.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fvwrite.o)
+memmove                                           C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memmove.o)
+                                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fvwrite.o)
 memset                                            C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
                                                   build/main.o
@@ -4797,12 +5329,15 @@ operator delete(void*, unsigned int)              C:/Tools/arm-gnu-toolchain/bin
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_exception.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
                                                   build/TimerSTM32F4.o
+                                                  build/SPISTM32F4.o
                                                   build/GpioSTM32F4.o
                                                   build/EncoderSTM32F4.o
                                                   build/AdcSTM32F4.o
                                                   build/main.o
 pFlash                                            build/stm32f4xx_hal_flash.o
                                                   build/stm32f4xx_hal_flash_ex.o
+printf                                            C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-printf.o)
+                                                  build/IMUDriver.o
 raise                                             C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signal.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-abort.o)
 restore_core_regs                                 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(libunwind.o)
@@ -4863,8 +5398,10 @@ typeinfo for IEncoder                             build/main.o
                                                   build/EncoderSTM32F4.o
 typeinfo for IGpio                                build/main.o
                                                   build/GpioSTM32F4.o
+typeinfo for ISpi                                 build/SPISTM32F4.o
 typeinfo for ITimer                               build/main.o
                                                   build/TimerSTM32F4.o
+typeinfo for SPISTM32F4                           build/SPISTM32F4.o
 typeinfo for TimerSTM32F4                         build/TimerSTM32F4.o
 typeinfo for __cxxabiv1::__class_type_info        C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
@@ -4886,8 +5423,10 @@ typeinfo name for IEncoder                        build/main.o
                                                   build/EncoderSTM32F4.o
 typeinfo name for IGpio                           build/main.o
                                                   build/GpioSTM32F4.o
+typeinfo name for ISpi                            build/SPISTM32F4.o
 typeinfo name for ITimer                          build/main.o
                                                   build/TimerSTM32F4.o
+typeinfo name for SPISTM32F4                      build/SPISTM32F4.o
 typeinfo name for TimerSTM32F4                    build/TimerSTM32F4.o
 typeinfo name for __cxxabiv1::__class_type_info   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
 typeinfo name for __cxxabiv1::__forced_unwind     C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_exception.o)
@@ -4901,6 +5440,8 @@ uwTickFreq                                        build/stm32f4xx_hal.o
 uwTickPrio                                        build/stm32f4xx_hal.o
                                                   build/stm32f4xx_hal_rcc_ex.o
                                                   build/stm32f4xx_hal_rcc.o
+vfiprintf                                         C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+vfprintf                                          C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
 vtable for AdcSTM32F4                             build/AdcSTM32F4.o
                                                   build/main.o
 vtable for EncoderSTM32F4                         build/EncoderSTM32F4.o
@@ -4913,14 +5454,17 @@ vtable for IEncoder                               build/main.o
                                                   build/EncoderSTM32F4.o
 vtable for IGpio                                  build/main.o
                                                   build/GpioSTM32F4.o
+vtable for ISpi                                   build/SPISTM32F4.o
 vtable for ITimer                                 build/main.o
                                                   build/TimerSTM32F4.o
+vtable for SPISTM32F4                             build/SPISTM32F4.o
 vtable for TimerSTM32F4                           build/TimerSTM32F4.o
                                                   build/main.o
 vtable for __cxxabiv1::__class_type_info          C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(tinfo.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_exception.o)
                                                   build/TimerSTM32F4.o
+                                                  build/SPISTM32F4.o
                                                   build/GpioSTM32F4.o
                                                   build/EncoderSTM32F4.o
                                                   build/AdcSTM32F4.o
@@ -4931,6 +5475,7 @@ vtable for __cxxabiv1::__si_class_type_info       C:/Tools/arm-gnu-toolchain/bin
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_exception.o)
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
                                                   build/TimerSTM32F4.o
+                                                  build/SPISTM32F4.o
                                                   build/GpioSTM32F4.o
                                                   build/EncoderSTM32F4.o
                                                   build/AdcSTM32F4.o

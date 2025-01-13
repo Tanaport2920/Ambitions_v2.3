@@ -73,10 +73,14 @@ Core/HALinterface/Src/AdcSTM32F4.cpp \
 Core/HALinterface/Src/EncoderSTM32F4.cpp \
 Core/HALinterface/Src/GpioSTM32F4.cpp \
 Core/HALinterface/Src/PwmSTM32F4.cpp \
+Core/HALinterface/Src/SPISTM32F4.cpp \
 Core/HALinterface/Src/TimerSTM32F4.cpp \
 Core/Driver/Src/Button.cpp \
 Core/Driver/Src/MotorDriver.cpp \
 Core/Driver/Src/EncoderDriver.cpp \
+Core/Driver/Src/IMUDriver.cpp \
+Core/Driver/Src/LEDController.cpp \
+Core/Driver/Src/PhotoSensor.cpp \
 
 # ASM sources
 ASM_SOURCES =  \

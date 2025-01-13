@@ -1,0 +1,783 @@
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"IMUDriver.cpp"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/Driver/Src/IMUDriver.cpp"
+  20              		.section	.text._ZN3ImuC2EP4ISpi,"ax",%progbits
+  21              		.align	1
+  22              		.global	_ZN3ImuC2EP4ISpi
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	_ZN3ImuC2EP4ISpi:
+  28              		.fnstart
+  29              	.LVL0:
+  30              	.LFB1185:
+   1:Core/Driver/Src/IMUDriver.cpp **** #include "../Inc/IMUDriver.hpp"
+   2:Core/Driver/Src/IMUDriver.cpp **** #include "stm32f4xx_hal.h"  // printf, HAL_Delay
+   3:Core/Driver/Src/IMUDriver.cpp **** #include <cmath>            // M_PI
+   4:Core/Driver/Src/IMUDriver.cpp **** #include <cstdio>
+   5:Core/Driver/Src/IMUDriver.cpp **** 
+   6:Core/Driver/Src/IMUDriver.cpp **** Imu::Imu(ISpi* spi)
+  31              		.loc 1 6 1 view -0
+  32              		.cfi_startproc
+  33              		@ args = 0, pretend = 0, frame = 0
+  34              		@ frame_needed = 0, uses_anonymous_args = 0
+  35              		@ link register save eliminated.
+  36              	.LBB2:
+   7:Core/Driver/Src/IMUDriver.cpp ****     : m_spi(spi)
+  37              		.loc 1 7 7 is_stmt 0 view .LVU1
+  38 0000 0160     		str	r1, [r0]
+   8:Core/Driver/Src/IMUDriver.cpp ****     , gyro_reference(0.0f)
+  39              		.loc 1 8 7 view .LVU2
+  40 0002 0022     		movs	r2, #0
+  41 0004 4260     		str	r2, [r0, #4]	@ float
+  42              	.LBE2:
+   9:Core/Driver/Src/IMUDriver.cpp **** {
+  10:Core/Driver/Src/IMUDriver.cpp **** }
+  43              		.loc 1 10 1 view .LVU3
+  44 0006 7047     		bx	lr
+  45              		.cfi_endproc
+  46              	.LFE1185:
+  47              		.cantunwind
+  48              		.fnend
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s 			page 2
+
+
+  50              		.global	_ZN3ImuC1EP4ISpi
+  51              		.thumb_set _ZN3ImuC1EP4ISpi,_ZN3ImuC2EP4ISpi
+  52              		.section	.text._ZN3Imu12SpiReadBytesEh,"ax",%progbits
+  53              		.align	1
+  54              		.global	_ZN3Imu12SpiReadBytesEh
+  55              		.syntax unified
+  56              		.thumb
+  57              		.thumb_func
+  59              	_ZN3Imu12SpiReadBytesEh:
+  60              		.fnstart
+  61              	.LVL1:
+  62              	.LFB1187:
+  11:Core/Driver/Src/IMUDriver.cpp **** 
+  12:Core/Driver/Src/IMUDriver.cpp **** uint8_t Imu::SpiReadBytes(uint8_t reg) {
+  63              		.loc 1 12 40 is_stmt 1 view -0
+  64              		.cfi_startproc
+  65              		@ args = 0, pretend = 0, frame = 8
+  66              		@ frame_needed = 0, uses_anonymous_args = 0
+  67              		.loc 1 12 40 is_stmt 0 view .LVU5
+  68 0000 30B5     		push	{r4, r5, lr}
+  69              		.save {r4, r5, lr}
+  70              	.LCFI0:
+  71              		.cfi_def_cfa_offset 12
+  72              		.cfi_offset 4, -12
+  73              		.cfi_offset 5, -8
+  74              		.cfi_offset 14, -4
+  75              		.pad #20
+  76 0002 85B0     		sub	sp, sp, #20
+  77              	.LCFI1:
+  78              		.cfi_def_cfa_offset 32
+  79 0004 0446     		mov	r4, r0
+  13:Core/Driver/Src/IMUDriver.cpp ****     uint8_t tx_data[2] = {(uint8_t)(reg | 0x80), 0x00};  // MSB=1 for read
+  80              		.loc 1 13 5 is_stmt 1 view .LVU6
+  81              		.loc 1 13 13 is_stmt 0 view .LVU7
+  82 0006 0023     		movs	r3, #0
+  83 0008 ADF80C30 		strh	r3, [sp, #12]	@ movhi
+  84              		.loc 1 13 41 view .LVU8
+  85 000c 41F08001 		orr	r1, r1, #128
+  86              	.LVL2:
+  87              		.loc 1 13 54 view .LVU9
+  88 0010 8DF80C10 		strb	r1, [sp, #12]
+  14:Core/Driver/Src/IMUDriver.cpp ****     uint8_t rx_data[2] = {0, 0};
+  89              		.loc 1 14 5 is_stmt 1 view .LVU10
+  90              		.loc 1 14 13 is_stmt 0 view .LVU11
+  91 0014 ADF80830 		strh	r3, [sp, #8]	@ movhi
+  15:Core/Driver/Src/IMUDriver.cpp **** 
+  16:Core/Driver/Src/IMUDriver.cpp ****     m_spi->resetChipSelect();
+  92              		.loc 1 16 5 is_stmt 1 view .LVU12
+  93 0018 0068     		ldr	r0, [r0]
+  94              	.LVL3:
+  95              		.loc 1 16 27 is_stmt 0 view .LVU13
+  96 001a 0368     		ldr	r3, [r0]
+  97 001c 9B68     		ldr	r3, [r3, #8]
+  98 001e 9847     		blx	r3
+  99              	.LVL4:
+  17:Core/Driver/Src/IMUDriver.cpp ****     m_spi->transmitReceive(tx_data, rx_data, 2, HAL_MAX_DELAY);
+ 100              		.loc 1 17 5 is_stmt 1 view .LVU14
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s 			page 3
+
+
+ 101 0020 2068     		ldr	r0, [r4]
+ 102              		.loc 1 17 27 is_stmt 0 view .LVU15
+ 103 0022 0368     		ldr	r3, [r0]
+ 104 0024 4FF0FF32 		mov	r2, #-1
+ 105 0028 0092     		str	r2, [sp]
+ 106 002a 1D69     		ldr	r5, [r3, #16]
+ 107 002c 0223     		movs	r3, #2
+ 108 002e 02AA     		add	r2, sp, #8
+ 109 0030 03A9     		add	r1, sp, #12
+ 110 0032 A847     		blx	r5
+ 111              	.LVL5:
+  18:Core/Driver/Src/IMUDriver.cpp ****     m_spi->setChipSelect();
+ 112              		.loc 1 18 5 is_stmt 1 view .LVU16
+ 113 0034 2068     		ldr	r0, [r4]
+ 114              		.loc 1 18 25 is_stmt 0 view .LVU17
+ 115 0036 0368     		ldr	r3, [r0]
+ 116 0038 DB68     		ldr	r3, [r3, #12]
+ 117 003a 9847     		blx	r3
+ 118              	.LVL6:
+  19:Core/Driver/Src/IMUDriver.cpp **** 
+  20:Core/Driver/Src/IMUDriver.cpp ****     return rx_data[1]; // 2バイト目にデータ
+ 119              		.loc 1 20 5 is_stmt 1 view .LVU18
+  21:Core/Driver/Src/IMUDriver.cpp **** }
+ 120              		.loc 1 21 1 is_stmt 0 view .LVU19
+ 121 003c 9DF80900 		ldrb	r0, [sp, #9]	@ zero_extendqisi2
+ 122 0040 05B0     		add	sp, sp, #20
+ 123              	.LCFI2:
+ 124              		.cfi_def_cfa_offset 12
+ 125              		@ sp needed
+ 126 0042 30BD     		pop	{r4, r5, pc}
+ 127              		.loc 1 21 1 view .LVU20
+ 128              		.cfi_endproc
+ 129              	.LFE1187:
+ 130              		.fnend
+ 132              		.section	.text._ZN3Imu13SpiWriteBytesEhh,"ax",%progbits
+ 133              		.align	1
+ 134              		.global	_ZN3Imu13SpiWriteBytesEhh
+ 135              		.syntax unified
+ 136              		.thumb
+ 137              		.thumb_func
+ 139              	_ZN3Imu13SpiWriteBytesEhh:
+ 140              		.fnstart
+ 141              	.LVL7:
+ 142              	.LFB1188:
+  22:Core/Driver/Src/IMUDriver.cpp **** 
+  23:Core/Driver/Src/IMUDriver.cpp **** void Imu::SpiWriteBytes(uint8_t reg, uint8_t data) {
+ 143              		.loc 1 23 52 is_stmt 1 view -0
+ 144              		.cfi_startproc
+ 145              		@ args = 0, pretend = 0, frame = 8
+ 146              		@ frame_needed = 0, uses_anonymous_args = 0
+ 147              		.loc 1 23 52 is_stmt 0 view .LVU22
+ 148 0000 30B5     		push	{r4, r5, lr}
+ 149              		.save {r4, r5, lr}
+ 150              	.LCFI3:
+ 151              		.cfi_def_cfa_offset 12
+ 152              		.cfi_offset 4, -12
+ 153              		.cfi_offset 5, -8
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s 			page 4
+
+
+ 154              		.cfi_offset 14, -4
+ 155              		.pad #20
+ 156 0002 85B0     		sub	sp, sp, #20
+ 157              	.LCFI4:
+ 158              		.cfi_def_cfa_offset 32
+ 159 0004 0446     		mov	r4, r0
+  24:Core/Driver/Src/IMUDriver.cpp ****     uint8_t tx_data[2] = {(uint8_t)(reg & 0x7F), data};  // MSB=0 for write
+ 160              		.loc 1 24 5 is_stmt 1 view .LVU23
+ 161              		.loc 1 24 41 is_stmt 0 view .LVU24
+ 162 0006 01F07F01 		and	r1, r1, #127
+ 163              	.LVL8:
+ 164              		.loc 1 24 54 view .LVU25
+ 165 000a 8DF80C10 		strb	r1, [sp, #12]
+ 166 000e 8DF80D20 		strb	r2, [sp, #13]
+  25:Core/Driver/Src/IMUDriver.cpp ****     uint8_t rx_data[2] = {0, 0};
+ 167              		.loc 1 25 5 is_stmt 1 view .LVU26
+ 168              		.loc 1 25 13 is_stmt 0 view .LVU27
+ 169 0012 0023     		movs	r3, #0
+ 170 0014 ADF80830 		strh	r3, [sp, #8]	@ movhi
+  26:Core/Driver/Src/IMUDriver.cpp **** 
+  27:Core/Driver/Src/IMUDriver.cpp ****     m_spi->resetChipSelect();
+ 171              		.loc 1 27 5 is_stmt 1 view .LVU28
+ 172 0018 0068     		ldr	r0, [r0]
+ 173              	.LVL9:
+ 174              		.loc 1 27 27 is_stmt 0 view .LVU29
+ 175 001a 0368     		ldr	r3, [r0]
+ 176 001c 9B68     		ldr	r3, [r3, #8]
+ 177 001e 9847     		blx	r3
+ 178              	.LVL10:
+  28:Core/Driver/Src/IMUDriver.cpp ****     m_spi->transmitReceive(tx_data, rx_data, 2, HAL_MAX_DELAY);
+ 179              		.loc 1 28 5 is_stmt 1 view .LVU30
+ 180 0020 2068     		ldr	r0, [r4]
+ 181              		.loc 1 28 27 is_stmt 0 view .LVU31
+ 182 0022 0368     		ldr	r3, [r0]
+ 183 0024 4FF0FF32 		mov	r2, #-1
+ 184 0028 0092     		str	r2, [sp]
+ 185 002a 1D69     		ldr	r5, [r3, #16]
+ 186 002c 0223     		movs	r3, #2
+ 187 002e 02AA     		add	r2, sp, #8
+ 188 0030 03A9     		add	r1, sp, #12
+ 189 0032 A847     		blx	r5
+ 190              	.LVL11:
+  29:Core/Driver/Src/IMUDriver.cpp ****     m_spi->setChipSelect();
+ 191              		.loc 1 29 5 is_stmt 1 view .LVU32
+ 192 0034 2068     		ldr	r0, [r4]
+ 193              		.loc 1 29 25 is_stmt 0 view .LVU33
+ 194 0036 0368     		ldr	r3, [r0]
+ 195 0038 DB68     		ldr	r3, [r3, #12]
+ 196 003a 9847     		blx	r3
+ 197              	.LVL12:
+  30:Core/Driver/Src/IMUDriver.cpp **** }
+ 198              		.loc 1 30 1 view .LVU34
+ 199 003c 05B0     		add	sp, sp, #20
+ 200              	.LCFI5:
+ 201              		.cfi_def_cfa_offset 12
+ 202              		@ sp needed
+ 203 003e 30BD     		pop	{r4, r5, pc}
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s 			page 5
+
+
+ 204              		.loc 1 30 1 view .LVU35
+ 205              		.cfi_endproc
+ 206              	.LFE1188:
+ 207              		.fnend
+ 209              		.section	.rodata._ZN3Imu12Lsm6dsrErrorEh.str1.4,"aMS",%progbits,1
+ 210              		.align	2
+ 211              	.LC0:
+ 212 0000 4661696C 		.ascii	"Failed WHO_AM_I. 0x%02X != 0x6B\015\012\000"
+ 212      65642057 
+ 212      484F5F41 
+ 212      4D5F492E 
+ 212      20307825 
+ 213              		.section	.text._ZN3Imu12Lsm6dsrErrorEh,"ax",%progbits
+ 214              		.align	1
+ 215              		.global	_ZN3Imu12Lsm6dsrErrorEh
+ 216              		.syntax unified
+ 217              		.thumb
+ 218              		.thumb_func
+ 220              	_ZN3Imu12Lsm6dsrErrorEh:
+ 221              		.fnstart
+ 222              	.LVL13:
+ 223              	.LFB1189:
+  31:Core/Driver/Src/IMUDriver.cpp **** 
+  32:Core/Driver/Src/IMUDriver.cpp **** void Imu::Lsm6dsrError(uint8_t whoami) {
+ 224              		.loc 1 32 40 is_stmt 1 view -0
+ 225              		.cfi_startproc
+ 226              		@ args = 0, pretend = 0, frame = 0
+ 227              		@ frame_needed = 0, uses_anonymous_args = 0
+ 228              		.loc 1 32 40 is_stmt 0 view .LVU37
+ 229 0000 08B5     		push	{r3, lr}
+ 230              		.save {r3, lr}
+ 231              	.LCFI6:
+ 232              		.cfi_def_cfa_offset 8
+ 233              		.cfi_offset 3, -8
+ 234              		.cfi_offset 14, -4
+  33:Core/Driver/Src/IMUDriver.cpp ****     printf("Failed WHO_AM_I. 0x%02X != 0x6B\r\n", whoami);
+ 235              		.loc 1 33 5 is_stmt 1 view .LVU38
+ 236              		.loc 1 33 11 is_stmt 0 view .LVU39
+ 237 0002 0248     		ldr	r0, .L8
+ 238              	.LVL14:
+ 239              		.loc 1 33 11 view .LVU40
+ 240 0004 FFF7FEFF 		bl	printf
+ 241              	.LVL15:
+  34:Core/Driver/Src/IMUDriver.cpp **** }
+ 242              		.loc 1 34 1 view .LVU41
+ 243 0008 08BD     		pop	{r3, pc}
+ 244              	.L9:
+ 245 000a 00BF     		.align	2
+ 246              	.L8:
+ 247 000c 00000000 		.word	.LC0
+ 248              		.cfi_endproc
+ 249              	.LFE1189:
+ 250              		.fnend
+ 252              		.section	.rodata._ZN3Imu14Lsm6dsrPowerOnEv.str1.4,"aMS",%progbits,1
+ 253              		.align	2
+ 254              	.LC1:
+ 255 0000 57484F5F 		.ascii	"WHO_AM_I: 0x%02X\012\000"
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s 			page 6
+
+
+ 255      414D5F49 
+ 255      3A203078 
+ 255      25303258 
+ 255      0A00
+ 256              		.section	.text._ZN3Imu14Lsm6dsrPowerOnEv,"ax",%progbits
+ 257              		.align	1
+ 258              		.global	_ZN3Imu14Lsm6dsrPowerOnEv
+ 259              		.syntax unified
+ 260              		.thumb
+ 261              		.thumb_func
+ 263              	_ZN3Imu14Lsm6dsrPowerOnEv:
+ 264              		.fnstart
+ 265              	.LVL16:
+ 266              	.LFB1190:
+  35:Core/Driver/Src/IMUDriver.cpp **** 
+  36:Core/Driver/Src/IMUDriver.cpp **** void Imu::Lsm6dsrPowerOn() {
+ 267              		.loc 1 36 28 is_stmt 1 view -0
+ 268              		.cfi_startproc
+ 269              		@ args = 0, pretend = 0, frame = 0
+ 270              		@ frame_needed = 0, uses_anonymous_args = 0
+ 271              		.loc 1 36 28 is_stmt 0 view .LVU43
+ 272 0000 38B5     		push	{r3, r4, r5, lr}
+ 273              		.save {r3, r4, r5, lr}
+ 274              	.LCFI7:
+ 275              		.cfi_def_cfa_offset 16
+ 276              		.cfi_offset 3, -16
+ 277              		.cfi_offset 4, -12
+ 278              		.cfi_offset 5, -8
+ 279              		.cfi_offset 14, -4
+ 280 0002 0546     		mov	r5, r0
+  37:Core/Driver/Src/IMUDriver.cpp ****     HAL_Delay(100);
+ 281              		.loc 1 37 5 is_stmt 1 view .LVU44
+ 282              		.loc 1 37 14 is_stmt 0 view .LVU45
+ 283 0004 6420     		movs	r0, #100
+ 284              	.LVL17:
+ 285              		.loc 1 37 14 view .LVU46
+ 286 0006 FFF7FEFF 		bl	HAL_Delay
+ 287              	.LVL18:
+  38:Core/Driver/Src/IMUDriver.cpp **** 
+  39:Core/Driver/Src/IMUDriver.cpp ****     uint8_t who_am_i = SpiReadBytes(0x0F);  // WHO_AM_I
+ 288              		.loc 1 39 5 is_stmt 1 view .LVU47
+ 289              		.loc 1 39 36 is_stmt 0 view .LVU48
+ 290 000a 0F21     		movs	r1, #15
+ 291 000c 2846     		mov	r0, r5
+ 292 000e FFF7FEFF 		bl	_ZN3Imu12SpiReadBytesEh
+ 293              	.LVL19:
+ 294 0012 0446     		mov	r4, r0
+ 295              	.LVL20:
+  40:Core/Driver/Src/IMUDriver.cpp ****     printf("WHO_AM_I: 0x%02X\n", who_am_i);
+ 296              		.loc 1 40 5 is_stmt 1 view .LVU49
+ 297              		.loc 1 40 11 is_stmt 0 view .LVU50
+ 298 0014 0146     		mov	r1, r0
+ 299 0016 0F48     		ldr	r0, .L15
+ 300              	.LVL21:
+ 301              		.loc 1 40 11 view .LVU51
+ 302 0018 FFF7FEFF 		bl	printf
+ 303              	.LVL22:
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s 			page 7
+
+
+  41:Core/Driver/Src/IMUDriver.cpp **** 
+  42:Core/Driver/Src/IMUDriver.cpp ****     if(who_am_i == 0x6B) { // LSM6DSR expected = 0x6B
+ 304              		.loc 1 42 5 is_stmt 1 view .LVU52
+ 305 001c 6B2C     		cmp	r4, #107
+ 306 001e 04D0     		beq	.L14
+  43:Core/Driver/Src/IMUDriver.cpp ****         HAL_Delay(10);
+  44:Core/Driver/Src/IMUDriver.cpp ****         // CTRL1_XL=0x10 → 1.66kHz, ±16g
+  45:Core/Driver/Src/IMUDriver.cpp ****         SpiWriteBytes(0x10, 0x84);
+  46:Core/Driver/Src/IMUDriver.cpp ****         HAL_Delay(10);
+  47:Core/Driver/Src/IMUDriver.cpp **** 
+  48:Core/Driver/Src/IMUDriver.cpp ****         // CTRL2_G=0x11 → 1.66kHz, 4000dps
+  49:Core/Driver/Src/IMUDriver.cpp ****         SpiWriteBytes(0x11, 0x81);
+  50:Core/Driver/Src/IMUDriver.cpp ****         HAL_Delay(10);
+  51:Core/Driver/Src/IMUDriver.cpp ****     } else {
+  52:Core/Driver/Src/IMUDriver.cpp ****         Lsm6dsrError(who_am_i);
+ 307              		.loc 1 52 9 view .LVU53
+ 308              		.loc 1 52 21 is_stmt 0 view .LVU54
+ 309 0020 2146     		mov	r1, r4
+ 310 0022 2846     		mov	r0, r5
+ 311 0024 FFF7FEFF 		bl	_ZN3Imu12Lsm6dsrErrorEh
+ 312              	.LVL23:
+ 313              	.L10:
+  53:Core/Driver/Src/IMUDriver.cpp ****     }
+  54:Core/Driver/Src/IMUDriver.cpp **** }
+ 314              		.loc 1 54 1 view .LVU55
+ 315 0028 38BD     		pop	{r3, r4, r5, pc}
+ 316              	.LVL24:
+ 317              	.L14:
+  43:Core/Driver/Src/IMUDriver.cpp ****         HAL_Delay(10);
+ 318              		.loc 1 43 9 is_stmt 1 view .LVU56
+  43:Core/Driver/Src/IMUDriver.cpp ****         HAL_Delay(10);
+ 319              		.loc 1 43 18 is_stmt 0 view .LVU57
+ 320 002a 0A20     		movs	r0, #10
+ 321 002c FFF7FEFF 		bl	HAL_Delay
+ 322              	.LVL25:
+  45:Core/Driver/Src/IMUDriver.cpp ****         HAL_Delay(10);
+ 323              		.loc 1 45 9 is_stmt 1 view .LVU58
+  45:Core/Driver/Src/IMUDriver.cpp ****         HAL_Delay(10);
+ 324              		.loc 1 45 22 is_stmt 0 view .LVU59
+ 325 0030 8422     		movs	r2, #132
+ 326 0032 1021     		movs	r1, #16
+ 327 0034 2846     		mov	r0, r5
+ 328 0036 FFF7FEFF 		bl	_ZN3Imu13SpiWriteBytesEhh
+ 329              	.LVL26:
+  46:Core/Driver/Src/IMUDriver.cpp **** 
+ 330              		.loc 1 46 9 is_stmt 1 view .LVU60
+  46:Core/Driver/Src/IMUDriver.cpp **** 
+ 331              		.loc 1 46 18 is_stmt 0 view .LVU61
+ 332 003a 0A20     		movs	r0, #10
+ 333 003c FFF7FEFF 		bl	HAL_Delay
+ 334              	.LVL27:
+  49:Core/Driver/Src/IMUDriver.cpp ****         HAL_Delay(10);
+ 335              		.loc 1 49 9 is_stmt 1 view .LVU62
+  49:Core/Driver/Src/IMUDriver.cpp ****         HAL_Delay(10);
+ 336              		.loc 1 49 22 is_stmt 0 view .LVU63
+ 337 0040 8122     		movs	r2, #129
+ 338 0042 1121     		movs	r1, #17
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s 			page 8
+
+
+ 339 0044 2846     		mov	r0, r5
+ 340 0046 FFF7FEFF 		bl	_ZN3Imu13SpiWriteBytesEhh
+ 341              	.LVL28:
+  50:Core/Driver/Src/IMUDriver.cpp ****     } else {
+ 342              		.loc 1 50 9 is_stmt 1 view .LVU64
+  50:Core/Driver/Src/IMUDriver.cpp ****     } else {
+ 343              		.loc 1 50 18 is_stmt 0 view .LVU65
+ 344 004a 0A20     		movs	r0, #10
+ 345 004c FFF7FEFF 		bl	HAL_Delay
+ 346              	.LVL29:
+ 347 0050 EAE7     		b	.L10
+ 348              	.L16:
+ 349 0052 00BF     		.align	2
+ 350              	.L15:
+ 351 0054 00000000 		.word	.LC1
+ 352              		.cfi_endproc
+ 353              	.LFE1190:
+ 354              		.fnend
+ 356              		.global	__aeabi_f2d
+ 357              		.global	__aeabi_dmul
+ 358              		.global	__aeabi_d2f
+ 359              		.section	.text._ZN3Imu16Lsm6dsrReadGyroZEv,"ax",%progbits
+ 360              		.align	1
+ 361              		.global	_ZN3Imu16Lsm6dsrReadGyroZEv
+ 362              		.syntax unified
+ 363              		.thumb
+ 364              		.thumb_func
+ 366              	_ZN3Imu16Lsm6dsrReadGyroZEv:
+ 367              		.fnstart
+ 368              	.LVL30:
+ 369              	.LFB1191:
+  55:Core/Driver/Src/IMUDriver.cpp **** 
+  56:Core/Driver/Src/IMUDriver.cpp **** float Imu::Lsm6dsrReadGyroZ() {
+ 370              		.loc 1 56 31 is_stmt 1 view -0
+ 371              		.cfi_startproc
+ 372              		@ args = 0, pretend = 0, frame = 0
+ 373              		@ frame_needed = 0, uses_anonymous_args = 0
+ 374              		.loc 1 56 31 is_stmt 0 view .LVU67
+ 375 0000 38B5     		push	{r3, r4, r5, lr}
+ 376              		.save {r3, r4, r5, lr}
+ 377              	.LCFI8:
+ 378              		.cfi_def_cfa_offset 16
+ 379              		.cfi_offset 3, -16
+ 380              		.cfi_offset 4, -12
+ 381              		.cfi_offset 5, -8
+ 382              		.cfi_offset 14, -4
+ 383 0002 0546     		mov	r5, r0
+  57:Core/Driver/Src/IMUDriver.cpp ****     // OUTZ_L_G=0x26, OUTZ_H_G=0x27
+  58:Core/Driver/Src/IMUDriver.cpp ****     uint8_t low  = SpiReadBytes(0x26);
+ 384              		.loc 1 58 5 is_stmt 1 view .LVU68
+ 385              		.loc 1 58 32 is_stmt 0 view .LVU69
+ 386 0004 2621     		movs	r1, #38
+ 387 0006 FFF7FEFF 		bl	_ZN3Imu12SpiReadBytesEh
+ 388              	.LVL31:
+ 389              		.loc 1 58 32 view .LVU70
+ 390 000a 0446     		mov	r4, r0
+ 391              	.LVL32:
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s 			page 9
+
+
+  59:Core/Driver/Src/IMUDriver.cpp ****     uint8_t high = SpiReadBytes(0x27);
+ 392              		.loc 1 59 5 is_stmt 1 view .LVU71
+ 393              		.loc 1 59 32 is_stmt 0 view .LVU72
+ 394 000c 2721     		movs	r1, #39
+ 395 000e 2846     		mov	r0, r5
+ 396 0010 FFF7FEFF 		bl	_ZN3Imu12SpiReadBytesEh
+ 397              	.LVL33:
+  60:Core/Driver/Src/IMUDriver.cpp **** 
+  61:Core/Driver/Src/IMUDriver.cpp ****     int16_t gyro_data = (int16_t)((high << 8) | low);
+ 398              		.loc 1 61 5 is_stmt 1 view .LVU73
+ 399              		.loc 1 61 47 is_stmt 0 view .LVU74
+ 400 0014 0302     		lsls	r3, r0, #8
+ 401 0016 1BB2     		sxth	r3, r3
+ 402 0018 24B2     		sxth	r4, r4
+ 403              		.loc 1 61 13 view .LVU75
+ 404 001a 2343     		orrs	r3, r3, r4
+ 405 001c 07EE903A 		vmov	s15, r3	@ int
+ 406              	.LVL34:
+  62:Core/Driver/Src/IMUDriver.cpp ****     float gyro_fix_data = (float)gyro_data - gyro_reference;
+ 407              		.loc 1 62 5 is_stmt 1 view .LVU76
+ 408              		.loc 1 62 27 is_stmt 0 view .LVU77
+ 409 0020 F8EEE77A 		vcvt.f32.s32	s15, s15
+ 410              	.LVL35:
+ 411              		.loc 1 62 46 view .LVU78
+ 412 0024 95ED017A 		vldr.32	s14, [r5, #4]
+ 413              		.loc 1 62 11 view .LVU79
+ 414 0028 77EEC77A 		vsub.f32	s15, s15, s14
+ 415              	.LVL36:
+  63:Core/Driver/Src/IMUDriver.cpp **** 
+  64:Core/Driver/Src/IMUDriver.cpp ****     // ±4000 dps → ~0.14 dps/LSB
+  65:Core/Driver/Src/IMUDriver.cpp ****     // (dps)→(rad/s)
+  66:Core/Driver/Src/IMUDriver.cpp ****     return (gyro_fix_data * 0.14f) * (M_PI / 180.0f);
+ 416              		.loc 1 66 5 is_stmt 1 view .LVU80
+ 417              		.loc 1 66 27 is_stmt 0 view .LVU81
+ 418 002c 9FED0A7A 		vldr.32	s14, .L19+8
+ 419 0030 67EE877A 		vmul.f32	s15, s15, s14
+ 420              	.LVL37:
+ 421              		.loc 1 66 27 view .LVU82
+ 422 0034 17EE900A 		vmov	r0, s15
+ 423              	.LVL38:
+ 424              		.loc 1 66 27 view .LVU83
+ 425 0038 FFF7FEFF 		bl	__aeabi_f2d
+ 426              	.LVL39:
+ 427              		.loc 1 66 36 view .LVU84
+ 428 003c 04A3     		adr	r3, .L19
+ 429 003e D3E90023 		ldrd	r2, [r3]
+ 430 0042 FFF7FEFF 		bl	__aeabi_dmul
+ 431              	.LVL40:
+ 432              		.loc 1 66 52 view .LVU85
+ 433 0046 FFF7FEFF 		bl	__aeabi_d2f
+ 434              	.LVL41:
+  67:Core/Driver/Src/IMUDriver.cpp **** }
+ 435              		.loc 1 67 1 view .LVU86
+ 436 004a 00EE100A 		vmov	s0, r0
+ 437 004e 38BD     		pop	{r3, r4, r5, pc}
+ 438              	.LVL42:
+ 439              	.L20:
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s 			page 10
+
+
+ 440              		.loc 1 67 1 view .LVU87
+ 441              		.align	3
+ 442              	.L19:
+ 443 0050 399D52A2 		.word	-1571644103
+ 444 0054 46DF913F 		.word	1066524486
+ 445 0058 295C0F3E 		.word	1041194025
+ 446              		.cfi_endproc
+ 447              	.LFE1191:
+ 448              		.fnend
+ 450              		.section	.rodata._ZN3Imu12gyro_get_refEv.str1.4,"aMS",%progbits,1
+ 451              		.align	2
+ 452              	.LC2:
+ 453 0000 4779726F 		.ascii	"Gyro reference: %f\012\000"
+ 453      20726566 
+ 453      6572656E 
+ 453      63653A20 
+ 453      25660A00 
+ 454              		.section	.text._ZN3Imu12gyro_get_refEv,"ax",%progbits
+ 455              		.align	1
+ 456              		.global	_ZN3Imu12gyro_get_refEv
+ 457              		.syntax unified
+ 458              		.thumb
+ 459              		.thumb_func
+ 461              	_ZN3Imu12gyro_get_refEv:
+ 462              		.fnstart
+ 463              	.LVL43:
+ 464              	.LFB1192:
+  68:Core/Driver/Src/IMUDriver.cpp **** 
+  69:Core/Driver/Src/IMUDriver.cpp **** void Imu::gyro_get_ref() {
+ 465              		.loc 1 69 26 is_stmt 1 view -0
+ 466              		.cfi_startproc
+ 467              		@ args = 0, pretend = 0, frame = 0
+ 468              		@ frame_needed = 0, uses_anonymous_args = 0
+ 469              		.loc 1 69 26 is_stmt 0 view .LVU89
+ 470 0000 70B5     		push	{r4, r5, r6, lr}
+ 471              		.save {r4, r5, r6, lr}
+ 472              	.LCFI9:
+ 473              		.cfi_def_cfa_offset 16
+ 474              		.cfi_offset 4, -16
+ 475              		.cfi_offset 5, -12
+ 476              		.cfi_offset 6, -8
+ 477              		.cfi_offset 14, -4
+ 478 0002 2DED028B 		vpush.64	{d8}
+ 479              		.vsave {d8}
+ 480              	.LCFI10:
+ 481              		.cfi_def_cfa_offset 24
+ 482              		.cfi_offset 80, -24
+ 483              		.cfi_offset 81, -20
+ 484 0006 0646     		mov	r6, r0
+  70:Core/Driver/Src/IMUDriver.cpp ****     float accum = 0.0f;
+ 485              		.loc 1 70 5 is_stmt 1 view .LVU90
+ 486              	.LVL44:
+  71:Core/Driver/Src/IMUDriver.cpp ****     gyro_reference = 0.0f;
+ 487              		.loc 1 71 5 view .LVU91
+ 488              		.loc 1 71 20 is_stmt 0 view .LVU92
+ 489 0008 9FED1A8A 		vldr.32	s16, .L25
+ 490 000c 80ED018A 		vstr.32	s16, [r0, #4]
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s 			page 11
+
+
+  72:Core/Driver/Src/IMUDriver.cpp **** 
+  73:Core/Driver/Src/IMUDriver.cpp ****     for(int i=0; i<500; i++) {
+ 491              		.loc 1 73 5 is_stmt 1 view .LVU93
+ 492              	.LVL45:
+ 493              	.LBB3:
+ 494              		.loc 1 73 13 is_stmt 0 view .LVU94
+ 495 0010 0025     		movs	r5, #0
+ 496              		.loc 1 73 5 view .LVU95
+ 497 0012 16E0     		b	.L22
+ 498              	.LVL46:
+ 499              	.L23:
+ 500              	.LBB4:
+  74:Core/Driver/Src/IMUDriver.cpp ****         uint8_t low  = SpiReadBytes(0x26);
+ 501              		.loc 1 74 9 is_stmt 1 view .LVU96
+ 502              		.loc 1 74 36 is_stmt 0 view .LVU97
+ 503 0014 2621     		movs	r1, #38
+ 504 0016 3046     		mov	r0, r6
+ 505 0018 FFF7FEFF 		bl	_ZN3Imu12SpiReadBytesEh
+ 506              	.LVL47:
+ 507 001c 0446     		mov	r4, r0
+ 508              	.LVL48:
+  75:Core/Driver/Src/IMUDriver.cpp ****         uint8_t high = SpiReadBytes(0x27);
+ 509              		.loc 1 75 9 is_stmt 1 view .LVU98
+ 510              		.loc 1 75 36 is_stmt 0 view .LVU99
+ 511 001e 2721     		movs	r1, #39
+ 512 0020 3046     		mov	r0, r6
+ 513 0022 FFF7FEFF 		bl	_ZN3Imu12SpiReadBytesEh
+ 514              	.LVL49:
+  76:Core/Driver/Src/IMUDriver.cpp ****         int16_t gyro_z = (int16_t)((high << 8) | low);
+ 515              		.loc 1 76 9 is_stmt 1 view .LVU100
+ 516              		.loc 1 76 48 is_stmt 0 view .LVU101
+ 517 0026 0302     		lsls	r3, r0, #8
+ 518 0028 1BB2     		sxth	r3, r3
+ 519 002a 24B2     		sxth	r4, r4
+ 520              		.loc 1 76 17 view .LVU102
+ 521 002c 2343     		orrs	r3, r3, r4
+ 522              	.LVL50:
+  77:Core/Driver/Src/IMUDriver.cpp **** 
+  78:Core/Driver/Src/IMUDriver.cpp ****         accum += (float)gyro_z;
+ 523              		.loc 1 78 9 is_stmt 1 view .LVU103
+ 524              		.loc 1 78 18 is_stmt 0 view .LVU104
+ 525 002e 07EE903A 		vmov	s15, r3	@ int
+ 526 0032 F8EEE77A 		vcvt.f32.s32	s15, s15
+ 527              		.loc 1 78 15 view .LVU105
+ 528 0036 38EE278A 		vadd.f32	s16, s16, s15
+ 529              	.LVL51:
+  79:Core/Driver/Src/IMUDriver.cpp ****         HAL_Delay(10);
+ 530              		.loc 1 79 9 is_stmt 1 view .LVU106
+ 531              		.loc 1 79 18 is_stmt 0 view .LVU107
+ 532 003a 0A20     		movs	r0, #10
+ 533              	.LVL52:
+ 534              		.loc 1 79 18 view .LVU108
+ 535 003c FFF7FEFF 		bl	HAL_Delay
+ 536              	.LVL53:
+ 537              		.loc 1 79 18 view .LVU109
+ 538              	.LBE4:
+  73:Core/Driver/Src/IMUDriver.cpp ****         uint8_t low  = SpiReadBytes(0x26);
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s 			page 12
+
+
+ 539              		.loc 1 73 5 is_stmt 1 discriminator 3 view .LVU110
+ 540 0040 0135     		adds	r5, r5, #1
+ 541              	.LVL54:
+ 542              	.L22:
+  73:Core/Driver/Src/IMUDriver.cpp ****         uint8_t low  = SpiReadBytes(0x26);
+ 543              		.loc 1 73 19 discriminator 1 view .LVU111
+ 544 0042 B5F5FA7F 		cmp	r5, #500
+ 545 0046 E5DB     		blt	.L23
+ 546              	.LBE3:
+  80:Core/Driver/Src/IMUDriver.cpp ****     }
+  81:Core/Driver/Src/IMUDriver.cpp ****     gyro_reference = accum / 500.0f;
+ 547              		.loc 1 81 5 view .LVU112
+ 548              		.loc 1 81 28 is_stmt 0 view .LVU113
+ 549 0048 9FED0B7A 		vldr.32	s14, .L25+4
+ 550 004c C8EE077A 		vdiv.f32	s15, s16, s14
+ 551              		.loc 1 81 20 view .LVU114
+ 552 0050 C6ED017A 		vstr.32	s15, [r6, #4]
+  82:Core/Driver/Src/IMUDriver.cpp ****     printf("Gyro reference: %f\n", gyro_reference);
+ 553              		.loc 1 82 5 is_stmt 1 view .LVU115
+ 554              		.loc 1 82 11 is_stmt 0 view .LVU116
+ 555 0054 17EE900A 		vmov	r0, s15
+ 556 0058 FFF7FEFF 		bl	__aeabi_f2d
+ 557              	.LVL55:
+ 558 005c 0246     		mov	r2, r0
+ 559 005e 0B46     		mov	r3, r1
+ 560 0060 0648     		ldr	r0, .L25+8
+ 561 0062 FFF7FEFF 		bl	printf
+ 562              	.LVL56:
+  83:Core/Driver/Src/IMUDriver.cpp ****     HAL_Delay(10);
+ 563              		.loc 1 83 5 is_stmt 1 view .LVU117
+ 564              		.loc 1 83 14 is_stmt 0 view .LVU118
+ 565 0066 0A20     		movs	r0, #10
+ 566 0068 FFF7FEFF 		bl	HAL_Delay
+ 567              	.LVL57:
+  84:Core/Driver/Src/IMUDriver.cpp **** }
+ 568              		.loc 1 84 1 view .LVU119
+ 569 006c BDEC028B 		vldm	sp!, {d8}
+ 570              	.LCFI11:
+ 571              		.cfi_restore 80
+ 572              		.cfi_restore 81
+ 573              		.cfi_def_cfa_offset 16
+ 574              	.LVL58:
+ 575              		.loc 1 84 1 view .LVU120
+ 576 0070 70BD     		pop	{r4, r5, r6, pc}
+ 577              	.LVL59:
+ 578              	.L26:
+ 579              		.loc 1 84 1 view .LVU121
+ 580 0072 00BF     		.align	2
+ 581              	.L25:
+ 582 0074 00000000 		.word	0
+ 583 0078 0000FA43 		.word	1140457472
+ 584 007c 00000000 		.word	.LC2
+ 585              		.cfi_endproc
+ 586              	.LFE1192:
+ 587              		.fnend
+ 589              		.text
+ 590              	.Letext0:
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s 			page 13
+
+
+ 591              		.file 2 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/machine/_default_types.h"
+ 592              		.file 3 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/sys/_stdint.h"
+ 593              		.file 4 "Core/Driver/Src/../Inc/IMUDriver.hpp"
+ 594              		.file 5 "C:/Tools/arm-gnu-toolchain/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h"
+ 595              		.file 6 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/cmath"
+ 596              		.file 7 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/type_traits"
+ 597              		.file 8 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/debug/debug.h"
+ 598              		.file 9 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/cstdio"
+ 599              		.file 10 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/arm-none-eabi/thumb/v7e-m+fp
+ 600              		.file 11 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/bits/predefined_ops.h"
+ 601              		.file 12 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/sys/_types.h"
+ 602              		.file 13 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/sys/reent.h"
+ 603              		.file 14 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/sys/lock.h"
+ 604              		.file 15 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/math.h"
+ 605              		.file 16 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/stdio.h"
+ 606              		.file 17 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s 			page 14
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 IMUDriver.cpp
+C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s:21     .text._ZN3ImuC2EP4ISpi:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s:27     .text._ZN3ImuC2EP4ISpi:00000000 _ZN3ImuC2EP4ISpi
+ .ARM.exidx.text._ZN3ImuC2EP4ISpi:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s:27     .text._ZN3ImuC2EP4ISpi:00000000 _ZN3ImuC1EP4ISpi
+C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s:53     .text._ZN3Imu12SpiReadBytesEh:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s:59     .text._ZN3Imu12SpiReadBytesEh:00000000 _ZN3Imu12SpiReadBytesEh
+.ARM.exidx.text._ZN3Imu12SpiReadBytesEh:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s:133    .text._ZN3Imu13SpiWriteBytesEhh:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s:139    .text._ZN3Imu13SpiWriteBytesEhh:00000000 _ZN3Imu13SpiWriteBytesEhh
+.ARM.exidx.text._ZN3Imu13SpiWriteBytesEhh:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s:210    .rodata._ZN3Imu12Lsm6dsrErrorEh.str1.4:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s:214    .text._ZN3Imu12Lsm6dsrErrorEh:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s:220    .text._ZN3Imu12Lsm6dsrErrorEh:00000000 _ZN3Imu12Lsm6dsrErrorEh
+C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s:247    .text._ZN3Imu12Lsm6dsrErrorEh:0000000c $d
+.ARM.extab.text._ZN3Imu12Lsm6dsrErrorEh:00000000 $d
+.ARM.exidx.text._ZN3Imu12Lsm6dsrErrorEh:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s:253    .rodata._ZN3Imu14Lsm6dsrPowerOnEv.str1.4:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s:257    .text._ZN3Imu14Lsm6dsrPowerOnEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s:263    .text._ZN3Imu14Lsm6dsrPowerOnEv:00000000 _ZN3Imu14Lsm6dsrPowerOnEv
+C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s:351    .text._ZN3Imu14Lsm6dsrPowerOnEv:00000054 $d
+.ARM.exidx.text._ZN3Imu14Lsm6dsrPowerOnEv:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s:360    .text._ZN3Imu16Lsm6dsrReadGyroZEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s:366    .text._ZN3Imu16Lsm6dsrReadGyroZEv:00000000 _ZN3Imu16Lsm6dsrReadGyroZEv
+C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s:443    .text._ZN3Imu16Lsm6dsrReadGyroZEv:00000050 $d
+.ARM.exidx.text._ZN3Imu16Lsm6dsrReadGyroZEv:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s:451    .rodata._ZN3Imu12gyro_get_refEv.str1.4:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s:455    .text._ZN3Imu12gyro_get_refEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s:461    .text._ZN3Imu12gyro_get_refEv:00000000 _ZN3Imu12gyro_get_refEv
+C:\Users\hanaj\AppData\Local\Temp\ccpvdJI8.s:582    .text._ZN3Imu12gyro_get_refEv:00000074 $d
+.ARM.exidx.text._ZN3Imu12gyro_get_refEv:00000000 $d
+
+UNDEFINED SYMBOLS
+__aeabi_unwind_cpp_pr0
+printf
+__aeabi_unwind_cpp_pr1
+HAL_Delay
+__aeabi_f2d
+__aeabi_dmul
+__aeabi_d2f

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
    6:Core/Src/../HALinterface/Inc/IGpio.hpp **** public:
    7:Core/Src/../HALinterface/Inc/IGpio.hpp ****     virtual ~IGpio() = default;
   45              		.loc 3 7 13 is_stmt 1 view .LVU2
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 2
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 2
 
 
   46              	.LBB54:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
    4:Core/Src/../HALinterface/Inc/IAdc.hpp **** // ADC用インターフェース
    5:Core/Src/../HALinterface/Inc/IAdc.hpp **** class IAdc {
    6:Core/Src/../HALinterface/Inc/IAdc.hpp **** public:
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 3
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 3
 
 
    7:Core/Src/../HALinterface/Inc/IAdc.hpp ****     virtual ~IAdc() = default;
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
    2:Core/Src/../HALinterface/Inc/ITimer.hpp **** 
    3:Core/Src/../HALinterface/Inc/ITimer.hpp **** #include <cstdint>
    4:Core/Src/../HALinterface/Inc/ITimer.hpp **** // タイマ用インターフェース
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 4
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 4
 
 
    5:Core/Src/../HALinterface/Inc/ITimer.hpp **** class ITimer {
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  188              		.file 9 "Core/Src/../HALinterface/Inc/IEncoder.hpp"
    1:Core/Src/../HALinterface/Inc/IEncoder.hpp **** #pragma once
    2:Core/Src/../HALinterface/Inc/IEncoder.hpp **** 
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 5
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 5
 
 
    3:Core/Src/../HALinterface/Inc/IEncoder.hpp **** #include <cstdint>
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  240 0006 0360     		str	r3, [r0]
  241              	.LVL14:
  242              	.LBB66:
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 6
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 6
 
 
  243              	.LBI66:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  299              	.LBB69:
  300 0004 044B     		ldr	r3, .L19
  301 0006 0360     		str	r3, [r0]
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 7
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 7
 
 
  302              	.LVL20:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  358              	.LBI72:
  359              		.loc 6 6 7 is_stmt 1 view .LVU38
  360              	.LBB73:
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 8
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 8
 
 
  361 0004 044B     		ldr	r3, .L23
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  417              	.LVL31:
  418              	.LBB76:
  419              	.LBI76:
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 9
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 9
 
 
  420              		.loc 8 6 7 is_stmt 1 view .LVU46
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
   11:Core/Src/main.cpp ****   *
   12:Core/Src/main.cpp ****   * This software is licensed under terms that can be found in the LICENSE file
   13:Core/Src/main.cpp ****   * in the root directory of this software component.
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 10
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 10
 
 
   14:Core/Src/main.cpp ****   * If no LICENSE file comes with this software, it is provided AS-IS.
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
   68:Core/Src/main.cpp **** /* USER CODE BEGIN 0 */
   69:Core/Src/main.cpp **** 
   70:Core/Src/main.cpp **** /* USER CODE END 0 */
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 11
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 11
 
 
   71:Core/Src/main.cpp **** 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  125:Core/Src/main.cpp ****   static GpioSTM32F4 LED_FR(GPIOC, GPIO_PIN_2);
  126:Core/Src/main.cpp ****   static GpioSTM32F4 LED_R(GPIOC, GPIO_PIN_3);
  127:Core/Src/main.cpp ****   static GpioSTM32F4 LED_L(GPIOA, GPIO_PIN_8);
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 12
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 12
 
 
  128:Core/Src/main.cpp ****   static GpioSTM32F4 ModeLED1(GPIOA, GPIO_PIN_15);
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  182:Core/Src/main.cpp ****             // 長押し
  183:Core/Src/main.cpp ****             // 例えば "決定" や "抜ける" 動作
  184:Core/Src/main.cpp ****         }
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 13
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 13
 
 
  185:Core/Src/main.cpp ****         else {
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  239:Core/Src/main.cpp **** 
  240:Core/Src/main.cpp ****   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_5) != HAL_OK)
  241:Core/Src/main.cpp ****   {
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 14
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 14
 
 
  242:Core/Src/main.cpp ****     Error_Handler();
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
   28:Drivers/CMSIS/Include/cmsis_gcc.h **** /* ignore some GCC warnings */
   29:Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic push
   30:Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wsign-conversion"
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 15
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 15
 
 
   31:Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wconversion"
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
   85:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   86:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT16_READ
   87:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 16
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 16
 
 
   88:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  142:Drivers/CMSIS/Include/cmsis_gcc.h ****     uint32_t* dest;
  143:Drivers/CMSIS/Include/cmsis_gcc.h ****     uint32_t  wlen;
  144:Drivers/CMSIS/Include/cmsis_gcc.h ****   } __zero_table_t;
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 17
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 17
 
 
  145:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  199:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __TZ_set_STACKSEAL_S (uint32_t* stackTop) {
  200:Drivers/CMSIS/Include/cmsis_gcc.h ****   *((uint64_t *)stackTop) = __TZ_STACK_SEAL_VALUE;
  201:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 18
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 18
 
 
  202:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  256:Drivers/CMSIS/Include/cmsis_gcc.h ****            after the instruction has been completed.
  257:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  258:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __ISB(void)
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 19
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 19
 
 
  259:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  313:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
  314:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  315:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM ("rev16 %0, %1" : __CMSIS_GCC_OUT_REG (result) : __CMSIS_GCC_USE_REG (value) );
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 20
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 20
 
 
  316:Drivers/CMSIS/Include/cmsis_gcc.h ****   return result;
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  370:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    value  Value to reverse
  371:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Reversed value
  372:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 21
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 21
 
 
  373:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __RBIT(uint32_t value)
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  427:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   LDR Exclusive (8 bit)
  428:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Executes a exclusive LDR instruction for 8 bit value.
  429:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    ptr  Pointer to data
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 22
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 22
 
 
  430:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return             value of type uint8_t at (*ptr)
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  484:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  485:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  486:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   STR Exclusive (8 bit)
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 23
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 23
 
 
  487:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Executes a exclusive STR instruction for 8 bit values.
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  541:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  542:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("clrex" ::: "memory");
  543:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 24
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 24
 
 
  544:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  598:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  599:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  600:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 25
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 25
 
 
  601:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  655:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  656:Drivers/CMSIS/Include/cmsis_gcc.h ****    __ASM volatile ("ldrt %0, %1" : "=r" (result) : "Q" (*ptr) );
  657:Drivers/CMSIS/Include/cmsis_gcc.h ****    return(result);
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 26
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 26
 
 
  658:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  712:Drivers/CMSIS/Include/cmsis_gcc.h ****     const int32_t min = -1 - max ;
  713:Drivers/CMSIS/Include/cmsis_gcc.h ****     if (val > max)
  714:Drivers/CMSIS/Include/cmsis_gcc.h ****     {
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 27
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 27
 
 
  715:Drivers/CMSIS/Include/cmsis_gcc.h ****       return max;
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  769:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  770:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  771:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 28
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 28
 
 
  772:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Load-Acquire (16 bit)
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  826:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Store-Release (32 bit)
  827:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Executes a STL instruction for 32 bit values.
  828:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]  value  Value to store
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 29
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 29
 
 
  829:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    ptr  Pointer to location
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  883:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Store-Release Exclusive (8 bit)
  884:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Executes a STLB exclusive instruction for 8 bit values.
  885:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]  value  Value to store
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 30
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 30
 
 
  886:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    ptr  Pointer to location
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  940:Drivers/CMSIS/Include/cmsis_gcc.h ****     \defgroup CMSIS_Core_RegAccFunctions CMSIS Core Register Access Functions
  941:Drivers/CMSIS/Include/cmsis_gcc.h ****   @{
  942:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 31
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 31
 
 
  943:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  510 0000 00B5     		push	{lr}
  511              		.save {lr}
  512              	.LCFI4:
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 32
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 32
 
 
  513              		.cfi_def_cfa_offset 4
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  212:Core/Src/main.cpp **** 
  555              		.loc 1 212 3 view .LVU71
  556 0032 1B4A     		ldr	r2, .L37+4
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 33
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 33
 
 
  557 0034 1168     		ldr	r1, [r2]
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  224:Core/Src/main.cpp ****   RCC_OscInitStruct.PLL.PLLQ = 4;
  594              		.loc 1 224 3 is_stmt 1 view .LVU89
  224:Core/Src/main.cpp ****   RCC_OscInitStruct.PLL.PLLQ = 4;
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 34
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 34
 
 
  595              		.loc 1 224 30 is_stmt 0 view .LVU90
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  632 0088 FFF7FEFF 		bl	HAL_RCC_ClockConfig
  633              	.LVL38:
  240:Core/Src/main.cpp ****   {
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 35
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 35
 
 
  634              		.loc 1 240 3 discriminator 1 view .LVU108
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
   86:Core/Src/main.cpp **** 
  684              		.loc 1 86 3 view .LVU115
  685              	.LEHB0:
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 36
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 36
 
 
   86:Core/Src/main.cpp **** 
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  107:Core/Src/main.cpp ****   MX_TIM3_Init();
  722              		.loc 1 107 15 is_stmt 0 view .LVU134
  723 0026 FFF7FEFF 		bl	MX_TIM2_Init
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 37
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 37
 
 
  724              	.LVL50:
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  763 005a 1B68     		ldr	r3, [r3]
  764 005c BFF35B8F 		dmb	ish
  117:Core/Src/main.cpp ****   static GpioSTM32F4 BIN1(GPIOB, GPIO_PIN_5);
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 38
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 38
 
 
  765              		.loc 1 117 45 discriminator 1 view .LVU150
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  810 00b4 9348     		ldr	r0, .L162+16
  811 00b6 FFF7FEFF 		bl	__cxa_guard_acquire
  812              	.LVL60:
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 39
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 39
 
 
  813 00ba 0028     		cmp	r0, #0
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  124:Core/Src/main.cpp ****   static GpioSTM32F4 LED_FR(GPIOC, GPIO_PIN_2);
  858              		.loc 1 124 3 is_stmt 1 view .LVU169
  124:Core/Src/main.cpp ****   static GpioSTM32F4 LED_FR(GPIOC, GPIO_PIN_2);
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 40
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 40
 
 
  859              		.loc 1 124 46 is_stmt 0 view .LVU170
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  904 0160 BFF35B8F 		dmb	ish
  127:Core/Src/main.cpp ****   static GpioSTM32F4 ModeLED1(GPIOA, GPIO_PIN_15);
  905              		.loc 1 127 45 discriminator 1 view .LVU180
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 41
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 41
 
 
  906 0164 13F0010F 		tst	r3, #1
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  951 01ba FFF7FEFF 		bl	__cxa_guard_acquire
  952              	.LVL70:
  953 01be 0028     		cmp	r0, #0
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 42
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 42
 
 
  954 01c0 40F0C481 		bne	.L146
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  998              		.loc 1 136 3 is_stmt 1 view .LVU199
  136:Core/Src/main.cpp **** 
  999              		.loc 1 136 32 is_stmt 0 view .LVU200
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 43
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 43
 
 
  1000 0212 4A4B     		ldr	r3, .L162+72
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  141:Core/Src/main.cpp ****   static PwmSTM32F4 Buzzer(&htim2, TIM_CHANNEL_1);
  1045              		.loc 1 141 56 discriminator 1 view .LVU210
  1046 0268 13F0010F 		tst	r3, #1
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 44
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 44
 
 
  1047 026c 05D1     		bne	.L61
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  1092              	.LVL80:
  1093 02c2 0028     		cmp	r0, #0
  1094 02c4 40F03082 		bne	.L156
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 45
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 45
 
 
  1095              	.L64:
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  1143 0348 00000000 		.word	_ZGVZ4mainE12SuctionMotor
  1144 034c 00000000 		.word	_ZGVZ4mainE6Buzzer
  1145 0350 00000000 		.word	_ZGVZ4mainE12CalcDynamics
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 46
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 46
 
 
  1146 0354 00000000 		.word	_ZGVZ4mainE12EncoderRight
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  1193 03b2 E9E1     		b	.L160
  1194              	.L132:
  116:Core/Src/main.cpp ****   static GpioSTM32F4 AIN2(GPIOB, GPIO_PIN_14);
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 47
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 47
 
 
  1195              		.loc 1 116 45 discriminator 2 view .LVU233
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  118:Core/Src/main.cpp ****   static GpioSTM32F4 BIN2(GPIOB, GPIO_PIN_4);
  1243              		.loc 1 118 44 discriminator 4 view .LVU240
  1244 03fa 8D4A     		ldr	r2, .L165+40
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 48
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 48
 
 
  1245 03fc 8D49     		ldr	r1, .L165+44
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  1292              	.LVL100:
  1293 0444 3CE6     		b	.L44
  1294              	.L137:
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 49
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 49
 
 
  121:Core/Src/main.cpp ****   static GpioSTM32F4 SensorLED_R(GPIOA, GPIO_PIN_10);
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  1342              	.LEHE9:
  123:Core/Src/main.cpp ****   static GpioSTM32F4 LED_FL(GPIOA, GPIO_PIN_7);
  1343              		.loc 1 123 51 discriminator 4 view .LVU255
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 50
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 50
 
 
  1344 048e 684A     		ldr	r2, .L165+40
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  1391 04d2 FFF7FEFF 		bl	__cxa_guard_release
  1392              	.LVL115:
  1393 04d6 34E6     		b	.L49
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 51
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 51
 
 
  1394              	.L142:
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  1441              	.LVL122:
  1442              	.LEHE14:
  128:Core/Src/main.cpp ****   static GpioSTM32F4 ModeLED2(GPIOB, GPIO_PIN_0);
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 52
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 52
 
 
  1443              		.loc 1 128 49 discriminator 4 view .LVU270
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  1490 0560 5148     		ldr	r0, .L165+160
  1491 0562 FFF7FEFF 		bl	__cxa_guard_release
  1492              	.LVL130:
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 53
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 53
 
 
  1493 0566 2DE6     		b	.L54
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  1540              	.LEHE19:
  135:Core/Src/main.cpp ****   static AdcSTM32F4 Adc3(&hadc3);
  1541              		.loc 1 135 32 discriminator 4 view .LVU285
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 54
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 54
 
 
  1542 05a6 224A     		ldr	r2, .L165+40
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  1589 05e8 0D48     		ldr	r0, .L165+24
  1590              	.LEHB22:
  1591 05ea FFF7FEFF 		bl	_ZN10PwmSTM32F4C1EP17TIM_HandleTypeDefm
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 55
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 55
 
 
  1592              	.LVL145:
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  1643 0674 00000000 		.word	_ZZ4mainE6LED_FL
  1644 0678 00000000 		.word	_ZGVZ4mainE6LED_FL
  1645 067c 00000000 		.word	_ZZ4mainE6LED_FR
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 56
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 56
 
 
  1646 0680 00000000 		.word	_ZGVZ4mainE6LED_FR
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  1697              	.LVL151:
  1698              	.LEHE25:
  145:Core/Src/main.cpp ****   static EncoderSTM32F4 EncoderRight(&htim3);
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 57
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 57
 
 
  1699              		.loc 1 145 42 discriminator 4 view .LVU299
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  1746              	.LVL159:
  1747 075a C2E5     		b	.L65
  1748              	.L158:
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 58
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 58
 
 
  150:Core/Src/main.cpp **** 
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  186:Core/Src/main.cpp ****             // Off
  1795              		.loc 1 186 27 view .LVU315
  1796 0796 FFF7FEFF 		bl	_ZN11GpioSTM32F47setHighEv
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 59
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 59
 
 
  1797              	.LVL167:
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  1837              		.loc 1 181 27 view .LVU329
  1838              	.LBE85:
  116:Core/Src/main.cpp ****   static GpioSTM32F4 AIN2(GPIOB, GPIO_PIN_14);
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 60
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 60
 
 
  1839              		.loc 1 116 45 discriminator 5 view .LVU330
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  1887              	.L109:
  123:Core/Src/main.cpp ****   static GpioSTM32F4 LED_FL(GPIOA, GPIO_PIN_7);
  1888              		.loc 1 123 51 discriminator 5 view .LVU337
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 61
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 61
 
 
  1889 0800 5948     		ldr	r0, .L167+140
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  130:Core/Src/main.cpp ****   static GpioSTM32F4 gpioButton(GPIOC, GPIO_PIN_5);
  1937              		.loc 1 130 48 discriminator 5 view .LVU344
  1938 0846 4F48     		ldr	r0, .L167+168
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 62
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 62
 
 
  1939 0848 FFF7FEFF 		bl	__cxa_guard_abort
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  1986              		.loc 1 141 56 discriminator 5 view .LVU351
  1987 088c 4448     		ldr	r0, .L167+196
  1988 088e FFF7FEFF 		bl	__cxa_guard_abort
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 63
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 63
 
 
  1989              	.LVL218:
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  2036 08d2 1A48     		ldr	r0, .L167+96
  2037 08d4 FFF7FEFF 		bl	__cxa_guard_abort
  2038              	.LVL232:
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 64
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 64
 
 
  2039 08d8 FFF7FEFF 		bl	__cxa_end_cleanup
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  2093 099c 00000000 		.word	_ZGVZ4mainE7pwmLeft
  2094 09a0 00000000 		.word	_ZGVZ4mainE12SuctionMotor
  2095              		.cfi_endproc
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 65
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 65
 
 
  2096              	.LFE246:
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  2150 0051 C209     		.uleb128 .LEHB11-.LFB246
  2151 0053 04       		.uleb128 .LEHE11-.LEHB11
  2152 0054 9410     		.uleb128 .L111-.LFB246
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 66
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 66
 
 
  2153 0056 00       		.uleb128 0
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  2207 00a7 04       		.uleb128 .LEHE25-.LEHB25
  2208 00a8 A011     		.uleb128 .L125-.LFB246
  2209 00aa 00       		.uleb128 0
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 67
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 67
 
 
  2210 00ab AC0E     		.uleb128 .LEHB26-.LFB246
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  276:Core/Src/main.cpp ****   /* User can add his own implementation to report the file name and line number,
  277:Core/Src/main.cpp ****      ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
  278:Core/Src/main.cpp ****   /* USER CODE END 6 */
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 68
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 68
 
 
  279:Core/Src/main.cpp **** }
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  2315 0000 08000000 		.word	_ZTVN10__cxxabiv117__class_type_infoE+8
  2316 0004 00000000 		.word	_ZTS8IEncoder
  2317              		.weak	_ZTV4IAdc
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 69
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 69
 
 
  2318              		.section	.rodata._ZTV4IAdc,"aG",%progbits,_ZTV4IAdc,comdat
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  2382              	_ZGVZ4mainE10RightMotor:
  2383 0000 00000000 		.space	4
  2384              		.section	.bss._ZZ4mainE10RightMotor,"aw",%nobits
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 70
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 70
 
 
  2385              		.align	2
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  2451              		.align	2
  2454              	_ZGVZ4mainE12SuctionMotor:
  2455 0000 00000000 		.space	4
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 71
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 71
 
 
  2456              		.section	.bss._ZZ4mainE12SuctionMotor,"aw",%nobits
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  2528              		.section	.bss._ZZ4mainE10gpioButton,"aw",%nobits
  2529              		.align	2
  2532              	_ZZ4mainE10gpioButton:
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 72
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 72
 
 
  2533 0000 00000000 		.space	12
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  2595              		.align	2
  2598              	_ZGVZ4mainE6LED_FR:
  2599 0000 00000000 		.space	4
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 73
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 73
 
 
  2600              		.section	.bss._ZZ4mainE6LED_FR,"aw",%nobits
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  2665      00000000 
  2665      00000000 
  2666              		.section	.bss._ZGVZ4mainE4BIN2,"aw",%nobits
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 74
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 74
 
 
  2667              		.align	2
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  2729              		.file 23 "Core/Inc/adc.h"
  2730              		.file 24 "Core/Inc/tim.h"
  2731              		.file 25 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/cstdint"
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 75
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 75
 
 
  2732              		.file 26 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/arm-none-eabi/thumb/v7e-m+fp
@@ -4448,215 +4448,215 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 1
  2736              		.file 30 "Core/Inc/spi.h"
  2737              		.file 31 "Core/Inc/dma.h"
  2738              		.file 32 "Core/Inc/gpio.h"
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 76
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 76
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.cpp
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:21     .text._ZN11GpioSTM32F4D2Ev:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:27     .text._ZN11GpioSTM32F4D2Ev:00000000 _ZN11GpioSTM32F4D2Ev
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:59     .text._ZN11GpioSTM32F4D2Ev:0000000c $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2346   .rodata._ZTV5IGpio:00000000 _ZTV5IGpio
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:21     .text._ZN11GpioSTM32F4D2Ev:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:27     .text._ZN11GpioSTM32F4D2Ev:00000000 _ZN11GpioSTM32F4D2Ev
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:59     .text._ZN11GpioSTM32F4D2Ev:0000000c $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2346   .rodata._ZTV5IGpio:00000000 _ZTV5IGpio
 .ARM.exidx.text._ZN11GpioSTM32F4D2Ev:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:27     .text._ZN11GpioSTM32F4D2Ev:00000000 _ZN11GpioSTM32F4D1Ev
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:69     .text._ZN10AdcSTM32F4D2Ev:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:75     .text._ZN10AdcSTM32F4D2Ev:00000000 _ZN10AdcSTM32F4D2Ev
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:107    .text._ZN10AdcSTM32F4D2Ev:0000000c $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2322   .rodata._ZTV4IAdc:00000000 _ZTV4IAdc
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:27     .text._ZN11GpioSTM32F4D2Ev:00000000 _ZN11GpioSTM32F4D1Ev
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:69     .text._ZN10AdcSTM32F4D2Ev:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:75     .text._ZN10AdcSTM32F4D2Ev:00000000 _ZN10AdcSTM32F4D2Ev
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:107    .text._ZN10AdcSTM32F4D2Ev:0000000c $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2322   .rodata._ZTV4IAdc:00000000 _ZTV4IAdc
 .ARM.exidx.text._ZN10AdcSTM32F4D2Ev:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:75     .text._ZN10AdcSTM32F4D2Ev:00000000 _ZN10AdcSTM32F4D1Ev
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:117    .text._ZN12TimerSTM32F4D2Ev:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:123    .text._ZN12TimerSTM32F4D2Ev:00000000 _ZN12TimerSTM32F4D2Ev
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:155    .text._ZN12TimerSTM32F4D2Ev:0000000c $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2333   .rodata._ZTV6ITimer:00000000 _ZTV6ITimer
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:75     .text._ZN10AdcSTM32F4D2Ev:00000000 _ZN10AdcSTM32F4D1Ev
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:117    .text._ZN12TimerSTM32F4D2Ev:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:123    .text._ZN12TimerSTM32F4D2Ev:00000000 _ZN12TimerSTM32F4D2Ev
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:155    .text._ZN12TimerSTM32F4D2Ev:0000000c $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2333   .rodata._ZTV6ITimer:00000000 _ZTV6ITimer
 .ARM.exidx.text._ZN12TimerSTM32F4D2Ev:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:123    .text._ZN12TimerSTM32F4D2Ev:00000000 _ZN12TimerSTM32F4D1Ev
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:165    .text._ZN14EncoderSTM32F4D2Ev:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:171    .text._ZN14EncoderSTM32F4D2Ev:00000000 _ZN14EncoderSTM32F4D2Ev
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:203    .text._ZN14EncoderSTM32F4D2Ev:0000000c $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2359   .rodata._ZTV8IEncoder:00000000 _ZTV8IEncoder
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:123    .text._ZN12TimerSTM32F4D2Ev:00000000 _ZN12TimerSTM32F4D1Ev
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:165    .text._ZN14EncoderSTM32F4D2Ev:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:171    .text._ZN14EncoderSTM32F4D2Ev:00000000 _ZN14EncoderSTM32F4D2Ev
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:203    .text._ZN14EncoderSTM32F4D2Ev:0000000c $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2359   .rodata._ZTV8IEncoder:00000000 _ZTV8IEncoder
 .ARM.exidx.text._ZN14EncoderSTM32F4D2Ev:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:171    .text._ZN14EncoderSTM32F4D2Ev:00000000 _ZN14EncoderSTM32F4D1Ev
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:213    .text._ZN11GpioSTM32F4D0Ev:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:219    .text._ZN11GpioSTM32F4D0Ev:00000000 _ZN11GpioSTM32F4D0Ev
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:266    .text._ZN11GpioSTM32F4D0Ev:00000018 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:171    .text._ZN14EncoderSTM32F4D2Ev:00000000 _ZN14EncoderSTM32F4D1Ev
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:213    .text._ZN11GpioSTM32F4D0Ev:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:219    .text._ZN11GpioSTM32F4D0Ev:00000000 _ZN11GpioSTM32F4D0Ev
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:266    .text._ZN11GpioSTM32F4D0Ev:00000018 $d
 .ARM.exidx.text._ZN11GpioSTM32F4D0Ev:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:274    .text._ZN10AdcSTM32F4D0Ev:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:280    .text._ZN10AdcSTM32F4D0Ev:00000000 _ZN10AdcSTM32F4D0Ev
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:327    .text._ZN10AdcSTM32F4D0Ev:00000018 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:274    .text._ZN10AdcSTM32F4D0Ev:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:280    .text._ZN10AdcSTM32F4D0Ev:00000000 _ZN10AdcSTM32F4D0Ev
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:327    .text._ZN10AdcSTM32F4D0Ev:00000018 $d
 .ARM.exidx.text._ZN10AdcSTM32F4D0Ev:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:335    .text._ZN12TimerSTM32F4D0Ev:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:341    .text._ZN12TimerSTM32F4D0Ev:00000000 _ZN12TimerSTM32F4D0Ev
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:388    .text._ZN12TimerSTM32F4D0Ev:00000018 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:335    .text._ZN12TimerSTM32F4D0Ev:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:341    .text._ZN12TimerSTM32F4D0Ev:00000000 _ZN12TimerSTM32F4D0Ev
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:388    .text._ZN12TimerSTM32F4D0Ev:00000018 $d
 .ARM.exidx.text._ZN12TimerSTM32F4D0Ev:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:396    .text._ZN14EncoderSTM32F4D0Ev:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:402    .text._ZN14EncoderSTM32F4D0Ev:00000000 _ZN14EncoderSTM32F4D0Ev
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:449    .text._ZN14EncoderSTM32F4D0Ev:00000018 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:396    .text._ZN14EncoderSTM32F4D0Ev:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:402    .text._ZN14EncoderSTM32F4D0Ev:00000000 _ZN14EncoderSTM32F4D0Ev
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:449    .text._ZN14EncoderSTM32F4D0Ev:00000018 $d
 .ARM.exidx.text._ZN14EncoderSTM32F4D0Ev:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:457    .text.Error_Handler:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:463    .text.Error_Handler:00000000 Error_Handler
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:457    .text.Error_Handler:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:463    .text.Error_Handler:00000000 Error_Handler
     .ARM.exidx.text.Error_Handler:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:497    .text._Z18SystemClock_Configv:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:503    .text._Z18SystemClock_Configv:00000000 _Z18SystemClock_Configv
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:658    .text._Z18SystemClock_Configv:0000009c $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:497    .text._Z18SystemClock_Configv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:503    .text._Z18SystemClock_Configv:00000000 _Z18SystemClock_Configv
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:658    .text._Z18SystemClock_Configv:0000009c $d
 .ARM.exidx.text._Z18SystemClock_Configv:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:665    .text.main:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:671    .text.main:00000000 main
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:1122   .text.main:000002f4 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2706   .bss._ZGVZ4mainE4AIN1:00000000 _ZGVZ4mainE4AIN1
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2694   .bss._ZGVZ4mainE4AIN2:00000000 _ZGVZ4mainE4AIN2
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2682   .bss._ZGVZ4mainE4BIN1:00000000 _ZGVZ4mainE4BIN1
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2670   .bss._ZGVZ4mainE4BIN2:00000000 _ZGVZ4mainE4BIN2
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2658   .bss._ZGVZ4mainE12SensorLED_FL:00000000 _ZGVZ4mainE12SensorLED_FL
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 77
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:665    .text.main:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:671    .text.main:00000000 main
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:1122   .text.main:000002f4 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2706   .bss._ZGVZ4mainE4AIN1:00000000 _ZGVZ4mainE4AIN1
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2694   .bss._ZGVZ4mainE4AIN2:00000000 _ZGVZ4mainE4AIN2
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2682   .bss._ZGVZ4mainE4BIN1:00000000 _ZGVZ4mainE4BIN1
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2670   .bss._ZGVZ4mainE4BIN2:00000000 _ZGVZ4mainE4BIN2
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2658   .bss._ZGVZ4mainE12SensorLED_FL:00000000 _ZGVZ4mainE12SensorLED_FL
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 77
 
 
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2646   .bss._ZGVZ4mainE12SensorLED_FR:00000000 _ZGVZ4mainE12SensorLED_FR
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2634   .bss._ZGVZ4mainE11SensorLED_R:00000000 _ZGVZ4mainE11SensorLED_R
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2622   .bss._ZGVZ4mainE11SensorLED_L:00000000 _ZGVZ4mainE11SensorLED_L
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2610   .bss._ZGVZ4mainE6LED_FL:00000000 _ZGVZ4mainE6LED_FL
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2598   .bss._ZGVZ4mainE6LED_FR:00000000 _ZGVZ4mainE6LED_FR
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2586   .bss._ZGVZ4mainE5LED_R:00000000 _ZGVZ4mainE5LED_R
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2574   .bss._ZGVZ4mainE5LED_L:00000000 _ZGVZ4mainE5LED_L
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2562   .bss._ZGVZ4mainE8ModeLED1:00000000 _ZGVZ4mainE8ModeLED1
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2550   .bss._ZGVZ4mainE8ModeLED2:00000000 _ZGVZ4mainE8ModeLED2
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2538   .bss._ZGVZ4mainE8ModeLED3:00000000 _ZGVZ4mainE8ModeLED3
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2526   .bss._ZGVZ4mainE10gpioButton:00000000 _ZGVZ4mainE10gpioButton
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2514   .bss._ZGVZ4mainE4Adc1:00000000 _ZGVZ4mainE4Adc1
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2502   .bss._ZGVZ4mainE4Adc2:00000000 _ZGVZ4mainE4Adc2
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2490   .bss._ZGVZ4mainE4Adc3:00000000 _ZGVZ4mainE4Adc3
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2478   .bss._ZGVZ4mainE8pwmRight:00000000 _ZGVZ4mainE8pwmRight
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2466   .bss._ZGVZ4mainE7pwmLeft:00000000 _ZGVZ4mainE7pwmLeft
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2454   .bss._ZGVZ4mainE12SuctionMotor:00000000 _ZGVZ4mainE12SuctionMotor
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2442   .bss._ZGVZ4mainE6Buzzer:00000000 _ZGVZ4mainE6Buzzer
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2430   .bss._ZGVZ4mainE12CalcDynamics:00000000 _ZGVZ4mainE12CalcDynamics
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2418   .bss._ZGVZ4mainE12EncoderRight:00000000 _ZGVZ4mainE12EncoderRight
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2406   .bss._ZGVZ4mainE11EncoderLeft:00000000 _ZGVZ4mainE11EncoderLeft
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2394   .bss._ZGVZ4mainE16ModeChangeButton:00000000 _ZGVZ4mainE16ModeChangeButton
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:1150   .text.main:00000360 $t
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:1616   .text.main:00000608 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2382   .bss._ZGVZ4mainE10RightMotor:00000000 _ZGVZ4mainE10RightMotor
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2370   .bss._ZGVZ4mainE9LeftMotor:00000000 _ZGVZ4mainE9LeftMotor
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2676   .bss._ZZ4mainE4BIN2:00000000 _ZZ4mainE4BIN2
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2688   .bss._ZZ4mainE4BIN1:00000000 _ZZ4mainE4BIN1
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2472   .bss._ZZ4mainE7pwmLeft:00000000 _ZZ4mainE7pwmLeft
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2376   .bss._ZZ4mainE9LeftMotor:00000000 _ZZ4mainE9LeftMotor
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2712   .bss._ZZ4mainE4AIN1:00000000 _ZZ4mainE4AIN1
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2700   .bss._ZZ4mainE4AIN2:00000000 _ZZ4mainE4AIN2
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2664   .bss._ZZ4mainE12SensorLED_FL:00000000 _ZZ4mainE12SensorLED_FL
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2652   .bss._ZZ4mainE12SensorLED_FR:00000000 _ZZ4mainE12SensorLED_FR
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2640   .bss._ZZ4mainE11SensorLED_R:00000000 _ZZ4mainE11SensorLED_R
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2628   .bss._ZZ4mainE11SensorLED_L:00000000 _ZZ4mainE11SensorLED_L
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2616   .bss._ZZ4mainE6LED_FL:00000000 _ZZ4mainE6LED_FL
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2604   .bss._ZZ4mainE6LED_FR:00000000 _ZZ4mainE6LED_FR
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2592   .bss._ZZ4mainE5LED_R:00000000 _ZZ4mainE5LED_R
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2580   .bss._ZZ4mainE5LED_L:00000000 _ZZ4mainE5LED_L
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2568   .bss._ZZ4mainE8ModeLED1:00000000 _ZZ4mainE8ModeLED1
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2556   .bss._ZZ4mainE8ModeLED2:00000000 _ZZ4mainE8ModeLED2
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2544   .bss._ZZ4mainE8ModeLED3:00000000 _ZZ4mainE8ModeLED3
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2532   .bss._ZZ4mainE10gpioButton:00000000 _ZZ4mainE10gpioButton
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2520   .bss._ZZ4mainE4Adc1:00000000 _ZZ4mainE4Adc1
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2508   .bss._ZZ4mainE4Adc2:00000000 _ZZ4mainE4Adc2
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2496   .bss._ZZ4mainE4Adc3:00000000 _ZZ4mainE4Adc3
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2484   .bss._ZZ4mainE8pwmRight:00000000 _ZZ4mainE8pwmRight
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2460   .bss._ZZ4mainE12SuctionMotor:00000000 _ZZ4mainE12SuctionMotor
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:1679   .text.main:000006fc $t
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2045   .text.main:000008dc $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2448   .bss._ZZ4mainE6Buzzer:00000000 _ZZ4mainE6Buzzer
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2436   .bss._ZZ4mainE12CalcDynamics:00000000 _ZZ4mainE12CalcDynamics
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2424   .bss._ZZ4mainE12EncoderRight:00000000 _ZZ4mainE12EncoderRight
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2412   .bss._ZZ4mainE11EncoderLeft:00000000 _ZZ4mainE11EncoderLeft
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2400   .bss._ZZ4mainE16ModeChangeButton:00000000 _ZZ4mainE16ModeChangeButton
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2388   .bss._ZZ4mainE10RightMotor:00000000 _ZZ4mainE10RightMotor
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 78
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2646   .bss._ZGVZ4mainE12SensorLED_FR:00000000 _ZGVZ4mainE12SensorLED_FR
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2634   .bss._ZGVZ4mainE11SensorLED_R:00000000 _ZGVZ4mainE11SensorLED_R
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2622   .bss._ZGVZ4mainE11SensorLED_L:00000000 _ZGVZ4mainE11SensorLED_L
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2610   .bss._ZGVZ4mainE6LED_FL:00000000 _ZGVZ4mainE6LED_FL
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2598   .bss._ZGVZ4mainE6LED_FR:00000000 _ZGVZ4mainE6LED_FR
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2586   .bss._ZGVZ4mainE5LED_R:00000000 _ZGVZ4mainE5LED_R
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2574   .bss._ZGVZ4mainE5LED_L:00000000 _ZGVZ4mainE5LED_L
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2562   .bss._ZGVZ4mainE8ModeLED1:00000000 _ZGVZ4mainE8ModeLED1
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2550   .bss._ZGVZ4mainE8ModeLED2:00000000 _ZGVZ4mainE8ModeLED2
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2538   .bss._ZGVZ4mainE8ModeLED3:00000000 _ZGVZ4mainE8ModeLED3
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2526   .bss._ZGVZ4mainE10gpioButton:00000000 _ZGVZ4mainE10gpioButton
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2514   .bss._ZGVZ4mainE4Adc1:00000000 _ZGVZ4mainE4Adc1
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2502   .bss._ZGVZ4mainE4Adc2:00000000 _ZGVZ4mainE4Adc2
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2490   .bss._ZGVZ4mainE4Adc3:00000000 _ZGVZ4mainE4Adc3
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2478   .bss._ZGVZ4mainE8pwmRight:00000000 _ZGVZ4mainE8pwmRight
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2466   .bss._ZGVZ4mainE7pwmLeft:00000000 _ZGVZ4mainE7pwmLeft
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2454   .bss._ZGVZ4mainE12SuctionMotor:00000000 _ZGVZ4mainE12SuctionMotor
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2442   .bss._ZGVZ4mainE6Buzzer:00000000 _ZGVZ4mainE6Buzzer
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2430   .bss._ZGVZ4mainE12CalcDynamics:00000000 _ZGVZ4mainE12CalcDynamics
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2418   .bss._ZGVZ4mainE12EncoderRight:00000000 _ZGVZ4mainE12EncoderRight
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2406   .bss._ZGVZ4mainE11EncoderLeft:00000000 _ZGVZ4mainE11EncoderLeft
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2394   .bss._ZGVZ4mainE16ModeChangeButton:00000000 _ZGVZ4mainE16ModeChangeButton
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:1150   .text.main:00000360 $t
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:1616   .text.main:00000608 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2382   .bss._ZGVZ4mainE10RightMotor:00000000 _ZGVZ4mainE10RightMotor
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2370   .bss._ZGVZ4mainE9LeftMotor:00000000 _ZGVZ4mainE9LeftMotor
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2676   .bss._ZZ4mainE4BIN2:00000000 _ZZ4mainE4BIN2
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2688   .bss._ZZ4mainE4BIN1:00000000 _ZZ4mainE4BIN1
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2472   .bss._ZZ4mainE7pwmLeft:00000000 _ZZ4mainE7pwmLeft
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2376   .bss._ZZ4mainE9LeftMotor:00000000 _ZZ4mainE9LeftMotor
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2712   .bss._ZZ4mainE4AIN1:00000000 _ZZ4mainE4AIN1
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2700   .bss._ZZ4mainE4AIN2:00000000 _ZZ4mainE4AIN2
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2664   .bss._ZZ4mainE12SensorLED_FL:00000000 _ZZ4mainE12SensorLED_FL
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2652   .bss._ZZ4mainE12SensorLED_FR:00000000 _ZZ4mainE12SensorLED_FR
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2640   .bss._ZZ4mainE11SensorLED_R:00000000 _ZZ4mainE11SensorLED_R
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2628   .bss._ZZ4mainE11SensorLED_L:00000000 _ZZ4mainE11SensorLED_L
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2616   .bss._ZZ4mainE6LED_FL:00000000 _ZZ4mainE6LED_FL
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2604   .bss._ZZ4mainE6LED_FR:00000000 _ZZ4mainE6LED_FR
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2592   .bss._ZZ4mainE5LED_R:00000000 _ZZ4mainE5LED_R
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2580   .bss._ZZ4mainE5LED_L:00000000 _ZZ4mainE5LED_L
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2568   .bss._ZZ4mainE8ModeLED1:00000000 _ZZ4mainE8ModeLED1
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2556   .bss._ZZ4mainE8ModeLED2:00000000 _ZZ4mainE8ModeLED2
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2544   .bss._ZZ4mainE8ModeLED3:00000000 _ZZ4mainE8ModeLED3
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2532   .bss._ZZ4mainE10gpioButton:00000000 _ZZ4mainE10gpioButton
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2520   .bss._ZZ4mainE4Adc1:00000000 _ZZ4mainE4Adc1
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2508   .bss._ZZ4mainE4Adc2:00000000 _ZZ4mainE4Adc2
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2496   .bss._ZZ4mainE4Adc3:00000000 _ZZ4mainE4Adc3
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2484   .bss._ZZ4mainE8pwmRight:00000000 _ZZ4mainE8pwmRight
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2460   .bss._ZZ4mainE12SuctionMotor:00000000 _ZZ4mainE12SuctionMotor
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:1679   .text.main:000006fc $t
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2045   .text.main:000008dc $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2448   .bss._ZZ4mainE6Buzzer:00000000 _ZZ4mainE6Buzzer
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2436   .bss._ZZ4mainE12CalcDynamics:00000000 _ZZ4mainE12CalcDynamics
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2424   .bss._ZZ4mainE12EncoderRight:00000000 _ZZ4mainE12EncoderRight
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2412   .bss._ZZ4mainE11EncoderLeft:00000000 _ZZ4mainE11EncoderLeft
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2400   .bss._ZZ4mainE16ModeChangeButton:00000000 _ZZ4mainE16ModeChangeButton
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2388   .bss._ZZ4mainE10RightMotor:00000000 _ZZ4mainE10RightMotor
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 78
 
 
              .ARM.extab.text.main:00000000 $d
              .ARM.exidx.text.main:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2235   .text.assert_failed:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2241   .text.assert_failed:00000000 assert_failed
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2235   .text.assert_failed:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2241   .text.assert_failed:00000000 assert_failed
     .ARM.exidx.text.assert_failed:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2262   .rodata._ZTS4IAdc:00000000 _ZTS4IAdc
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2259   .rodata._ZTS4IAdc:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2269   .rodata._ZTI4IAdc:00000000 _ZTI4IAdc
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2266   .rodata._ZTI4IAdc:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2277   .rodata._ZTS6ITimer:00000000 _ZTS6ITimer
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2274   .rodata._ZTS6ITimer:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2284   .rodata._ZTI6ITimer:00000000 _ZTI6ITimer
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2281   .rodata._ZTI6ITimer:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2292   .rodata._ZTS5IGpio:00000000 _ZTS5IGpio
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2289   .rodata._ZTS5IGpio:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2299   .rodata._ZTI5IGpio:00000000 _ZTI5IGpio
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2296   .rodata._ZTI5IGpio:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2307   .rodata._ZTS8IEncoder:00000000 _ZTS8IEncoder
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2304   .rodata._ZTS8IEncoder:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2314   .rodata._ZTI8IEncoder:00000000 _ZTI8IEncoder
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2311   .rodata._ZTI8IEncoder:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2319   .rodata._ZTV4IAdc:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2330   .rodata._ZTV6ITimer:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2343   .rodata._ZTV5IGpio:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2356   .rodata._ZTV8IEncoder:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2367   .bss._ZGVZ4mainE9LeftMotor:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2373   .bss._ZZ4mainE9LeftMotor:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2379   .bss._ZGVZ4mainE10RightMotor:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2385   .bss._ZZ4mainE10RightMotor:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2391   .bss._ZGVZ4mainE16ModeChangeButton:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2397   .bss._ZZ4mainE16ModeChangeButton:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2403   .bss._ZGVZ4mainE11EncoderLeft:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2409   .bss._ZZ4mainE11EncoderLeft:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2415   .bss._ZGVZ4mainE12EncoderRight:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2421   .bss._ZZ4mainE12EncoderRight:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2427   .bss._ZGVZ4mainE12CalcDynamics:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2433   .bss._ZZ4mainE12CalcDynamics:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2439   .bss._ZGVZ4mainE6Buzzer:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2445   .bss._ZZ4mainE6Buzzer:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2451   .bss._ZGVZ4mainE12SuctionMotor:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2457   .bss._ZZ4mainE12SuctionMotor:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2463   .bss._ZGVZ4mainE7pwmLeft:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2469   .bss._ZZ4mainE7pwmLeft:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2475   .bss._ZGVZ4mainE8pwmRight:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2481   .bss._ZZ4mainE8pwmRight:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2487   .bss._ZGVZ4mainE4Adc3:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2493   .bss._ZZ4mainE4Adc3:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2499   .bss._ZGVZ4mainE4Adc2:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2505   .bss._ZZ4mainE4Adc2:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2511   .bss._ZGVZ4mainE4Adc1:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2517   .bss._ZZ4mainE4Adc1:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2523   .bss._ZGVZ4mainE10gpioButton:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2529   .bss._ZZ4mainE10gpioButton:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2535   .bss._ZGVZ4mainE8ModeLED3:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2541   .bss._ZZ4mainE8ModeLED3:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2547   .bss._ZGVZ4mainE8ModeLED2:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2553   .bss._ZZ4mainE8ModeLED2:00000000 $d
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 79
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2262   .rodata._ZTS4IAdc:00000000 _ZTS4IAdc
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2259   .rodata._ZTS4IAdc:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2269   .rodata._ZTI4IAdc:00000000 _ZTI4IAdc
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2266   .rodata._ZTI4IAdc:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2277   .rodata._ZTS6ITimer:00000000 _ZTS6ITimer
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2274   .rodata._ZTS6ITimer:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2284   .rodata._ZTI6ITimer:00000000 _ZTI6ITimer
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2281   .rodata._ZTI6ITimer:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2292   .rodata._ZTS5IGpio:00000000 _ZTS5IGpio
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2289   .rodata._ZTS5IGpio:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2299   .rodata._ZTI5IGpio:00000000 _ZTI5IGpio
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2296   .rodata._ZTI5IGpio:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2307   .rodata._ZTS8IEncoder:00000000 _ZTS8IEncoder
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2304   .rodata._ZTS8IEncoder:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2314   .rodata._ZTI8IEncoder:00000000 _ZTI8IEncoder
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2311   .rodata._ZTI8IEncoder:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2319   .rodata._ZTV4IAdc:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2330   .rodata._ZTV6ITimer:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2343   .rodata._ZTV5IGpio:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2356   .rodata._ZTV8IEncoder:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2367   .bss._ZGVZ4mainE9LeftMotor:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2373   .bss._ZZ4mainE9LeftMotor:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2379   .bss._ZGVZ4mainE10RightMotor:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2385   .bss._ZZ4mainE10RightMotor:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2391   .bss._ZGVZ4mainE16ModeChangeButton:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2397   .bss._ZZ4mainE16ModeChangeButton:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2403   .bss._ZGVZ4mainE11EncoderLeft:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2409   .bss._ZZ4mainE11EncoderLeft:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2415   .bss._ZGVZ4mainE12EncoderRight:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2421   .bss._ZZ4mainE12EncoderRight:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2427   .bss._ZGVZ4mainE12CalcDynamics:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2433   .bss._ZZ4mainE12CalcDynamics:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2439   .bss._ZGVZ4mainE6Buzzer:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2445   .bss._ZZ4mainE6Buzzer:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2451   .bss._ZGVZ4mainE12SuctionMotor:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2457   .bss._ZZ4mainE12SuctionMotor:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2463   .bss._ZGVZ4mainE7pwmLeft:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2469   .bss._ZZ4mainE7pwmLeft:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2475   .bss._ZGVZ4mainE8pwmRight:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2481   .bss._ZZ4mainE8pwmRight:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2487   .bss._ZGVZ4mainE4Adc3:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2493   .bss._ZZ4mainE4Adc3:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2499   .bss._ZGVZ4mainE4Adc2:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2505   .bss._ZZ4mainE4Adc2:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2511   .bss._ZGVZ4mainE4Adc1:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2517   .bss._ZZ4mainE4Adc1:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2523   .bss._ZGVZ4mainE10gpioButton:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2529   .bss._ZZ4mainE10gpioButton:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2535   .bss._ZGVZ4mainE8ModeLED3:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2541   .bss._ZZ4mainE8ModeLED3:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2547   .bss._ZGVZ4mainE8ModeLED2:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2553   .bss._ZZ4mainE8ModeLED2:00000000 $d
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 79
 
 
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2559   .bss._ZGVZ4mainE8ModeLED1:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2565   .bss._ZZ4mainE8ModeLED1:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2571   .bss._ZGVZ4mainE5LED_L:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2577   .bss._ZZ4mainE5LED_L:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2583   .bss._ZGVZ4mainE5LED_R:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2589   .bss._ZZ4mainE5LED_R:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2595   .bss._ZGVZ4mainE6LED_FR:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2601   .bss._ZZ4mainE6LED_FR:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2607   .bss._ZGVZ4mainE6LED_FL:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2613   .bss._ZZ4mainE6LED_FL:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2619   .bss._ZGVZ4mainE11SensorLED_L:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2625   .bss._ZZ4mainE11SensorLED_L:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2631   .bss._ZGVZ4mainE11SensorLED_R:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2637   .bss._ZZ4mainE11SensorLED_R:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2643   .bss._ZGVZ4mainE12SensorLED_FR:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2649   .bss._ZZ4mainE12SensorLED_FR:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2655   .bss._ZGVZ4mainE12SensorLED_FL:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2661   .bss._ZZ4mainE12SensorLED_FL:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2667   .bss._ZGVZ4mainE4BIN2:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2673   .bss._ZZ4mainE4BIN2:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2679   .bss._ZGVZ4mainE4BIN1:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2685   .bss._ZZ4mainE4BIN1:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2691   .bss._ZGVZ4mainE4AIN2:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2697   .bss._ZZ4mainE4AIN2:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2703   .bss._ZGVZ4mainE4AIN1:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s:2709   .bss._ZZ4mainE4AIN1:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2559   .bss._ZGVZ4mainE8ModeLED1:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2565   .bss._ZZ4mainE8ModeLED1:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2571   .bss._ZGVZ4mainE5LED_L:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2577   .bss._ZZ4mainE5LED_L:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2583   .bss._ZGVZ4mainE5LED_R:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2589   .bss._ZZ4mainE5LED_R:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2595   .bss._ZGVZ4mainE6LED_FR:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2601   .bss._ZZ4mainE6LED_FR:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2607   .bss._ZGVZ4mainE6LED_FL:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2613   .bss._ZZ4mainE6LED_FL:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2619   .bss._ZGVZ4mainE11SensorLED_L:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2625   .bss._ZZ4mainE11SensorLED_L:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2631   .bss._ZGVZ4mainE11SensorLED_R:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2637   .bss._ZZ4mainE11SensorLED_R:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2643   .bss._ZGVZ4mainE12SensorLED_FR:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2649   .bss._ZZ4mainE12SensorLED_FR:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2655   .bss._ZGVZ4mainE12SensorLED_FL:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2661   .bss._ZZ4mainE12SensorLED_FL:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2667   .bss._ZGVZ4mainE4BIN2:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2673   .bss._ZZ4mainE4BIN2:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2679   .bss._ZGVZ4mainE4BIN1:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2685   .bss._ZZ4mainE4BIN1:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2691   .bss._ZGVZ4mainE4AIN2:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2697   .bss._ZZ4mainE4AIN2:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2703   .bss._ZGVZ4mainE4AIN1:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s:2709   .bss._ZZ4mainE4AIN1:00000000 $d
                            .group:00000000 _ZN11GpioSTM32F4D5Ev
                            .group:00000000 _ZN10AdcSTM32F4D5Ev
                            .group:00000000 _ZN12TimerSTM32F4D5Ev
@@ -4688,7 +4688,7 @@ MX_TIM11_Init
 MX_TIM5_Init
 __cxa_guard_acquire
 _ZN11MotorDriverC1EP10PwmSTM32F4P11GpioSTM32F4S3_f
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cclEhX6W.s 			page 80
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccvLJIcX.s 			page 80
 
 
 _ZN11GpioSTM32F4C1EP12GPIO_TypeDeft

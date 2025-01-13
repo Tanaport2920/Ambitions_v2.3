@@ -1,0 +1,189 @@
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccOKEKOl.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"PhotoSensor.cpp"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/Driver/Src/PhotoSensor.cpp"
+  20              		.section	.text._ZN11PhotoSensorC2EP17ADC_HandleTypeDefPtm,"ax",%progbits
+  21              		.align	1
+  22              		.global	_ZN11PhotoSensorC2EP17ADC_HandleTypeDefPtm
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	_ZN11PhotoSensorC2EP17ADC_HandleTypeDefPtm:
+  28              		.fnstart
+  29              	.LVL0:
+  30              	.LFB241:
+   1:Core/Driver/Src/PhotoSensor.cpp **** #include "../Inc/PhotoSensor.hpp"
+   2:Core/Driver/Src/PhotoSensor.cpp **** 
+   3:Core/Driver/Src/PhotoSensor.cpp **** PhotoSensor::PhotoSensor(ADC_HandleTypeDef* hadc, uint16_t* dmaBuffer, uint32_t bufferSize)
+  31              		.loc 1 3 1 view -0
+  32              		.cfi_startproc
+  33              		@ args = 0, pretend = 0, frame = 0
+  34              		@ frame_needed = 0, uses_anonymous_args = 0
+  35              		@ link register save eliminated.
+  36              	.LBB2:
+   4:Core/Driver/Src/PhotoSensor.cpp ****     : m_hadc(hadc)
+  37              		.loc 1 4 7 is_stmt 0 view .LVU1
+  38 0000 0160     		str	r1, [r0]
+   5:Core/Driver/Src/PhotoSensor.cpp ****     , m_dmaBuffer(dmaBuffer)
+  39              		.loc 1 5 7 view .LVU2
+  40 0002 4260     		str	r2, [r0, #4]
+   6:Core/Driver/Src/PhotoSensor.cpp ****     , m_bufferSize(bufferSize)
+  41              		.loc 1 6 7 view .LVU3
+  42 0004 8360     		str	r3, [r0, #8]
+  43              	.LBE2:
+   7:Core/Driver/Src/PhotoSensor.cpp **** {
+   8:Core/Driver/Src/PhotoSensor.cpp **** }
+  44              		.loc 1 8 1 view .LVU4
+  45 0006 7047     		bx	lr
+  46              		.cfi_endproc
+  47              	.LFE241:
+  48              		.cantunwind
+  49              		.fnend
+  51              		.global	_ZN11PhotoSensorC1EP17ADC_HandleTypeDefPtm
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccOKEKOl.s 			page 2
+
+
+  52              		.thumb_set _ZN11PhotoSensorC1EP17ADC_HandleTypeDefPtm,_ZN11PhotoSensorC2EP17ADC_HandleTypeDefPtm
+  53              		.section	.text._ZN11PhotoSensor5startEv,"ax",%progbits
+  54              		.align	1
+  55              		.global	_ZN11PhotoSensor5startEv
+  56              		.syntax unified
+  57              		.thumb
+  58              		.thumb_func
+  60              	_ZN11PhotoSensor5startEv:
+  61              		.fnstart
+  62              	.LVL1:
+  63              	.LFB243:
+   9:Core/Driver/Src/PhotoSensor.cpp **** 
+  10:Core/Driver/Src/PhotoSensor.cpp **** void PhotoSensor::start() {
+  64              		.loc 1 10 27 is_stmt 1 view -0
+  65              		.cfi_startproc
+  66              		@ args = 0, pretend = 0, frame = 0
+  67              		@ frame_needed = 0, uses_anonymous_args = 0
+  68              		.loc 1 10 27 is_stmt 0 view .LVU6
+  69 0000 08B5     		push	{r3, lr}
+  70              		.save {r3, lr}
+  71              	.LCFI0:
+  72              		.cfi_def_cfa_offset 8
+  73              		.cfi_offset 3, -8
+  74              		.cfi_offset 14, -4
+  11:Core/Driver/Src/PhotoSensor.cpp ****     // ADC1をDMAモードでスタートする
+  12:Core/Driver/Src/PhotoSensor.cpp ****     // 第3引数にバッファのサイズ（チャネル数）を渡す
+  13:Core/Driver/Src/PhotoSensor.cpp ****     if (HAL_ADC_Start_DMA(m_hadc, (uint32_t*)m_dmaBuffer, m_bufferSize) != HAL_OK) {
+  75              		.loc 1 13 5 is_stmt 1 view .LVU7
+  76              		.loc 1 13 26 is_stmt 0 view .LVU8
+  77 0002 8268     		ldr	r2, [r0, #8]
+  78 0004 4168     		ldr	r1, [r0, #4]
+  79 0006 0068     		ldr	r0, [r0]
+  80              	.LVL2:
+  81              		.loc 1 13 26 view .LVU9
+  82 0008 FFF7FEFF 		bl	HAL_ADC_Start_DMA
+  83              	.LVL3:
+  14:Core/Driver/Src/PhotoSensor.cpp ****         // エラー処理（必要なら）
+  15:Core/Driver/Src/PhotoSensor.cpp ****     }
+  16:Core/Driver/Src/PhotoSensor.cpp **** }
+  84              		.loc 1 16 1 view .LVU10
+  85 000c 08BD     		pop	{r3, pc}
+  86              		.cfi_endproc
+  87              	.LFE243:
+  88              		.fnend
+  90              		.section	.text._ZNK11PhotoSensor8getValueEm,"ax",%progbits
+  91              		.align	1
+  92              		.global	_ZNK11PhotoSensor8getValueEm
+  93              		.syntax unified
+  94              		.thumb
+  95              		.thumb_func
+  97              	_ZNK11PhotoSensor8getValueEm:
+  98              		.fnstart
+  99              	.LVL4:
+ 100              	.LFB244:
+  17:Core/Driver/Src/PhotoSensor.cpp **** 
+  18:Core/Driver/Src/PhotoSensor.cpp **** uint16_t PhotoSensor::getValue(uint32_t index) const {
+ 101              		.loc 1 18 54 is_stmt 1 view -0
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccOKEKOl.s 			page 3
+
+
+ 102              		.cfi_startproc
+ 103              		@ args = 0, pretend = 0, frame = 0
+ 104              		@ frame_needed = 0, uses_anonymous_args = 0
+ 105              		@ link register save eliminated.
+  19:Core/Driver/Src/PhotoSensor.cpp ****     if (index < m_bufferSize) {
+ 106              		.loc 1 19 5 view .LVU12
+ 107              		.loc 1 19 17 is_stmt 0 view .LVU13
+ 108 0000 8368     		ldr	r3, [r0, #8]
+ 109              		.loc 1 19 5 view .LVU14
+ 110 0002 8B42     		cmp	r3, r1
+ 111 0004 03D9     		bls	.L6
+  20:Core/Driver/Src/PhotoSensor.cpp ****         return m_dmaBuffer[index];
+ 112              		.loc 1 20 9 is_stmt 1 view .LVU15
+ 113              		.loc 1 20 16 is_stmt 0 view .LVU16
+ 114 0006 4368     		ldr	r3, [r0, #4]
+ 115              		.loc 1 20 33 view .LVU17
+ 116 0008 33F81100 		ldrh	r0, [r3, r1, lsl #1]
+ 117              	.LVL5:
+ 118              		.loc 1 20 33 view .LVU18
+ 119 000c 7047     		bx	lr
+ 120              	.LVL6:
+ 121              	.L6:
+  21:Core/Driver/Src/PhotoSensor.cpp ****     } else {
+  22:Core/Driver/Src/PhotoSensor.cpp ****         // indexエラーの場合は0を返すか、別のエラー処理を行う
+  23:Core/Driver/Src/PhotoSensor.cpp ****         return 0;
+ 122              		.loc 1 23 16 view .LVU19
+ 123 000e 0020     		movs	r0, #0
+ 124              	.LVL7:
+  24:Core/Driver/Src/PhotoSensor.cpp ****     }
+  25:Core/Driver/Src/PhotoSensor.cpp **** }
+ 125              		.loc 1 25 1 view .LVU20
+ 126 0010 7047     		bx	lr
+ 127              		.cfi_endproc
+ 128              	.LFE244:
+ 129              		.cantunwind
+ 130              		.fnend
+ 132              		.text
+ 133              	.Letext0:
+ 134              		.file 2 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/machine/_default_types.h"
+ 135              		.file 3 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/sys/_stdint.h"
+ 136              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h"
+ 137              		.file 5 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h"
+ 138              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
+ 139              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
+ 140              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h"
+ 141              		.file 9 "Core/Driver/Src/../Inc/PhotoSensor.hpp"
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccOKEKOl.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 PhotoSensor.cpp
+C:\Users\hanaj\AppData\Local\Temp\ccOKEKOl.s:21     .text._ZN11PhotoSensorC2EP17ADC_HandleTypeDefPtm:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccOKEKOl.s:27     .text._ZN11PhotoSensorC2EP17ADC_HandleTypeDefPtm:00000000 _ZN11PhotoSensorC2EP17ADC_HandleTypeDefPtm
+.ARM.exidx.text._ZN11PhotoSensorC2EP17ADC_HandleTypeDefPtm:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccOKEKOl.s:27     .text._ZN11PhotoSensorC2EP17ADC_HandleTypeDefPtm:00000000 _ZN11PhotoSensorC1EP17ADC_HandleTypeDefPtm
+C:\Users\hanaj\AppData\Local\Temp\ccOKEKOl.s:54     .text._ZN11PhotoSensor5startEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccOKEKOl.s:60     .text._ZN11PhotoSensor5startEv:00000000 _ZN11PhotoSensor5startEv
+.ARM.extab.text._ZN11PhotoSensor5startEv:00000000 $d
+.ARM.exidx.text._ZN11PhotoSensor5startEv:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccOKEKOl.s:91     .text._ZNK11PhotoSensor8getValueEm:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccOKEKOl.s:97     .text._ZNK11PhotoSensor8getValueEm:00000000 _ZNK11PhotoSensor8getValueEm
+.ARM.exidx.text._ZNK11PhotoSensor8getValueEm:00000000 $d
+
+UNDEFINED SYMBOLS
+HAL_ADC_Start_DMA
+__aeabi_unwind_cpp_pr1
