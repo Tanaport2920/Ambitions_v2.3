@@ -725,10 +725,6 @@ Discarded input sections
                 0x00000000       0x68 build/stm32f4xx_hal_spi.o
  .text.SPI_AbortTx_ISR
                 0x00000000       0x1c build/stm32f4xx_hal_spi.o
- .text.SPI_WaitFlagStateUntilTimeout
-                0x00000000       0xc8 build/stm32f4xx_hal_spi.o
- .text.SPI_EndRxTxTransaction
-                0x00000000       0x80 build/stm32f4xx_hal_spi.o
  .text.SPI_EndRxTransaction
                 0x00000000       0x8c build/stm32f4xx_hal_spi.o
  .text.HAL_SPI_MspInit
@@ -739,8 +735,6 @@ Discarded input sections
                 0x00000000       0x58 build/stm32f4xx_hal_spi.o
  .text.HAL_SPI_Transmit
                 0x00000000      0x1e0 build/stm32f4xx_hal_spi.o
- .text.HAL_SPI_TransmitReceive
-                0x00000000      0x26c build/stm32f4xx_hal_spi.o
  .text.HAL_SPI_Receive
                 0x00000000      0x188 build/stm32f4xx_hal_spi.o
  .text.HAL_SPI_Transmit_IT
@@ -1167,6 +1161,7 @@ Discarded input sections
  .group         0x00000000       0x2c build/main.o
  .group         0x00000000       0x2c build/main.o
  .group         0x00000000       0x2c build/main.o
+ .group         0x00000000       0x2c build/main.o
  .group         0x00000000        0x8 build/main.o
  .group         0x00000000        0xc build/main.o
  .group         0x00000000        0x8 build/main.o
@@ -1174,6 +1169,9 @@ Discarded input sections
  .group         0x00000000        0x8 build/main.o
  .group         0x00000000        0xc build/main.o
  .group         0x00000000        0x8 build/main.o
+ .group         0x00000000        0xc build/main.o
+ .group         0x00000000        0x8 build/main.o
+ .group         0x00000000        0xc build/main.o
  .group         0x00000000        0xc build/main.o
  .group         0x00000000        0xc build/main.o
  .group         0x00000000        0xc build/main.o
@@ -1201,15 +1199,13 @@ Discarded input sections
                 0x00000000        0x0 build/AdcSTM32F4.o
  .ARM.exidx.text._ZN10AdcSTM32F4D2Ev
                 0x00000000        0x8 build/AdcSTM32F4.o
- .ARM.extab.text._ZN10AdcSTM32F44readEh
-                0x00000000        0x0 build/AdcSTM32F4.o
  .text._ZN10AdcSTM32F4D0Ev
                 0x00000000       0x20 build/AdcSTM32F4.o
  .ARM.extab.text._ZN10AdcSTM32F4D0Ev
                 0x00000000        0x0 build/AdcSTM32F4.o
  .ARM.exidx.text._ZN10AdcSTM32F4D0Ev
                 0x00000000        0x8 build/AdcSTM32F4.o
- .ARM.extab.text._ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef
+ .ARM.extab.text._ZN10AdcSTM32F44readEh
                 0x00000000        0x0 build/AdcSTM32F4.o
  .rodata._ZTS4IAdc
                 0x00000000        0x6 build/AdcSTM32F4.o
@@ -1321,60 +1317,22 @@ Discarded input sections
                 0x00000000        0x0 build/SPISTM32F4.o
  .ARM.exidx.text._ZN10SPISTM32F4D2Ev
                 0x00000000        0x8 build/SPISTM32F4.o
- .text._ZN10SPISTM32F415resetChipSelectEv
-                0x00000000        0xe build/SPISTM32F4.o
- .ARM.extab.text._ZN10SPISTM32F415resetChipSelectEv
-                0x00000000        0xc build/SPISTM32F4.o
- .ARM.exidx.text._ZN10SPISTM32F415resetChipSelectEv
-                0x00000000        0x8 build/SPISTM32F4.o
- .text._ZN10SPISTM32F413setChipSelectEv
-                0x00000000        0xe build/SPISTM32F4.o
- .ARM.extab.text._ZN10SPISTM32F413setChipSelectEv
-                0x00000000        0xc build/SPISTM32F4.o
- .ARM.exidx.text._ZN10SPISTM32F413setChipSelectEv
-                0x00000000        0x8 build/SPISTM32F4.o
- .text._ZN10SPISTM32F415transmitReceiveEPhS0_tm
-                0x00000000       0x12 build/SPISTM32F4.o
  .ARM.extab.text._ZN10SPISTM32F415transmitReceiveEPhS0_tm
                 0x00000000        0x0 build/SPISTM32F4.o
- .ARM.exidx.text._ZN10SPISTM32F415transmitReceiveEPhS0_tm
-                0x00000000        0x8 build/SPISTM32F4.o
  .text._ZN10SPISTM32F4D0Ev
                 0x00000000       0x20 build/SPISTM32F4.o
  .ARM.extab.text._ZN10SPISTM32F4D0Ev
                 0x00000000        0x0 build/SPISTM32F4.o
  .ARM.exidx.text._ZN10SPISTM32F4D0Ev
                 0x00000000        0x8 build/SPISTM32F4.o
- .text._ZN10SPISTM32F4C2EP19__SPI_HandleTypeDefP12GPIO_TypeDeft
-                0x00000000       0x20 build/SPISTM32F4.o
  .ARM.extab.text._ZN10SPISTM32F4C2EP19__SPI_HandleTypeDefP12GPIO_TypeDeft
                 0x00000000        0x0 build/SPISTM32F4.o
- .ARM.exidx.text._ZN10SPISTM32F4C2EP19__SPI_HandleTypeDefP12GPIO_TypeDeft
-                0x00000000        0x8 build/SPISTM32F4.o
  .rodata._ZTS4ISpi
                 0x00000000        0x6 build/SPISTM32F4.o
  .rodata._ZTI4ISpi
                 0x00000000        0x8 build/SPISTM32F4.o
- .rodata._ZTS10SPISTM32F4
-                0x00000000        0xd build/SPISTM32F4.o
- .rodata._ZTI10SPISTM32F4
-                0x00000000        0xc build/SPISTM32F4.o
  .rodata._ZTV4ISpi
                 0x00000000       0x1c build/SPISTM32F4.o
- .rodata._ZTV10SPISTM32F4
-                0x00000000       0x1c build/SPISTM32F4.o
- .debug_info    0x00000000      0xea7 build/SPISTM32F4.o
- .debug_abbrev  0x00000000      0x382 build/SPISTM32F4.o
- .debug_loc     0x00000000      0x249 build/SPISTM32F4.o
- .debug_aranges
-                0x00000000       0x48 build/SPISTM32F4.o
- .debug_ranges  0x00000000       0x38 build/SPISTM32F4.o
- .debug_line    0x00000000      0x2b7 build/SPISTM32F4.o
- .debug_str     0x00000000      0xaf1 build/SPISTM32F4.o
- .comment       0x00000000       0x45 build/SPISTM32F4.o
- .debug_frame   0x00000000       0xa4 build/SPISTM32F4.o
- .ARM.attributes
-                0x00000000       0x34 build/SPISTM32F4.o
  .group         0x00000000       0x2c build/TimerSTM32F4.o
  .group         0x00000000        0x8 build/TimerSTM32F4.o
  .group         0x00000000        0xc build/TimerSTM32F4.o
@@ -1476,12 +1434,8 @@ Discarded input sections
  .text          0x00000000        0x0 build/IMUDriver.o
  .data          0x00000000        0x0 build/IMUDriver.o
  .bss           0x00000000        0x0 build/IMUDriver.o
- .text._ZN3ImuC2EP4ISpi
-                0x00000000        0x8 build/IMUDriver.o
- .ARM.extab.text._ZN3ImuC2EP4ISpi
+ .ARM.extab.text._ZN3ImuC2EP10SPISTM32F4
                 0x00000000        0x0 build/IMUDriver.o
- .ARM.exidx.text._ZN3ImuC2EP4ISpi
-                0x00000000        0x8 build/IMUDriver.o
  .text._ZN3Imu12SpiReadBytesEh
                 0x00000000       0x44 build/IMUDriver.o
  .ARM.extab.text._ZN3Imu12SpiReadBytesEh
@@ -1495,7 +1449,7 @@ Discarded input sections
  .ARM.exidx.text._ZN3Imu13SpiWriteBytesEhh
                 0x00000000        0x8 build/IMUDriver.o
  .rodata._ZN3Imu12Lsm6dsrErrorEh.str1.4
-                0x00000000       0x22 build/IMUDriver.o
+                0x00000000       0x21 build/IMUDriver.o
  .text._ZN3Imu12Lsm6dsrErrorEh
                 0x00000000       0x10 build/IMUDriver.o
  .ARM.extab.text._ZN3Imu12Lsm6dsrErrorEh
@@ -1524,27 +1478,11 @@ Discarded input sections
                 0x00000000        0x0 build/IMUDriver.o
  .ARM.exidx.text._ZN3Imu12gyro_get_refEv
                 0x00000000        0x8 build/IMUDriver.o
- .debug_info    0x00000000     0x1316 build/IMUDriver.o
- .debug_abbrev  0x00000000      0x428 build/IMUDriver.o
- .debug_loc     0x00000000      0x3d0 build/IMUDriver.o
- .debug_aranges
-                0x00000000       0x50 build/IMUDriver.o
- .debug_ranges  0x00000000       0x40 build/IMUDriver.o
- .debug_line    0x00000000      0x54c build/IMUDriver.o
- .debug_str     0x00000000      0x7cd build/IMUDriver.o
- .comment       0x00000000       0x45 build/IMUDriver.o
- .debug_frame   0x00000000       0xdc build/IMUDriver.o
- .ARM.attributes
-                0x00000000       0x34 build/IMUDriver.o
  .text          0x00000000        0x0 build/LEDController.o
  .data          0x00000000        0x0 build/LEDController.o
  .bss           0x00000000        0x0 build/LEDController.o
- .text._ZN13LEDControllerC2EP11GpioSTM32F4S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_
-                0x00000000       0x28 build/LEDController.o
  .ARM.extab.text._ZN13LEDControllerC2EP11GpioSTM32F4S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_
                 0x00000000        0x0 build/LEDController.o
- .ARM.exidx.text._ZN13LEDControllerC2EP11GpioSTM32F4S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_
-                0x00000000        0x8 build/LEDController.o
  .text._ZN13LEDController12setSensorLEDEbbbb
                 0x00000000       0x5e build/LEDController.o
  .ARM.extab.text._ZN13LEDController12setSensorLEDEbbbb
@@ -1587,27 +1525,11 @@ Discarded input sections
                 0x00000000        0x0 build/LEDController.o
  .ARM.exidx.text._ZN13LEDController10setModeLEDEh
                 0x00000000        0x8 build/LEDController.o
- .debug_info    0x00000000      0xa13 build/LEDController.o
- .debug_abbrev  0x00000000      0x21e build/LEDController.o
- .debug_loc     0x00000000      0x4d8 build/LEDController.o
- .debug_aranges
-                0x00000000       0x58 build/LEDController.o
- .debug_ranges  0x00000000       0x48 build/LEDController.o
- .debug_line    0x00000000      0x491 build/LEDController.o
- .debug_str     0x00000000      0x69d build/LEDController.o
- .comment       0x00000000       0x45 build/LEDController.o
- .debug_frame   0x00000000       0xe8 build/LEDController.o
- .ARM.attributes
-                0x00000000       0x34 build/LEDController.o
  .text          0x00000000        0x0 build/PhotoSensor.o
  .data          0x00000000        0x0 build/PhotoSensor.o
  .bss           0x00000000        0x0 build/PhotoSensor.o
- .text._ZN11PhotoSensorC2EP17ADC_HandleTypeDefPtm
-                0x00000000        0x8 build/PhotoSensor.o
  .ARM.extab.text._ZN11PhotoSensorC2EP17ADC_HandleTypeDefPtm
                 0x00000000        0x0 build/PhotoSensor.o
- .ARM.exidx.text._ZN11PhotoSensorC2EP17ADC_HandleTypeDefPtm
-                0x00000000        0x8 build/PhotoSensor.o
  .text._ZN11PhotoSensor5startEv
                 0x00000000        0xe build/PhotoSensor.o
  .ARM.extab.text._ZN11PhotoSensor5startEv
@@ -1620,18 +1542,6 @@ Discarded input sections
                 0x00000000        0x0 build/PhotoSensor.o
  .ARM.exidx.text._ZNK11PhotoSensor8getValueEm
                 0x00000000        0x8 build/PhotoSensor.o
- .debug_info    0x00000000      0x88f build/PhotoSensor.o
- .debug_abbrev  0x00000000      0x22d build/PhotoSensor.o
- .debug_loc     0x00000000       0x99 build/PhotoSensor.o
- .debug_aranges
-                0x00000000       0x30 build/PhotoSensor.o
- .debug_ranges  0x00000000       0x20 build/PhotoSensor.o
- .debug_line    0x00000000      0x20d build/PhotoSensor.o
- .debug_str     0x00000000      0x776 build/PhotoSensor.o
- .comment       0x00000000       0x45 build/PhotoSensor.o
- .debug_frame   0x00000000       0x48 build/PhotoSensor.o
- .ARM.attributes
-                0x00000000       0x34 build/PhotoSensor.o
  .text          0x00000000       0x14 build/startup_stm32f405xx.o
  .data          0x00000000        0x0 build/startup_stm32f405xx.o
  .bss           0x00000000        0x0 build/startup_stm32f405xx.o
@@ -2298,7 +2208,7 @@ LOAD C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+
                 0x08000000                g_pfnVectors
                 0x08000188                        . = ALIGN (0x4)
 
-.text           0x08000188     0x6a0c
+.text           0x08000188     0x6fec
                 0x08000188                        . = ALIGN (0x4)
  *(.text)
  .text          0x08000188       0x14 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-strcmp.o)
@@ -2511,914 +2421,1004 @@ LOAD C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+
  .text.HAL_Delay
                 0x080028c4       0x28 build/stm32f4xx_hal.o
                 0x080028c4                HAL_Delay
+ .text.SPI_WaitFlagStateUntilTimeout
+                0x080028ec       0xc8 build/stm32f4xx_hal_spi.o
+ .text.SPI_EndRxTxTransaction
+                0x080029b4       0x80 build/stm32f4xx_hal_spi.o
  .text.HAL_SPI_Init
-                0x080028ec      0x25c build/stm32f4xx_hal_spi.o
-                0x080028ec                HAL_SPI_Init
+                0x08002a34      0x25c build/stm32f4xx_hal_spi.o
+                0x08002a34                HAL_SPI_Init
+ .text.HAL_SPI_TransmitReceive
+                0x08002c90      0x26c build/stm32f4xx_hal_spi.o
+                0x08002c90                HAL_SPI_TransmitReceive
  .text.TIM_TI1_ConfigInputStage
-                0x08002b48       0x26 build/stm32f4xx_hal_tim.o
+                0x08002efc       0x26 build/stm32f4xx_hal_tim.o
  .text.TIM_TI2_ConfigInputStage
-                0x08002b6e       0x28 build/stm32f4xx_hal_tim.o
+                0x08002f22       0x28 build/stm32f4xx_hal_tim.o
  .text.TIM_ITRx_SetConfig
-                0x08002b96       0x10 build/stm32f4xx_hal_tim.o
- *fill*         0x08002ba6        0x2 
+                0x08002f4a       0x10 build/stm32f4xx_hal_tim.o
+ *fill*         0x08002f5a        0x2 
  .text.TIM_OC1_SetConfig
-                0x08002ba8       0xb4 build/stm32f4xx_hal_tim.o
+                0x08002f5c       0xb4 build/stm32f4xx_hal_tim.o
  .text.TIM_OC3_SetConfig
-                0x08002c5c       0xbc build/stm32f4xx_hal_tim.o
+                0x08003010       0xbc build/stm32f4xx_hal_tim.o
  .text.TIM_OC4_SetConfig
-                0x08002d18       0x74 build/stm32f4xx_hal_tim.o
+                0x080030cc       0x74 build/stm32f4xx_hal_tim.o
  .text.HAL_TIM_Base_Start_IT
-                0x08002d8c      0x108 build/stm32f4xx_hal_tim.o
-                0x08002d8c                HAL_TIM_Base_Start_IT
+                0x08003140      0x108 build/stm32f4xx_hal_tim.o
+                0x08003140                HAL_TIM_Base_Start_IT
  .text.HAL_TIM_Base_Stop_IT
-                0x08002e94       0xb8 build/stm32f4xx_hal_tim.o
-                0x08002e94                HAL_TIM_Base_Stop_IT
+                0x08003248       0xb8 build/stm32f4xx_hal_tim.o
+                0x08003248                HAL_TIM_Base_Stop_IT
  .text.TIM_Base_SetConfig
-                0x08002f4c       0xd8 build/stm32f4xx_hal_tim.o
-                0x08002f4c                TIM_Base_SetConfig
+                0x08003300       0xd8 build/stm32f4xx_hal_tim.o
+                0x08003300                TIM_Base_SetConfig
  .text.HAL_TIM_Base_Init
-                0x08003024      0x168 build/stm32f4xx_hal_tim.o
-                0x08003024                HAL_TIM_Base_Init
+                0x080033d8      0x168 build/stm32f4xx_hal_tim.o
+                0x080033d8                HAL_TIM_Base_Init
  .text.HAL_TIM_PWM_Init
-                0x0800318c      0x168 build/stm32f4xx_hal_tim.o
-                0x0800318c                HAL_TIM_PWM_Init
+                0x08003540      0x168 build/stm32f4xx_hal_tim.o
+                0x08003540                HAL_TIM_PWM_Init
  .text.HAL_TIM_Encoder_Init
-                0x080032f4      0x260 build/stm32f4xx_hal_tim.o
-                0x080032f4                HAL_TIM_Encoder_Init
+                0x080036a8      0x260 build/stm32f4xx_hal_tim.o
+                0x080036a8                HAL_TIM_Encoder_Init
  .text.TIM_OC2_SetConfig
-                0x08003554       0xc0 build/stm32f4xx_hal_tim.o
-                0x08003554                TIM_OC2_SetConfig
+                0x08003908       0xc0 build/stm32f4xx_hal_tim.o
+                0x08003908                TIM_OC2_SetConfig
  .text.HAL_TIM_PWM_ConfigChannel
-                0x08003614      0x27c build/stm32f4xx_hal_tim.o
-                0x08003614                HAL_TIM_PWM_ConfigChannel
+                0x080039c8      0x27c build/stm32f4xx_hal_tim.o
+                0x080039c8                HAL_TIM_PWM_ConfigChannel
  .text.TIM_ETR_SetConfig
-                0x08003890       0x1a build/stm32f4xx_hal_tim.o
-                0x08003890                TIM_ETR_SetConfig
- *fill*         0x080038aa        0x2 
+                0x08003c44       0x1a build/stm32f4xx_hal_tim.o
+                0x08003c44                TIM_ETR_SetConfig
+ *fill*         0x08003c5e        0x2 
  .text.HAL_TIM_ConfigClockSource
-                0x080038ac      0x4fc build/stm32f4xx_hal_tim.o
-                0x080038ac                HAL_TIM_ConfigClockSource
+                0x08003c60      0x4fc build/stm32f4xx_hal_tim.o
+                0x08003c60                HAL_TIM_ConfigClockSource
  .text.TIM_CCxChannelCmd
-                0x08003da8       0xb0 build/stm32f4xx_hal_tim.o
-                0x08003da8                TIM_CCxChannelCmd
+                0x0800415c       0xb0 build/stm32f4xx_hal_tim.o
+                0x0800415c                TIM_CCxChannelCmd
  .text.HAL_TIM_Encoder_Start
-                0x08003e58      0x128 build/stm32f4xx_hal_tim.o
-                0x08003e58                HAL_TIM_Encoder_Start
+                0x0800420c      0x128 build/stm32f4xx_hal_tim.o
+                0x0800420c                HAL_TIM_Encoder_Start
  .text.HAL_TIMEx_MasterConfigSynchronization
-                0x08003f80      0x118 build/stm32f4xx_hal_tim_ex.o
-                0x08003f80                HAL_TIMEx_MasterConfigSynchronization
+                0x08004334      0x118 build/stm32f4xx_hal_tim_ex.o
+                0x08004334                HAL_TIMEx_MasterConfigSynchronization
  .text.HAL_TIMEx_ConfigBreakDeadTime
-                0x08004098      0x124 build/stm32f4xx_hal_tim_ex.o
-                0x08004098                HAL_TIMEx_ConfigBreakDeadTime
+                0x0800444c      0x124 build/stm32f4xx_hal_tim_ex.o
+                0x0800444c                HAL_TIMEx_ConfigBreakDeadTime
  .text.SystemInit
-                0x080041bc       0x14 build/system_stm32f4xx.o
-                0x080041bc                SystemInit
- .text._getpid  0x080041d0        0x4 build/syscalls.o
-                0x080041d0                _getpid
- .text._kill    0x080041d4       0x10 build/syscalls.o
-                0x080041d4                _kill
- .text._exit    0x080041e4        0xc build/syscalls.o
-                0x080041e4                _exit
+                0x08004570       0x14 build/system_stm32f4xx.o
+                0x08004570                SystemInit
+ .text._getpid  0x08004584        0x4 build/syscalls.o
+                0x08004584                _getpid
+ .text._kill    0x08004588       0x10 build/syscalls.o
+                0x08004588                _kill
+ .text._exit    0x08004598        0xc build/syscalls.o
+                0x08004598                _exit
  .text._ZN11GpioSTM32F4D2Ev
-                0x080041f0       0x14 build/main.o
-                0x080041f0                GpioSTM32F4::~GpioSTM32F4()
-                0x080041f0                GpioSTM32F4::~GpioSTM32F4()
+                0x080045a4       0x14 build/main.o
+                0x080045a4                GpioSTM32F4::~GpioSTM32F4()
+                0x080045a4                GpioSTM32F4::~GpioSTM32F4()
  .text._ZN10AdcSTM32F4D2Ev
-                0x08004204       0x14 build/main.o
-                0x08004204                AdcSTM32F4::~AdcSTM32F4()
-                0x08004204                AdcSTM32F4::~AdcSTM32F4()
+                0x080045b8       0x14 build/main.o
+                0x080045b8                AdcSTM32F4::~AdcSTM32F4()
+                0x080045b8                AdcSTM32F4::~AdcSTM32F4()
  .text._ZN12TimerSTM32F4D2Ev
-                0x08004218       0x14 build/main.o
-                0x08004218                TimerSTM32F4::~TimerSTM32F4()
-                0x08004218                TimerSTM32F4::~TimerSTM32F4()
+                0x080045cc       0x14 build/main.o
+                0x080045cc                TimerSTM32F4::~TimerSTM32F4()
+                0x080045cc                TimerSTM32F4::~TimerSTM32F4()
  .text._ZN14EncoderSTM32F4D2Ev
-                0x0800422c       0x14 build/main.o
-                0x0800422c                EncoderSTM32F4::~EncoderSTM32F4()
-                0x0800422c                EncoderSTM32F4::~EncoderSTM32F4()
+                0x080045e0       0x14 build/main.o
+                0x080045e0                EncoderSTM32F4::~EncoderSTM32F4()
+                0x080045e0                EncoderSTM32F4::~EncoderSTM32F4()
+ .text._ZN10SPISTM32F4D2Ev
+                0x080045f4       0x14 build/main.o
+                0x080045f4                SPISTM32F4::~SPISTM32F4()
+                0x080045f4                SPISTM32F4::~SPISTM32F4()
  .text._ZN11GpioSTM32F4D0Ev
-                0x08004240       0x20 build/main.o
-                0x08004240                GpioSTM32F4::~GpioSTM32F4()
+                0x08004608       0x20 build/main.o
+                0x08004608                GpioSTM32F4::~GpioSTM32F4()
  .text._ZN10AdcSTM32F4D0Ev
-                0x08004260       0x20 build/main.o
-                0x08004260                AdcSTM32F4::~AdcSTM32F4()
+                0x08004628       0x20 build/main.o
+                0x08004628                AdcSTM32F4::~AdcSTM32F4()
  .text._ZN12TimerSTM32F4D0Ev
-                0x08004280       0x20 build/main.o
-                0x08004280                TimerSTM32F4::~TimerSTM32F4()
+                0x08004648       0x20 build/main.o
+                0x08004648                TimerSTM32F4::~TimerSTM32F4()
  .text._ZN14EncoderSTM32F4D0Ev
-                0x080042a0       0x20 build/main.o
-                0x080042a0                EncoderSTM32F4::~EncoderSTM32F4()
+                0x08004668       0x20 build/main.o
+                0x08004668                EncoderSTM32F4::~EncoderSTM32F4()
+ .text._ZN10SPISTM32F4D0Ev
+                0x08004688       0x20 build/main.o
+                0x08004688                SPISTM32F4::~SPISTM32F4()
  .text.Error_Handler
-                0x080042c0        0x4 build/main.o
-                0x080042c0                Error_Handler
+                0x080046a8        0x4 build/main.o
+                0x080046a8                Error_Handler
  .text._Z18SystemClock_Configv
-                0x080042c4       0xa4 build/main.o
-                0x080042c4                SystemClock_Config()
- .text.main     0x08004368      0x9a4 build/main.o
-                0x08004368                main
+                0x080046ac       0xa4 build/main.o
+                0x080046ac                SystemClock_Config()
+ .text.main     0x08004750      0xafc build/main.o
+                0x08004750                main
  .text.assert_failed
-                0x08004d0c        0x2 build/main.o
-                0x08004d0c                assert_failed
+                0x0800524c        0x2 build/main.o
+                0x0800524c                assert_failed
  .text._ZN10AdcSTM32F44readEh
-                0x08004d0e       0x46 build/AdcSTM32F4.o
-                0x08004d0e                AdcSTM32F4::read(unsigned char)
+                0x0800524e       0x46 build/AdcSTM32F4.o
+                0x0800524e                AdcSTM32F4::read(unsigned char)
  .text._ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef
-                0x08004d54       0x14 build/AdcSTM32F4.o
-                0x08004d54                AdcSTM32F4::AdcSTM32F4(ADC_HandleTypeDef*)
-                0x08004d54                AdcSTM32F4::AdcSTM32F4(ADC_HandleTypeDef*)
+                0x08005294       0x30 build/AdcSTM32F4.o
+                0x08005294                AdcSTM32F4::AdcSTM32F4(ADC_HandleTypeDef*)
+                0x08005294                AdcSTM32F4::AdcSTM32F4(ADC_HandleTypeDef*)
  .text._ZNK14EncoderSTM32F48getCountEv
-                0x08004d68        0x8 build/EncoderSTM32F4.o
-                0x08004d68                EncoderSTM32F4::getCount() const
+                0x080052c4        0x8 build/EncoderSTM32F4.o
+                0x080052c4                EncoderSTM32F4::getCount() const
  .text._ZN14EncoderSTM32F410resetCountEv
-                0x08004d70        0xa build/EncoderSTM32F4.o
-                0x08004d70                EncoderSTM32F4::resetCount()
- *fill*         0x08004d7a        0x2 
+                0x080052cc        0xa build/EncoderSTM32F4.o
+                0x080052cc                EncoderSTM32F4::resetCount()
+ *fill*         0x080052d6        0x2 
  .text._ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef
-                0x08004d7c       0x2c build/EncoderSTM32F4.o
-                0x08004d7c                EncoderSTM32F4::EncoderSTM32F4(TIM_HandleTypeDef*)
-                0x08004d7c                EncoderSTM32F4::EncoderSTM32F4(TIM_HandleTypeDef*)
+                0x080052d8       0x2c build/EncoderSTM32F4.o
+                0x080052d8                EncoderSTM32F4::EncoderSTM32F4(TIM_HandleTypeDef*)
+                0x080052d8                EncoderSTM32F4::EncoderSTM32F4(TIM_HandleTypeDef*)
  .text._ZN11GpioSTM32F47setHighEv
-                0x08004da8        0xe build/GpioSTM32F4.o
-                0x08004da8                GpioSTM32F4::setHigh()
+                0x08005304        0xe build/GpioSTM32F4.o
+                0x08005304                GpioSTM32F4::setHigh()
  .text._ZN11GpioSTM32F46setLowEv
-                0x08004db6        0xe build/GpioSTM32F4.o
-                0x08004db6                GpioSTM32F4::setLow()
+                0x08005312        0xe build/GpioSTM32F4.o
+                0x08005312                GpioSTM32F4::setLow()
  .text._ZN11GpioSTM32F44readEv
-                0x08004dc4       0x14 build/GpioSTM32F4.o
-                0x08004dc4                GpioSTM32F4::read()
+                0x08005320       0x14 build/GpioSTM32F4.o
+                0x08005320                GpioSTM32F4::read()
  .text._ZN11GpioSTM32F4C2EP12GPIO_TypeDeft
-                0x08004dd8       0x1c build/GpioSTM32F4.o
-                0x08004dd8                GpioSTM32F4::GpioSTM32F4(GPIO_TypeDef*, unsigned short)
-                0x08004dd8                GpioSTM32F4::GpioSTM32F4(GPIO_TypeDef*, unsigned short)
+                0x08005334       0x1c build/GpioSTM32F4.o
+                0x08005334                GpioSTM32F4::GpioSTM32F4(GPIO_TypeDef*, unsigned short)
+                0x08005334                GpioSTM32F4::GpioSTM32F4(GPIO_TypeDef*, unsigned short)
  .text._ZN10PwmSTM32F4C2EP17TIM_HandleTypeDefm
-                0x08004df4        0x6 build/PwmSTM32F4.o
-                0x08004df4                PwmSTM32F4::PwmSTM32F4(TIM_HandleTypeDef*, unsigned long)
-                0x08004df4                PwmSTM32F4::PwmSTM32F4(TIM_HandleTypeDef*, unsigned long)
+                0x08005350        0x6 build/PwmSTM32F4.o
+                0x08005350                PwmSTM32F4::PwmSTM32F4(TIM_HandleTypeDef*, unsigned long)
+                0x08005350                PwmSTM32F4::PwmSTM32F4(TIM_HandleTypeDef*, unsigned long)
+ .text._ZN10SPISTM32F415resetChipSelectEv
+                0x08005356        0xe build/SPISTM32F4.o
+                0x08005356                SPISTM32F4::resetChipSelect()
+ .text._ZN10SPISTM32F413setChipSelectEv
+                0x08005364        0xe build/SPISTM32F4.o
+                0x08005364                SPISTM32F4::setChipSelect()
+ .text._ZN10SPISTM32F415transmitReceiveEPhS0_tm
+                0x08005372       0x12 build/SPISTM32F4.o
+                0x08005372                SPISTM32F4::transmitReceive(unsigned char*, unsigned char*, unsigned short, unsigned long)
+ .text._ZN10SPISTM32F4C2EP19__SPI_HandleTypeDefP12GPIO_TypeDeft
+                0x08005384       0x20 build/SPISTM32F4.o
+                0x08005384                SPISTM32F4::SPISTM32F4(__SPI_HandleTypeDef*, GPIO_TypeDef*, unsigned short)
+                0x08005384                SPISTM32F4::SPISTM32F4(__SPI_HandleTypeDef*, GPIO_TypeDef*, unsigned short)
  .text._ZN12TimerSTM32F411setCallbackEPFvvE
-                0x08004dfa        0x4 build/TimerSTM32F4.o
-                0x08004dfa                TimerSTM32F4::setCallback(void (*)())
+                0x080053a4        0x4 build/TimerSTM32F4.o
+                0x080053a4                TimerSTM32F4::setCallback(void (*)())
  .text._ZN12TimerSTM32F45startEv
-                0x08004dfe        0xa build/TimerSTM32F4.o
-                0x08004dfe                TimerSTM32F4::start()
+                0x080053a8        0xa build/TimerSTM32F4.o
+                0x080053a8                TimerSTM32F4::start()
  .text._ZN12TimerSTM32F44stopEv
-                0x08004e08        0xa build/TimerSTM32F4.o
-                0x08004e08                TimerSTM32F4::stop()
- *fill*         0x08004e12        0x2 
+                0x080053b2        0xa build/TimerSTM32F4.o
+                0x080053b2                TimerSTM32F4::stop()
  .text._ZN12TimerSTM32F4C2EP17TIM_HandleTypeDef
-                0x08004e14       0x18 build/TimerSTM32F4.o
-                0x08004e14                TimerSTM32F4::TimerSTM32F4(TIM_HandleTypeDef*)
-                0x08004e14                TimerSTM32F4::TimerSTM32F4(TIM_HandleTypeDef*)
+                0x080053bc       0x18 build/TimerSTM32F4.o
+                0x080053bc                TimerSTM32F4::TimerSTM32F4(TIM_HandleTypeDef*)
+                0x080053bc                TimerSTM32F4::TimerSTM32F4(TIM_HandleTypeDef*)
  .text._ZN6ButtonC2EP5IGpiom
-                0x08004e2c        0x6 build/Button.o
-                0x08004e2c                Button::Button(IGpio*, unsigned long)
-                0x08004e2c                Button::Button(IGpio*, unsigned long)
+                0x080053d4        0x6 build/Button.o
+                0x080053d4                Button::Button(IGpio*, unsigned long)
+                0x080053d4                Button::Button(IGpio*, unsigned long)
  .text._ZN6Button10checkStateEv
-                0x08004e32       0x38 build/Button.o
-                0x08004e32                Button::checkState()
+                0x080053da       0x38 build/Button.o
+                0x080053da                Button::checkState()
  .text._ZN11MotorDriverC2EP10PwmSTM32F4P11GpioSTM32F4S3_f
-                0x08004e6a        0xc build/MotorDriver.o
-                0x08004e6a                MotorDriver::MotorDriver(PwmSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, float)
-                0x08004e6a                MotorDriver::MotorDriver(PwmSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, float)
- *fill*         0x08004e76        0x2 
+                0x08005412        0xc build/MotorDriver.o
+                0x08005412                MotorDriver::MotorDriver(PwmSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, float)
+                0x08005412                MotorDriver::MotorDriver(PwmSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, float)
+ .text._ZN3ImuC2EP10SPISTM32F4
+                0x0800541e        0x8 build/IMUDriver.o
+                0x0800541e                Imu::Imu(SPISTM32F4*)
+                0x0800541e                Imu::Imu(SPISTM32F4*)
+ .text._ZN13LEDControllerC2EP11GpioSTM32F4S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_
+                0x08005426       0x28 build/LEDController.o
+                0x08005426                LEDController::LEDController(GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*)
+                0x08005426                LEDController::LEDController(GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*)
+ .text._ZN11PhotoSensorC2EP17ADC_HandleTypeDefPtm
+                0x0800544e        0x8 build/PhotoSensor.o
+                0x0800544e                PhotoSensor::PhotoSensor(ADC_HandleTypeDef*, unsigned short*, unsigned long)
+                0x0800544e                PhotoSensor::PhotoSensor(ADC_HandleTypeDef*, unsigned short*, unsigned long)
+ *fill*         0x08005456        0x2 
  .text.Reset_Handler
-                0x08004e78       0x50 build/startup_stm32f405xx.o
-                0x08004e78                Reset_Handler
+                0x08005458       0x50 build/startup_stm32f405xx.o
+                0x08005458                Reset_Handler
  .text.Default_Handler
-                0x08004ec8        0x2 build/startup_stm32f405xx.o
-                0x08004ec8                RTC_Alarm_IRQHandler
-                0x08004ec8                HASH_RNG_IRQHandler
-                0x08004ec8                EXTI2_IRQHandler
-                0x08004ec8                TIM8_CC_IRQHandler
-                0x08004ec8                TIM1_CC_IRQHandler
-                0x08004ec8                DMA2_Stream5_IRQHandler
-                0x08004ec8                DMA1_Stream5_IRQHandler
-                0x08004ec8                PVD_IRQHandler
-                0x08004ec8                SDIO_IRQHandler
-                0x08004ec8                TAMP_STAMP_IRQHandler
-                0x08004ec8                CAN2_RX1_IRQHandler
-                0x08004ec8                EXTI3_IRQHandler
-                0x08004ec8                TIM8_TRG_COM_TIM14_IRQHandler
-                0x08004ec8                TIM1_UP_TIM10_IRQHandler
-                0x08004ec8                TIM8_UP_TIM13_IRQHandler
-                0x08004ec8                I2C3_ER_IRQHandler
-                0x08004ec8                EXTI0_IRQHandler
-                0x08004ec8                I2C2_EV_IRQHandler
-                0x08004ec8                DMA1_Stream2_IRQHandler
-                0x08004ec8                CAN1_RX0_IRQHandler
-                0x08004ec8                FPU_IRQHandler
-                0x08004ec8                OTG_HS_WKUP_IRQHandler
-                0x08004ec8                CAN2_SCE_IRQHandler
-                0x08004ec8                DMA2_Stream2_IRQHandler
-                0x08004ec8                SPI1_IRQHandler
-                0x08004ec8                TIM6_DAC_IRQHandler
-                0x08004ec8                TIM1_BRK_TIM9_IRQHandler
-                0x08004ec8                CAN2_RX0_IRQHandler
-                0x08004ec8                DMA2_Stream3_IRQHandler
-                0x08004ec8                USART6_IRQHandler
-                0x08004ec8                USART3_IRQHandler
-                0x08004ec8                CAN1_RX1_IRQHandler
-                0x08004ec8                UART5_IRQHandler
-                0x08004ec8                TIM4_IRQHandler
-                0x08004ec8                I2C1_EV_IRQHandler
-                0x08004ec8                DMA1_Stream6_IRQHandler
-                0x08004ec8                DMA1_Stream1_IRQHandler
-                0x08004ec8                UART4_IRQHandler
-                0x08004ec8                TIM3_IRQHandler
-                0x08004ec8                RCC_IRQHandler
-                0x08004ec8                TIM8_BRK_TIM12_IRQHandler
-                0x08004ec8                Default_Handler
-                0x08004ec8                EXTI15_10_IRQHandler
-                0x08004ec8                ADC_IRQHandler
-                0x08004ec8                DMA1_Stream7_IRQHandler
-                0x08004ec8                TIM7_IRQHandler
-                0x08004ec8                CAN2_TX_IRQHandler
-                0x08004ec8                TIM5_IRQHandler
-                0x08004ec8                DMA2_Stream7_IRQHandler
-                0x08004ec8                I2C3_EV_IRQHandler
-                0x08004ec8                EXTI9_5_IRQHandler
-                0x08004ec8                RTC_WKUP_IRQHandler
-                0x08004ec8                SPI2_IRQHandler
-                0x08004ec8                OTG_HS_EP1_IN_IRQHandler
-                0x08004ec8                DMA1_Stream0_IRQHandler
-                0x08004ec8                CAN1_TX_IRQHandler
-                0x08004ec8                EXTI4_IRQHandler
-                0x08004ec8                FSMC_IRQHandler
-                0x08004ec8                OTG_HS_EP1_OUT_IRQHandler
-                0x08004ec8                WWDG_IRQHandler
-                0x08004ec8                TIM2_IRQHandler
-                0x08004ec8                OTG_FS_WKUP_IRQHandler
-                0x08004ec8                TIM1_TRG_COM_TIM11_IRQHandler
-                0x08004ec8                OTG_HS_IRQHandler
-                0x08004ec8                EXTI1_IRQHandler
-                0x08004ec8                USART2_IRQHandler
-                0x08004ec8                I2C2_ER_IRQHandler
-                0x08004ec8                DMA2_Stream1_IRQHandler
-                0x08004ec8                CAN1_SCE_IRQHandler
-                0x08004ec8                FLASH_IRQHandler
-                0x08004ec8                DMA2_Stream4_IRQHandler
-                0x08004ec8                USART1_IRQHandler
-                0x08004ec8                OTG_FS_IRQHandler
-                0x08004ec8                SPI3_IRQHandler
-                0x08004ec8                DMA1_Stream4_IRQHandler
-                0x08004ec8                I2C1_ER_IRQHandler
-                0x08004ec8                DMA2_Stream6_IRQHandler
-                0x08004ec8                DMA1_Stream3_IRQHandler
+                0x080054a8        0x2 build/startup_stm32f405xx.o
+                0x080054a8                RTC_Alarm_IRQHandler
+                0x080054a8                HASH_RNG_IRQHandler
+                0x080054a8                EXTI2_IRQHandler
+                0x080054a8                TIM8_CC_IRQHandler
+                0x080054a8                TIM1_CC_IRQHandler
+                0x080054a8                DMA2_Stream5_IRQHandler
+                0x080054a8                DMA1_Stream5_IRQHandler
+                0x080054a8                PVD_IRQHandler
+                0x080054a8                SDIO_IRQHandler
+                0x080054a8                TAMP_STAMP_IRQHandler
+                0x080054a8                CAN2_RX1_IRQHandler
+                0x080054a8                EXTI3_IRQHandler
+                0x080054a8                TIM8_TRG_COM_TIM14_IRQHandler
+                0x080054a8                TIM1_UP_TIM10_IRQHandler
+                0x080054a8                TIM8_UP_TIM13_IRQHandler
+                0x080054a8                I2C3_ER_IRQHandler
+                0x080054a8                EXTI0_IRQHandler
+                0x080054a8                I2C2_EV_IRQHandler
+                0x080054a8                DMA1_Stream2_IRQHandler
+                0x080054a8                CAN1_RX0_IRQHandler
+                0x080054a8                FPU_IRQHandler
+                0x080054a8                OTG_HS_WKUP_IRQHandler
+                0x080054a8                CAN2_SCE_IRQHandler
+                0x080054a8                DMA2_Stream2_IRQHandler
+                0x080054a8                SPI1_IRQHandler
+                0x080054a8                TIM6_DAC_IRQHandler
+                0x080054a8                TIM1_BRK_TIM9_IRQHandler
+                0x080054a8                CAN2_RX0_IRQHandler
+                0x080054a8                DMA2_Stream3_IRQHandler
+                0x080054a8                USART6_IRQHandler
+                0x080054a8                USART3_IRQHandler
+                0x080054a8                CAN1_RX1_IRQHandler
+                0x080054a8                UART5_IRQHandler
+                0x080054a8                TIM4_IRQHandler
+                0x080054a8                I2C1_EV_IRQHandler
+                0x080054a8                DMA1_Stream6_IRQHandler
+                0x080054a8                DMA1_Stream1_IRQHandler
+                0x080054a8                UART4_IRQHandler
+                0x080054a8                TIM3_IRQHandler
+                0x080054a8                RCC_IRQHandler
+                0x080054a8                TIM8_BRK_TIM12_IRQHandler
+                0x080054a8                Default_Handler
+                0x080054a8                EXTI15_10_IRQHandler
+                0x080054a8                ADC_IRQHandler
+                0x080054a8                DMA1_Stream7_IRQHandler
+                0x080054a8                TIM7_IRQHandler
+                0x080054a8                CAN2_TX_IRQHandler
+                0x080054a8                TIM5_IRQHandler
+                0x080054a8                DMA2_Stream7_IRQHandler
+                0x080054a8                I2C3_EV_IRQHandler
+                0x080054a8                EXTI9_5_IRQHandler
+                0x080054a8                RTC_WKUP_IRQHandler
+                0x080054a8                SPI2_IRQHandler
+                0x080054a8                OTG_HS_EP1_IN_IRQHandler
+                0x080054a8                DMA1_Stream0_IRQHandler
+                0x080054a8                CAN1_TX_IRQHandler
+                0x080054a8                EXTI4_IRQHandler
+                0x080054a8                FSMC_IRQHandler
+                0x080054a8                OTG_HS_EP1_OUT_IRQHandler
+                0x080054a8                WWDG_IRQHandler
+                0x080054a8                TIM2_IRQHandler
+                0x080054a8                OTG_FS_WKUP_IRQHandler
+                0x080054a8                TIM1_TRG_COM_TIM11_IRQHandler
+                0x080054a8                OTG_HS_IRQHandler
+                0x080054a8                EXTI1_IRQHandler
+                0x080054a8                USART2_IRQHandler
+                0x080054a8                I2C2_ER_IRQHandler
+                0x080054a8                DMA2_Stream1_IRQHandler
+                0x080054a8                CAN1_SCE_IRQHandler
+                0x080054a8                FLASH_IRQHandler
+                0x080054a8                DMA2_Stream4_IRQHandler
+                0x080054a8                USART1_IRQHandler
+                0x080054a8                OTG_FS_IRQHandler
+                0x080054a8                SPI3_IRQHandler
+                0x080054a8                DMA1_Stream4_IRQHandler
+                0x080054a8                I2C1_ER_IRQHandler
+                0x080054a8                DMA2_Stream6_IRQHandler
+                0x080054a8                DMA1_Stream3_IRQHandler
  .text.__aeabi_atexit
-                0x08004eca        0xa C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(atexit_arm.o)
-                0x08004eca                __aeabi_atexit
+                0x080054aa        0xa C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(atexit_arm.o)
+                0x080054aa                __aeabi_atexit
  .text._ZNK10__cxxabiv117__class_type_info11__do_upcastEPKS0_PPv
-                0x08004ed4       0x32 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
-                0x08004ed4                __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void**) const
+                0x080054b4       0x32 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
+                0x080054b4                __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void**) const
  .text._ZNK10__cxxabiv117__class_type_info20__do_find_public_srcEiPKvPKS0_S2_
-                0x08004f06        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
-                0x08004f06                __cxxabiv1::__class_type_info::__do_find_public_src(int, void const*, __cxxabiv1::__class_type_info const*, void const*) const
- *fill*         0x08004f12        0x2 
+                0x080054e6        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
+                0x080054e6                __cxxabiv1::__class_type_info::__do_find_public_src(int, void const*, __cxxabiv1::__class_type_info const*, void const*) const
+ *fill*         0x080054f2        0x2 
  .text._ZN10__cxxabiv117__class_type_infoD2Ev
-                0x08004f14       0x14 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
-                0x08004f14                __cxxabiv1::__class_type_info::~__class_type_info()
-                0x08004f14                __cxxabiv1::__class_type_info::~__class_type_info()
+                0x080054f4       0x14 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
+                0x080054f4                __cxxabiv1::__class_type_info::~__class_type_info()
+                0x080054f4                __cxxabiv1::__class_type_info::~__class_type_info()
  .text._ZN10__cxxabiv117__class_type_infoD0Ev
-                0x08004f28       0x14 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
-                0x08004f28                __cxxabiv1::__class_type_info::~__class_type_info()
+                0x08005508       0x14 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
+                0x08005508                __cxxabiv1::__class_type_info::~__class_type_info()
  .text._ZNK10__cxxabiv117__class_type_info12__do_dyncastEiNS0_10__sub_kindEPKS0_PKvS3_S5_RNS0_16__dyncast_resultE
-                0x08004f3c       0x3e C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
-                0x08004f3c                __cxxabiv1::__class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+                0x0800551c       0x3e C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
+                0x0800551c                __cxxabiv1::__class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
  .text._ZNK10__cxxabiv117__class_type_info11__do_upcastEPKS0_PKvRNS0_15__upcast_resultE
-                0x08004f7a       0x18 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
-                0x08004f7a                __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const
+                0x0800555a       0x18 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
+                0x0800555a                __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const
  .text._ZNK10__cxxabiv117__class_type_info10__do_catchEPKSt9type_infoPPvj
-                0x08004f92       0x2a C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
-                0x08004f92                __cxxabiv1::__class_type_info::__do_catch(std::type_info const*, void**, unsigned int) const
- .text._ZdlPvj  0x08004fbc        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(del_ops.o)
-                0x08004fbc                operator delete(void*, unsigned int)
+                0x08005572       0x2a C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
+                0x08005572                __cxxabiv1::__class_type_info::__do_catch(std::type_info const*, void**, unsigned int) const
+ .text._ZdlPvj  0x0800559c        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(del_ops.o)
+                0x0800559c                operator delete(void*, unsigned int)
  .text.__cxa_end_cleanup
-                0x08004fc0        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_arm.o)
-                0x08004fc0                __cxa_end_cleanup
+                0x080055a0        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_arm.o)
+                0x080055a0                __cxa_end_cleanup
  .text._ZN10__cxxabiv1L24__is_gxx_exception_classEPc
-                0x08004fcc       0x3a C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_arm.o)
- *fill*         0x08005006        0x2 
+                0x080055ac       0x3a C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_arm.o)
+ *fill*         0x080055e6        0x2 
  .text.__cxa_type_match
-                0x08005008       0xbc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_arm.o)
-                0x08005008                __cxa_type_match
+                0x080055e8       0xbc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_arm.o)
+                0x080055e8                __cxa_type_match
  .text.__cxa_begin_cleanup
-                0x080050c4       0x3a C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_arm.o)
-                0x080050c4                __cxa_begin_cleanup
+                0x080056a4       0x3a C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_arm.o)
+                0x080056a4                __cxa_begin_cleanup
  .text.__gnu_end_cleanup
-                0x080050fe       0x32 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_arm.o)
-                0x080050fe                __gnu_end_cleanup
+                0x080056de       0x32 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_arm.o)
+                0x080056de                __gnu_end_cleanup
  .text.__cxa_get_globals
-                0x08005130        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_globals.o)
-                0x08005130                __cxa_get_globals
+                0x08005710        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_globals.o)
+                0x08005710                __cxa_get_globals
  .text._ZL12read_uleb128PKhPm
-                0x08005138       0x1e C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_personality.o)
+                0x08005718       0x1e C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_personality.o)
  .text._ZL12read_sleb128PKhPl
-                0x08005156       0x30 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_personality.o)
+                0x08005736       0x30 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_personality.o)
  .text._ZL28read_encoded_value_with_basehjPKhPj
-                0x08005186       0x8c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_personality.o)
+                0x08005766       0x8c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_personality.o)
  .text._ZL21base_of_encoded_valuehP15_Unwind_Context
-                0x08005212       0x42 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_personality.o)
+                0x080057f2       0x42 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_personality.o)
  .text._ZL18read_encoded_valueP15_Unwind_ContexthPKhPj
-                0x08005254       0x20 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_personality.o)
+                0x08005834       0x20 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_personality.o)
  .text._ZL17parse_lsda_headerP15_Unwind_ContextPKhP16lsda_header_info
-                0x08005274       0x5e C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_personality.o)
+                0x08005854       0x5e C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_personality.o)
  .text._Unwind_GetGR
-                0x080052d2       0x18 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_personality.o)
- *fill*         0x080052ea        0x2 
+                0x080058b2       0x18 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_personality.o)
+ *fill*         0x080058ca        0x2 
  .text.__gxx_personality_v0
-                0x080052ec      0x32c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_personality.o)
-                0x080052ec                __gxx_personality_v0
+                0x080058cc      0x32c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_personality.o)
+                0x080058cc                __gxx_personality_v0
  .text._ZN10__cxxabiv111__terminateEPFvvE
-                0x08005618        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_terminate.o)
-                0x08005618                __cxxabiv1::__terminate(void (*)())
+                0x08005bf8        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_terminate.o)
+                0x08005bf8                __cxxabiv1::__terminate(void (*)())
  .text._ZSt13get_terminatev
-                0x08005620       0x10 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_terminate.o)
-                0x08005620                std::get_terminate()
+                0x08005c00       0x10 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_terminate.o)
+                0x08005c00                std::get_terminate()
  .text._ZSt9terminatev
-                0x08005630        0xa C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_terminate.o)
-                0x08005630                std::terminate()
+                0x08005c10        0xa C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_terminate.o)
+                0x08005c10                std::terminate()
  .text._ZN10__cxxabiv112__unexpectedEPFvvE
-                0x0800563a        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_terminate.o)
-                0x0800563a                __cxxabiv1::__unexpected(void (*)())
- *fill*         0x08005642        0x2 
+                0x08005c1a        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_terminate.o)
+                0x08005c1a                __cxxabiv1::__unexpected(void (*)())
+ *fill*         0x08005c22        0x2 
  .text._ZSt14get_unexpectedv
-                0x08005644       0x10 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_terminate.o)
-                0x08005644                std::get_unexpected()
+                0x08005c24       0x10 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_terminate.o)
+                0x08005c24                std::get_unexpected()
  .text._ZSt10unexpectedv
-                0x08005654        0xa C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_terminate.o)
-                0x08005654                std::unexpected()
+                0x08005c34        0xa C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_terminate.o)
+                0x08005c34                std::unexpected()
  .text.__cxa_guard_acquire
-                0x0800565e       0x18 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(guard.o)
-                0x0800565e                __cxa_guard_acquire
+                0x08005c3e       0x18 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(guard.o)
+                0x08005c3e                __cxa_guard_acquire
  .text.__cxa_guard_abort
-                0x08005676        0x6 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(guard.o)
-                0x08005676                __cxa_guard_abort
+                0x08005c56        0x6 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(guard.o)
+                0x08005c56                __cxa_guard_abort
  .text.__cxa_guard_release
-                0x0800567c        0x6 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(guard.o)
-                0x0800567c                __cxa_guard_release
- *fill*         0x08005682        0x2 
+                0x08005c5c        0x6 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(guard.o)
+                0x08005c5c                __cxa_guard_release
+ *fill*         0x08005c62        0x2 
  .text._ZN10__cxxabiv120__si_class_type_infoD2Ev
-                0x08005684       0x14 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
-                0x08005684                __cxxabiv1::__si_class_type_info::~__si_class_type_info()
-                0x08005684                __cxxabiv1::__si_class_type_info::~__si_class_type_info()
+                0x08005c64       0x14 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
+                0x08005c64                __cxxabiv1::__si_class_type_info::~__si_class_type_info()
+                0x08005c64                __cxxabiv1::__si_class_type_info::~__si_class_type_info()
  .text._ZN10__cxxabiv120__si_class_type_infoD0Ev
-                0x08005698       0x14 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
-                0x08005698                __cxxabiv1::__si_class_type_info::~__si_class_type_info()
+                0x08005c78       0x14 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
+                0x08005c78                __cxxabiv1::__si_class_type_info::~__si_class_type_info()
  .text._ZNK10__cxxabiv120__si_class_type_info20__do_find_public_srcEiPKvPKNS_17__class_type_infoES2_
-                0x080056ac       0x3c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
-                0x080056ac                __cxxabiv1::__si_class_type_info::__do_find_public_src(int, void const*, __cxxabiv1::__class_type_info const*, void const*) const
+                0x08005c8c       0x3c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
+                0x08005c8c                __cxxabiv1::__si_class_type_info::__do_find_public_src(int, void const*, __cxxabiv1::__class_type_info const*, void const*) const
  .text._ZNK10__cxxabiv120__si_class_type_info12__do_dyncastEiNS_17__class_type_info10__sub_kindEPKS1_PKvS4_S6_RNS1_16__dyncast_resultE
-                0x080056e8       0x74 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
-                0x080056e8                __cxxabiv1::__si_class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+                0x08005cc8       0x74 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
+                0x08005cc8                __cxxabiv1::__si_class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
  .text._ZNK10__cxxabiv120__si_class_type_info11__do_upcastEPKNS_17__class_type_infoEPKvRNS1_15__upcast_resultE
-                0x0800575c       0x2a C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
-                0x0800575c                __cxxabiv1::__si_class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const
+                0x08005d3c       0x2a C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
+                0x08005d3c                __cxxabiv1::__si_class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const
  .text._ZNSt9type_infoD2Ev
-                0x08005786        0x2 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(tinfo.o)
-                0x08005786                std::type_info::~type_info()
-                0x08005786                std::type_info::~type_info()
+                0x08005d66        0x2 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(tinfo.o)
+                0x08005d66                std::type_info::~type_info()
+                0x08005d66                std::type_info::~type_info()
  .text._ZNKSt9type_info14__is_pointer_pEv
-                0x08005788        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(tinfo.o)
-                0x08005788                std::type_info::__is_pointer_p() const
-                0x08005788                std::type_info::__is_function_p() const
+                0x08005d68        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(tinfo.o)
+                0x08005d68                std::type_info::__is_pointer_p() const
+                0x08005d68                std::type_info::__is_function_p() const
  .text._ZNKSt9type_infoeqERKS_
-                0x0800578c       0x2c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(tinfo.o)
-                0x0800578c                std::type_info::operator==(std::type_info const&) const
-                0x0800578c                std::type_info::__equal(std::type_info const&) const
- .text._ZdlPv   0x080057b8        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(del_op.o)
-                0x080057b8                operator delete(void*)
+                0x08005d6c       0x2c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(tinfo.o)
+                0x08005d6c                std::type_info::operator==(std::type_info const&) const
+                0x08005d6c                std::type_info::__equal(std::type_info const&) const
+ .text._ZdlPv   0x08005d98        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(del_op.o)
+                0x08005d98                operator delete(void*)
  .text._ZN10__cxxabiv1L24__is_gxx_exception_classEPc
-                0x080057bc       0x3a C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_call.o)
+                0x08005d9c       0x3a C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_call.o)
  .text.__cxa_call_terminate
-                0x080057f6       0x1e C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_call.o)
-                0x080057f6                __cxa_call_terminate
+                0x08005dd6       0x1e C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_call.o)
+                0x08005dd6                __cxa_call_terminate
  .text.__cxa_call_unexpected
-                0x08005814       0x28 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_call.o)
-                0x08005814                __cxa_call_unexpected
+                0x08005df4       0x28 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_call.o)
+                0x08005df4                __cxa_call_unexpected
  .text._ZN10__cxxabiv1L24__is_gxx_exception_classEPc
-                0x0800583c       0x3a C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_catch.o)
+                0x08005e1c       0x3a C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_catch.o)
  .text.__cxa_begin_catch
-                0x08005876       0x52 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_catch.o)
-                0x08005876                __cxa_begin_catch
- .text.abort    0x080058c8        0xe C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-abort.o)
-                0x080058c8                abort
- *fill*         0x080058d6        0x2 
- .text.free     0x080058d8       0x10 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-malloc.o)
-                0x080058d8                free
+                0x08005e56       0x52 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_catch.o)
+                0x08005e56                __cxa_begin_catch
+ .text.abort    0x08005ea8        0xe C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-abort.o)
+                0x08005ea8                abort
+ *fill*         0x08005eb6        0x2 
+ .text.free     0x08005eb8       0x10 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-malloc.o)
+                0x08005eb8                free
  .text.__malloc_lock
-                0x080058e8        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
-                0x080058e8                __malloc_lock
+                0x08005ec8        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+                0x08005ec8                __malloc_lock
  .text.__malloc_unlock
-                0x080058f4        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
-                0x080058f4                __malloc_unlock
+                0x08005ed4        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+                0x08005ed4                __malloc_unlock
  .text.__cxa_atexit
-                0x08005900       0x1c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-cxa_atexit.o)
-                0x08005900                __cxa_atexit
- .text.memset   0x0800591c       0x10 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
-                0x0800591c                memset
+                0x08005ee0       0x1c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-cxa_atexit.o)
+                0x08005ee0                __cxa_atexit
+ .text.memset   0x08005efc       0x10 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
+                0x08005efc                memset
  .text._raise_r
-                0x0800592c       0x50 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signal.o)
-                0x0800592c                _raise_r
- .text.raise    0x0800597c       0x10 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signal.o)
-                0x0800597c                raise
- .text._kill_r  0x0800598c       0x24 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signalr.o)
-                0x0800598c                _kill_r
+                0x08005f0c       0x50 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signal.o)
+                0x08005f0c                _raise_r
+ .text.raise    0x08005f5c       0x10 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signal.o)
+                0x08005f5c                raise
+ .text._kill_r  0x08005f6c       0x24 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signalr.o)
+                0x08005f6c                _kill_r
  .text._getpid_r
-                0x080059b0        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signalr.o)
-                0x080059b0                _getpid_r
- .text.__errno  0x080059b4        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
-                0x080059b4                __errno
+                0x08005f90        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signalr.o)
+                0x08005f90                _getpid_r
+ .text.__errno  0x08005f94        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
+                0x08005f94                __errno
  .text.__libc_init_array
-                0x080059c0       0x48 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
-                0x080059c0                __libc_init_array
+                0x08005fa0       0x48 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+                0x08005fa0                __libc_init_array
  .text.__retarget_lock_acquire_recursive
-                0x08005a08        0x2 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
-                0x08005a08                __retarget_lock_acquire_recursive
+                0x08005fe8        0x2 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+                0x08005fe8                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x08005a0a        0x2 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
-                0x08005a0a                __retarget_lock_release_recursive
- .text._free_r  0x08005a0c       0x94 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
-                0x08005a0c                _free_r
- .text.memcpy   0x08005aa0       0x1c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
-                0x08005aa0                memcpy
+                0x08005fea        0x2 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+                0x08005fea                __retarget_lock_release_recursive
+ .text._free_r  0x08005fec       0x94 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
+                0x08005fec                _free_r
+ .text.memcpy   0x08006080       0x1c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
+                0x08006080                memcpy
  .text.__udivmoddi4
-                0x08005abc      0x2bc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
-                0x08005abc                __udivmoddi4
+                0x0800609c      0x2bc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x0800609c                __udivmoddi4
  .text.selfrel_offset31
-                0x08005d78       0x14 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006358       0x14 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text.search_EIT_table
-                0x08005d8c       0x68 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x0800636c       0x68 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text.__gnu_unwind_get_pr_addr
-                0x08005df4       0x28 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080063d4       0x28 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text.get_eit_entry
-                0x08005e1c       0x98 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080063fc       0x98 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text.restore_non_core_regs
-                0x08005eb4       0x58 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006494       0x58 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text._Unwind_decode_typeinfo_ptr.constprop.0
-                0x08005f0c        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080064ec        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text._Unwind_DebugHook
-                0x08005f18        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080064f8        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text.unwind_phase2
-                0x08005f1c       0x3c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080064fc       0x3c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text.unwind_phase2_forced
-                0x08005f58       0xd8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006538       0xd8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text.__gnu_Unwind_RaiseException
-                0x08006030       0x68 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x08006030                __gnu_Unwind_RaiseException
+                0x08006610       0x68 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006610                __gnu_Unwind_RaiseException
  .text.__gnu_Unwind_ForcedUnwind
-                0x08006098       0x10 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x08006098                __gnu_Unwind_ForcedUnwind
+                0x08006678       0x10 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006678                __gnu_Unwind_ForcedUnwind
  .text.__gnu_Unwind_Resume
-                0x080060a8       0x44 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x080060a8                __gnu_Unwind_Resume
+                0x08006688       0x44 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006688                __gnu_Unwind_Resume
  .text.__gnu_Unwind_Resume_or_Rethrow
-                0x080060ec       0x14 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x080060ec                __gnu_Unwind_Resume_or_Rethrow
+                0x080066cc       0x14 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080066cc                __gnu_Unwind_Resume_or_Rethrow
  .text._Unwind_Complete
-                0x08006100        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x08006100                _Unwind_Complete
+                0x080066e0        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080066e0                _Unwind_Complete
  .text._Unwind_VRS_Get
-                0x08006104       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x08006104                _Unwind_VRS_Get
+                0x080066e4       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080066e4                _Unwind_VRS_Get
  .text._Unwind_GetGR
-                0x08006138       0x1c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006718       0x1c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text._Unwind_VRS_Set
-                0x08006154       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x08006154                _Unwind_VRS_Set
+                0x08006734       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006734                _Unwind_VRS_Set
  .text._Unwind_SetGR
-                0x08006188       0x18 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006768       0x18 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text.__gnu_Unwind_Backtrace
-                0x080061a0       0x84 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x080061a0                __gnu_Unwind_Backtrace
+                0x08006780       0x84 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006780                __gnu_Unwind_Backtrace
  .text.__gnu_unwind_pr_common
-                0x08006224      0x2a4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006804      0x2a4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .text.__aeabi_unwind_cpp_pr0
-                0x080064c8        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x080064c8                __aeabi_unwind_cpp_pr0
+                0x08006aa8        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006aa8                __aeabi_unwind_cpp_pr0
  .text.__aeabi_unwind_cpp_pr1
-                0x080064d0        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x080064d0                __aeabi_unwind_cpp_pr1
+                0x08006ab0        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006ab0                __aeabi_unwind_cpp_pr1
  .text.__aeabi_unwind_cpp_pr2
-                0x080064d8        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x080064d8                __aeabi_unwind_cpp_pr2
+                0x08006ab8        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006ab8                __aeabi_unwind_cpp_pr2
  .text._Unwind_VRS_Pop
-                0x080064e0      0x2f0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
-                0x080064e0                _Unwind_VRS_Pop
+                0x08006ac0      0x2f0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08006ac0                _Unwind_VRS_Pop
  .text.next_unwind_byte
-                0x080067d0       0x38 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x08006db0       0x38 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
  .text._Unwind_GetGR.constprop.0
-                0x08006808       0x1c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x08006de8       0x1c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
  .text.unwind_UCB_from_context
-                0x08006824        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x08006e04        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
  .text.__gnu_unwind_execute
-                0x08006828      0x2fc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
-                0x08006828                __gnu_unwind_execute
+                0x08006e08      0x2fc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x08006e08                __gnu_unwind_execute
  .text.__gnu_unwind_frame
-                0x08006b24       0x2c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
-                0x08006b24                __gnu_unwind_frame
+                0x08007104       0x2c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x08007104                __gnu_unwind_frame
  .text._Unwind_GetRegionStart
-                0x08006b50        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
-                0x08006b50                _Unwind_GetRegionStart
+                0x08007130        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x08007130                _Unwind_GetRegionStart
  .text._Unwind_GetLanguageSpecificData
-                0x08006b5c       0x14 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
-                0x08006b5c                _Unwind_GetLanguageSpecificData
+                0x0800713c       0x14 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x0800713c                _Unwind_GetLanguageSpecificData
  .text.unlikely._Unwind_GetDataRelBase
-                0x08006b70        0x6 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
-                0x08006b70                _Unwind_GetDataRelBase
+                0x08007150        0x6 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x08007150                _Unwind_GetDataRelBase
  .text.unlikely._Unwind_GetTextRelBase
-                0x08006b76        0x6 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
-                0x08006b76                _Unwind_GetTextRelBase
+                0x08007156        0x6 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x08007156                _Unwind_GetTextRelBase
  *(.glue_7)
- .glue_7        0x08006b7c        0x0 linker stubs
+ .glue_7        0x0800715c        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08006b7c        0x0 linker stubs
+ .glue_7t       0x0800715c        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08006b7c        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x0800715c        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x08006b7c        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crti.o
-                0x08006b7c                _init
- .init          0x08006b80        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x0800715c        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crti.o
+                0x0800715c                _init
+ .init          0x08007160        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x08006b88        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crti.o
-                0x08006b88                _fini
- .fini          0x08006b8c        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtn.o
-                0x08006b94                        . = ALIGN (0x4)
-                0x08006b94                        _etext = .
+ .fini          0x08007168        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crti.o
+                0x08007168                _fini
+ .fini          0x0800716c        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+                0x08007174                        . = ALIGN (0x4)
+                0x08007174                        _etext = .
 
-.vfp11_veneer   0x08006b94        0x0
- .vfp11_veneer  0x08006b94        0x0 linker stubs
+.vfp11_veneer   0x08007174        0x0
+ .vfp11_veneer  0x08007174        0x0 linker stubs
 
-.v4_bx          0x08006b94        0x0
- .v4_bx         0x08006b94        0x0 linker stubs
+.v4_bx          0x08007174        0x0
+ .v4_bx         0x08007174        0x0 linker stubs
 
-.iplt           0x08006b94        0x0
- .iplt          0x08006b94        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x08007174        0x0
+ .iplt          0x08007174        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x08006b94      0x480
-                0x08006b94                        . = ALIGN (0x4)
+.rodata         0x08007174      0x4e4
+                0x08007174                        . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.ADC_Init.str1.4
-                0x08006b94      0x1c0 build/stm32f4xx_hal_adc.o
+                0x08007174      0x1c0 build/stm32f4xx_hal_adc.o
                                  0x35 (size before relaxing)
  .rodata.HAL_RCC_OscConfig.str1.4
-                0x08006d54       0x35 build/stm32f4xx_hal_rcc.o
+                0x08007334       0x35 build/stm32f4xx_hal_rcc.o
  .rodata.HAL_GPIO_Init.str1.4
-                0x08006d54       0x36 build/stm32f4xx_hal_gpio.o
+                0x08007334       0x36 build/stm32f4xx_hal_gpio.o
  .rodata.HAL_DMA_Init.str1.4
-                0x08006d54       0x35 build/stm32f4xx_hal_dma.o
+                0x08007334       0x35 build/stm32f4xx_hal_dma.o
  .rodata.flagBitshiftOffset.0
-                0x08006d54        0x8 build/stm32f4xx_hal_dma.o
+                0x08007334        0x8 build/stm32f4xx_hal_dma.o
  .rodata.HAL_NVIC_SetPriorityGrouping.str1.4
-                0x08006d5c       0x38 build/stm32f4xx_hal_cortex.o
+                0x0800733c       0x38 build/stm32f4xx_hal_cortex.o
  .rodata.HAL_SPI_Init.str1.4
-                0x08006d5c       0x35 build/stm32f4xx_hal_spi.o
+                0x0800733c       0x35 build/stm32f4xx_hal_spi.o
  .rodata.TIM_OC1_SetConfig.str1.4
-                0x08006d5c       0x35 build/stm32f4xx_hal_tim.o
+                0x0800733c       0x35 build/stm32f4xx_hal_tim.o
  .rodata.HAL_TIMEx_HallSensor_Init.str1.4
-                0x08006d5c       0x38 build/stm32f4xx_hal_tim_ex.o
+                0x0800733c       0x38 build/stm32f4xx_hal_tim_ex.o
  .rodata.AHBPrescTable
-                0x08006d5c       0x10 build/system_stm32f4xx.o
-                0x08006d5c                AHBPrescTable
+                0x0800733c       0x10 build/system_stm32f4xx.o
+                0x0800733c                AHBPrescTable
  .rodata._ZTS4IAdc
-                0x08006d6c        0x6 build/main.o
-                0x08006d6c                typeinfo name for IAdc
- *fill*         0x08006d72        0x2 
+                0x0800734c        0x6 build/main.o
+                0x0800734c                typeinfo name for IAdc
+ *fill*         0x08007352        0x2 
  .rodata._ZTI4IAdc
-                0x08006d74        0x8 build/main.o
-                0x08006d74                typeinfo for IAdc
+                0x08007354        0x8 build/main.o
+                0x08007354                typeinfo for IAdc
  .rodata._ZTS6ITimer
-                0x08006d7c        0x8 build/main.o
-                0x08006d7c                typeinfo name for ITimer
+                0x0800735c        0x8 build/main.o
+                0x0800735c                typeinfo name for ITimer
  .rodata._ZTI6ITimer
-                0x08006d84        0x8 build/main.o
-                0x08006d84                typeinfo for ITimer
+                0x08007364        0x8 build/main.o
+                0x08007364                typeinfo for ITimer
  .rodata._ZTS5IGpio
-                0x08006d8c        0x7 build/main.o
-                0x08006d8c                typeinfo name for IGpio
- *fill*         0x08006d93        0x1 
+                0x0800736c        0x7 build/main.o
+                0x0800736c                typeinfo name for IGpio
+ *fill*         0x08007373        0x1 
  .rodata._ZTI5IGpio
-                0x08006d94        0x8 build/main.o
-                0x08006d94                typeinfo for IGpio
+                0x08007374        0x8 build/main.o
+                0x08007374                typeinfo for IGpio
  .rodata._ZTS8IEncoder
-                0x08006d9c        0xa build/main.o
-                0x08006d9c                typeinfo name for IEncoder
- *fill*         0x08006da6        0x2 
+                0x0800737c        0xa build/main.o
+                0x0800737c                typeinfo name for IEncoder
+ *fill*         0x08007386        0x2 
  .rodata._ZTI8IEncoder
-                0x08006da8        0x8 build/main.o
-                0x08006da8                typeinfo for IEncoder
+                0x08007388        0x8 build/main.o
+                0x08007388                typeinfo for IEncoder
+ .rodata._ZTS4ISpi
+                0x08007390        0x6 build/main.o
+                0x08007390                typeinfo name for ISpi
+ *fill*         0x08007396        0x2 
+ .rodata._ZTI4ISpi
+                0x08007398        0x8 build/main.o
+                0x08007398                typeinfo for ISpi
  .rodata._ZTV4IAdc
-                0x08006db0       0x14 build/main.o
-                0x08006db0                vtable for IAdc
+                0x080073a0       0x14 build/main.o
+                0x080073a0                vtable for IAdc
  .rodata._ZTV6ITimer
-                0x08006dc4       0x1c build/main.o
-                0x08006dc4                vtable for ITimer
+                0x080073b4       0x1c build/main.o
+                0x080073b4                vtable for ITimer
  .rodata._ZTV5IGpio
-                0x08006de0       0x1c build/main.o
-                0x08006de0                vtable for IGpio
+                0x080073d0       0x1c build/main.o
+                0x080073d0                vtable for IGpio
  .rodata._ZTV8IEncoder
-                0x08006dfc       0x18 build/main.o
-                0x08006dfc                vtable for IEncoder
+                0x080073ec       0x18 build/main.o
+                0x080073ec                vtable for IEncoder
+ .rodata._ZTV4ISpi
+                0x08007404       0x1c build/main.o
+                0x08007404                vtable for ISpi
  .rodata._ZTS10AdcSTM32F4
-                0x08006e14        0xd build/AdcSTM32F4.o
-                0x08006e14                typeinfo name for AdcSTM32F4
- *fill*         0x08006e21        0x3 
+                0x08007420        0xd build/AdcSTM32F4.o
+                0x08007420                typeinfo name for AdcSTM32F4
+ *fill*         0x0800742d        0x3 
  .rodata._ZTI10AdcSTM32F4
-                0x08006e24        0xc build/AdcSTM32F4.o
-                0x08006e24                typeinfo for AdcSTM32F4
+                0x08007430        0xc build/AdcSTM32F4.o
+                0x08007430                typeinfo for AdcSTM32F4
  .rodata._ZTV10AdcSTM32F4
-                0x08006e30       0x14 build/AdcSTM32F4.o
-                0x08006e30                vtable for AdcSTM32F4
+                0x0800743c       0x14 build/AdcSTM32F4.o
+                0x0800743c                vtable for AdcSTM32F4
  .rodata._ZTS14EncoderSTM32F4
-                0x08006e44       0x11 build/EncoderSTM32F4.o
-                0x08006e44                typeinfo name for EncoderSTM32F4
- *fill*         0x08006e55        0x3 
+                0x08007450       0x11 build/EncoderSTM32F4.o
+                0x08007450                typeinfo name for EncoderSTM32F4
+ *fill*         0x08007461        0x3 
  .rodata._ZTI14EncoderSTM32F4
-                0x08006e58        0xc build/EncoderSTM32F4.o
-                0x08006e58                typeinfo for EncoderSTM32F4
+                0x08007464        0xc build/EncoderSTM32F4.o
+                0x08007464                typeinfo for EncoderSTM32F4
  .rodata._ZTV14EncoderSTM32F4
-                0x08006e64       0x18 build/EncoderSTM32F4.o
-                0x08006e64                vtable for EncoderSTM32F4
+                0x08007470       0x18 build/EncoderSTM32F4.o
+                0x08007470                vtable for EncoderSTM32F4
  .rodata._ZTS11GpioSTM32F4
-                0x08006e7c        0xe build/GpioSTM32F4.o
-                0x08006e7c                typeinfo name for GpioSTM32F4
- *fill*         0x08006e8a        0x2 
+                0x08007488        0xe build/GpioSTM32F4.o
+                0x08007488                typeinfo name for GpioSTM32F4
+ *fill*         0x08007496        0x2 
  .rodata._ZTI11GpioSTM32F4
-                0x08006e8c        0xc build/GpioSTM32F4.o
-                0x08006e8c                typeinfo for GpioSTM32F4
+                0x08007498        0xc build/GpioSTM32F4.o
+                0x08007498                typeinfo for GpioSTM32F4
  .rodata._ZTV11GpioSTM32F4
-                0x08006e98       0x1c build/GpioSTM32F4.o
-                0x08006e98                vtable for GpioSTM32F4
+                0x080074a4       0x1c build/GpioSTM32F4.o
+                0x080074a4                vtable for GpioSTM32F4
+ .rodata._ZTS10SPISTM32F4
+                0x080074c0        0xd build/SPISTM32F4.o
+                0x080074c0                typeinfo name for SPISTM32F4
+ *fill*         0x080074cd        0x3 
+ .rodata._ZTI10SPISTM32F4
+                0x080074d0        0xc build/SPISTM32F4.o
+                0x080074d0                typeinfo for SPISTM32F4
+ .rodata._ZTV10SPISTM32F4
+                0x080074dc       0x1c build/SPISTM32F4.o
+                0x080074dc                vtable for SPISTM32F4
  .rodata._ZTS12TimerSTM32F4
-                0x08006eb4        0xf build/TimerSTM32F4.o
-                0x08006eb4                typeinfo name for TimerSTM32F4
- *fill*         0x08006ec3        0x1 
+                0x080074f8        0xf build/TimerSTM32F4.o
+                0x080074f8                typeinfo name for TimerSTM32F4
+ *fill*         0x08007507        0x1 
  .rodata._ZTI12TimerSTM32F4
-                0x08006ec4        0xc build/TimerSTM32F4.o
-                0x08006ec4                typeinfo for TimerSTM32F4
+                0x08007508        0xc build/TimerSTM32F4.o
+                0x08007508                typeinfo for TimerSTM32F4
  .rodata._ZTV12TimerSTM32F4
-                0x08006ed0       0x1c build/TimerSTM32F4.o
-                0x08006ed0                vtable for TimerSTM32F4
+                0x08007514       0x1c build/TimerSTM32F4.o
+                0x08007514                vtable for TimerSTM32F4
  .rodata._ZTSN10__cxxabiv117__class_type_infoE
-                0x08006eec       0x22 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
-                0x08006eec                typeinfo name for __cxxabiv1::__class_type_info
- *fill*         0x08006f0e        0x2 
+                0x08007530       0x22 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
+                0x08007530                typeinfo name for __cxxabiv1::__class_type_info
+ *fill*         0x08007552        0x2 
  .rodata._ZTIN10__cxxabiv117__class_type_infoE
-                0x08006f10        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
-                0x08006f10                typeinfo for __cxxabiv1::__class_type_info
+                0x08007554        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
+                0x08007554                typeinfo for __cxxabiv1::__class_type_info
  .rodata._ZTVN10__cxxabiv117__class_type_infoE
-                0x08006f1c       0x2c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
-                0x08006f1c                vtable for __cxxabiv1::__class_type_info
+                0x08007560       0x2c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
+                0x08007560                vtable for __cxxabiv1::__class_type_info
  .rodata._ZTSN10__cxxabiv115__forced_unwindE
-                0x08006f48       0x20 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_exception.o)
-                0x08006f48                typeinfo name for __cxxabiv1::__forced_unwind
+                0x0800758c       0x20 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_exception.o)
+                0x0800758c                typeinfo name for __cxxabiv1::__forced_unwind
  .rodata._ZTIN10__cxxabiv115__forced_unwindE
-                0x08006f68        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_exception.o)
-                0x08006f68                typeinfo for __cxxabiv1::__forced_unwind
+                0x080075ac        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_exception.o)
+                0x080075ac                typeinfo for __cxxabiv1::__forced_unwind
  .rodata._ZTSN10__cxxabiv119__foreign_exceptionE
-                0x08006f70       0x24 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_exception.o)
-                0x08006f70                typeinfo name for __cxxabiv1::__foreign_exception
+                0x080075b4       0x24 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_exception.o)
+                0x080075b4                typeinfo name for __cxxabiv1::__foreign_exception
  .rodata._ZTIN10__cxxabiv119__foreign_exceptionE
-                0x08006f94        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_exception.o)
-                0x08006f94                typeinfo for __cxxabiv1::__foreign_exception
+                0x080075d8        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_exception.o)
+                0x080075d8                typeinfo for __cxxabiv1::__foreign_exception
  .rodata._ZTSN10__cxxabiv120__si_class_type_infoE
-                0x08006f9c       0x25 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
-                0x08006f9c                typeinfo name for __cxxabiv1::__si_class_type_info
- *fill*         0x08006fc1        0x3 
+                0x080075e0       0x25 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
+                0x080075e0                typeinfo name for __cxxabiv1::__si_class_type_info
+ *fill*         0x08007605        0x3 
  .rodata._ZTIN10__cxxabiv120__si_class_type_infoE
-                0x08006fc4        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
-                0x08006fc4                typeinfo for __cxxabiv1::__si_class_type_info
+                0x08007608        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
+                0x08007608                typeinfo for __cxxabiv1::__si_class_type_info
  .rodata._ZTVN10__cxxabiv120__si_class_type_infoE
-                0x08006fd0       0x2c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
-                0x08006fd0                vtable for __cxxabiv1::__si_class_type_info
+                0x08007614       0x2c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
+                0x08007614                vtable for __cxxabiv1::__si_class_type_info
  .rodata._ZTSSt9type_info
-                0x08006ffc        0xd C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(tinfo.o)
-                0x08006ffc                typeinfo name for std::type_info
- *fill*         0x08007009        0x3 
+                0x08007640        0xd C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(tinfo.o)
+                0x08007640                typeinfo name for std::type_info
+ *fill*         0x0800764d        0x3 
  .rodata._ZTISt9type_info
-                0x0800700c        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(tinfo.o)
-                0x0800700c                typeinfo for std::type_info
-                0x08007014                        . = ALIGN (0x4)
+                0x08007650        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(tinfo.o)
+                0x08007650                typeinfo for std::type_info
+                0x08007658                        . = ALIGN (0x4)
 
-.ARM.extab      0x08007014      0x134
+.ARM.extab      0x08007658      0x174
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  .ARM.extab.text._ZN11GpioSTM32F4D2Ev
-                0x08007014        0x0 build/main.o
+                0x08007658        0x0 build/main.o
  .ARM.extab.text._ZN10AdcSTM32F4D2Ev
-                0x08007014        0x0 build/main.o
+                0x08007658        0x0 build/main.o
  .ARM.extab.text._ZN12TimerSTM32F4D2Ev
-                0x08007014        0x0 build/main.o
+                0x08007658        0x0 build/main.o
  .ARM.extab.text._ZN14EncoderSTM32F4D2Ev
-                0x08007014        0x0 build/main.o
+                0x08007658        0x0 build/main.o
+ .ARM.extab.text._ZN10SPISTM32F4D2Ev
+                0x08007658        0x0 build/main.o
  .ARM.extab.text._ZN11GpioSTM32F4D0Ev
-                0x08007014        0x0 build/main.o
+                0x08007658        0x0 build/main.o
  .ARM.extab.text._ZN10AdcSTM32F4D0Ev
-                0x08007014        0x0 build/main.o
+                0x08007658        0x0 build/main.o
  .ARM.extab.text._ZN12TimerSTM32F4D0Ev
-                0x08007014        0x0 build/main.o
+                0x08007658        0x0 build/main.o
  .ARM.extab.text._ZN14EncoderSTM32F4D0Ev
-                0x08007014        0x0 build/main.o
+                0x08007658        0x0 build/main.o
+ .ARM.extab.text._ZN10SPISTM32F4D0Ev
+                0x08007658        0x0 build/main.o
  .ARM.extab.text.main
-                0x08007014       0xc9 build/main.o
- *fill*         0x080070dd        0x3 
+                0x08007658       0xdd build/main.o
+ *fill*         0x08007735        0x3 
+ .ARM.extab.text._ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef
+                0x08007738       0x14 build/AdcSTM32F4.o
  .ARM.extab.text._ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef
-                0x080070e0       0x14 build/EncoderSTM32F4.o
+                0x0800774c       0x14 build/EncoderSTM32F4.o
  .ARM.extab.text._ZN11GpioSTM32F47setHighEv
-                0x080070f4        0xc build/GpioSTM32F4.o
+                0x08007760        0xc build/GpioSTM32F4.o
  .ARM.extab.text._ZN11GpioSTM32F46setLowEv
-                0x08007100        0xc build/GpioSTM32F4.o
+                0x0800776c        0xc build/GpioSTM32F4.o
  .ARM.extab.text._ZN11GpioSTM32F44readEv
-                0x0800710c        0xc build/GpioSTM32F4.o
+                0x08007778        0xc build/GpioSTM32F4.o
+ .ARM.extab.text._ZN10SPISTM32F415resetChipSelectEv
+                0x08007784        0xc build/SPISTM32F4.o
+ .ARM.extab.text._ZN10SPISTM32F413setChipSelectEv
+                0x08007790        0xc build/SPISTM32F4.o
  .ARM.extab.text._ZN12TimerSTM32F45startEv
-                0x08007118        0xc build/TimerSTM32F4.o
+                0x0800779c        0xc build/TimerSTM32F4.o
  .ARM.extab.text._ZN12TimerSTM32F44stopEv
-                0x08007124        0xc build/TimerSTM32F4.o
+                0x080077a8        0xc build/TimerSTM32F4.o
  .ARM.extab.text._Unwind_GetRegionStart
-                0x08007130        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x080077b4        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
  .ARM.extab.text._Unwind_GetLanguageSpecificData
-                0x0800713c        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x080077c0        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
 
-.ARM            0x08007148      0x128
-                0x08007148                        __exidx_start = .
+.ARM            0x080077cc      0x150
+                0x080077cc                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x08007148        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-strcmp.o)
+ .ARM.exidx     0x080077cc        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-strcmp.o)
  .ARM.exidx.text._ZN11GpioSTM32F4D2Ev
-                0x08007150        0x0 build/main.o
+                0x080077d4        0x0 build/main.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN10AdcSTM32F4D2Ev
-                0x08007150        0x0 build/main.o
+                0x080077d4        0x0 build/main.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN12TimerSTM32F4D2Ev
-                0x08007150        0x0 build/main.o
+                0x080077d4        0x0 build/main.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN14EncoderSTM32F4D2Ev
-                0x08007150        0x0 build/main.o
+                0x080077d4        0x0 build/main.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text._ZN10SPISTM32F4D2Ev
+                0x080077d4        0x0 build/main.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN11GpioSTM32F4D0Ev
-                0x08007150        0x0 build/main.o
+                0x080077d4        0x0 build/main.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN10AdcSTM32F4D0Ev
-                0x08007150        0x0 build/main.o
+                0x080077d4        0x0 build/main.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN12TimerSTM32F4D0Ev
-                0x08007150        0x0 build/main.o
+                0x080077d4        0x0 build/main.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN14EncoderSTM32F4D0Ev
-                0x08007150        0x0 build/main.o
+                0x080077d4        0x0 build/main.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text._ZN10SPISTM32F4D0Ev
+                0x080077d4        0x0 build/main.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text.Error_Handler
-                0x08007150        0x0 build/main.o
+                0x080077d4        0x0 build/main.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._Z18SystemClock_Configv
-                0x08007150        0x8 build/main.o
+                0x080077d4        0x8 build/main.o
  .ARM.exidx.text.main
-                0x08007158        0x8 build/main.o
+                0x080077dc        0x8 build/main.o
  .ARM.exidx.text.assert_failed
-                0x08007160        0x8 build/main.o
+                0x080077e4        0x8 build/main.o
  .ARM.exidx.text._ZN10AdcSTM32F44readEh
-                0x08007168        0x8 build/AdcSTM32F4.o
+                0x080077ec        0x8 build/AdcSTM32F4.o
  .ARM.exidx.text._ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef
-                0x08007170        0x8 build/AdcSTM32F4.o
+                0x080077f4        0x8 build/AdcSTM32F4.o
  .ARM.exidx.text._ZNK14EncoderSTM32F48getCountEv
-                0x08007178        0x0 build/EncoderSTM32F4.o
-                                  0x8 (size before relaxing)
+                0x080077fc        0x8 build/EncoderSTM32F4.o
  .ARM.exidx.text._ZN14EncoderSTM32F410resetCountEv
-                0x08007178        0x0 build/EncoderSTM32F4.o
+                0x08007804        0x0 build/EncoderSTM32F4.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef
-                0x08007178        0x8 build/EncoderSTM32F4.o
+                0x08007804        0x8 build/EncoderSTM32F4.o
  .ARM.exidx.text._ZN11GpioSTM32F47setHighEv
-                0x08007180        0x8 build/GpioSTM32F4.o
+                0x0800780c        0x8 build/GpioSTM32F4.o
  .ARM.exidx.text._ZN11GpioSTM32F46setLowEv
-                0x08007188        0x8 build/GpioSTM32F4.o
+                0x08007814        0x8 build/GpioSTM32F4.o
  .ARM.exidx.text._ZN11GpioSTM32F44readEv
-                0x08007190        0x8 build/GpioSTM32F4.o
+                0x0800781c        0x8 build/GpioSTM32F4.o
  .ARM.exidx.text._ZN11GpioSTM32F4C2EP12GPIO_TypeDeft
-                0x08007198        0x8 build/GpioSTM32F4.o
+                0x08007824        0x8 build/GpioSTM32F4.o
  .ARM.exidx.text._ZN10PwmSTM32F4C2EP17TIM_HandleTypeDefm
-                0x080071a0        0x0 build/PwmSTM32F4.o
+                0x0800782c        0x0 build/PwmSTM32F4.o
                                   0x8 (size before relaxing)
+ .ARM.exidx.text._ZN10SPISTM32F415resetChipSelectEv
+                0x0800782c        0x8 build/SPISTM32F4.o
+ .ARM.exidx.text._ZN10SPISTM32F413setChipSelectEv
+                0x08007834        0x8 build/SPISTM32F4.o
+ .ARM.exidx.text._ZN10SPISTM32F415transmitReceiveEPhS0_tm
+                0x0800783c        0x8 build/SPISTM32F4.o
+ .ARM.exidx.text._ZN10SPISTM32F4C2EP19__SPI_HandleTypeDefP12GPIO_TypeDeft
+                0x08007844        0x8 build/SPISTM32F4.o
  .ARM.exidx.text._ZN12TimerSTM32F411setCallbackEPFvvE
-                0x080071a0        0x0 build/TimerSTM32F4.o
+                0x0800784c        0x0 build/TimerSTM32F4.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN12TimerSTM32F45startEv
-                0x080071a0        0x8 build/TimerSTM32F4.o
+                0x0800784c        0x8 build/TimerSTM32F4.o
  .ARM.exidx.text._ZN12TimerSTM32F44stopEv
-                0x080071a8        0x8 build/TimerSTM32F4.o
+                0x08007854        0x8 build/TimerSTM32F4.o
  .ARM.exidx.text._ZN12TimerSTM32F4C2EP17TIM_HandleTypeDef
-                0x080071b0        0x8 build/TimerSTM32F4.o
+                0x0800785c        0x8 build/TimerSTM32F4.o
  .ARM.exidx.text._ZN6ButtonC2EP5IGpiom
-                0x080071b8        0x0 build/Button.o
+                0x08007864        0x0 build/Button.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN6Button10checkStateEv
-                0x080071b8        0x8 build/Button.o
+                0x08007864        0x8 build/Button.o
  .ARM.exidx.text._ZN11MotorDriverC2EP10PwmSTM32F4P11GpioSTM32F4S3_f
-                0x080071c0        0x8 build/MotorDriver.o
+                0x0800786c        0x8 build/MotorDriver.o
+ .ARM.exidx.text._ZN3ImuC2EP10SPISTM32F4
+                0x08007874        0x0 build/IMUDriver.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text._ZN13LEDControllerC2EP11GpioSTM32F4S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_
+                0x08007874        0x0 build/LEDController.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text._ZN11PhotoSensorC2EP17ADC_HandleTypeDefPtm
+                0x08007874        0x0 build/PhotoSensor.o
+                                  0x8 (size before relaxing)
  .ARM.exidx.text.__udivmoddi4
-                0x080071c8        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x08007874        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text.selfrel_offset31
-                0x080071c8        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08007874        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text.search_EIT_table
-                0x080071c8        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08007874        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text.__gnu_unwind_get_pr_addr
-                0x080071c8        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08007874        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text.get_eit_entry
-                0x080071c8        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08007874        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .ARM.exidx.text.restore_non_core_regs
-                0x080071d0        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x0800787c        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .ARM.exidx.text._Unwind_decode_typeinfo_ptr.constprop.0
-                0x080071d8        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08007884        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .ARM.exidx.text._Unwind_DebugHook
-                0x080071e0        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x0800788c        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text.unwind_phase2
-                0x080071e0        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x0800788c        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .ARM.exidx.text.unwind_phase2_forced
-                0x080071e8        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x08007894        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .ARM.exidx.text.__gnu_Unwind_RaiseException
-                0x080071f0        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x0800789c        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .ARM.exidx.text.__gnu_Unwind_ForcedUnwind
-                0x080071f8        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080078a4        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .ARM.exidx.text.__gnu_Unwind_Resume
-                0x08007200        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080078ac        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .ARM.exidx.text.__gnu_Unwind_Resume_or_Rethrow
-                0x08007208        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080078b4        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .ARM.exidx.text._Unwind_Complete
-                0x08007210        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080078bc        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text._Unwind_VRS_Get
-                0x08007210        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080078bc        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text._Unwind_GetGR
-                0x08007210        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080078bc        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text._Unwind_VRS_Set
-                0x08007210        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080078bc        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text._Unwind_SetGR
-                0x08007210        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080078bc        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text.__gnu_Unwind_Backtrace
-                0x08007210        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080078bc        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .ARM.exidx.text.__gnu_unwind_pr_common
-                0x08007218        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080078c4        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .ARM.exidx.text.__aeabi_unwind_cpp_pr0
-                0x08007220        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080078cc        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .ARM.exidx.text.__aeabi_unwind_cpp_pr1
-                0x08007228        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080078d4        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text.__aeabi_unwind_cpp_pr2
-                0x08007228        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080078d4        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text._Unwind_VRS_Pop
-                0x08007228        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x080078d4        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .ARM.exidx.text.next_unwind_byte
-                0x08007230        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x080078dc        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
  .ARM.exidx.text._Unwind_GetGR.constprop.0
-                0x08007238        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x080078e4        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
  .ARM.exidx.text.unwind_UCB_from_context
-                0x08007240        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x080078ec        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
  .ARM.exidx.text.__gnu_unwind_execute
-                0x08007248        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x080078f4        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
  .ARM.exidx.text.__gnu_unwind_frame
-                0x08007250        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x080078fc        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
  .ARM.exidx.text._Unwind_GetRegionStart
-                0x08007258        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x08007904        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
  .ARM.exidx.text._Unwind_GetLanguageSpecificData
-                0x08007260        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x0800790c        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
  .ARM.exidx.text.unlikely._Unwind_GetDataRelBase
-                0x08007268        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x08007914        0x8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
  .ARM.exidx.text.unlikely._Unwind_GetTextRelBase
-                0x08007270        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x0800791c        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
                                   0x8 (size before relaxing)
-                0x08007270                        __exidx_end = .
+                0x0800791c                        __exidx_end = .
 
-.rel.dyn        0x08007270        0x0
- .rel.iplt      0x08007270        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x0800791c        0x0
+ .rel.iplt      0x0800791c        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.preinit_array  0x08007270        0x0
-                0x08007270                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0800791c        0x0
+                0x0800791c                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08007270                        PROVIDE (__preinit_array_end = .)
+                0x0800791c                        PROVIDE (__preinit_array_end = .)
 
-.init_array     0x08007270        0x4
-                0x08007270                        PROVIDE (__init_array_start = .)
+.init_array     0x0800791c        0x4
+                0x0800791c                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x08007270        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x08007274                        PROVIDE (__init_array_end = .)
+ .init_array    0x0800791c        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x08007920                        PROVIDE (__init_array_end = .)
 
-.fini_array     0x08007274        0x4
+.fini_array     0x08007920        0x4
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08007274        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x08007920        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x08007278                        _sidata = LOADADDR (.data)
+                0x08007924                        _sidata = LOADADDR (.data)
 
-.data           0x20000000       0x68 load address 0x08007278
+.data           0x20000000       0x68 load address 0x08007924
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -3450,19 +3450,19 @@ LOAD C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+
                 0x2000001c                _impure_data
                 0x20000068                        . = ALIGN (0x4)
                 0x20000068                        _edata = .
-                0x080072e0                        _siccmram = LOADADDR (.ccmram)
+                0x0800798c                        _siccmram = LOADADDR (.ccmram)
 
 .tm_clone_table
-                0x20000068        0x0 load address 0x080072e0
+                0x20000068        0x0 load address 0x0800798c
  .tm_clone_table
                 0x20000068        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
  .tm_clone_table
                 0x20000068        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtend.o
 
-.igot.plt       0x20000068        0x0 load address 0x080072e0
+.igot.plt       0x20000068        0x0 load address 0x0800798c
  .igot.plt      0x20000068        0x0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.ccmram         0x10000000        0x0 load address 0x080072e0
+.ccmram         0x10000000        0x0 load address 0x0800798c
                 0x10000000                        . = ALIGN (0x4)
                 0x10000000                        _sccmram = .
  *(.ccmram)
@@ -3471,7 +3471,7 @@ LOAD C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+
                 0x10000000                        _eccmram = .
                 0x10000000                        . = ALIGN (0x4)
 
-.bss            0x20000068      0x6b0
+.bss            0x20000068      0x71c
                 0x20000068                        _sbss = .
                 0x20000068                        __bss_start__ = _sbss
  *(.bss)
@@ -3515,142 +3515,161 @@ LOAD C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+
                 0x20000428        0x4 build/main.o
  .bss._ZZ4mainE10RightMotor
                 0x2000042c       0x14 build/main.o
- .bss._ZGVZ4mainE16ModeChangeButton
+ .bss._ZGVZ4mainE11PhotoSensor
                 0x20000440        0x4 build/main.o
+ .bss._ZZ4mainE11PhotoSensor
+                0x20000444        0xc build/main.o
+ .bss._ZGVZ4mainE7lsm6dsr
+                0x20000450        0x4 build/main.o
+ .bss._ZZ4mainE7lsm6dsr
+                0x20000454        0x8 build/main.o
+ .bss._ZGVZ4mainE13LEDController
+                0x2000045c        0x4 build/main.o
+ .bss._ZZ4mainE13LEDController
+                0x20000460       0x30 build/main.o
+ .bss._ZGVZ4mainE16ModeChangeButton
+                0x20000490        0x4 build/main.o
  .bss._ZZ4mainE16ModeChangeButton
-                0x20000444        0x8 build/main.o
+                0x20000494        0x8 build/main.o
+ .bss._ZGVZ4mainE4spi3
+                0x2000049c        0x4 build/main.o
+ .bss._ZZ4mainE4spi3
+                0x200004a0       0x10 build/main.o
  .bss._ZGVZ4mainE11EncoderLeft
-                0x2000044c        0x4 build/main.o
- .bss._ZZ4mainE11EncoderLeft
-                0x20000450        0x8 build/main.o
- .bss._ZGVZ4mainE12EncoderRight
-                0x20000458        0x4 build/main.o
- .bss._ZZ4mainE12EncoderRight
-                0x2000045c        0x8 build/main.o
- .bss._ZGVZ4mainE12CalcDynamics
-                0x20000464        0x4 build/main.o
- .bss._ZZ4mainE12CalcDynamics
-                0x20000468        0xc build/main.o
- .bss._ZGVZ4mainE6Buzzer
-                0x20000474        0x4 build/main.o
- .bss._ZZ4mainE6Buzzer
-                0x20000478        0x8 build/main.o
- .bss._ZGVZ4mainE12SuctionMotor
-                0x20000480        0x4 build/main.o
- .bss._ZZ4mainE12SuctionMotor
-                0x20000484        0x8 build/main.o
- .bss._ZGVZ4mainE7pwmLeft
-                0x2000048c        0x4 build/main.o
- .bss._ZZ4mainE7pwmLeft
-                0x20000490        0x8 build/main.o
- .bss._ZGVZ4mainE8pwmRight
-                0x20000498        0x4 build/main.o
- .bss._ZZ4mainE8pwmRight
-                0x2000049c        0x8 build/main.o
- .bss._ZGVZ4mainE4Adc3
-                0x200004a4        0x4 build/main.o
- .bss._ZZ4mainE4Adc3
-                0x200004a8        0x8 build/main.o
- .bss._ZGVZ4mainE4Adc2
                 0x200004b0        0x4 build/main.o
- .bss._ZZ4mainE4Adc2
+ .bss._ZZ4mainE11EncoderLeft
                 0x200004b4        0x8 build/main.o
- .bss._ZGVZ4mainE4Adc1
+ .bss._ZGVZ4mainE12EncoderRight
                 0x200004bc        0x4 build/main.o
- .bss._ZZ4mainE4Adc1
+ .bss._ZZ4mainE12EncoderRight
                 0x200004c0        0x8 build/main.o
- .bss._ZGVZ4mainE10gpioButton
+ .bss._ZGVZ4mainE12CalcDynamics
                 0x200004c8        0x4 build/main.o
- .bss._ZZ4mainE10gpioButton
+ .bss._ZZ4mainE12CalcDynamics
                 0x200004cc        0xc build/main.o
- .bss._ZGVZ4mainE8ModeLED3
+ .bss._ZGVZ4mainE6Buzzer
                 0x200004d8        0x4 build/main.o
- .bss._ZZ4mainE8ModeLED3
-                0x200004dc        0xc build/main.o
- .bss._ZGVZ4mainE8ModeLED2
-                0x200004e8        0x4 build/main.o
- .bss._ZZ4mainE8ModeLED2
-                0x200004ec        0xc build/main.o
- .bss._ZGVZ4mainE8ModeLED1
-                0x200004f8        0x4 build/main.o
- .bss._ZZ4mainE8ModeLED1
-                0x200004fc        0xc build/main.o
- .bss._ZGVZ4mainE5LED_L
+ .bss._ZZ4mainE6Buzzer
+                0x200004dc        0x8 build/main.o
+ .bss._ZGVZ4mainE12SuctionMotor
+                0x200004e4        0x4 build/main.o
+ .bss._ZZ4mainE12SuctionMotor
+                0x200004e8        0x8 build/main.o
+ .bss._ZGVZ4mainE7pwmLeft
+                0x200004f0        0x4 build/main.o
+ .bss._ZZ4mainE7pwmLeft
+                0x200004f4        0x8 build/main.o
+ .bss._ZGVZ4mainE8pwmRight
+                0x200004fc        0x4 build/main.o
+ .bss._ZZ4mainE8pwmRight
+                0x20000500        0x8 build/main.o
+ .bss._ZGVZ4mainE4Adc3
                 0x20000508        0x4 build/main.o
+ .bss._ZZ4mainE4Adc3
+                0x2000050c        0x8 build/main.o
+ .bss._ZGVZ4mainE4Adc2
+                0x20000514        0x4 build/main.o
+ .bss._ZZ4mainE4Adc2
+                0x20000518        0x8 build/main.o
+ .bss._ZGVZ4mainE4Adc1
+                0x20000520        0x4 build/main.o
+ .bss._ZZ4mainE4Adc1
+                0x20000524        0x8 build/main.o
+ .bss._ZGVZ4mainE10gpioButton
+                0x2000052c        0x4 build/main.o
+ .bss._ZZ4mainE10gpioButton
+                0x20000530        0xc build/main.o
+ .bss._ZGVZ4mainE8ModeLED3
+                0x2000053c        0x4 build/main.o
+ .bss._ZZ4mainE8ModeLED3
+                0x20000540        0xc build/main.o
+ .bss._ZGVZ4mainE8ModeLED2
+                0x2000054c        0x4 build/main.o
+ .bss._ZZ4mainE8ModeLED2
+                0x20000550        0xc build/main.o
+ .bss._ZGVZ4mainE8ModeLED1
+                0x2000055c        0x4 build/main.o
+ .bss._ZZ4mainE8ModeLED1
+                0x20000560        0xc build/main.o
+ .bss._ZGVZ4mainE5LED_L
+                0x2000056c        0x4 build/main.o
  .bss._ZZ4mainE5LED_L
-                0x2000050c        0xc build/main.o
+                0x20000570        0xc build/main.o
  .bss._ZGVZ4mainE5LED_R
-                0x20000518        0x4 build/main.o
+                0x2000057c        0x4 build/main.o
  .bss._ZZ4mainE5LED_R
-                0x2000051c        0xc build/main.o
+                0x20000580        0xc build/main.o
  .bss._ZGVZ4mainE6LED_FR
-                0x20000528        0x4 build/main.o
+                0x2000058c        0x4 build/main.o
  .bss._ZZ4mainE6LED_FR
-                0x2000052c        0xc build/main.o
+                0x20000590        0xc build/main.o
  .bss._ZGVZ4mainE6LED_FL
-                0x20000538        0x4 build/main.o
+                0x2000059c        0x4 build/main.o
  .bss._ZZ4mainE6LED_FL
-                0x2000053c        0xc build/main.o
+                0x200005a0        0xc build/main.o
  .bss._ZGVZ4mainE11SensorLED_L
-                0x20000548        0x4 build/main.o
+                0x200005ac        0x4 build/main.o
  .bss._ZZ4mainE11SensorLED_L
-                0x2000054c        0xc build/main.o
+                0x200005b0        0xc build/main.o
  .bss._ZGVZ4mainE11SensorLED_R
-                0x20000558        0x4 build/main.o
+                0x200005bc        0x4 build/main.o
  .bss._ZZ4mainE11SensorLED_R
-                0x2000055c        0xc build/main.o
+                0x200005c0        0xc build/main.o
  .bss._ZGVZ4mainE12SensorLED_FR
-                0x20000568        0x4 build/main.o
+                0x200005cc        0x4 build/main.o
  .bss._ZZ4mainE12SensorLED_FR
-                0x2000056c        0xc build/main.o
+                0x200005d0        0xc build/main.o
  .bss._ZGVZ4mainE12SensorLED_FL
-                0x20000578        0x4 build/main.o
+                0x200005dc        0x4 build/main.o
  .bss._ZZ4mainE12SensorLED_FL
-                0x2000057c        0xc build/main.o
+                0x200005e0        0xc build/main.o
  .bss._ZGVZ4mainE4BIN2
-                0x20000588        0x4 build/main.o
+                0x200005ec        0x4 build/main.o
  .bss._ZZ4mainE4BIN2
-                0x2000058c        0xc build/main.o
+                0x200005f0        0xc build/main.o
  .bss._ZGVZ4mainE4BIN1
-                0x20000598        0x4 build/main.o
+                0x200005fc        0x4 build/main.o
  .bss._ZZ4mainE4BIN1
-                0x2000059c        0xc build/main.o
+                0x20000600        0xc build/main.o
  .bss._ZGVZ4mainE4AIN2
-                0x200005a8        0x4 build/main.o
+                0x2000060c        0x4 build/main.o
  .bss._ZZ4mainE4AIN2
-                0x200005ac        0xc build/main.o
+                0x20000610        0xc build/main.o
  .bss._ZGVZ4mainE4AIN1
-                0x200005b8        0x4 build/main.o
+                0x2000061c        0x4 build/main.o
  .bss._ZZ4mainE4AIN1
-                0x200005bc        0xc build/main.o
+                0x20000620        0xc build/main.o
+ .bss._ZL9adcBuffer
+                0x2000062c        0x8 build/main.o
  .bss._ZN12_GLOBAL__N_110eh_globalsE
-                0x200005c8        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_globals.o)
+                0x20000634        0xc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_globals.o)
  .bss.__malloc_free_list
-                0x200005d4        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
-                0x200005d4                __malloc_free_list
- .bss.__sf      0x200005d8      0x138 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
-                0x200005d8                __sf
- .bss.errno     0x20000710        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
-                0x20000710                errno
+                0x20000640        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+                0x20000640                __malloc_free_list
+ .bss.__sf      0x20000644      0x138 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+                0x20000644                __sf
+ .bss.errno     0x2000077c        0x4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
+                0x2000077c                errno
  .bss.__lock___malloc_recursive_mutex
-                0x20000714        0x1 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
-                0x20000714                __lock___malloc_recursive_mutex
+                0x20000780        0x1 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+                0x20000780                __lock___malloc_recursive_mutex
  *(COMMON)
-                0x20000718                        . = ALIGN (0x4)
- *fill*         0x20000715        0x3 
-                0x20000718                        _ebss = .
-                0x20000718                        __bss_end__ = _ebss
+                0x20000784                        . = ALIGN (0x4)
+ *fill*         0x20000781        0x3 
+                0x20000784                        _ebss = .
+                0x20000784                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20000718      0x600
-                0x20000718                        . = ALIGN (0x8)
+                0x20000784      0x604
+                0x20000788                        . = ALIGN (0x8)
+ *fill*         0x20000784        0x4 
                 [!provide]                        PROVIDE (end = .)
-                0x20000718                        PROVIDE (_end = .)
-                0x20000918                        . = (. + _Min_Heap_Size)
- *fill*         0x20000718      0x200 
-                0x20000d18                        . = (. + _Min_Stack_Size)
- *fill*         0x20000918      0x400 
-                0x20000d18                        . = ALIGN (0x8)
+                0x20000788                        PROVIDE (_end = .)
+                0x20000988                        . = (. + _Min_Heap_Size)
+ *fill*         0x20000788      0x200 
+                0x20000d88                        . = (. + _Min_Stack_Size)
+ *fill*         0x20000988      0x400 
+                0x20000d88                        . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -3711,102 +3730,110 @@ LOAD C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+
  .ARM.attributes
                 0x000004ce       0x34 build/PwmSTM32F4.o
  .ARM.attributes
-                0x00000502       0x34 build/TimerSTM32F4.o
+                0x00000502       0x34 build/SPISTM32F4.o
  .ARM.attributes
-                0x00000536       0x34 build/Button.o
+                0x00000536       0x34 build/TimerSTM32F4.o
  .ARM.attributes
-                0x0000056a       0x34 build/MotorDriver.o
+                0x0000056a       0x34 build/Button.o
  .ARM.attributes
-                0x0000059e       0x21 build/startup_stm32f405xx.o
+                0x0000059e       0x34 build/MotorDriver.o
  .ARM.attributes
-                0x000005bf       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(atexit_arm.o)
+                0x000005d2       0x34 build/IMUDriver.o
  .ARM.attributes
-                0x000005f3       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
+                0x00000606       0x34 build/LEDController.o
  .ARM.attributes
-                0x00000627       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(del_ops.o)
+                0x0000063a       0x34 build/PhotoSensor.o
  .ARM.attributes
-                0x0000065b       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_arm.o)
+                0x0000066e       0x21 build/startup_stm32f405xx.o
  .ARM.attributes
-                0x0000068f       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_exception.o)
+                0x0000068f       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(atexit_arm.o)
  .ARM.attributes
-                0x000006c3       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_globals.o)
+                0x000006c3       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
  .ARM.attributes
-                0x000006f7       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_personality.o)
+                0x000006f7       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(del_ops.o)
  .ARM.attributes
-                0x0000072b       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_terminate.o)
+                0x0000072b       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_arm.o)
  .ARM.attributes
-                0x0000075f       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_unex_handler.o)
+                0x0000075f       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_exception.o)
  .ARM.attributes
-                0x00000793       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(guard.o)
+                0x00000793       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_globals.o)
  .ARM.attributes
-                0x000007c7       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
+                0x000007c7       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_personality.o)
  .ARM.attributes
-                0x000007fb       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(tinfo.o)
+                0x000007fb       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_terminate.o)
  .ARM.attributes
-                0x0000082f       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(del_op.o)
+                0x0000082f       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_unex_handler.o)
  .ARM.attributes
-                0x00000863       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_call.o)
+                0x00000863       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(guard.o)
  .ARM.attributes
-                0x00000897       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_catch.o)
+                0x00000897       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
  .ARM.attributes
-                0x000008cb       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_term_handler.o)
+                0x000008cb       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(tinfo.o)
  .ARM.attributes
-                0x000008ff       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-abort.o)
+                0x000008ff       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(del_op.o)
  .ARM.attributes
-                0x00000933       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-malloc.o)
+                0x00000933       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_call.o)
  .ARM.attributes
-                0x00000967       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+                0x00000967       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_catch.o)
  .ARM.attributes
-                0x0000099b       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+                0x0000099b       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_term_handler.o)
  .ARM.attributes
-                0x000009cf       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-cxa_atexit.o)
+                0x000009cf       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-abort.o)
  .ARM.attributes
-                0x00000a03       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+                0x00000a03       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-malloc.o)
  .ARM.attributes
-                0x00000a37       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
+                0x00000a37       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
  .ARM.attributes
-                0x00000a6b       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signal.o)
+                0x00000a6b       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
  .ARM.attributes
-                0x00000a9f       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
+                0x00000a9f       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-cxa_atexit.o)
  .ARM.attributes
-                0x00000ad3       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
+                0x00000ad3       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
  .ARM.attributes
-                0x00000b07       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signalr.o)
+                0x00000b07       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
  .ARM.attributes
-                0x00000b3b       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
+                0x00000b3b       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signal.o)
  .ARM.attributes
-                0x00000b6f       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+                0x00000b6f       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
  .ARM.attributes
-                0x00000ba3       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+                0x00000ba3       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
  .ARM.attributes
-                0x00000bd7       0x20 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-strcmp.o)
+                0x00000bd7       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signalr.o)
  .ARM.attributes
-                0x00000bf7       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
+                0x00000c0b       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
  .ARM.attributes
-                0x00000c2b       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
+                0x00000c3f       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
  .ARM.attributes
-                0x00000c5f       0x22 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+                0x00000c73       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
  .ARM.attributes
-                0x00000c81       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x00000ca7       0x20 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-strcmp.o)
  .ARM.attributes
-                0x00000cb5       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+                0x00000cc7       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
  .ARM.attributes
-                0x00000ce9       0x22 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(libunwind.o)
+                0x00000cfb       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
  .ARM.attributes
-                0x00000d0b       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+                0x00000d2f       0x22 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
  .ARM.attributes
-                0x00000d3f       0x22 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+                0x00000d51       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
  .ARM.attributes
-                0x00000d61       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtend.o
+                0x00000d85       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
  .ARM.attributes
-                0x00000d95       0x22 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+                0x00000db9       0x22 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(libunwind.o)
+ .ARM.attributes
+                0x00000ddb       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+ .ARM.attributes
+                0x00000e0f       0x22 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000e31       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtend.o
+ .ARM.attributes
+                0x00000e65       0x22 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtn.o
 OUTPUT(build/Ambitions_v2.3.elf elf32-littlearm)
 LOAD linker stubs
 LOAD C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc.a
 LOAD C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libm.a
 LOAD C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a
 
-.debug_info     0x00000000    0x1e4cb
+.debug_info     0x00000000    0x22849
  .debug_info    0x00000000      0x648 build/gpio.o
  .debug_info    0x00000648      0xea6 build/adc.o
  .debug_info    0x000014ee      0x555 build/dma.o
@@ -3825,17 +3852,21 @@ LOAD C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+
  .debug_info    0x00011a57     0x23af build/stm32f4xx_hal_tim_ex.o
  .debug_info    0x00013e06      0x5b3 build/system_stm32f4xx.o
  .debug_info    0x000143b9      0x848 build/syscalls.o
- .debug_info    0x00014c01     0x3872 build/main.o
- .debug_info    0x00018473      0xf8a build/AdcSTM32F4.o
- .debug_info    0x000193fd     0x1144 build/EncoderSTM32F4.o
- .debug_info    0x0001a541      0xb3d build/GpioSTM32F4.o
- .debug_info    0x0001b07e      0x95b build/PwmSTM32F4.o
- .debug_info    0x0001b9d9     0x1103 build/TimerSTM32F4.o
- .debug_info    0x0001cadc      0x584 build/Button.o
- .debug_info    0x0001d060     0x143b build/MotorDriver.o
- .debug_info    0x0001e49b       0x30 build/startup_stm32f405xx.o
+ .debug_info    0x00014c01     0x470d build/main.o
+ .debug_info    0x0001930e     0x100f build/AdcSTM32F4.o
+ .debug_info    0x0001a31d     0x1144 build/EncoderSTM32F4.o
+ .debug_info    0x0001b461      0xb3d build/GpioSTM32F4.o
+ .debug_info    0x0001bf9e      0x95b build/PwmSTM32F4.o
+ .debug_info    0x0001c8f9      0xea7 build/SPISTM32F4.o
+ .debug_info    0x0001d7a0     0x1103 build/TimerSTM32F4.o
+ .debug_info    0x0001e8a3      0x584 build/Button.o
+ .debug_info    0x0001ee27     0x143b build/MotorDriver.o
+ .debug_info    0x00020262     0x1315 build/IMUDriver.o
+ .debug_info    0x00021577      0xa13 build/LEDController.o
+ .debug_info    0x00021f8a      0x88f build/PhotoSensor.o
+ .debug_info    0x00022819       0x30 build/startup_stm32f405xx.o
 
-.debug_abbrev   0x00000000     0x4655
+.debug_abbrev   0x00000000     0x52ee
  .debug_abbrev  0x00000000      0x160 build/gpio.o
  .debug_abbrev  0x00000160      0x25c build/adc.o
  .debug_abbrev  0x000003bc      0x12f build/dma.o
@@ -3854,17 +3885,21 @@ LOAD C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+
  .debug_abbrev  0x000022c1      0x2b7 build/stm32f4xx_hal_tim_ex.o
  .debug_abbrev  0x00002578      0x11b build/system_stm32f4xx.o
  .debug_abbrev  0x00002693      0x1e3 build/syscalls.o
- .debug_abbrev  0x00002876      0x5a9 build/main.o
- .debug_abbrev  0x00002e1f      0x3ee build/AdcSTM32F4.o
- .debug_abbrev  0x0000320d      0x435 build/EncoderSTM32F4.o
- .debug_abbrev  0x00003642      0x3d6 build/GpioSTM32F4.o
- .debug_abbrev  0x00003a18      0x254 build/PwmSTM32F4.o
- .debug_abbrev  0x00003c6c      0x432 build/TimerSTM32F4.o
- .debug_abbrev  0x0000409e      0x1c1 build/Button.o
- .debug_abbrev  0x0000425f      0x3d9 build/MotorDriver.o
- .debug_abbrev  0x00004638       0x1d build/startup_stm32f405xx.o
+ .debug_abbrev  0x00002876      0x624 build/main.o
+ .debug_abbrev  0x00002e9a      0x3ff build/AdcSTM32F4.o
+ .debug_abbrev  0x00003299      0x435 build/EncoderSTM32F4.o
+ .debug_abbrev  0x000036ce      0x3d6 build/GpioSTM32F4.o
+ .debug_abbrev  0x00003aa4      0x254 build/PwmSTM32F4.o
+ .debug_abbrev  0x00003cf8      0x382 build/SPISTM32F4.o
+ .debug_abbrev  0x0000407a      0x432 build/TimerSTM32F4.o
+ .debug_abbrev  0x000044ac      0x1c1 build/Button.o
+ .debug_abbrev  0x0000466d      0x3d9 build/MotorDriver.o
+ .debug_abbrev  0x00004a46      0x440 build/IMUDriver.o
+ .debug_abbrev  0x00004e86      0x21e build/LEDController.o
+ .debug_abbrev  0x000050a4      0x22d build/PhotoSensor.o
+ .debug_abbrev  0x000052d1       0x1d build/startup_stm32f405xx.o
 
-.debug_loc      0x00000000     0xddc8
+.debug_loc      0x00000000     0xea7b
  .debug_loc     0x00000000       0x39 build/gpio.o
  .debug_loc     0x00000039      0x248 build/adc.o
  .debug_loc     0x00000281       0x38 build/dma.o
@@ -3883,16 +3918,20 @@ LOAD C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+
  .debug_loc     0x0000adad     0x1b32 build/stm32f4xx_hal_tim_ex.o
  .debug_loc     0x0000c8df      0x181 build/system_stm32f4xx.o
  .debug_loc     0x0000ca60      0x583 build/syscalls.o
- .debug_loc     0x0000cfe3      0x2cd build/main.o
- .debug_loc     0x0000d2b0      0x171 build/AdcSTM32F4.o
- .debug_loc     0x0000d421      0x200 build/EncoderSTM32F4.o
- .debug_loc     0x0000d621      0x1c5 build/GpioSTM32F4.o
- .debug_loc     0x0000d7e6       0xf6 build/PwmSTM32F4.o
- .debug_loc     0x0000d8dc      0x184 build/TimerSTM32F4.o
- .debug_loc     0x0000da60       0x9b build/Button.o
- .debug_loc     0x0000dafb      0x2cd build/MotorDriver.o
+ .debug_loc     0x0000cfe3      0x367 build/main.o
+ .debug_loc     0x0000d34a      0x200 build/AdcSTM32F4.o
+ .debug_loc     0x0000d54a      0x200 build/EncoderSTM32F4.o
+ .debug_loc     0x0000d74a      0x1c5 build/GpioSTM32F4.o
+ .debug_loc     0x0000d90f       0xf6 build/PwmSTM32F4.o
+ .debug_loc     0x0000da05      0x249 build/SPISTM32F4.o
+ .debug_loc     0x0000dc4e      0x184 build/TimerSTM32F4.o
+ .debug_loc     0x0000ddd2       0x9b build/Button.o
+ .debug_loc     0x0000de6d      0x2cd build/MotorDriver.o
+ .debug_loc     0x0000e13a      0x3d0 build/IMUDriver.o
+ .debug_loc     0x0000e50a      0x4d8 build/LEDController.o
+ .debug_loc     0x0000e9e2       0x99 build/PhotoSensor.o
 
-.debug_aranges  0x00000000     0x1038
+.debug_aranges  0x00000000     0x1168
  .debug_aranges
                 0x00000000       0x20 build/gpio.o
  .debug_aranges
@@ -3930,25 +3969,33 @@ LOAD C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+
  .debug_aranges
                 0x00000d30       0xa8 build/syscalls.o
  .debug_aranges
-                0x00000dd8       0x78 build/main.o
+                0x00000dd8       0x88 build/main.o
  .debug_aranges
-                0x00000e50       0x38 build/AdcSTM32F4.o
+                0x00000e60       0x38 build/AdcSTM32F4.o
  .debug_aranges
-                0x00000e88       0x50 build/EncoderSTM32F4.o
+                0x00000e98       0x50 build/EncoderSTM32F4.o
  .debug_aranges
-                0x00000ed8       0x48 build/GpioSTM32F4.o
+                0x00000ee8       0x48 build/GpioSTM32F4.o
  .debug_aranges
-                0x00000f20       0x38 build/PwmSTM32F4.o
+                0x00000f30       0x38 build/PwmSTM32F4.o
  .debug_aranges
-                0x00000f58       0x50 build/TimerSTM32F4.o
+                0x00000f68       0x48 build/SPISTM32F4.o
  .debug_aranges
-                0x00000fa8       0x28 build/Button.o
+                0x00000fb0       0x50 build/TimerSTM32F4.o
  .debug_aranges
-                0x00000fd0       0x40 build/MotorDriver.o
+                0x00001000       0x28 build/Button.o
  .debug_aranges
-                0x00001010       0x28 build/startup_stm32f405xx.o
+                0x00001028       0x40 build/MotorDriver.o
+ .debug_aranges
+                0x00001068       0x50 build/IMUDriver.o
+ .debug_aranges
+                0x000010b8       0x58 build/LEDController.o
+ .debug_aranges
+                0x00001110       0x30 build/PhotoSensor.o
+ .debug_aranges
+                0x00001140       0x28 build/startup_stm32f405xx.o
 
-.debug_ranges   0x00000000      0xf20
+.debug_ranges   0x00000000     0x1010
  .debug_ranges  0x00000000       0x10 build/gpio.o
  .debug_ranges  0x00000010       0x30 build/adc.o
  .debug_ranges  0x00000040       0x10 build/dma.o
@@ -3967,17 +4014,21 @@ LOAD C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+
  .debug_ranges  0x00000b28      0x158 build/stm32f4xx_hal_tim_ex.o
  .debug_ranges  0x00000c80       0x18 build/system_stm32f4xx.o
  .debug_ranges  0x00000c98       0x98 build/syscalls.o
- .debug_ranges  0x00000d30       0x80 build/main.o
- .debug_ranges  0x00000db0       0x28 build/AdcSTM32F4.o
- .debug_ranges  0x00000dd8       0x40 build/EncoderSTM32F4.o
- .debug_ranges  0x00000e18       0x38 build/GpioSTM32F4.o
- .debug_ranges  0x00000e50       0x28 build/PwmSTM32F4.o
- .debug_ranges  0x00000e78       0x40 build/TimerSTM32F4.o
- .debug_ranges  0x00000eb8       0x18 build/Button.o
- .debug_ranges  0x00000ed0       0x30 build/MotorDriver.o
- .debug_ranges  0x00000f00       0x20 build/startup_stm32f405xx.o
+ .debug_ranges  0x00000d30       0x90 build/main.o
+ .debug_ranges  0x00000dc0       0x28 build/AdcSTM32F4.o
+ .debug_ranges  0x00000de8       0x40 build/EncoderSTM32F4.o
+ .debug_ranges  0x00000e28       0x38 build/GpioSTM32F4.o
+ .debug_ranges  0x00000e60       0x28 build/PwmSTM32F4.o
+ .debug_ranges  0x00000e88       0x38 build/SPISTM32F4.o
+ .debug_ranges  0x00000ec0       0x40 build/TimerSTM32F4.o
+ .debug_ranges  0x00000f00       0x18 build/Button.o
+ .debug_ranges  0x00000f18       0x30 build/MotorDriver.o
+ .debug_ranges  0x00000f48       0x40 build/IMUDriver.o
+ .debug_ranges  0x00000f88       0x48 build/LEDController.o
+ .debug_ranges  0x00000fd0       0x20 build/PhotoSensor.o
+ .debug_ranges  0x00000ff0       0x20 build/startup_stm32f405xx.o
 
-.debug_line     0x00000000    0x13209
+.debug_line     0x00000000    0x1424f
  .debug_line    0x00000000      0x26c build/gpio.o
  .debug_line    0x0000026c      0x5b0 build/adc.o
  .debug_line    0x0000081c      0x153 build/dma.o
@@ -3996,45 +4047,53 @@ LOAD C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+
  .debug_line    0x0000e8be     0x1f15 build/stm32f4xx_hal_tim_ex.o
  .debug_line    0x000107d3      0x222 build/system_stm32f4xx.o
  .debug_line    0x000109f5      0x3ac build/syscalls.o
- .debug_line    0x00010da1      0xae0 build/main.o
- .debug_line    0x00011881      0x3a8 build/AdcSTM32F4.o
- .debug_line    0x00011c29      0x3ce build/EncoderSTM32F4.o
- .debug_line    0x00011ff7      0x37b build/GpioSTM32F4.o
- .debug_line    0x00012372      0x250 build/PwmSTM32F4.o
- .debug_line    0x000125c2      0x3c7 build/TimerSTM32F4.o
- .debug_line    0x00012989      0x2a9 build/Button.o
- .debug_line    0x00012c32      0x564 build/MotorDriver.o
- .debug_line    0x00013196       0x73 build/startup_stm32f405xx.o
+ .debug_line    0x00010da1      0xc37 build/main.o
+ .debug_line    0x000119d8      0x3f8 build/AdcSTM32F4.o
+ .debug_line    0x00011dd0      0x3ce build/EncoderSTM32F4.o
+ .debug_line    0x0001219e      0x37b build/GpioSTM32F4.o
+ .debug_line    0x00012519      0x250 build/PwmSTM32F4.o
+ .debug_line    0x00012769      0x2b7 build/SPISTM32F4.o
+ .debug_line    0x00012a20      0x3c7 build/TimerSTM32F4.o
+ .debug_line    0x00012de7      0x2a9 build/Button.o
+ .debug_line    0x00013090      0x564 build/MotorDriver.o
+ .debug_line    0x000135f4      0x54a build/IMUDriver.o
+ .debug_line    0x00013b3e      0x491 build/LEDController.o
+ .debug_line    0x00013fcf      0x20d build/PhotoSensor.o
+ .debug_line    0x000141dc       0x73 build/startup_stm32f405xx.o
 
-.debug_str      0x00000000     0x52db
- .debug_str     0x00000000     0x52db build/gpio.o
+.debug_str      0x00000000     0x5ebb
+ .debug_str     0x00000000     0x5ebb build/gpio.o
                                 0x34a (size before relaxing)
- .debug_str     0x000052db      0x809 build/adc.o
- .debug_str     0x000052db      0x77c build/dma.o
- .debug_str     0x000052db      0x7d7 build/spi.o
- .debug_str     0x000052db      0xce1 build/tim.o
- .debug_str     0x000052db      0x494 build/stm32f4xx_it.o
- .debug_str     0x000052db      0x28b build/stm32f4xx_hal_msp.o
- .debug_str     0x000052db      0x940 build/stm32f4xx_hal_adc.o
- .debug_str     0x000052db      0x6e4 build/stm32f4xx_hal_rcc.o
- .debug_str     0x000052db      0x4be build/stm32f4xx_hal_gpio.o
- .debug_str     0x000052db      0x754 build/stm32f4xx_hal_dma.o
- .debug_str     0x000052db      0xc46 build/stm32f4xx_hal_cortex.o
- .debug_str     0x000052db      0xb33 build/stm32f4xx_hal.o
- .debug_str     0x000052db      0xbd2 build/stm32f4xx_hal_spi.o
- .debug_str     0x000052db     0x16ef build/stm32f4xx_hal_tim.o
- .debug_str     0x000052db      0xefb build/stm32f4xx_hal_tim_ex.o
- .debug_str     0x000052db      0x345 build/system_stm32f4xx.o
- .debug_str     0x000052db      0x3c9 build/syscalls.o
- .debug_str     0x000052db     0x1bac build/main.o
- .debug_str     0x000052db      0xb8a build/AdcSTM32F4.o
- .debug_str     0x000052db      0xe04 build/EncoderSTM32F4.o
- .debug_str     0x000052db      0x786 build/GpioSTM32F4.o
- .debug_str     0x000052db      0x8fb build/PwmSTM32F4.o
- .debug_str     0x000052db      0xdd9 build/TimerSTM32F4.o
- .debug_str     0x000052db      0x48b build/Button.o
- .debug_str     0x000052db      0xd6d build/MotorDriver.o
- .debug_str     0x000052db       0x52 build/startup_stm32f405xx.o
+ .debug_str     0x00005ebb      0x809 build/adc.o
+ .debug_str     0x00005ebb      0x77c build/dma.o
+ .debug_str     0x00005ebb      0x7d7 build/spi.o
+ .debug_str     0x00005ebb      0xce1 build/tim.o
+ .debug_str     0x00005ebb      0x494 build/stm32f4xx_it.o
+ .debug_str     0x00005ebb      0x28b build/stm32f4xx_hal_msp.o
+ .debug_str     0x00005ebb      0x940 build/stm32f4xx_hal_adc.o
+ .debug_str     0x00005ebb      0x6e4 build/stm32f4xx_hal_rcc.o
+ .debug_str     0x00005ebb      0x4be build/stm32f4xx_hal_gpio.o
+ .debug_str     0x00005ebb      0x754 build/stm32f4xx_hal_dma.o
+ .debug_str     0x00005ebb      0xc46 build/stm32f4xx_hal_cortex.o
+ .debug_str     0x00005ebb      0xb33 build/stm32f4xx_hal.o
+ .debug_str     0x00005ebb      0xbd2 build/stm32f4xx_hal_spi.o
+ .debug_str     0x00005ebb     0x16ef build/stm32f4xx_hal_tim.o
+ .debug_str     0x00005ebb      0xefb build/stm32f4xx_hal_tim_ex.o
+ .debug_str     0x00005ebb      0x345 build/system_stm32f4xx.o
+ .debug_str     0x00005ebb      0x3c9 build/syscalls.o
+ .debug_str     0x00005ebb     0x24cb build/main.o
+ .debug_str     0x00005ebb      0xbdd build/AdcSTM32F4.o
+ .debug_str     0x00005ebb      0xe04 build/EncoderSTM32F4.o
+ .debug_str     0x00005ebb      0x786 build/GpioSTM32F4.o
+ .debug_str     0x00005ebb      0x8fb build/PwmSTM32F4.o
+ .debug_str     0x00005ebb      0xaf1 build/SPISTM32F4.o
+ .debug_str     0x00005ebb      0xdd9 build/TimerSTM32F4.o
+ .debug_str     0x00005ebb      0x48b build/Button.o
+ .debug_str     0x00005ebb      0xd6d build/MotorDriver.o
+ .debug_str     0x00005ebb      0x7e1 build/IMUDriver.o
+ .debug_str     0x00005ebb      0x69d build/LEDController.o
+ .debug_str     0x00005ebb      0x776 build/PhotoSensor.o
+ .debug_str     0x00005ebb       0x52 build/startup_stm32f405xx.o
 
 .comment        0x00000000       0x44
  .comment       0x00000000       0x44 build/gpio.o
@@ -4061,11 +4120,15 @@ LOAD C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+
  .comment       0x00000044       0x45 build/EncoderSTM32F4.o
  .comment       0x00000044       0x45 build/GpioSTM32F4.o
  .comment       0x00000044       0x45 build/PwmSTM32F4.o
+ .comment       0x00000044       0x45 build/SPISTM32F4.o
  .comment       0x00000044       0x45 build/TimerSTM32F4.o
  .comment       0x00000044       0x45 build/Button.o
  .comment       0x00000044       0x45 build/MotorDriver.o
+ .comment       0x00000044       0x45 build/IMUDriver.o
+ .comment       0x00000044       0x45 build/LEDController.o
+ .comment       0x00000044       0x45 build/PhotoSensor.o
 
-.debug_frame    0x00000000     0x3b8c
+.debug_frame    0x00000000     0x3e6c
  .debug_frame   0x00000000       0x38 build/gpio.o
  .debug_frame   0x00000038       0xac build/adc.o
  .debug_frame   0x000000e4       0x2c build/dma.o
@@ -4084,48 +4147,52 @@ LOAD C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+
  .debug_frame   0x00002070      0x468 build/stm32f4xx_hal_tim_ex.o
  .debug_frame   0x000024d8       0x30 build/system_stm32f4xx.o
  .debug_frame   0x00002508      0x190 build/syscalls.o
- .debug_frame   0x00002698      0x108 build/main.o
- .debug_frame   0x000027a0       0x68 build/AdcSTM32F4.o
- .debug_frame   0x00002808       0xa0 build/EncoderSTM32F4.o
- .debug_frame   0x000028a8       0x9c build/GpioSTM32F4.o
- .debug_frame   0x00002944       0x60 build/PwmSTM32F4.o
- .debug_frame   0x000029a4       0xa0 build/TimerSTM32F4.o
- .debug_frame   0x00002a44       0x3c build/Button.o
- .debug_frame   0x00002a80       0xa0 build/MotorDriver.o
- .debug_frame   0x00002b20       0x20 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(atexit_arm.o)
- .debug_frame   0x00002b40       0xd8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
- .debug_frame   0x00002c18       0x20 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(del_ops.o)
- .debug_frame   0x00002c38       0x78 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_arm.o)
- .debug_frame   0x00002cb0       0xf0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_exception.o)
- .debug_frame   0x00002da0       0x30 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_globals.o)
- .debug_frame   0x00002dd0      0x12c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_personality.o)
- .debug_frame   0x00002efc       0xb0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_terminate.o)
- .debug_frame   0x00002fac       0x40 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(guard.o)
- .debug_frame   0x00002fec       0xd4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
- .debug_frame   0x000030c0       0x80 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(tinfo.o)
- .debug_frame   0x00003140       0x20 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(del_op.o)
- .debug_frame   0x00003160       0x54 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_call.o)
- .debug_frame   0x000031b4       0x8c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_catch.o)
- .debug_frame   0x00003240       0x28 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-abort.o)
- .debug_frame   0x00003268       0x30 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-malloc.o)
- .debug_frame   0x00003298       0x50 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
- .debug_frame   0x000032e8       0x30 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
- .debug_frame   0x00003318       0x28 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-cxa_atexit.o)
- .debug_frame   0x00003340      0x144 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
- .debug_frame   0x00003484       0x20 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
- .debug_frame   0x000034a4       0xcc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signal.o)
- .debug_frame   0x00003570       0x38 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
- .debug_frame   0x000035a8       0x3c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signalr.o)
- .debug_frame   0x000035e4       0x20 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
- .debug_frame   0x00003604       0x2c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
- .debug_frame   0x00003630       0xb0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
- .debug_frame   0x000036e0       0x20 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-strcmp.o)
- .debug_frame   0x00003700       0x38 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
- .debug_frame   0x00003738       0x28 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
- .debug_frame   0x00003760       0x2c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x0000378c       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
- .debug_frame   0x000037c0      0x2c8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
- .debug_frame   0x00003a88      0x104 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
+ .debug_frame   0x00002698      0x130 build/main.o
+ .debug_frame   0x000027c8       0x70 build/AdcSTM32F4.o
+ .debug_frame   0x00002838       0xa0 build/EncoderSTM32F4.o
+ .debug_frame   0x000028d8       0x9c build/GpioSTM32F4.o
+ .debug_frame   0x00002974       0x60 build/PwmSTM32F4.o
+ .debug_frame   0x000029d4       0xa4 build/SPISTM32F4.o
+ .debug_frame   0x00002a78       0xa0 build/TimerSTM32F4.o
+ .debug_frame   0x00002b18       0x3c build/Button.o
+ .debug_frame   0x00002b54       0xa0 build/MotorDriver.o
+ .debug_frame   0x00002bf4       0xdc build/IMUDriver.o
+ .debug_frame   0x00002cd0       0xe8 build/LEDController.o
+ .debug_frame   0x00002db8       0x48 build/PhotoSensor.o
+ .debug_frame   0x00002e00       0x20 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(atexit_arm.o)
+ .debug_frame   0x00002e20       0xd8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)
+ .debug_frame   0x00002ef8       0x20 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(del_ops.o)
+ .debug_frame   0x00002f18       0x78 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_arm.o)
+ .debug_frame   0x00002f90       0xf0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_exception.o)
+ .debug_frame   0x00003080       0x30 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_globals.o)
+ .debug_frame   0x000030b0      0x12c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_personality.o)
+ .debug_frame   0x000031dc       0xb0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_terminate.o)
+ .debug_frame   0x0000328c       0x40 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(guard.o)
+ .debug_frame   0x000032cc       0xd4 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(si_class_type_info.o)
+ .debug_frame   0x000033a0       0x80 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(tinfo.o)
+ .debug_frame   0x00003420       0x20 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(del_op.o)
+ .debug_frame   0x00003440       0x54 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_call.o)
+ .debug_frame   0x00003494       0x8c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_catch.o)
+ .debug_frame   0x00003520       0x28 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-abort.o)
+ .debug_frame   0x00003548       0x30 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-malloc.o)
+ .debug_frame   0x00003578       0x50 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+ .debug_frame   0x000035c8       0x30 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+ .debug_frame   0x000035f8       0x28 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-cxa_atexit.o)
+ .debug_frame   0x00003620      0x144 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+ .debug_frame   0x00003764       0x20 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
+ .debug_frame   0x00003784       0xcc C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signal.o)
+ .debug_frame   0x00003850       0x38 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
+ .debug_frame   0x00003888       0x3c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signalr.o)
+ .debug_frame   0x000038c4       0x20 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
+ .debug_frame   0x000038e4       0x2c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+ .debug_frame   0x00003910       0xb0 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .debug_frame   0x000039c0       0x20 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-strcmp.o)
+ .debug_frame   0x000039e0       0x38 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
+ .debug_frame   0x00003a18       0x28 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
+ .debug_frame   0x00003a40       0x2c C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00003a6c       0x34 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x00003aa0      0x2c8 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(unwind-arm.o)
+ .debug_frame   0x00003d68      0x104 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(pr-support.o)
 
 .debug_line_str
                 0x00000000      0x1cb
@@ -4226,8 +4293,8 @@ FLASH_WaitForLastOperation                        build/stm32f4xx_hal_flash.o
 FPU_IRQHandler                                    build/startup_stm32f405xx.o
 FSMC_IRQHandler                                   build/startup_stm32f405xx.o
 GpioSTM32F4::GpioSTM32F4(GPIO_TypeDef*, unsigned short) build/GpioSTM32F4.o
-GpioSTM32F4::GpioSTM32F4(GPIO_TypeDef*, unsigned short) build/GpioSTM32F4.o
                                                   build/main.o
+GpioSTM32F4::GpioSTM32F4(GPIO_TypeDef*, unsigned short) build/GpioSTM32F4.o
 GpioSTM32F4::read()                               build/GpioSTM32F4.o
 GpioSTM32F4::setHigh()                            build/GpioSTM32F4.o
                                                   build/main.o
@@ -4658,8 +4725,9 @@ I2C2_ER_IRQHandler                                build/startup_stm32f405xx.o
 I2C2_EV_IRQHandler                                build/startup_stm32f405xx.o
 I2C3_ER_IRQHandler                                build/startup_stm32f405xx.o
 I2C3_EV_IRQHandler                                build/startup_stm32f405xx.o
-Imu::Imu(ISpi*)                                   build/IMUDriver.o
-Imu::Imu(ISpi*)                                   build/IMUDriver.o
+Imu::Imu(SPISTM32F4*)                             build/IMUDriver.o
+Imu::Imu(SPISTM32F4*)                             build/IMUDriver.o
+                                                  build/main.o
 Imu::Lsm6dsrError(unsigned char)                  build/IMUDriver.o
 Imu::Lsm6dsrPowerOn()                             build/IMUDriver.o
 Imu::Lsm6dsrReadGyroZ()                           build/IMUDriver.o
@@ -4667,6 +4735,7 @@ Imu::SpiReadBytes(unsigned char)                  build/IMUDriver.o
 Imu::SpiWriteBytes(unsigned char, unsigned char)  build/IMUDriver.o
 Imu::gyro_get_ref()                               build/IMUDriver.o
 LEDController::LEDController(GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*) build/LEDController.o
+                                                  build/main.o
 LEDController::LEDController(GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*, GpioSTM32F4*) build/LEDController.o
 LEDController::sensorLEDOff()                     build/LEDController.o
 LEDController::sensorLEDOn()                      build/LEDController.o
@@ -4676,11 +4745,11 @@ LEDController::setSensorLED(bool, bool, bool, bool) build/LEDController.o
 LEDController::turnAllLEDOff()                    build/LEDController.o
 LEDController::turnAllLEDOn()                     build/LEDController.o
 MX_ADC1_Init                                      build/adc.o
-                                                  build/main.o
+                                                  build/AdcSTM32F4.o
 MX_ADC2_Init                                      build/adc.o
-                                                  build/main.o
+                                                  build/AdcSTM32F4.o
 MX_ADC3_Init                                      build/adc.o
-                                                  build/main.o
+                                                  build/AdcSTM32F4.o
 MX_DMA_Init                                       build/dma.o
                                                   build/main.o
 MX_GPIO_Init                                      build/gpio.o
@@ -4720,11 +4789,12 @@ PVD_IRQHandler                                    build/startup_stm32f405xx.o
 PendSV_Handler                                    build/stm32f4xx_it.o
 PhotoSensor::PhotoSensor(ADC_HandleTypeDef*, unsigned short*, unsigned long) build/PhotoSensor.o
 PhotoSensor::PhotoSensor(ADC_HandleTypeDef*, unsigned short*, unsigned long) build/PhotoSensor.o
+                                                  build/main.o
 PhotoSensor::getValue(unsigned long) const        build/PhotoSensor.o
 PhotoSensor::start()                              build/PhotoSensor.o
 PwmSTM32F4::PwmSTM32F4(TIM_HandleTypeDef*, unsigned long) build/PwmSTM32F4.o
-                                                  build/main.o
 PwmSTM32F4::PwmSTM32F4(TIM_HandleTypeDef*, unsigned long) build/PwmSTM32F4.o
+                                                  build/main.o
 PwmSTM32F4::setDutyCycle(float)                   build/PwmSTM32F4.o
                                                   build/MotorDriver.o
 PwmSTM32F4::start()                               build/PwmSTM32F4.o
@@ -4739,12 +4809,16 @@ SPI2_IRQHandler                                   build/startup_stm32f405xx.o
 SPI3_IRQHandler                                   build/startup_stm32f405xx.o
 SPISTM32F4::SPISTM32F4(__SPI_HandleTypeDef*, GPIO_TypeDef*, unsigned short) build/SPISTM32F4.o
 SPISTM32F4::SPISTM32F4(__SPI_HandleTypeDef*, GPIO_TypeDef*, unsigned short) build/SPISTM32F4.o
+                                                  build/main.o
 SPISTM32F4::resetChipSelect()                     build/SPISTM32F4.o
 SPISTM32F4::setChipSelect()                       build/SPISTM32F4.o
 SPISTM32F4::transmitReceive(unsigned char*, unsigned char*, unsigned short, unsigned long) build/SPISTM32F4.o
-SPISTM32F4::~SPISTM32F4()                         build/SPISTM32F4.o
-SPISTM32F4::~SPISTM32F4()                         build/SPISTM32F4.o
-SPISTM32F4::~SPISTM32F4()                         build/SPISTM32F4.o
+SPISTM32F4::~SPISTM32F4()                         build/main.o
+                                                  build/SPISTM32F4.o
+SPISTM32F4::~SPISTM32F4()                         build/main.o
+                                                  build/SPISTM32F4.o
+SPISTM32F4::~SPISTM32F4()                         build/main.o
+                                                  build/SPISTM32F4.o
 SVC_Handler                                       build/stm32f4xx_it.o
 SysTick_Handler                                   build/stm32f4xx_it.o
 SystemClock_Config()                              build/main.o
@@ -4913,6 +4987,7 @@ __cxa_call_unexpected                             C:/Tools/arm-gnu-toolchain/bin
 __cxa_end_catch                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_catch.o)
 __cxa_end_cleanup                                 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_arm.o)
                                                   build/EncoderSTM32F4.o
+                                                  build/AdcSTM32F4.o
                                                   build/main.o
 __cxa_get_exception_ptr                           C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_catch.o)
 __cxa_get_globals                                 C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_globals.o)
@@ -5022,6 +5097,7 @@ __gnu_unwind_frame                                C:/Tools/arm-gnu-toolchain/bin
                                                   C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_personality.o)
 __gxx_personality_v0                              C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(eh_personality.o)
                                                   build/EncoderSTM32F4.o
+                                                  build/AdcSTM32F4.o
                                                   build/main.o
 __init_array_end                                  C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
 __init_array_start                                C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
@@ -5286,6 +5362,7 @@ hardware_init_hook                                C:/Tools/arm-gnu-toolchain/bin
 hdma_adc1                                         build/adc.o
                                                   build/stm32f4xx_it.o
 hspi3                                             build/spi.o
+                                                  build/main.o
 htim1                                             build/tim.o
                                                   build/main.o
 htim10                                            build/tim.o
@@ -5398,7 +5475,8 @@ typeinfo for IEncoder                             build/main.o
                                                   build/EncoderSTM32F4.o
 typeinfo for IGpio                                build/main.o
                                                   build/GpioSTM32F4.o
-typeinfo for ISpi                                 build/SPISTM32F4.o
+typeinfo for ISpi                                 build/main.o
+                                                  build/SPISTM32F4.o
 typeinfo for ITimer                               build/main.o
                                                   build/TimerSTM32F4.o
 typeinfo for SPISTM32F4                           build/SPISTM32F4.o
@@ -5423,7 +5501,8 @@ typeinfo name for IEncoder                        build/main.o
                                                   build/EncoderSTM32F4.o
 typeinfo name for IGpio                           build/main.o
                                                   build/GpioSTM32F4.o
-typeinfo name for ISpi                            build/SPISTM32F4.o
+typeinfo name for ISpi                            build/main.o
+                                                  build/SPISTM32F4.o
 typeinfo name for ITimer                          build/main.o
                                                   build/TimerSTM32F4.o
 typeinfo name for SPISTM32F4                      build/SPISTM32F4.o
@@ -5454,10 +5533,12 @@ vtable for IEncoder                               build/main.o
                                                   build/EncoderSTM32F4.o
 vtable for IGpio                                  build/main.o
                                                   build/GpioSTM32F4.o
-vtable for ISpi                                   build/SPISTM32F4.o
+vtable for ISpi                                   build/main.o
+                                                  build/SPISTM32F4.o
 vtable for ITimer                                 build/main.o
                                                   build/TimerSTM32F4.o
 vtable for SPISTM32F4                             build/SPISTM32F4.o
+                                                  build/main.o
 vtable for TimerSTM32F4                           build/TimerSTM32F4.o
                                                   build/main.o
 vtable for __cxxabiv1::__class_type_info          C:/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libstdc++_nano.a(class_type_info.o)

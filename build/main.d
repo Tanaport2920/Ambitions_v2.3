@@ -29,8 +29,7 @@ build/main.o: Core/Src/main.cpp Core/Inc/main.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h Core/Inc/adc.h \
  Core/Inc/main.h Core/Inc/dma.h Core/Inc/spi.h Core/Inc/tim.h \
- Core/Inc/gpio.h Core/Inc/gpio.hpp \
- Core/Src/../HALinterface/Inc/AdcSTM32F4.hpp \
+ Core/Inc/gpio.h Core/Src/../HALinterface/Inc/AdcSTM32F4.hpp \
  Core/Src/../HALinterface/Inc/IAdc.hpp \
  Core/Src/../HALinterface/Inc/PwmSTM32F4.hpp \
  Core/Src/../HALinterface/Inc/TimerSTM32F4.hpp \
@@ -39,7 +38,13 @@ build/main.o: Core/Src/main.cpp Core/Inc/main.h \
  Core/Src/../HALinterface/Inc/IGpio.hpp \
  Core/Src/../HALinterface/Inc/EncoderSTM32F4.hpp \
  Core/Src/../HALinterface/Inc/IEncoder.hpp \
- Core/Src/../Driver/Inc/Button.hpp Core/Src/../Driver/Inc/MotorDriver.hpp
+ Core/Src/../Driver/Inc/Button.hpp Core/Src/../Driver/Inc/MotorDriver.hpp \
+ Core/Src/../Driver/Inc/EncoderDriver.hpp \
+ Core/Src/../Driver/Inc/IMUDriver.hpp \
+ Core/Src/../Driver/Inc/../../HALinterface/Inc/SPISTM32F4.hpp \
+ Core/Src/../Driver/Inc/../../HALinterface/Inc/ISpi.hpp \
+ Core/Src/../Driver/Inc/PhotoSensor.hpp \
+ Core/Src/../Driver/Inc/LEDController.hpp
 Core/Inc/main.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 Core/Inc/stm32f4xx_hal_conf.h:
@@ -78,7 +83,6 @@ Core/Inc/dma.h:
 Core/Inc/spi.h:
 Core/Inc/tim.h:
 Core/Inc/gpio.h:
-Core/Inc/gpio.hpp:
 Core/Src/../HALinterface/Inc/AdcSTM32F4.hpp:
 Core/Src/../HALinterface/Inc/IAdc.hpp:
 Core/Src/../HALinterface/Inc/PwmSTM32F4.hpp:
@@ -90,3 +94,9 @@ Core/Src/../HALinterface/Inc/EncoderSTM32F4.hpp:
 Core/Src/../HALinterface/Inc/IEncoder.hpp:
 Core/Src/../Driver/Inc/Button.hpp:
 Core/Src/../Driver/Inc/MotorDriver.hpp:
+Core/Src/../Driver/Inc/EncoderDriver.hpp:
+Core/Src/../Driver/Inc/IMUDriver.hpp:
+Core/Src/../Driver/Inc/../../HALinterface/Inc/SPISTM32F4.hpp:
+Core/Src/../Driver/Inc/../../HALinterface/Inc/ISpi.hpp:
+Core/Src/../Driver/Inc/PhotoSensor.hpp:
+Core/Src/../Driver/Inc/LEDController.hpp:

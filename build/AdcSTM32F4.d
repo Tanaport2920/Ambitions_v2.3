@@ -29,7 +29,9 @@ build/AdcSTM32F4.o: Core/HALinterface/Src/AdcSTM32F4.cpp \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
- Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+ Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+ Core/HALinterface/Src/../../Inc/adc.h \
+ Core/HALinterface/Src/../../Inc/main.h
 Core/HALinterface/Src/../Inc/AdcSTM32F4.hpp:
 Core/HALinterface/Src/../Inc/IAdc.hpp:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
@@ -63,3 +65,5 @@ Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
+Core/HALinterface/Src/../../Inc/adc.h:
+Core/HALinterface/Src/../../Inc/main.h:

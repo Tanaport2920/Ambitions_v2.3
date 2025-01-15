@@ -1,10 +1,13 @@
 #include "../Inc/AdcSTM32F4.hpp"
 #include "stm32f4xx_hal.h"
+#include "../../Inc/adc.h"
 
 AdcSTM32F4::AdcSTM32F4(ADC_HandleTypeDef* hadc)
     : m_hadc(hadc)
 {
-    // 必要ならここで追加の初期化
+    MX_ADC1_Init();
+    MX_ADC2_Init();
+    MX_ADC3_Init();
 }
 
 uint16_t AdcSTM32F4::read(uint8_t channel) {

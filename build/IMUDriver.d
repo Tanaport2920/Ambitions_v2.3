@@ -1,5 +1,6 @@
 build/IMUDriver.o: Core/Driver/Src/IMUDriver.cpp \
  Core/Driver/Src/../Inc/IMUDriver.hpp \
+ Core/Driver/Src/../Inc/../../HALinterface/Inc/SPISTM32F4.hpp \
  Core/Driver/Src/../Inc/../../HALinterface/Inc/ISpi.hpp \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  Core/Inc/stm32f4xx_hal_conf.h \
@@ -31,6 +32,7 @@ build/IMUDriver.o: Core/Driver/Src/IMUDriver.cpp \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 Core/Driver/Src/../Inc/IMUDriver.hpp:
+Core/Driver/Src/../Inc/../../HALinterface/Inc/SPISTM32F4.hpp:
 Core/Driver/Src/../Inc/../../HALinterface/Inc/ISpi.hpp:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 Core/Inc/stm32f4xx_hal_conf.h:

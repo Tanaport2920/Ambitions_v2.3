@@ -33,9 +33,7 @@ extern "C" {
 /* USER CODE END Includes */
 
 extern ADC_HandleTypeDef hadc1;
-
 extern ADC_HandleTypeDef hadc2;
-
 extern ADC_HandleTypeDef hadc3;
 
 /* USER CODE BEGIN Private defines */

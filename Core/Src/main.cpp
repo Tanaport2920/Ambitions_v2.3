@@ -23,7 +23,6 @@
 #include "spi.h"
 #include "tim.h"
 #include "gpio.h"
-#include "gpio.hpp"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -32,9 +31,12 @@
 #include "../HALinterface/Inc/TimerSTM32F4.hpp"
 #include "../HALinterface/Inc/GpioSTM32F4.hpp"
 #include "../HALinterface/Inc/EncoderSTM32F4.hpp"
-
 #include "../Driver/Inc/Button.hpp"
 #include "../Driver/Inc/MotorDriver.hpp"
+#include "../Driver/Inc/EncoderDriver.hpp"
+#include "../Driver/Inc/IMUDriver.hpp"
+#include "../Driver/Inc/PhotoSensor.hpp"
+#include "../Driver/Inc/LEDController.hpp"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -66,7 +68,7 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+static uint16_t adcBuffer[4];
 /* USER CODE END 0 */
 
 /**
@@ -99,9 +101,6 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_DMA_Init();
-  MX_ADC1_Init();
-  MX_ADC2_Init();
-  MX_ADC3_Init();
   MX_SPI3_Init();
   MX_TIM1_Init();
   MX_TIM2_Init();
@@ -146,8 +145,26 @@ int main(void)
   static EncoderSTM32F4 EncoderRight(&htim3);
   static EncoderSTM32F4 EncoderLeft(&htim4);
 
+  // SPI
+  static SPISTM32F4 spi3(&hspi3, SPI3_CS_GPIO_Port, SPI3_CS_Pin);
+
   //ドライバクラス 
   static Button ModeChangeButton(&gpioButton, 1000);  // longPress=1000ms
+  static LEDController LEDController(
+      &SensorLED_FL,
+      &SensorLED_FR,
+      &SensorLED_R,
+      &SensorLED_L,
+      &LED_FL,
+      &LED_FR,
+      &LED_R,
+      &LED_L,
+      &ModeLED1,
+      &ModeLED2,
+      &ModeLED3
+  );
+  static Imu lsm6dsr(&spi3);
+  static PhotoSensor PhotoSensor(&hadc1, adcBuffer, 4);
 
   // 右モータ
   static MotorDriver RightMotor(

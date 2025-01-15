@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s 			page 1
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s 			page 1
   38              		.loc 2 18 13 is_stmt 0 view .LVU1
   39 0000 024A     		ldr	r2, .L2
   40 0002 0260     		str	r2, [r0]
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s 			page 2
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s 			page 2
 
 
   41              	.LVL1:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s 			page 1
    8:Core/HALinterface/Src/SPISTM32F4.cpp ****     // CubeMX側で既にHAL_SPI_Init()済みを想定
    9:Core/HALinterface/Src/SPISTM32F4.cpp **** }
   10:Core/HALinterface/Src/SPISTM32F4.cpp **** 
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s 			page 3
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s 			page 3
 
 
   11:Core/HALinterface/Src/SPISTM32F4.cpp **** void SPISTM32F4::resetChipSelect() {
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s 			page 1
  129 0002 0122     		movs	r2, #1
  130 0004 8189     		ldrh	r1, [r0, #12]
  131 0006 8068     		ldr	r0, [r0, #8]
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s 			page 4
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s 			page 4
 
 
  132              	.LVL7:
@@ -228,7 +228,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s 			page 1
  174 0008 0094     		str	r4, [sp]
  175 000a FFF7FEFF 		bl	HAL_SPI_TransmitReceive
  176              	.LVL11:
-  21:Core/HALinterface/Src/SPISTM32F4.cpp **** }
+  21:Core/HALinterface/Src/SPISTM32F4.cpp **** }...
  177              		.loc 1 21 1 view .LVU22
  178 000e 02B0     		add	sp, sp, #8
  179              	.LCFI4:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s 			page 1
  183              		.loc 1 21 1 view .LVU23
  184              		.cfi_endproc
  185              	.LFE251:
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s 			page 5
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s 			page 5
 
 
  186              		.fnend
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s 			page 1
  242 0018 08000000 		.word	_ZTV10SPISTM32F4+8
  243 001c 08000000 		.word	_ZTV4ISpi+8
  244              		.cfi_endproc
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s 			page 6
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s 			page 6
 
 
  245              	.LFE255:
@@ -314,13 +314,13 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s 			page 1
  257              		.fnstart
  258              	.LVL18:
  259              	.LFB247:
-   3:Core/HALinterface/Src/SPISTM32F4.cpp ****     : m_hspi(hspi)
+   3:Core/HALinterface/Src/SPISTM32F4.cpp **** SPISTM32F4::SPISTM32F4(SPI_HandleTypeDef* hspi, GPIO_TypeDef* csPort, uint16_t csPin)
  260              		.loc 1 3 1 is_stmt 1 view -0
  261              		.cfi_startproc
  262              		@ args = 0, pretend = 0, frame = 0
  263              		@ frame_needed = 0, uses_anonymous_args = 0
  264              		@ link register save eliminated.
-   3:Core/HALinterface/Src/SPISTM32F4.cpp ****     : m_hspi(hspi)
+   3:Core/HALinterface/Src/SPISTM32F4.cpp **** SPISTM32F4::SPISTM32F4(SPI_HandleTypeDef* hspi, GPIO_TypeDef* csPort, uint16_t csPin)
  265              		.loc 1 3 1 is_stmt 0 view .LVU33
  266 0000 10B4     		push	{r4}
  267              	.LCFI6:
@@ -340,25 +340,25 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s 			page 1
  279              		.loc 3 9 7 is_stmt 0 view .LVU35
  280              	.LBE27:
  281              	.LBE26:
-   6:Core/HALinterface/Src/SPISTM32F4.cpp **** {
+   6:Core/HALinterface/Src/SPISTM32F4.cpp ****     , m_csPin(csPin)
  282              		.loc 1 6 20 discriminator 1 view .LVU36
  283 0006 054C     		ldr	r4, .L16+4
  284 0008 0460     		str	r4, [r0]
-   4:Core/HALinterface/Src/SPISTM32F4.cpp ****     , m_csPort(csPort)
+   4:Core/HALinterface/Src/SPISTM32F4.cpp ****     : m_hspi(hspi)
  285              		.loc 1 4 7 view .LVU37
  286 000a 4160     		str	r1, [r0, #4]
-   5:Core/HALinterface/Src/SPISTM32F4.cpp ****     , m_csPin(csPin)
+   5:Core/HALinterface/Src/SPISTM32F4.cpp ****     , m_csPort(csPort)
  287              		.loc 1 5 7 view .LVU38
  288 000c 8260     		str	r2, [r0, #8]
-   6:Core/HALinterface/Src/SPISTM32F4.cpp **** {
+   6:Core/HALinterface/Src/SPISTM32F4.cpp ****     , m_csPin(csPin)
  289              		.loc 1 6 7 view .LVU39
  290 000e 8381     		strh	r3, [r0, #12]	@ movhi
  291              	.LBE25:
-   9:Core/HALinterface/Src/SPISTM32F4.cpp **** 
+   9:Core/HALinterface/Src/SPISTM32F4.cpp **** }
  292              		.loc 1 9 1 view .LVU40
  293 0010 5DF8044B 		ldr	r4, [sp], #4
  294              	.LCFI7:
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s 			page 7
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s 			page 7
 
 
  295              		.cfi_restore 4
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s 			page 1
  356              		.align	2
  359              	_ZTV10SPISTM32F4:
  360 0000 00000000 		.word	0
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s 			page 8
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s 			page 8
 
 
  361 0004 00000000 		.word	_ZTI10SPISTM32F4
@@ -439,48 +439,48 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s 			page 1
  376              		.file 10 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
  377              		.file 11 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h"
  378              		.file 12 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s 			page 9
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 SPISTM32F4.cpp
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:21     .text._ZN10SPISTM32F4D2Ev:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:27     .text._ZN10SPISTM32F4D2Ev:00000000 _ZN10SPISTM32F4D2Ev
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:59     .text._ZN10SPISTM32F4D2Ev:0000000c $d
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:359    .rodata._ZTV10SPISTM32F4:00000000 _ZTV10SPISTM32F4
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:346    .rodata._ZTV4ISpi:00000000 _ZTV4ISpi
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:21     .text._ZN10SPISTM32F4D2Ev:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:27     .text._ZN10SPISTM32F4D2Ev:00000000 _ZN10SPISTM32F4D2Ev
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:59     .text._ZN10SPISTM32F4D2Ev:0000000c $d
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:359    .rodata._ZTV10SPISTM32F4:00000000 _ZTV10SPISTM32F4
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:346    .rodata._ZTV4ISpi:00000000 _ZTV4ISpi
 .ARM.exidx.text._ZN10SPISTM32F4D2Ev:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:27     .text._ZN10SPISTM32F4D2Ev:00000000 _ZN10SPISTM32F4D1Ev
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:69     .text._ZN10SPISTM32F415resetChipSelectEv:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:75     .text._ZN10SPISTM32F415resetChipSelectEv:00000000 _ZN10SPISTM32F415resetChipSelectEv
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:27     .text._ZN10SPISTM32F4D2Ev:00000000 _ZN10SPISTM32F4D1Ev
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:69     .text._ZN10SPISTM32F415resetChipSelectEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:75     .text._ZN10SPISTM32F415resetChipSelectEv:00000000 _ZN10SPISTM32F415resetChipSelectEv
 .ARM.extab.text._ZN10SPISTM32F415resetChipSelectEv:00000000 $d
 .ARM.exidx.text._ZN10SPISTM32F415resetChipSelectEv:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:106    .text._ZN10SPISTM32F413setChipSelectEv:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:112    .text._ZN10SPISTM32F413setChipSelectEv:00000000 _ZN10SPISTM32F413setChipSelectEv
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:106    .text._ZN10SPISTM32F413setChipSelectEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:112    .text._ZN10SPISTM32F413setChipSelectEv:00000000 _ZN10SPISTM32F413setChipSelectEv
 .ARM.extab.text._ZN10SPISTM32F413setChipSelectEv:00000000 $d
 .ARM.exidx.text._ZN10SPISTM32F413setChipSelectEv:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:143    .text._ZN10SPISTM32F415transmitReceiveEPhS0_tm:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:149    .text._ZN10SPISTM32F415transmitReceiveEPhS0_tm:00000000 _ZN10SPISTM32F415transmitReceiveEPhS0_tm
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:143    .text._ZN10SPISTM32F415transmitReceiveEPhS0_tm:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:149    .text._ZN10SPISTM32F415transmitReceiveEPhS0_tm:00000000 _ZN10SPISTM32F415transmitReceiveEPhS0_tm
 .ARM.exidx.text._ZN10SPISTM32F415transmitReceiveEPhS0_tm:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:189    .text._ZN10SPISTM32F4D0Ev:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:195    .text._ZN10SPISTM32F4D0Ev:00000000 _ZN10SPISTM32F4D0Ev
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:242    .text._ZN10SPISTM32F4D0Ev:00000018 $d
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:189    .text._ZN10SPISTM32F4D0Ev:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:195    .text._ZN10SPISTM32F4D0Ev:00000000 _ZN10SPISTM32F4D0Ev
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:242    .text._ZN10SPISTM32F4D0Ev:00000018 $d
 .ARM.exidx.text._ZN10SPISTM32F4D0Ev:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:250    .text._ZN10SPISTM32F4C2EP19__SPI_HandleTypeDefP12GPIO_TypeDeft:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:256    .text._ZN10SPISTM32F4C2EP19__SPI_HandleTypeDefP12GPIO_TypeDeft:00000000 _ZN10SPISTM32F4C2EP19__SPI_HandleTypeDefP12GPIO_TypeDeft
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:301    .text._ZN10SPISTM32F4C2EP19__SPI_HandleTypeDefP12GPIO_TypeDeft:00000018 $d
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:250    .text._ZN10SPISTM32F4C2EP19__SPI_HandleTypeDefP12GPIO_TypeDeft:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:256    .text._ZN10SPISTM32F4C2EP19__SPI_HandleTypeDefP12GPIO_TypeDeft:00000000 _ZN10SPISTM32F4C2EP19__SPI_HandleTypeDefP12GPIO_TypeDeft
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:301    .text._ZN10SPISTM32F4C2EP19__SPI_HandleTypeDefP12GPIO_TypeDeft:00000018 $d
 .ARM.exidx.text._ZN10SPISTM32F4C2EP19__SPI_HandleTypeDefP12GPIO_TypeDeft:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:256    .text._ZN10SPISTM32F4C2EP19__SPI_HandleTypeDefP12GPIO_TypeDeft:00000000 _ZN10SPISTM32F4C1EP19__SPI_HandleTypeDefP12GPIO_TypeDeft
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:315    .rodata._ZTS4ISpi:00000000 _ZTS4ISpi
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:312    .rodata._ZTS4ISpi:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:322    .rodata._ZTI4ISpi:00000000 _ZTI4ISpi
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:319    .rodata._ZTI4ISpi:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:330    .rodata._ZTS10SPISTM32F4:00000000 _ZTS10SPISTM32F4
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:327    .rodata._ZTS10SPISTM32F4:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:337    .rodata._ZTI10SPISTM32F4:00000000 _ZTI10SPISTM32F4
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:334    .rodata._ZTI10SPISTM32F4:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:343    .rodata._ZTV4ISpi:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccgzbCXx.s:356    .rodata._ZTV10SPISTM32F4:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:256    .text._ZN10SPISTM32F4C2EP19__SPI_HandleTypeDefP12GPIO_TypeDeft:00000000 _ZN10SPISTM32F4C1EP19__SPI_HandleTypeDefP12GPIO_TypeDeft
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:315    .rodata._ZTS4ISpi:00000000 _ZTS4ISpi
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:312    .rodata._ZTS4ISpi:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:322    .rodata._ZTI4ISpi:00000000 _ZTI4ISpi
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:319    .rodata._ZTI4ISpi:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:330    .rodata._ZTS10SPISTM32F4:00000000 _ZTS10SPISTM32F4
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:327    .rodata._ZTS10SPISTM32F4:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:337    .rodata._ZTI10SPISTM32F4:00000000 _ZTI10SPISTM32F4
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:334    .rodata._ZTI10SPISTM32F4:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:343    .rodata._ZTV4ISpi:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccWGCBgZ.s:356    .rodata._ZTV10SPISTM32F4:00000000 $d
                            .group:00000000 _ZN10SPISTM32F4D5Ev
 
 UNDEFINED SYMBOLS
