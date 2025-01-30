@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 1
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 1
   46              	.LFE1185:
   47              		.cantunwind
   48              		.fnend
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 2
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s 			page 2
 
 
   50              		.global	_ZN3ImuC1EP10SPISTM32F4
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 1
   99              	.LVL4:
   17:Core/Driver/Src/IMUDriver.cpp ****     m_spi->transmitReceive(tx_data, rx_data, 2, HAL_MAX_DELAY);
  100              		.loc 1 17 5 is_stmt 1 view .LVU14
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 3
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s 			page 3
 
 
  101 0020 2068     		ldr	r0, [r4]
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 1
  151              		.cfi_def_cfa_offset 12
  152              		.cfi_offset 4, -12
  153              		.cfi_offset 5, -8
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 4
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s 			page 4
 
 
  154              		.cfi_offset 14, -4
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 1
  201              		.cfi_def_cfa_offset 12
  202              		@ sp needed
  203 003e 30BD     		pop	{r4, r5, pc}
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 5
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s 			page 5
 
 
  204              		.loc 1 30 1 view .LVU35
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 1
  253              		.align	2
  254              	.LC1:
  255 0000 57484F5F 		.ascii	"WHO_AM_I: 0x%02X\012\000"
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 6
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s 			page 6
 
 
  255      414D5F49 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 1
  301              		.loc 1 40 11 view .LVU51
  302 0018 FFF7FEFF 		bl	printf
  303              	.LVL22:
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 7
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s 			page 7
 
 
   41:Core/Driver/Src/IMUDriver.cpp **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 1
  336              		.loc 1 49 22 is_stmt 0 view .LVU63
  337 0040 8122     		movs	r2, #129
  338 0042 1121     		movs	r1, #17
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 8
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s 			page 8
 
 
  339 0044 2846     		mov	r0, r5
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 1
  390 000a 0446     		mov	r4, r0
  391              	.LVL32:
   58:Core/Driver/Src/IMUDriver.cpp ****     uint8_t high = SpiReadBytes(0x27);
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 9
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s 			page 9
 
 
  392              		.loc 1 58 5 is_stmt 1 view .LVU71
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 1
  439              	.L20:
  440              		.loc 1 65 1 view .LVU87
  441              		.align	3
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 10
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s 			page 10
 
 
  442              	.L19:
@@ -548,7 +548,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 1
  446              		.cfi_endproc
  447              	.LFE1191:
  448              		.fnend
- 450              		.section	.rodata._ZN3Imu12gyro_get_refEv.str1.4,"aMS",%progbits,1
+ 450              		.section	.rodata._ZN3Imu16gyroGetReferenceEv.str1.4,"aMS",%progbits,1
  451              		.align	2
  452              	.LC2:
  453 0000 4779726F 		.ascii	"Gyro reference: %f\012\000"
@@ -556,23 +556,23 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 1
  453      6572656E 
  453      63653A20 
  453      25660A00 
- 454              		.section	.text._ZN3Imu12gyro_get_refEv,"ax",%progbits
+ 454              		.section	.text._ZN3Imu16gyroGetReferenceEv,"ax",%progbits
  455              		.align	1
- 456              		.global	_ZN3Imu12gyro_get_refEv
+ 456              		.global	_ZN3Imu16gyroGetReferenceEv
  457              		.syntax unified
  458              		.thumb
  459              		.thumb_func
- 461              	_ZN3Imu12gyro_get_refEv:
+ 461              	_ZN3Imu16gyroGetReferenceEv:
  462              		.fnstart
  463              	.LVL43:
  464              	.LFB1192:
   66:Core/Driver/Src/IMUDriver.cpp **** 
-  67:Core/Driver/Src/IMUDriver.cpp **** void Imu::gyro_get_ref() {
- 465              		.loc 1 67 26 is_stmt 1 view -0
+  67:Core/Driver/Src/IMUDriver.cpp **** void Imu::gyroGetReference() {
+ 465              		.loc 1 67 30 is_stmt 1 view -0
  466              		.cfi_startproc
  467              		@ args = 0, pretend = 0, frame = 0
  468              		@ frame_needed = 0, uses_anonymous_args = 0
- 469              		.loc 1 67 26 is_stmt 0 view .LVU89
+ 469              		.loc 1 67 30 is_stmt 0 view .LVU89
  470 0000 70B5     		push	{r4, r5, r6, lr}
  471              		.save {r4, r5, r6, lr}
  472              	.LCFI9:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 1
  490 000c 80ED018A 		vstr.32	s16, [r0, #4]
   70:Core/Driver/Src/IMUDriver.cpp **** 
   71:Core/Driver/Src/IMUDriver.cpp ****     for(int i=0; i<500; i++) {
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 11
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s 			page 11
 
 
  491              		.loc 1 71 5 is_stmt 1 view .LVU93
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 1
  539              		.loc 1 71 5 is_stmt 1 discriminator 3 view .LVU110
  540 0040 0135     		adds	r5, r5, #1
  541              	.LVL54:
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 12
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s 			page 12
 
 
  542              	.L22:
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 1
  590              	.Letext0:
  591              		.file 2 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/machine/_default_types.h"
  592              		.file 3 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/sys/_stdint.h"
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 13
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s 			page 13
 
 
  593              		.file 4 "C:/Tools/arm-gnu-toolchain/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h"
@@ -735,41 +735,41 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 1
  604              		.file 15 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/math.h"
  605              		.file 16 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/stdio.h"
  606              		.file 17 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s 			page 14
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s 			page 14
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 IMUDriver.cpp
-C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s:21     .text._ZN3ImuC2EP10SPISTM32F4:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s:27     .text._ZN3ImuC2EP10SPISTM32F4:00000000 _ZN3ImuC2EP10SPISTM32F4
+C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s:21     .text._ZN3ImuC2EP10SPISTM32F4:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s:27     .text._ZN3ImuC2EP10SPISTM32F4:00000000 _ZN3ImuC2EP10SPISTM32F4
 .ARM.exidx.text._ZN3ImuC2EP10SPISTM32F4:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s:27     .text._ZN3ImuC2EP10SPISTM32F4:00000000 _ZN3ImuC1EP10SPISTM32F4
-C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s:53     .text._ZN3Imu12SpiReadBytesEh:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s:59     .text._ZN3Imu12SpiReadBytesEh:00000000 _ZN3Imu12SpiReadBytesEh
+C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s:27     .text._ZN3ImuC2EP10SPISTM32F4:00000000 _ZN3ImuC1EP10SPISTM32F4
+C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s:53     .text._ZN3Imu12SpiReadBytesEh:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s:59     .text._ZN3Imu12SpiReadBytesEh:00000000 _ZN3Imu12SpiReadBytesEh
 .ARM.exidx.text._ZN3Imu12SpiReadBytesEh:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s:133    .text._ZN3Imu13SpiWriteBytesEhh:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s:139    .text._ZN3Imu13SpiWriteBytesEhh:00000000 _ZN3Imu13SpiWriteBytesEhh
+C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s:133    .text._ZN3Imu13SpiWriteBytesEhh:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s:139    .text._ZN3Imu13SpiWriteBytesEhh:00000000 _ZN3Imu13SpiWriteBytesEhh
 .ARM.exidx.text._ZN3Imu13SpiWriteBytesEhh:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s:210    .rodata._ZN3Imu12Lsm6dsrErrorEh.str1.4:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s:214    .text._ZN3Imu12Lsm6dsrErrorEh:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s:220    .text._ZN3Imu12Lsm6dsrErrorEh:00000000 _ZN3Imu12Lsm6dsrErrorEh
-C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s:247    .text._ZN3Imu12Lsm6dsrErrorEh:0000000c $d
+C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s:210    .rodata._ZN3Imu12Lsm6dsrErrorEh.str1.4:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s:214    .text._ZN3Imu12Lsm6dsrErrorEh:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s:220    .text._ZN3Imu12Lsm6dsrErrorEh:00000000 _ZN3Imu12Lsm6dsrErrorEh
+C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s:247    .text._ZN3Imu12Lsm6dsrErrorEh:0000000c $d
 .ARM.extab.text._ZN3Imu12Lsm6dsrErrorEh:00000000 $d
 .ARM.exidx.text._ZN3Imu12Lsm6dsrErrorEh:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s:253    .rodata._ZN3Imu14Lsm6dsrPowerOnEv.str1.4:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s:257    .text._ZN3Imu14Lsm6dsrPowerOnEv:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s:263    .text._ZN3Imu14Lsm6dsrPowerOnEv:00000000 _ZN3Imu14Lsm6dsrPowerOnEv
-C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s:351    .text._ZN3Imu14Lsm6dsrPowerOnEv:00000054 $d
+C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s:253    .rodata._ZN3Imu14Lsm6dsrPowerOnEv.str1.4:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s:257    .text._ZN3Imu14Lsm6dsrPowerOnEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s:263    .text._ZN3Imu14Lsm6dsrPowerOnEv:00000000 _ZN3Imu14Lsm6dsrPowerOnEv
+C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s:351    .text._ZN3Imu14Lsm6dsrPowerOnEv:00000054 $d
 .ARM.exidx.text._ZN3Imu14Lsm6dsrPowerOnEv:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s:360    .text._ZN3Imu16Lsm6dsrReadGyroZEv:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s:366    .text._ZN3Imu16Lsm6dsrReadGyroZEv:00000000 _ZN3Imu16Lsm6dsrReadGyroZEv
-C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s:443    .text._ZN3Imu16Lsm6dsrReadGyroZEv:00000050 $d
+C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s:360    .text._ZN3Imu16Lsm6dsrReadGyroZEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s:366    .text._ZN3Imu16Lsm6dsrReadGyroZEv:00000000 _ZN3Imu16Lsm6dsrReadGyroZEv
+C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s:443    .text._ZN3Imu16Lsm6dsrReadGyroZEv:00000050 $d
 .ARM.exidx.text._ZN3Imu16Lsm6dsrReadGyroZEv:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s:451    .rodata._ZN3Imu12gyro_get_refEv.str1.4:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s:455    .text._ZN3Imu12gyro_get_refEv:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s:461    .text._ZN3Imu12gyro_get_refEv:00000000 _ZN3Imu12gyro_get_refEv
-C:\Users\hanaj\AppData\Local\Temp\cc0wJ3u5.s:582    .text._ZN3Imu12gyro_get_refEv:00000074 $d
-.ARM.exidx.text._ZN3Imu12gyro_get_refEv:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s:451    .rodata._ZN3Imu16gyroGetReferenceEv.str1.4:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s:455    .text._ZN3Imu16gyroGetReferenceEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s:461    .text._ZN3Imu16gyroGetReferenceEv:00000000 _ZN3Imu16gyroGetReferenceEv
+C:\Users\hanaj\AppData\Local\Temp\ccL3GJjL.s:582    .text._ZN3Imu16gyroGetReferenceEv:00000074 $d
+.ARM.exidx.text._ZN3Imu16gyroGetReferenceEv:00000000 $d
 
 UNDEFINED SYMBOLS
 __aeabi_unwind_cpp_pr0

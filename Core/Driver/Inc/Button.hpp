@@ -15,12 +15,14 @@ public:
     //   押されていない場合は Off
     uint8_t checkState();
 
-private:
-    IGpio*   m_gpio;
-    uint32_t m_longPressThreshold; // ロング押し判定の閾値[ms]
     enum{
         Off = 0,
         On,
         LongOn
     };
+
+private:
+    IGpio*   m_gpio;
+    uint32_t m_longPressThreshold; // ロング押し判定の閾値[ms]
+
 };

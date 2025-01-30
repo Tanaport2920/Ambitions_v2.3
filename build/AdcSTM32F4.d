@@ -2,7 +2,7 @@ build/AdcSTM32F4.o: Core/HALinterface/Src/AdcSTM32F4.cpp \
  Core/HALinterface/Src/../Inc/AdcSTM32F4.hpp \
  Core/HALinterface/Src/../Inc/IAdc.hpp \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
- Core/Inc/stm32f4xx_hal_conf.h \
+ C:/MicroMouse_ws/Ambitions_v2.3/Core/CubeMXAutoGenerate/Inc/stm32f4xx_hal_conf.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
@@ -30,12 +30,12 @@ build/AdcSTM32F4.o: Core/HALinterface/Src/AdcSTM32F4.cpp \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
- Core/HALinterface/Src/../../Inc/adc.h \
- Core/HALinterface/Src/../../Inc/main.h
+ Core/HALinterface/Src/../../CubeMXAutoGenerate/Inc/adc.h \
+ C:/MicroMouse_ws/Ambitions_v2.3/Core/main.h
 Core/HALinterface/Src/../Inc/AdcSTM32F4.hpp:
 Core/HALinterface/Src/../Inc/IAdc.hpp:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
-Core/Inc/stm32f4xx_hal_conf.h:
+C:/MicroMouse_ws/Ambitions_v2.3/Core/CubeMXAutoGenerate/Inc/stm32f4xx_hal_conf.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:
 Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
@@ -65,5 +65,5 @@ Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
-Core/HALinterface/Src/../../Inc/adc.h:
-Core/HALinterface/Src/../../Inc/main.h:
+Core/HALinterface/Src/../../CubeMXAutoGenerate/Inc/adc.h:
+C:/MicroMouse_ws/Ambitions_v2.3/Core/main.h:

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s 			page 1
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s 			page 1
    6:Core/HALinterface/Src/../Inc/IAdc.hpp **** public:
    7:Core/HALinterface/Src/../Inc/IAdc.hpp ****     virtual ~IAdc() = default;
   45              		.loc 3 7 13 is_stmt 1 view .LVU2
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s 			page 2
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s 			page 2
 
 
   46              	.LBB23:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s 			page 1
  102 0008 044B     		ldr	r3, .L6+4
  103 000a 0360     		str	r3, [r0]
  104              	.LVL6:
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s 			page 3
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s 			page 3
 
 
  105              		.loc 3 7 13 is_stmt 0 view .LVU9
@@ -156,7 +156,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s 			page 1
  139              	.LFB251:
    1:Core/HALinterface/Src/AdcSTM32F4.cpp **** #include "../Inc/AdcSTM32F4.hpp"
    2:Core/HALinterface/Src/AdcSTM32F4.cpp **** #include "stm32f4xx_hal.h"
-   3:Core/HALinterface/Src/AdcSTM32F4.cpp **** #include "../../Inc/adc.h"
+   3:Core/HALinterface/Src/AdcSTM32F4.cpp **** #include "../../CubeMXAutoGenerate/Inc/adc.h"
    4:Core/HALinterface/Src/AdcSTM32F4.cpp **** 
    5:Core/HALinterface/Src/AdcSTM32F4.cpp **** AdcSTM32F4::AdcSTM32F4(ADC_HandleTypeDef* hadc)
    6:Core/HALinterface/Src/AdcSTM32F4.cpp ****     : m_hadc(hadc)
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s 			page 1
  148              		.cfi_def_cfa_offset 8
  149              		.cfi_offset 4, -8
  150              		.cfi_offset 14, -4
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s 			page 4
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s 			page 4
 
 
  151              		.pad #16
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s 			page 1
   37:Core/HALinterface/Src/AdcSTM32F4.cpp ****     HAL_ADC_Start(m_hadc);
  182              		.loc 1 37 5 is_stmt 1 view .LVU25
  183              		.loc 1 37 18 is_stmt 0 view .LVU26
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s 			page 5
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s 			page 5
 
 
  184 0020 6068     		ldr	r0, [r4, #4]
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s 			page 1
  222              	.LVL17:
   42:Core/HALinterface/Src/AdcSTM32F4.cpp ****     }
  223              		.loc 1 42 62 discriminator 1 view .LVU38
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s 			page 6
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s 			page 6
 
 
  224 0042 80B2     		uxth	r0, r0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s 			page 1
  272              	.LEHB0:
    8:Core/HALinterface/Src/AdcSTM32F4.cpp ****     MX_ADC2_Init();
  273              		.loc 1 8 17 is_stmt 0 view .LVU47
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s 			page 7
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s 			page 7
 
 
  274 000e FFF7FEFF 		bl	MX_ADC1_Init
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s 			page 1
  322 0009 FF       		.byte	0xff
  323 000a 01       		.byte	0x1
  324 000b 08       		.uleb128 .LLSDACSE249-.LLSDACSB249
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s 			page 8
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s 			page 8
 
 
  325              	.LLSDACSB249:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s 			page 1
  388 0000 00000000 		.word	0
  389 0004 00000000 		.word	_ZTI10AdcSTM32F4
  390 0008 00000000 		.word	_ZN10AdcSTM32F4D1Ev
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s 			page 9
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s 			page 9
 
 
  391 000c 00000000 		.word	_ZN10AdcSTM32F4D0Ev
@@ -497,42 +497,42 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s 			page 1
  404              		.file 12 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
  405              		.file 13 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h"
  406              		.file 14 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
- 407              		.file 15 "Core/HALinterface/Src/../../Inc/adc.h"
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s 			page 10
+ 407              		.file 15 "Core/HALinterface/Src/../../CubeMXAutoGenerate/Inc/adc.h"
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s 			page 10
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 AdcSTM32F4.cpp
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:21     .text._ZN10AdcSTM32F4D2Ev:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:27     .text._ZN10AdcSTM32F4D2Ev:00000000 _ZN10AdcSTM32F4D2Ev
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:59     .text._ZN10AdcSTM32F4D2Ev:0000000c $d
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:387    .rodata._ZTV10AdcSTM32F4:00000000 _ZTV10AdcSTM32F4
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:376    .rodata._ZTV4IAdc:00000000 _ZTV4IAdc
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:21     .text._ZN10AdcSTM32F4D2Ev:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:27     .text._ZN10AdcSTM32F4D2Ev:00000000 _ZN10AdcSTM32F4D2Ev
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:59     .text._ZN10AdcSTM32F4D2Ev:0000000c $d
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:387    .rodata._ZTV10AdcSTM32F4:00000000 _ZTV10AdcSTM32F4
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:376    .rodata._ZTV4IAdc:00000000 _ZTV4IAdc
 .ARM.exidx.text._ZN10AdcSTM32F4D2Ev:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:27     .text._ZN10AdcSTM32F4D2Ev:00000000 _ZN10AdcSTM32F4D1Ev
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:69     .text._ZN10AdcSTM32F4D0Ev:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:75     .text._ZN10AdcSTM32F4D0Ev:00000000 _ZN10AdcSTM32F4D0Ev
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:122    .text._ZN10AdcSTM32F4D0Ev:00000018 $d
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:27     .text._ZN10AdcSTM32F4D2Ev:00000000 _ZN10AdcSTM32F4D1Ev
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:69     .text._ZN10AdcSTM32F4D0Ev:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:75     .text._ZN10AdcSTM32F4D0Ev:00000000 _ZN10AdcSTM32F4D0Ev
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:122    .text._ZN10AdcSTM32F4D0Ev:00000018 $d
 .ARM.exidx.text._ZN10AdcSTM32F4D0Ev:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:130    .text._ZN10AdcSTM32F44readEh:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:136    .text._ZN10AdcSTM32F44readEh:00000000 _ZN10AdcSTM32F44readEh
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:130    .text._ZN10AdcSTM32F44readEh:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:136    .text._ZN10AdcSTM32F44readEh:00000000 _ZN10AdcSTM32F44readEh
 .ARM.exidx.text._ZN10AdcSTM32F44readEh:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:232    .text._ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:238    .text._ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef:00000000 _ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:313    .text._ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef:00000028 $d
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:232    .text._ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:238    .text._ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef:00000000 _ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:313    .text._ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef:00000028 $d
 .ARM.extab.text._ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef:00000000 $d
 .ARM.exidx.text._ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:238    .text._ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef:00000000 _ZN10AdcSTM32F4C1EP17ADC_HandleTypeDef
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:345    .rodata._ZTS4IAdc:00000000 _ZTS4IAdc
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:342    .rodata._ZTS4IAdc:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:352    .rodata._ZTI4IAdc:00000000 _ZTI4IAdc
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:349    .rodata._ZTI4IAdc:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:360    .rodata._ZTS10AdcSTM32F4:00000000 _ZTS10AdcSTM32F4
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:357    .rodata._ZTS10AdcSTM32F4:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:367    .rodata._ZTI10AdcSTM32F4:00000000 _ZTI10AdcSTM32F4
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:364    .rodata._ZTI10AdcSTM32F4:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:373    .rodata._ZTV4IAdc:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccM3CaTy.s:384    .rodata._ZTV10AdcSTM32F4:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:238    .text._ZN10AdcSTM32F4C2EP17ADC_HandleTypeDef:00000000 _ZN10AdcSTM32F4C1EP17ADC_HandleTypeDef
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:345    .rodata._ZTS4IAdc:00000000 _ZTS4IAdc
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:342    .rodata._ZTS4IAdc:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:352    .rodata._ZTI4IAdc:00000000 _ZTI4IAdc
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:349    .rodata._ZTI4IAdc:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:360    .rodata._ZTS10AdcSTM32F4:00000000 _ZTS10AdcSTM32F4
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:357    .rodata._ZTS10AdcSTM32F4:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:367    .rodata._ZTI10AdcSTM32F4:00000000 _ZTI10AdcSTM32F4
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:364    .rodata._ZTI10AdcSTM32F4:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:373    .rodata._ZTV4IAdc:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccgCmCbn.s:384    .rodata._ZTV10AdcSTM32F4:00000000 $d
                            .group:00000000 _ZN10AdcSTM32F4D5Ev
 
 UNDEFINED SYMBOLS

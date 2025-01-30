@@ -18,25 +18,27 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "adc.h"
-#include "dma.h"
-#include "spi.h"
-#include "tim.h"
-#include "gpio.h"
+#include "CubeMXAutoGenerate/Inc/adc.h"
+#include "CubeMXAutoGenerate/Inc/dma.h"
+#include "CubeMXAutoGenerate/Inc/spi.h"
+#include "CubeMXAutoGenerate/Inc/tim.h"
+#include "CubeMXAutoGenerate/Inc/gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "../HALinterface/Inc/AdcSTM32F4.hpp"
-#include "../HALinterface/Inc/PwmSTM32F4.hpp"
-#include "../HALinterface/Inc/TimerSTM32F4.hpp"
-#include "../HALinterface/Inc/GpioSTM32F4.hpp"
-#include "../HALinterface/Inc/EncoderSTM32F4.hpp"
-#include "../Driver/Inc/Button.hpp"
-#include "../Driver/Inc/MotorDriver.hpp"
-#include "../Driver/Inc/EncoderDriver.hpp"
-#include "../Driver/Inc/IMUDriver.hpp"
-#include "../Driver/Inc/PhotoSensor.hpp"
-#include "../Driver/Inc/LEDController.hpp"
+#include "HALinterface/Inc/AdcSTM32F4.hpp"
+#include "HALinterface/Inc/PwmSTM32F4.hpp"
+#include "HALinterface/Inc/TimerSTM32F4.hpp"
+#include "HALinterface/Inc/GpioSTM32F4.hpp"
+#include "HALinterface/Inc/EncoderSTM32F4.hpp"
+#include "Driver/Inc/Button.hpp"
+#include "Driver/Inc/MotorDriver.hpp"
+#include "Driver/Inc/EncoderDriver.hpp"
+#include "Driver/Inc/IMUDriver.hpp"
+#include "Driver/Inc/PhotoSensor.hpp"
+#include "Driver/Inc/LEDController.hpp"
+#include "RobotController/Inc/RobotController.hpp"
+#include "RobotController/Inc/Mazesolver.hpp"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -110,6 +112,7 @@ int main(void)
   MX_TIM11_Init();
   MX_TIM5_Init();
   /* USER CODE BEGIN 2 */
+
   // HAL実装インスタンス
   // GPIO
   static GpioSTM32F4 AIN1(GPIOB, GPIO_PIN_15);
@@ -165,21 +168,36 @@ int main(void)
   );
   static Imu lsm6dsr(&spi3);
   static PhotoSensor PhotoSensor(&hadc1, adcBuffer, 4);
-
-  // 右モータ
   static MotorDriver RightMotor(
       &pwmRight,
       &AIN1,
       &AIN2,
       840.0f   // ARR値
   );
-
-  // 左モータ
   static MotorDriver LeftMotor(
       &pwmLeft,
       &BIN1,
       &BIN2,
       840.0f   // ARR値
+  );
+  static EncoderDriver EncoderRightDriver(&EncoderRight);
+  static EncoderDriver EncoderLeftDriver(&EncoderLeft);
+
+  // MazeSolverの実装（静的に生成）
+  static AdachiSolver adachi;
+  static DijkstraSolver dijkstra;
+
+  // ロボットコントローラ
+  static RobotController RobotController(
+      &ModeChangeButton,
+      &LEDController,
+      &lsm6dsr,
+      &PhotoSensor,
+      &EncoderRightDriver,
+      &EncoderLeftDriver,
+      &RightMotor,
+      &LeftMotor,
+      &adachi
   );
   /* USER CODE END 2 */
 

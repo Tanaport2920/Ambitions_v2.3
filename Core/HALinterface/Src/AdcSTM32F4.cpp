@@ -1,6 +1,6 @@
 #include "../Inc/AdcSTM32F4.hpp"
 #include "stm32f4xx_hal.h"
-#include "../../Inc/adc.h"
+#include "../../CubeMXAutoGenerate/Inc/adc.h"
 
 AdcSTM32F4::AdcSTM32F4(ADC_HandleTypeDef* hadc)
     : m_hadc(hadc)

@@ -3,7 +3,7 @@ build/LEDController.o: Core/Driver/Src/LEDController.cpp \
  Core/Driver/Src/../Inc/../../HALinterface/Inc/GpioSTM32F4.hpp \
  Core/Driver/Src/../Inc/../../HALinterface/Inc/IGpio.hpp \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
- Core/Inc/stm32f4xx_hal_conf.h \
+ C:/MicroMouse_ws/Ambitions_v2.3/Core/CubeMXAutoGenerate/Inc/stm32f4xx_hal_conf.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
@@ -35,7 +35,7 @@ Core/Driver/Src/../Inc/LEDController.hpp:
 Core/Driver/Src/../Inc/../../HALinterface/Inc/GpioSTM32F4.hpp:
 Core/Driver/Src/../Inc/../../HALinterface/Inc/IGpio.hpp:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
-Core/Inc/stm32f4xx_hal_conf.h:
+C:/MicroMouse_ws/Ambitions_v2.3/Core/CubeMXAutoGenerate/Inc/stm32f4xx_hal_conf.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:
 Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:

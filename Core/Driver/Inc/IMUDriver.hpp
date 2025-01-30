@@ -15,7 +15,7 @@ public:
 
     void Lsm6dsrPowerOn();
     float Lsm6dsrReadGyroZ();
-    void gyro_get_ref();
+    void gyroGetReference();
 
 private:
     // レジスタ読書き/書き

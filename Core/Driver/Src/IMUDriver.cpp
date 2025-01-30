@@ -64,7 +64,7 @@ float Imu::Lsm6dsrReadGyroZ() {
     return (gyro_fix_data * 0.14f) * (M_PI / 180.0f);
 }
 
-void Imu::gyro_get_ref() {
+void Imu::gyroGetReference() {
     float accum = 0.0f;
     gyro_reference = 0.0f;
 

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s 			page 1
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s 			page 1
   15:Core/HALinterface/Src/EncoderSTM32F4.cpp **** }
   42              		.loc 1 15 1 view .LVU3
   43 0006 7047     		bx	lr
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s 			page 2
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s 			page 2
 
 
   44              		.cfi_endproc
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s 			page 1
   92              		@ frame_needed = 0, uses_anonymous_args = 0
   93              		@ link register save eliminated.
   94              	.LBB21:
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s 			page 3
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s 			page 3
 
 
   95              		.loc 2 6 7 is_stmt 0 view .LVU8
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s 			page 1
  144              		.cfi_offset 4, -8
  145              		.cfi_offset 14, -4
  146 0002 0446     		mov	r4, r0
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s 			page 4
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s 			page 4
 
 
  147              	.LVL7:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s 			page 1
  201              		.loc 1 4 1 is_stmt 0 view .LVU21
  202 0000 10B5     		push	{r4, lr}
  203              		.save {r4, lr}
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s 			page 5
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s 			page 5
 
 
  204              	.LCFI1:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s 			page 1
  250              	.LVL19:
  251              	.LEHE1:
  252              	.L15:
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s 			page 6
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s 			page 6
 
 
  253              		.loc 3 7 13 view .LVU32
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s 			page 1
  305              		@ args = 0, pretend = 0, frame = 0
  306              		@ frame_needed = 0, uses_anonymous_args = 0
  307              		.loc 1 21 29 is_stmt 0 view .LVU36
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s 			page 7
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s 			page 7
 
 
  308 0000 08B5     		push	{r3, lr}
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s 			page 1
  358              		.loc 1 27 1 view .LVU46
  359 000a 08BD     		pop	{r3, pc}
  360              		.cfi_endproc
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s 			page 8
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s 			page 8
 
 
  361              	.LFE254:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s 			page 1
  422              		.file 4 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/cstdint"
  423              		.file 5 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/arm-none-eabi/thumb/v7e-m+fp/
  424              		.file 6 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/machine/_default_types.h"
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s 			page 9
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s 			page 9
 
 
  425              		.file 7 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/sys/_stdint.h"
@@ -489,52 +489,52 @@ ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s 			page 1
  430              		.file 12 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
  431              		.file 13 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h"
  432              		.file 14 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
-ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s 			page 10
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s 			page 10
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 EncoderSTM32F4.cpp
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:21     .text._ZNK14EncoderSTM32F48getCountEv:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:27     .text._ZNK14EncoderSTM32F48getCountEv:00000000 _ZNK14EncoderSTM32F48getCountEv
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:21     .text._ZNK14EncoderSTM32F48getCountEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:27     .text._ZNK14EncoderSTM32F48getCountEv:00000000 _ZNK14EncoderSTM32F48getCountEv
 .ARM.exidx.text._ZNK14EncoderSTM32F48getCountEv:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:50     .text._ZN14EncoderSTM32F410resetCountEv:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:56     .text._ZN14EncoderSTM32F410resetCountEv:00000000 _ZN14EncoderSTM32F410resetCountEv
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:50     .text._ZN14EncoderSTM32F410resetCountEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:56     .text._ZN14EncoderSTM32F410resetCountEv:00000000 _ZN14EncoderSTM32F410resetCountEv
 .ARM.exidx.text._ZN14EncoderSTM32F410resetCountEv:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:78     .text._ZN14EncoderSTM32F4D2Ev:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:84     .text._ZN14EncoderSTM32F4D2Ev:00000000 _ZN14EncoderSTM32F4D2Ev
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:116    .text._ZN14EncoderSTM32F4D2Ev:0000000c $d
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:412    .rodata._ZTV14EncoderSTM32F4:00000000 _ZTV14EncoderSTM32F4
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:400    .rodata._ZTV8IEncoder:00000000 _ZTV8IEncoder
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:78     .text._ZN14EncoderSTM32F4D2Ev:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:84     .text._ZN14EncoderSTM32F4D2Ev:00000000 _ZN14EncoderSTM32F4D2Ev
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:116    .text._ZN14EncoderSTM32F4D2Ev:0000000c $d
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:412    .rodata._ZTV14EncoderSTM32F4:00000000 _ZTV14EncoderSTM32F4
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:400    .rodata._ZTV8IEncoder:00000000 _ZTV8IEncoder
 .ARM.exidx.text._ZN14EncoderSTM32F4D2Ev:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:84     .text._ZN14EncoderSTM32F4D2Ev:00000000 _ZN14EncoderSTM32F4D1Ev
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:126    .text._ZN14EncoderSTM32F4D0Ev:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:132    .text._ZN14EncoderSTM32F4D0Ev:00000000 _ZN14EncoderSTM32F4D0Ev
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:179    .text._ZN14EncoderSTM32F4D0Ev:00000018 $d
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:84     .text._ZN14EncoderSTM32F4D2Ev:00000000 _ZN14EncoderSTM32F4D1Ev
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:126    .text._ZN14EncoderSTM32F4D0Ev:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:132    .text._ZN14EncoderSTM32F4D0Ev:00000000 _ZN14EncoderSTM32F4D0Ev
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:179    .text._ZN14EncoderSTM32F4D0Ev:00000018 $d
 .ARM.exidx.text._ZN14EncoderSTM32F4D0Ev:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:187    .text._ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:193    .text._ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef:00000000 _ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:265    .text._ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef:00000024 $d
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:187    .text._ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:193    .text._ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef:00000000 _ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:265    .text._ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef:00000024 $d
 .ARM.extab.text._ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef:00000000 $d
 .ARM.exidx.text._ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:193    .text._ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef:00000000 _ZN14EncoderSTM32F4C1EP17TIM_HandleTypeDef
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:293    .text._ZN14EncoderSTM32F45startEv:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:299    .text._ZN14EncoderSTM32F45startEv:00000000 _ZN14EncoderSTM32F45startEv
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:193    .text._ZN14EncoderSTM32F4C2EP17TIM_HandleTypeDef:00000000 _ZN14EncoderSTM32F4C1EP17TIM_HandleTypeDef
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:293    .text._ZN14EncoderSTM32F45startEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:299    .text._ZN14EncoderSTM32F45startEv:00000000 _ZN14EncoderSTM32F45startEv
 .ARM.extab.text._ZN14EncoderSTM32F45startEv:00000000 $d
 .ARM.exidx.text._ZN14EncoderSTM32F45startEv:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:329    .text._ZN14EncoderSTM32F44stopEv:00000000 $t
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:335    .text._ZN14EncoderSTM32F44stopEv:00000000 _ZN14EncoderSTM32F44stopEv
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:329    .text._ZN14EncoderSTM32F44stopEv:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:335    .text._ZN14EncoderSTM32F44stopEv:00000000 _ZN14EncoderSTM32F44stopEv
 .ARM.extab.text._ZN14EncoderSTM32F44stopEv:00000000 $d
 .ARM.exidx.text._ZN14EncoderSTM32F44stopEv:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:369    .rodata._ZTS8IEncoder:00000000 _ZTS8IEncoder
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:366    .rodata._ZTS8IEncoder:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:376    .rodata._ZTI8IEncoder:00000000 _ZTI8IEncoder
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:373    .rodata._ZTI8IEncoder:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:384    .rodata._ZTS14EncoderSTM32F4:00000000 _ZTS14EncoderSTM32F4
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:381    .rodata._ZTS14EncoderSTM32F4:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:391    .rodata._ZTI14EncoderSTM32F4:00000000 _ZTI14EncoderSTM32F4
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:388    .rodata._ZTI14EncoderSTM32F4:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:397    .rodata._ZTV8IEncoder:00000000 $d
-C:\Users\hanaj\AppData\Local\Temp\ccjhQMNh.s:409    .rodata._ZTV14EncoderSTM32F4:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:369    .rodata._ZTS8IEncoder:00000000 _ZTS8IEncoder
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:366    .rodata._ZTS8IEncoder:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:376    .rodata._ZTI8IEncoder:00000000 _ZTI8IEncoder
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:373    .rodata._ZTI8IEncoder:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:384    .rodata._ZTS14EncoderSTM32F4:00000000 _ZTS14EncoderSTM32F4
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:381    .rodata._ZTS14EncoderSTM32F4:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:391    .rodata._ZTI14EncoderSTM32F4:00000000 _ZTI14EncoderSTM32F4
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:388    .rodata._ZTI14EncoderSTM32F4:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:397    .rodata._ZTV8IEncoder:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\ccoWBywx.s:409    .rodata._ZTV14EncoderSTM32F4:00000000 $d
                            .group:00000000 _ZN14EncoderSTM32F4D5Ev
 
 UNDEFINED SYMBOLS

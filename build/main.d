@@ -1,6 +1,6 @@
-build/main.o: Core/Src/main.cpp Core/Inc/main.h \
+build/main.o: Core/main.cpp Core/main.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
- Core/Inc/stm32f4xx_hal_conf.h \
+ C:/MicroMouse_ws/Ambitions_v2.3/Core/CubeMXAutoGenerate/Inc/stm32f4xx_hal_conf.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
@@ -27,27 +27,29 @@ build/main.o: Core/Src/main.cpp Core/Inc/main.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
- Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h Core/Inc/adc.h \
- Core/Inc/main.h Core/Inc/dma.h Core/Inc/spi.h Core/Inc/tim.h \
- Core/Inc/gpio.h Core/Src/../HALinterface/Inc/AdcSTM32F4.hpp \
- Core/Src/../HALinterface/Inc/IAdc.hpp \
- Core/Src/../HALinterface/Inc/PwmSTM32F4.hpp \
- Core/Src/../HALinterface/Inc/TimerSTM32F4.hpp \
- Core/Src/../HALinterface/Inc/ITimer.hpp \
- Core/Src/../HALinterface/Inc/GpioSTM32F4.hpp \
- Core/Src/../HALinterface/Inc/IGpio.hpp \
- Core/Src/../HALinterface/Inc/EncoderSTM32F4.hpp \
- Core/Src/../HALinterface/Inc/IEncoder.hpp \
- Core/Src/../Driver/Inc/Button.hpp Core/Src/../Driver/Inc/MotorDriver.hpp \
- Core/Src/../Driver/Inc/EncoderDriver.hpp \
- Core/Src/../Driver/Inc/IMUDriver.hpp \
- Core/Src/../Driver/Inc/../../HALinterface/Inc/SPISTM32F4.hpp \
- Core/Src/../Driver/Inc/../../HALinterface/Inc/ISpi.hpp \
- Core/Src/../Driver/Inc/PhotoSensor.hpp \
- Core/Src/../Driver/Inc/LEDController.hpp
-Core/Inc/main.h:
+ Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+ Core/CubeMXAutoGenerate/Inc/adc.h \
+ Core/CubeMXAutoGenerate/Inc/../../main.h \
+ Core/CubeMXAutoGenerate/Inc/dma.h Core/CubeMXAutoGenerate/Inc/spi.h \
+ Core/CubeMXAutoGenerate/Inc/tim.h Core/CubeMXAutoGenerate/Inc/gpio.h \
+ Core/HALinterface/Inc/AdcSTM32F4.hpp Core/HALinterface/Inc/IAdc.hpp \
+ Core/HALinterface/Inc/PwmSTM32F4.hpp \
+ Core/HALinterface/Inc/TimerSTM32F4.hpp Core/HALinterface/Inc/ITimer.hpp \
+ Core/HALinterface/Inc/GpioSTM32F4.hpp Core/HALinterface/Inc/IGpio.hpp \
+ Core/HALinterface/Inc/EncoderSTM32F4.hpp \
+ Core/HALinterface/Inc/IEncoder.hpp Core/Driver/Inc/Button.hpp \
+ Core/Driver/Inc/MotorDriver.hpp Core/Driver/Inc/EncoderDriver.hpp \
+ Core/Driver/Inc/IMUDriver.hpp \
+ Core/Driver/Inc/../../HALinterface/Inc/SPISTM32F4.hpp \
+ Core/Driver/Inc/../../HALinterface/Inc/ISpi.hpp \
+ Core/Driver/Inc/PhotoSensor.hpp Core/Driver/Inc/LEDController.hpp \
+ Core/RobotController/Inc/RobotController.hpp \
+ Core/RobotController/Inc/MazeSolver.hpp \
+ Core/RobotController/Inc/Maze.hpp Core/RobotController/Inc/Path.hpp \
+ Core/RobotController/Inc/DynamicsController.hpp
+Core/main.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
-Core/Inc/stm32f4xx_hal_conf.h:
+C:/MicroMouse_ws/Ambitions_v2.3/Core/CubeMXAutoGenerate/Inc/stm32f4xx_hal_conf.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:
 Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
@@ -77,26 +79,31 @@ Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
-Core/Inc/adc.h:
-Core/Inc/main.h:
-Core/Inc/dma.h:
-Core/Inc/spi.h:
-Core/Inc/tim.h:
-Core/Inc/gpio.h:
-Core/Src/../HALinterface/Inc/AdcSTM32F4.hpp:
-Core/Src/../HALinterface/Inc/IAdc.hpp:
-Core/Src/../HALinterface/Inc/PwmSTM32F4.hpp:
-Core/Src/../HALinterface/Inc/TimerSTM32F4.hpp:
-Core/Src/../HALinterface/Inc/ITimer.hpp:
-Core/Src/../HALinterface/Inc/GpioSTM32F4.hpp:
-Core/Src/../HALinterface/Inc/IGpio.hpp:
-Core/Src/../HALinterface/Inc/EncoderSTM32F4.hpp:
-Core/Src/../HALinterface/Inc/IEncoder.hpp:
-Core/Src/../Driver/Inc/Button.hpp:
-Core/Src/../Driver/Inc/MotorDriver.hpp:
-Core/Src/../Driver/Inc/EncoderDriver.hpp:
-Core/Src/../Driver/Inc/IMUDriver.hpp:
-Core/Src/../Driver/Inc/../../HALinterface/Inc/SPISTM32F4.hpp:
-Core/Src/../Driver/Inc/../../HALinterface/Inc/ISpi.hpp:
-Core/Src/../Driver/Inc/PhotoSensor.hpp:
-Core/Src/../Driver/Inc/LEDController.hpp:
+Core/CubeMXAutoGenerate/Inc/adc.h:
+Core/CubeMXAutoGenerate/Inc/../../main.h:
+Core/CubeMXAutoGenerate/Inc/dma.h:
+Core/CubeMXAutoGenerate/Inc/spi.h:
+Core/CubeMXAutoGenerate/Inc/tim.h:
+Core/CubeMXAutoGenerate/Inc/gpio.h:
+Core/HALinterface/Inc/AdcSTM32F4.hpp:
+Core/HALinterface/Inc/IAdc.hpp:
+Core/HALinterface/Inc/PwmSTM32F4.hpp:
+Core/HALinterface/Inc/TimerSTM32F4.hpp:
+Core/HALinterface/Inc/ITimer.hpp:
+Core/HALinterface/Inc/GpioSTM32F4.hpp:
+Core/HALinterface/Inc/IGpio.hpp:
+Core/HALinterface/Inc/EncoderSTM32F4.hpp:
+Core/HALinterface/Inc/IEncoder.hpp:
+Core/Driver/Inc/Button.hpp:
+Core/Driver/Inc/MotorDriver.hpp:
+Core/Driver/Inc/EncoderDriver.hpp:
+Core/Driver/Inc/IMUDriver.hpp:
+Core/Driver/Inc/../../HALinterface/Inc/SPISTM32F4.hpp:
+Core/Driver/Inc/../../HALinterface/Inc/ISpi.hpp:
+Core/Driver/Inc/PhotoSensor.hpp:
+Core/Driver/Inc/LEDController.hpp:
+Core/RobotController/Inc/RobotController.hpp:
+Core/RobotController/Inc/MazeSolver.hpp:
+Core/RobotController/Inc/Maze.hpp:
+Core/RobotController/Inc/Path.hpp:
+Core/RobotController/Inc/DynamicsController.hpp:

@@ -36,13 +36,16 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
-Core/Src/gpio.c \
-Core/Src/adc.c \
-Core/Src/dma.c \
-Core/Src/spi.c \
-Core/Src/tim.c \
-Core/Src/stm32f4xx_it.c \
-Core/Src/stm32f4xx_hal_msp.c \
+Core/CubeMXAutoGenerate/Src/gpio.c \
+Core/CubeMXAutoGenerate/Src/adc.c \
+Core/CubeMXAutoGenerate/Src/dma.c \
+Core/CubeMXAutoGenerate/Src/spi.c \
+Core/CubeMXAutoGenerate/Src/tim.c \
+Core/CubeMXAutoGenerate/Src/system_stm32f4xx.c \
+Core/CubeMXAutoGenerate/Src/sysmem.c \
+Core/CubeMXAutoGenerate/Src/syscalls.c  \
+Core/CubeMXAutoGenerate/Src/stm32f4xx_it.c \
+Core/CubeMXAutoGenerate/Src/stm32f4xx_hal_msp.c \
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c \
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c \
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c \
@@ -62,13 +65,10 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c \
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c \
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c \
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c \
-Core/Src/system_stm32f4xx.c \
-Core/Src/sysmem.c \
-Core/Src/syscalls.c  
 
 # --- C++ sources ---
 CPP_SOURCES = \
-Core/Src/main.cpp \
+Core/main.cpp \
 Core/HALinterface/Src/AdcSTM32F4.cpp \
 Core/HALinterface/Src/EncoderSTM32F4.cpp \
 Core/HALinterface/Src/GpioSTM32F4.cpp \
@@ -81,6 +81,12 @@ Core/Driver/Src/EncoderDriver.cpp \
 Core/Driver/Src/IMUDriver.cpp \
 Core/Driver/Src/LEDController.cpp \
 Core/Driver/Src/PhotoSensor.cpp \
+Core/RobotController/Src/RobotController.cpp \
+Core/RobotController/Src/Path.cpp \
+Core/RobotController/Src/Maze.cpp \
+Core/RobotController/Src/MazeSolver.cpp \
+Core/RobotController/Src/Interrupt.cpp \
+Core/RobotController/Src/DynamicsController.cpp \
 
 # ASM sources
 ASM_SOURCES =  \
@@ -173,7 +179,7 @@ LDSCRIPT = STM32F405RGTx_FLASH.ld
 # libraries
 LIBS = -lc -lm -lnosys 
 LIBDIR = 
-LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
+LDFLAGS = $(MCU) -specs=nano.specs -u_printf_float -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections,-print-memory-usage
 
 # default action: build all
 all: $(BUILD_DIR)/$(TARGET).elf $(BUILD_DIR)/$(TARGET).hex $(BUILD_DIR)/$(TARGET).bin

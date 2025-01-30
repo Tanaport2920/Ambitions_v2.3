@@ -1,0 +1,703 @@
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"Maze.cpp"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/RobotController/Src/Maze.cpp"
+  20              		.section	.text._ZN4MazeC2Ejj,"ax",%progbits
+  21              		.align	1
+  22              		.global	_ZN4MazeC2Ejj
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	_ZN4MazeC2Ejj:
+  28              		.fnstart
+  29              	.LVL0:
+  30              	.LFB21:
+   1:Core/RobotController/Src/Maze.cpp **** #include "../Inc/Maze.hpp"
+   2:Core/RobotController/Src/Maze.cpp **** #include <cstring>  // memset を使う場合など
+   3:Core/RobotController/Src/Maze.cpp **** 
+   4:Core/RobotController/Src/Maze.cpp **** Maze::Maze(std::size_t width, std::size_t height)
+  31              		.loc 1 4 1 view -0
+  32              		.cfi_startproc
+  33              		@ args = 0, pretend = 0, frame = 0
+  34              		@ frame_needed = 0, uses_anonymous_args = 0
+  35              		.loc 1 4 1 is_stmt 0 view .LVU1
+  36 0000 10B5     		push	{r4, lr}
+  37              		.save {r4, lr}
+  38              	.LCFI0:
+  39              		.cfi_def_cfa_offset 8
+  40              		.cfi_offset 4, -8
+  41              		.cfi_offset 14, -4
+  42 0002 0446     		mov	r4, r0
+  43              	.LBB6:
+   5:Core/RobotController/Src/Maze.cpp ****     : m_width(width)
+  44              		.loc 1 5 7 view .LVU2
+  45 0004 0160     		str	r1, [r0]
+   6:Core/RobotController/Src/Maze.cpp ****     , m_height(height)
+  46              		.loc 1 6 7 view .LVU3
+  47 0006 4260     		str	r2, [r0, #4]
+  48              	.LBB7:
+   7:Core/RobotController/Src/Maze.cpp **** {
+   8:Core/RobotController/Src/Maze.cpp ****     m_cells = new Cell[m_width * m_height];
+  49              		.loc 1 8 5 is_stmt 1 view .LVU4
+  50              		.loc 1 8 32 is_stmt 0 view .LVU5
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s 			page 2
+
+
+  51 0008 02FB01F0 		mul	r0, r2, r1
+  52              	.LVL1:
+  53              		.loc 1 8 42 view .LVU6
+  54 000c 124B     		ldr	r3, .L6
+  55 000e 9842     		cmp	r0, r3
+  56 0010 06D2     		bcs	.L2
+  57              		.loc 1 8 42 discriminator 3 view .LVU7
+  58 0012 00EB8000 		add	r0, r0, r0, lsl #2
+  59 0016 FFF7FEFF 		bl	_Znaj
+  60              	.LVL2:
+  61              		.loc 1 8 13 discriminator 1 view .LVU8
+  62 001a A060     		str	r0, [r4, #8]
+   9:Core/RobotController/Src/Maze.cpp **** 
+  10:Core/RobotController/Src/Maze.cpp ****     // 全セルの壁情報を初期化（すべての壁を false とする）
+  11:Core/RobotController/Src/Maze.cpp ****     for (std::size_t i = 0; i < m_width * m_height; ++i) {
+  63              		.loc 1 11 5 is_stmt 1 view .LVU9
+  64              	.LVL3:
+  65              	.LBB8:
+  66              		.loc 1 11 22 is_stmt 0 view .LVU10
+  67 001c 0021     		movs	r1, #0
+  68              		.loc 1 11 5 view .LVU11
+  69 001e 13E0     		b	.L3
+  70              	.LVL4:
+  71              	.L2:
+  72              		.loc 1 11 5 view .LVU12
+  73              	.LBE8:
+   8:Core/RobotController/Src/Maze.cpp **** 
+  74              		.loc 1 8 42 discriminator 2 view .LVU13
+  75 0020 FFF7FEFF 		bl	__cxa_throw_bad_array_new_length
+  76              	.LVL5:
+  77              	.L4:
+  78              	.LBB9:
+  12:Core/RobotController/Src/Maze.cpp ****         m_cells[i].north = false;
+  79              		.loc 1 12 9 is_stmt 1 view .LVU14
+  80 0024 A068     		ldr	r0, [r4, #8]
+  81              		.loc 1 12 18 is_stmt 0 view .LVU15
+  82 0026 01EB8102 		add	r2, r1, r1, lsl #2
+  83              		.loc 1 12 26 view .LVU16
+  84 002a 0023     		movs	r3, #0
+  85 002c 8354     		strb	r3, [r0, r2]
+  13:Core/RobotController/Src/Maze.cpp ****         m_cells[i].east  = false;
+  86              		.loc 1 13 9 is_stmt 1 view .LVU17
+  87 002e A068     		ldr	r0, [r4, #8]
+  88              		.loc 1 13 18 is_stmt 0 view .LVU18
+  89 0030 1044     		add	r0, r0, r2
+  90              		.loc 1 13 26 view .LVU19
+  91 0032 4370     		strb	r3, [r0, #1]
+  14:Core/RobotController/Src/Maze.cpp ****         m_cells[i].south = false;
+  92              		.loc 1 14 9 is_stmt 1 view .LVU20
+  93 0034 A068     		ldr	r0, [r4, #8]
+  94              		.loc 1 14 18 is_stmt 0 view .LVU21
+  95 0036 1044     		add	r0, r0, r2
+  96              		.loc 1 14 26 view .LVU22
+  97 0038 8370     		strb	r3, [r0, #2]
+  15:Core/RobotController/Src/Maze.cpp ****         m_cells[i].west  = false;
+  98              		.loc 1 15 9 is_stmt 1 view .LVU23
+  99 003a A068     		ldr	r0, [r4, #8]
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s 			page 3
+
+
+ 100              		.loc 1 15 18 is_stmt 0 view .LVU24
+ 101 003c 1044     		add	r0, r0, r2
+ 102              		.loc 1 15 26 view .LVU25
+ 103 003e C370     		strb	r3, [r0, #3]
+  16:Core/RobotController/Src/Maze.cpp ****         m_cells[i].visited = false;
+ 104              		.loc 1 16 9 is_stmt 1 view .LVU26
+ 105 0040 A068     		ldr	r0, [r4, #8]
+ 106              		.loc 1 16 18 is_stmt 0 view .LVU27
+ 107 0042 1044     		add	r0, r0, r2
+ 108              		.loc 1 16 28 view .LVU28
+ 109 0044 0371     		strb	r3, [r0, #4]
+  11:Core/RobotController/Src/Maze.cpp ****         m_cells[i].north = false;
+ 110              		.loc 1 11 5 is_stmt 1 discriminator 3 view .LVU29
+ 111 0046 0131     		adds	r1, r1, #1
+ 112              	.LVL6:
+ 113              	.L3:
+  11:Core/RobotController/Src/Maze.cpp ****         m_cells[i].north = false;
+ 114              		.loc 1 11 31 discriminator 1 view .LVU30
+  11:Core/RobotController/Src/Maze.cpp ****         m_cells[i].north = false;
+ 115              		.loc 1 11 33 is_stmt 0 discriminator 1 view .LVU31
+ 116 0048 2368     		ldr	r3, [r4]
+  11:Core/RobotController/Src/Maze.cpp ****         m_cells[i].north = false;
+ 117              		.loc 1 11 43 discriminator 1 view .LVU32
+ 118 004a 6268     		ldr	r2, [r4, #4]
+  11:Core/RobotController/Src/Maze.cpp ****         m_cells[i].north = false;
+ 119              		.loc 1 11 41 discriminator 1 view .LVU33
+ 120 004c 02FB03F3 		mul	r3, r2, r3
+  11:Core/RobotController/Src/Maze.cpp ****         m_cells[i].north = false;
+ 121              		.loc 1 11 31 discriminator 1 view .LVU34
+ 122 0050 8B42     		cmp	r3, r1
+ 123 0052 E7D8     		bhi	.L4
+ 124              	.LBE9:
+ 125              	.LBE7:
+ 126              	.LBE6:
+  17:Core/RobotController/Src/Maze.cpp ****     }
+  18:Core/RobotController/Src/Maze.cpp **** }
+ 127              		.loc 1 18 1 view .LVU35
+ 128 0054 2046     		mov	r0, r4
+ 129 0056 10BD     		pop	{r4, pc}
+ 130              	.LVL7:
+ 131              	.L7:
+ 132              		.loc 1 18 1 view .LVU36
+ 133              		.align	2
+ 134              	.L6:
+ 135 0058 99999919 		.word	429496729
+ 136              		.cfi_endproc
+ 137              	.LFE21:
+ 138              		.fnend
+ 140              		.global	_ZN4MazeC1Ejj
+ 141              		.thumb_set _ZN4MazeC1Ejj,_ZN4MazeC2Ejj
+ 142              		.section	.text._ZN4MazeD2Ev,"ax",%progbits
+ 143              		.align	1
+ 144              		.global	_ZN4MazeD2Ev
+ 145              		.syntax unified
+ 146              		.thumb
+ 147              		.thumb_func
+ 149              	_ZN4MazeD2Ev:
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s 			page 4
+
+
+ 150              		.fnstart
+ 151              	.LVL8:
+ 152              	.LFB24:
+  19:Core/RobotController/Src/Maze.cpp **** 
+  20:Core/RobotController/Src/Maze.cpp **** Maze::~Maze() {
+ 153              		.loc 1 20 1 is_stmt 1 view -0
+ 154              		.cfi_startproc
+ 155              		@ args = 0, pretend = 0, frame = 0
+ 156              		@ frame_needed = 0, uses_anonymous_args = 0
+ 157              		.loc 1 20 1 is_stmt 0 view .LVU38
+ 158 0000 10B5     		push	{r4, lr}
+ 159              	.LCFI1:
+ 160              		.cfi_def_cfa_offset 8
+ 161              		.cfi_offset 4, -8
+ 162              		.cfi_offset 14, -4
+ 163 0002 0446     		mov	r4, r0
+ 164              	.LBB10:
+  21:Core/RobotController/Src/Maze.cpp ****     delete[] m_cells;
+ 165              		.loc 1 21 5 is_stmt 1 view .LVU39
+ 166              		.loc 1 21 14 is_stmt 0 view .LVU40
+ 167 0004 8068     		ldr	r0, [r0, #8]
+ 168              	.LVL9:
+ 169              		.loc 1 21 5 view .LVU41
+ 170 0006 08B1     		cbz	r0, .L9
+ 171              		.loc 1 21 14 discriminator 1 view .LVU42
+ 172 0008 FFF7FEFF 		bl	_ZdaPv
+ 173              	.LVL10:
+ 174              	.L9:
+ 175              	.LBE10:
+  22:Core/RobotController/Src/Maze.cpp **** }
+ 176              		.loc 1 22 1 view .LVU43
+ 177 000c 2046     		mov	r0, r4
+ 178 000e 10BD     		pop	{r4, pc}
+ 179              		.loc 1 22 1 view .LVU44
+ 180              		.cfi_endproc
+ 181              	.LFE24:
+ 182              		.cantunwind
+ 183              		.fnend
+ 185              		.global	_ZN4MazeD1Ev
+ 186              		.thumb_set _ZN4MazeD1Ev,_ZN4MazeD2Ev
+ 187              		.section	.text._ZN4Maze7setWallEjj13MazeDirectionb,"ax",%progbits
+ 188              		.align	1
+ 189              		.global	_ZN4Maze7setWallEjj13MazeDirectionb
+ 190              		.syntax unified
+ 191              		.thumb
+ 192              		.thumb_func
+ 194              	_ZN4Maze7setWallEjj13MazeDirectionb:
+ 195              		.fnstart
+ 196              	.LVL11:
+ 197              	.LFB26:
+  23:Core/RobotController/Src/Maze.cpp **** 
+  24:Core/RobotController/Src/Maze.cpp **** void Maze::setWall(std::size_t x, std::size_t y, MazeDirection direction, bool isWall) {
+ 198              		.loc 1 24 88 is_stmt 1 view -0
+ 199              		.cfi_startproc
+ 200              		@ args = 4, pretend = 0, frame = 0
+ 201              		@ frame_needed = 0, uses_anonymous_args = 0
+ 202              		@ link register save eliminated.
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s 			page 5
+
+
+ 203              		.loc 1 24 88 is_stmt 0 view .LVU46
+ 204 0000 30B4     		push	{r4, r5}
+ 205              	.LCFI2:
+ 206              		.cfi_def_cfa_offset 8
+ 207              		.cfi_offset 4, -8
+ 208              		.cfi_offset 5, -4
+ 209 0002 9DF808C0 		ldrb	ip, [sp, #8]	@ zero_extendqisi2
+  25:Core/RobotController/Src/Maze.cpp ****     if (x >= m_width || y >= m_height) {
+ 210              		.loc 1 25 5 is_stmt 1 view .LVU47
+ 211              		.loc 1 25 14 is_stmt 0 view .LVU48
+ 212 0006 0468     		ldr	r4, [r0]
+ 213              		.loc 1 25 5 view .LVU49
+ 214 0008 8C42     		cmp	r4, r1
+ 215 000a 15D9     		bls	.L11
+ 216              		.loc 1 25 22 discriminator 1 view .LVU50
+ 217 000c 4568     		ldr	r5, [r0, #4]
+ 218 000e 9542     		cmp	r5, r2
+ 219 0010 12D9     		bls	.L11
+  26:Core/RobotController/Src/Maze.cpp ****         return; // 範囲外の場合は何もしない（必要に応じ例外処理）
+  27:Core/RobotController/Src/Maze.cpp ****     }
+  28:Core/RobotController/Src/Maze.cpp ****     std::size_t idx = index(x, y);
+ 220              		.loc 1 28 5 is_stmt 1 view .LVU51
+ 221              	.LVL12:
+ 222              	.LBB11:
+ 223              	.LBI11:
+ 224              		.file 2 "Core/RobotController/Src/../Inc/Maze.hpp"
+   1:Core/RobotController/Src/../Inc/Maze.hpp **** #ifndef MAZE_HPP
+   2:Core/RobotController/Src/../Inc/Maze.hpp **** #define MAZE_HPP
+   3:Core/RobotController/Src/../Inc/Maze.hpp **** 
+   4:Core/RobotController/Src/../Inc/Maze.hpp **** #include <cstddef>
+   5:Core/RobotController/Src/../Inc/Maze.hpp **** 
+   6:Core/RobotController/Src/../Inc/Maze.hpp **** // 迷路の方向を表す列挙型
+   7:Core/RobotController/Src/../Inc/Maze.hpp **** enum class MazeDirection {
+   8:Core/RobotController/Src/../Inc/Maze.hpp ****     North,  // 上
+   9:Core/RobotController/Src/../Inc/Maze.hpp ****     East,   // 右
+  10:Core/RobotController/Src/../Inc/Maze.hpp ****     South,  // 下
+  11:Core/RobotController/Src/../Inc/Maze.hpp ****     West    // 左
+  12:Core/RobotController/Src/../Inc/Maze.hpp **** };
+  13:Core/RobotController/Src/../Inc/Maze.hpp **** 
+  14:Core/RobotController/Src/../Inc/Maze.hpp **** /**
+  15:Core/RobotController/Src/../Inc/Maze.hpp ****  * @brief Mazeクラス
+  16:Core/RobotController/Src/../Inc/Maze.hpp ****  *
+  17:Core/RobotController/Src/../Inc/Maze.hpp ****  * 各セルごとの壁情報（North, East, South, West）を管理する。
+  18:Core/RobotController/Src/../Inc/Maze.hpp ****  */
+  19:Core/RobotController/Src/../Inc/Maze.hpp **** class Maze {
+  20:Core/RobotController/Src/../Inc/Maze.hpp **** public:
+  21:Core/RobotController/Src/../Inc/Maze.hpp ****     /**
+  22:Core/RobotController/Src/../Inc/Maze.hpp ****      * @brief コンストラクタ
+  23:Core/RobotController/Src/../Inc/Maze.hpp ****      * @param width  迷路の幅（セル数）
+  24:Core/RobotController/Src/../Inc/Maze.hpp ****      * @param height 迷路の高さ（セル数）
+  25:Core/RobotController/Src/../Inc/Maze.hpp ****      */
+  26:Core/RobotController/Src/../Inc/Maze.hpp ****     Maze(std::size_t width, std::size_t height);
+  27:Core/RobotController/Src/../Inc/Maze.hpp **** 
+  28:Core/RobotController/Src/../Inc/Maze.hpp ****     /**
+  29:Core/RobotController/Src/../Inc/Maze.hpp ****      * @brief デストラクタ
+  30:Core/RobotController/Src/../Inc/Maze.hpp ****      */
+  31:Core/RobotController/Src/../Inc/Maze.hpp ****     ~Maze();
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s 			page 6
+
+
+  32:Core/RobotController/Src/../Inc/Maze.hpp **** 
+  33:Core/RobotController/Src/../Inc/Maze.hpp ****     /**
+  34:Core/RobotController/Src/../Inc/Maze.hpp ****      * @brief 指定セルの指定方向の壁の状態を設定する
+  35:Core/RobotController/Src/../Inc/Maze.hpp ****      * @param x セルの X 座標 (0～width-1)
+  36:Core/RobotController/Src/../Inc/Maze.hpp ****      * @param y セルの Y 座標 (0～height-1)
+  37:Core/RobotController/Src/../Inc/Maze.hpp ****      * @param direction 壁の方向 (MazeDirection::North など)
+  38:Core/RobotController/Src/../Inc/Maze.hpp ****      * @param isWall true: 壁がある, false: 壁がない
+  39:Core/RobotController/Src/../Inc/Maze.hpp ****      */
+  40:Core/RobotController/Src/../Inc/Maze.hpp ****     void setWall(std::size_t x, std::size_t y, MazeDirection direction, bool isWall);
+  41:Core/RobotController/Src/../Inc/Maze.hpp **** 
+  42:Core/RobotController/Src/../Inc/Maze.hpp ****     /**
+  43:Core/RobotController/Src/../Inc/Maze.hpp ****      * @brief 指定セルの指定方向に壁があるかを取得する
+  44:Core/RobotController/Src/../Inc/Maze.hpp ****      * @param x セルの X 座標
+  45:Core/RobotController/Src/../Inc/Maze.hpp ****      * @param y セルの Y 座標
+  46:Core/RobotController/Src/../Inc/Maze.hpp ****      * @param direction 調べる方向
+  47:Core/RobotController/Src/../Inc/Maze.hpp ****      * @return true なら壁がある, false なら壁がない
+  48:Core/RobotController/Src/../Inc/Maze.hpp ****      */
+  49:Core/RobotController/Src/../Inc/Maze.hpp ****     bool hasWall(std::size_t x, std::size_t y, MazeDirection direction) const;
+  50:Core/RobotController/Src/../Inc/Maze.hpp **** 
+  51:Core/RobotController/Src/../Inc/Maze.hpp **** 
+  52:Core/RobotController/Src/../Inc/Maze.hpp **** private:
+  53:Core/RobotController/Src/../Inc/Maze.hpp ****     // 各セルの壁情報を保持する構造体
+  54:Core/RobotController/Src/../Inc/Maze.hpp ****     struct Cell {
+  55:Core/RobotController/Src/../Inc/Maze.hpp ****         bool north;
+  56:Core/RobotController/Src/../Inc/Maze.hpp ****         bool east;
+  57:Core/RobotController/Src/../Inc/Maze.hpp ****         bool south;
+  58:Core/RobotController/Src/../Inc/Maze.hpp ****         bool west;
+  59:Core/RobotController/Src/../Inc/Maze.hpp ****         bool visited;
+  60:Core/RobotController/Src/../Inc/Maze.hpp ****     };
+  61:Core/RobotController/Src/../Inc/Maze.hpp **** 
+  62:Core/RobotController/Src/../Inc/Maze.hpp ****     std::size_t m_width;
+  63:Core/RobotController/Src/../Inc/Maze.hpp ****     std::size_t m_height;
+  64:Core/RobotController/Src/../Inc/Maze.hpp ****     Cell* m_cells;  // 幅×高さのセルの配列
+  65:Core/RobotController/Src/../Inc/Maze.hpp **** 
+  66:Core/RobotController/Src/../Inc/Maze.hpp ****     // (x, y) 座標を 1次元のインデックスに変換
+  67:Core/RobotController/Src/../Inc/Maze.hpp ****     inline std::size_t index(std::size_t x, std::size_t y) const {
+ 225              		.loc 2 67 24 view .LVU52
+ 226              	.LBB12:
+  68:Core/RobotController/Src/../Inc/Maze.hpp ****         return y * m_width + x;
+ 227              		.loc 2 68 9 view .LVU53
+ 228              		.loc 2 68 30 is_stmt 0 view .LVU54
+ 229 0012 02FB0411 		mla	r1, r2, r4, r1
+ 230              	.LVL13:
+ 231              		.loc 2 68 30 view .LVU55
+ 232              	.LBE12:
+ 233              	.LBE11:
+  29:Core/RobotController/Src/Maze.cpp ****     switch (direction) {
+ 234              		.loc 1 29 5 is_stmt 1 view .LVU56
+ 235 0016 032B     		cmp	r3, #3
+ 236 0018 08D8     		bhi	.L13
+ 237 001a DFE803F0 		tbb	[pc, r3]
+ 238              	.LVL14:
+ 239              	.L15:
+ 240 001e 02       		.byte	(.L18-.L15)/2
+ 241 001f 0F       		.byte	(.L17-.L15)/2
+ 242 0020 16       		.byte	(.L16-.L15)/2
+ 243 0021 1D       		.byte	(.L14-.L15)/2
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s 			page 7
+
+
+ 244              		.p2align 1
+ 245              	.L18:
+  30:Core/RobotController/Src/Maze.cpp ****         case MazeDirection::North:
+ 246              		.loc 1 30 9 view .LVU57
+  31:Core/RobotController/Src/Maze.cpp ****             m_cells[idx].north = isWall;
+ 247              		.loc 1 31 13 view .LVU58
+ 248 0022 8268     		ldr	r2, [r0, #8]
+ 249              		.loc 1 31 24 is_stmt 0 view .LVU59
+ 250 0024 01EB8103 		add	r3, r1, r1, lsl #2
+ 251              	.LVL15:
+ 252              		.loc 1 31 32 view .LVU60
+ 253 0028 02F803C0 		strb	ip, [r2, r3]
+  32:Core/RobotController/Src/Maze.cpp ****             break;
+ 254              		.loc 1 32 13 is_stmt 1 view .LVU61
+ 255              	.L13:
+  33:Core/RobotController/Src/Maze.cpp ****         case MazeDirection::East:
+  34:Core/RobotController/Src/Maze.cpp ****             m_cells[idx].east = isWall;
+  35:Core/RobotController/Src/Maze.cpp ****             break;
+  36:Core/RobotController/Src/Maze.cpp ****         case MazeDirection::South:
+  37:Core/RobotController/Src/Maze.cpp ****             m_cells[idx].south = isWall;
+  38:Core/RobotController/Src/Maze.cpp ****             break;
+  39:Core/RobotController/Src/Maze.cpp ****         case MazeDirection::West:
+  40:Core/RobotController/Src/Maze.cpp ****             m_cells[idx].west = isWall;
+  41:Core/RobotController/Src/Maze.cpp ****             break;
+  42:Core/RobotController/Src/Maze.cpp ****     }
+  43:Core/RobotController/Src/Maze.cpp ****     m_cells[idx].visited = true;
+ 256              		.loc 1 43 5 view .LVU62
+ 257 002c 8368     		ldr	r3, [r0, #8]
+ 258              		.loc 1 43 16 is_stmt 0 view .LVU63
+ 259 002e 01EB8101 		add	r1, r1, r1, lsl #2
+ 260              	.LVL16:
+ 261              		.loc 1 43 16 view .LVU64
+ 262 0032 0B44     		add	r3, r3, r1
+ 263              		.loc 1 43 26 view .LVU65
+ 264 0034 0122     		movs	r2, #1
+ 265 0036 1A71     		strb	r2, [r3, #4]
+ 266              	.LVL17:
+ 267              	.L11:
+  44:Core/RobotController/Src/Maze.cpp **** }
+ 268              		.loc 1 44 1 view .LVU66
+ 269 0038 30BC     		pop	{r4, r5}
+ 270              	.LCFI3:
+ 271              		.cfi_remember_state
+ 272              		.cfi_restore 5
+ 273              		.cfi_restore 4
+ 274              		.cfi_def_cfa_offset 0
+ 275              	.LVL18:
+ 276              		.loc 1 44 1 view .LVU67
+ 277 003a 7047     		bx	lr
+ 278              	.LVL19:
+ 279              	.L17:
+ 280              	.LCFI4:
+ 281              		.cfi_restore_state
+  33:Core/RobotController/Src/Maze.cpp ****         case MazeDirection::East:
+ 282              		.loc 1 33 9 is_stmt 1 view .LVU68
+  34:Core/RobotController/Src/Maze.cpp ****             break;
+ 283              		.loc 1 34 13 view .LVU69
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s 			page 8
+
+
+ 284 003c 8368     		ldr	r3, [r0, #8]
+ 285              	.LVL20:
+  34:Core/RobotController/Src/Maze.cpp ****             break;
+ 286              		.loc 1 34 24 is_stmt 0 view .LVU70
+ 287 003e 01EB8102 		add	r2, r1, r1, lsl #2
+ 288 0042 1344     		add	r3, r3, r2
+  34:Core/RobotController/Src/Maze.cpp ****             break;
+ 289              		.loc 1 34 31 view .LVU71
+ 290 0044 83F801C0 		strb	ip, [r3, #1]
+  35:Core/RobotController/Src/Maze.cpp ****         case MazeDirection::South:
+ 291              		.loc 1 35 13 is_stmt 1 view .LVU72
+ 292 0048 F0E7     		b	.L13
+ 293              	.LVL21:
+ 294              	.L16:
+  36:Core/RobotController/Src/Maze.cpp ****             m_cells[idx].south = isWall;
+ 295              		.loc 1 36 9 view .LVU73
+  37:Core/RobotController/Src/Maze.cpp ****             break;
+ 296              		.loc 1 37 13 view .LVU74
+ 297 004a 8368     		ldr	r3, [r0, #8]
+ 298              	.LVL22:
+  37:Core/RobotController/Src/Maze.cpp ****             break;
+ 299              		.loc 1 37 24 is_stmt 0 view .LVU75
+ 300 004c 01EB8102 		add	r2, r1, r1, lsl #2
+ 301 0050 1344     		add	r3, r3, r2
+  37:Core/RobotController/Src/Maze.cpp ****             break;
+ 302              		.loc 1 37 32 view .LVU76
+ 303 0052 83F802C0 		strb	ip, [r3, #2]
+  38:Core/RobotController/Src/Maze.cpp ****         case MazeDirection::West:
+ 304              		.loc 1 38 13 is_stmt 1 view .LVU77
+ 305 0056 E9E7     		b	.L13
+ 306              	.LVL23:
+ 307              	.L14:
+  39:Core/RobotController/Src/Maze.cpp ****             m_cells[idx].west = isWall;
+ 308              		.loc 1 39 9 view .LVU78
+  40:Core/RobotController/Src/Maze.cpp ****             break;
+ 309              		.loc 1 40 13 view .LVU79
+ 310 0058 8368     		ldr	r3, [r0, #8]
+ 311              	.LVL24:
+  40:Core/RobotController/Src/Maze.cpp ****             break;
+ 312              		.loc 1 40 24 is_stmt 0 view .LVU80
+ 313 005a 01EB8102 		add	r2, r1, r1, lsl #2
+ 314 005e 1344     		add	r3, r3, r2
+  40:Core/RobotController/Src/Maze.cpp ****             break;
+ 315              		.loc 1 40 31 view .LVU81
+ 316 0060 83F803C0 		strb	ip, [r3, #3]
+  41:Core/RobotController/Src/Maze.cpp ****     }
+ 317              		.loc 1 41 13 is_stmt 1 view .LVU82
+ 318 0064 E2E7     		b	.L13
+ 319              		.cfi_endproc
+ 320              	.LFE26:
+ 321              		.cantunwind
+ 322              		.fnend
+ 324              		.section	.text._ZNK4Maze7hasWallEjj13MazeDirection,"ax",%progbits
+ 325              		.align	1
+ 326              		.global	_ZNK4Maze7hasWallEjj13MazeDirection
+ 327              		.syntax unified
+ 328              		.thumb
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s 			page 9
+
+
+ 329              		.thumb_func
+ 331              	_ZNK4Maze7hasWallEjj13MazeDirection:
+ 332              		.fnstart
+ 333              	.LVL25:
+ 334              	.LFB27:
+  45:Core/RobotController/Src/Maze.cpp **** 
+  46:Core/RobotController/Src/Maze.cpp **** bool Maze::hasWall(std::size_t x, std::size_t y, MazeDirection direction) const {
+ 335              		.loc 1 46 81 view -0
+ 336              		.cfi_startproc
+ 337              		@ args = 0, pretend = 0, frame = 0
+ 338              		@ frame_needed = 0, uses_anonymous_args = 0
+ 339              		@ link register save eliminated.
+ 340              		.loc 1 46 81 is_stmt 0 view .LVU84
+ 341 0000 30B4     		push	{r4, r5}
+ 342              	.LCFI5:
+ 343              		.cfi_def_cfa_offset 8
+ 344              		.cfi_offset 4, -8
+ 345              		.cfi_offset 5, -4
+  47:Core/RobotController/Src/Maze.cpp ****     if (x >= m_width || y >= m_height) {
+ 346              		.loc 1 47 5 is_stmt 1 view .LVU85
+ 347              		.loc 1 47 14 is_stmt 0 view .LVU86
+ 348 0002 0468     		ldr	r4, [r0]
+ 349              		.loc 1 47 5 view .LVU87
+ 350 0004 8C42     		cmp	r4, r1
+ 351 0006 21D9     		bls	.L28
+ 352              		.loc 1 47 22 discriminator 1 view .LVU88
+ 353 0008 4568     		ldr	r5, [r0, #4]
+ 354 000a 9542     		cmp	r5, r2
+ 355 000c 21D9     		bls	.L29
+  48:Core/RobotController/Src/Maze.cpp ****         return false; // 範囲外なら false とするか、エラー扱い
+  49:Core/RobotController/Src/Maze.cpp ****     }
+  50:Core/RobotController/Src/Maze.cpp ****     std::size_t idx = index(x, y);
+ 356              		.loc 1 50 5 is_stmt 1 view .LVU89
+ 357              	.LVL26:
+ 358              	.LBB13:
+ 359              	.LBI13:
+  67:Core/RobotController/Src/../Inc/Maze.hpp ****         return y * m_width + x;
+ 360              		.loc 2 67 24 view .LVU90
+ 361              	.LBB14:
+ 362              		.loc 2 68 9 view .LVU91
+ 363              		.loc 2 68 30 is_stmt 0 view .LVU92
+ 364 000e 02FB0411 		mla	r1, r2, r4, r1
+ 365              	.LVL27:
+ 366              		.loc 2 68 30 view .LVU93
+ 367              	.LBE14:
+ 368              	.LBE13:
+  51:Core/RobotController/Src/Maze.cpp ****     switch (direction) {
+ 369              		.loc 1 51 5 is_stmt 1 view .LVU94
+ 370 0012 032B     		cmp	r3, #3
+ 371 0014 1FD8     		bhi	.L30
+ 372 0016 DFE803F0 		tbb	[pc, r3]
+ 373              	.LVL28:
+ 374              	.L24:
+ 375 001a 02       		.byte	(.L27-.L24)/2
+ 376 001b 07       		.byte	(.L26-.L24)/2
+ 377 001c 0D       		.byte	(.L25-.L24)/2
+ 378 001d 13       		.byte	(.L23-.L24)/2
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s 			page 10
+
+
+ 379              		.p2align 1
+ 380              	.L27:
+  52:Core/RobotController/Src/Maze.cpp ****         case MazeDirection::North:
+ 381              		.loc 1 52 9 view .LVU95
+  53:Core/RobotController/Src/Maze.cpp ****             return m_cells[idx].north;
+ 382              		.loc 1 53 13 view .LVU96
+ 383              		.loc 1 53 20 is_stmt 0 view .LVU97
+ 384 001e 8368     		ldr	r3, [r0, #8]
+ 385              	.LVL29:
+ 386              		.loc 1 53 31 view .LVU98
+ 387 0020 01EB8101 		add	r1, r1, r1, lsl #2
+ 388              	.LVL30:
+ 389              		.loc 1 53 33 view .LVU99
+ 390 0024 585C     		ldrb	r0, [r3, r1]	@ zero_extendqisi2
+ 391              	.LVL31:
+ 392              		.loc 1 53 33 view .LVU100
+ 393 0026 12E0     		b	.L22
+ 394              	.LVL32:
+ 395              	.L26:
+  54:Core/RobotController/Src/Maze.cpp ****         case MazeDirection::East:
+ 396              		.loc 1 54 9 is_stmt 1 view .LVU101
+  55:Core/RobotController/Src/Maze.cpp ****             return m_cells[idx].east;
+ 397              		.loc 1 55 13 view .LVU102
+ 398              		.loc 1 55 20 is_stmt 0 view .LVU103
+ 399 0028 8368     		ldr	r3, [r0, #8]
+ 400              	.LVL33:
+ 401              		.loc 1 55 31 view .LVU104
+ 402 002a 01EB8101 		add	r1, r1, r1, lsl #2
+ 403              	.LVL34:
+ 404              		.loc 1 55 31 view .LVU105
+ 405 002e 0B44     		add	r3, r3, r1
+ 406              		.loc 1 55 33 view .LVU106
+ 407 0030 5878     		ldrb	r0, [r3, #1]	@ zero_extendqisi2
+ 408              	.LVL35:
+ 409              		.loc 1 55 33 view .LVU107
+ 410 0032 0CE0     		b	.L22
+ 411              	.LVL36:
+ 412              	.L25:
+  56:Core/RobotController/Src/Maze.cpp ****         case MazeDirection::South:
+ 413              		.loc 1 56 9 is_stmt 1 view .LVU108
+  57:Core/RobotController/Src/Maze.cpp ****             return m_cells[idx].south;
+ 414              		.loc 1 57 13 view .LVU109
+ 415              		.loc 1 57 20 is_stmt 0 view .LVU110
+ 416 0034 8368     		ldr	r3, [r0, #8]
+ 417              	.LVL37:
+ 418              		.loc 1 57 31 view .LVU111
+ 419 0036 01EB8101 		add	r1, r1, r1, lsl #2
+ 420              	.LVL38:
+ 421              		.loc 1 57 31 view .LVU112
+ 422 003a 0B44     		add	r3, r3, r1
+ 423              		.loc 1 57 33 view .LVU113
+ 424 003c 9878     		ldrb	r0, [r3, #2]	@ zero_extendqisi2
+ 425              	.LVL39:
+ 426              		.loc 1 57 33 view .LVU114
+ 427 003e 06E0     		b	.L22
+ 428              	.LVL40:
+ 429              	.L23:
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s 			page 11
+
+
+  58:Core/RobotController/Src/Maze.cpp ****         case MazeDirection::West:
+ 430              		.loc 1 58 9 is_stmt 1 view .LVU115
+  59:Core/RobotController/Src/Maze.cpp ****             return m_cells[idx].west;
+ 431              		.loc 1 59 13 view .LVU116
+ 432              		.loc 1 59 20 is_stmt 0 view .LVU117
+ 433 0040 8368     		ldr	r3, [r0, #8]
+ 434              	.LVL41:
+ 435              		.loc 1 59 31 view .LVU118
+ 436 0042 01EB8101 		add	r1, r1, r1, lsl #2
+ 437              	.LVL42:
+ 438              		.loc 1 59 31 view .LVU119
+ 439 0046 0B44     		add	r3, r3, r1
+ 440              		.loc 1 59 33 view .LVU120
+ 441 0048 D878     		ldrb	r0, [r3, #3]	@ zero_extendqisi2
+ 442              	.LVL43:
+ 443              		.loc 1 59 33 view .LVU121
+ 444 004a 00E0     		b	.L22
+ 445              	.LVL44:
+ 446              	.L28:
+  48:Core/RobotController/Src/Maze.cpp ****     }
+ 447              		.loc 1 48 16 view .LVU122
+ 448 004c 0020     		movs	r0, #0
+ 449              	.LVL45:
+ 450              	.L22:
+  60:Core/RobotController/Src/Maze.cpp ****         default:
+  61:Core/RobotController/Src/Maze.cpp ****             return false;
+  62:Core/RobotController/Src/Maze.cpp ****     }
+  63:Core/RobotController/Src/Maze.cpp **** }
+ 451              		.loc 1 63 1 view .LVU123
+ 452 004e 30BC     		pop	{r4, r5}
+ 453              	.LCFI6:
+ 454              		.cfi_remember_state
+ 455              		.cfi_restore 5
+ 456              		.cfi_restore 4
+ 457              		.cfi_def_cfa_offset 0
+ 458 0050 7047     		bx	lr
+ 459              	.LVL46:
+ 460              	.L29:
+ 461              	.LCFI7:
+ 462              		.cfi_restore_state
+  48:Core/RobotController/Src/Maze.cpp ****     }
+ 463              		.loc 1 48 16 view .LVU124
+ 464 0052 0020     		movs	r0, #0
+ 465              	.LVL47:
+  48:Core/RobotController/Src/Maze.cpp ****     }
+ 466              		.loc 1 48 16 view .LVU125
+ 467 0054 FBE7     		b	.L22
+ 468              	.LVL48:
+ 469              	.L30:
+  51:Core/RobotController/Src/Maze.cpp ****         case MazeDirection::North:
+ 470              		.loc 1 51 5 view .LVU126
+ 471 0056 0020     		movs	r0, #0
+ 472              	.LVL49:
+  51:Core/RobotController/Src/Maze.cpp ****         case MazeDirection::North:
+ 473              		.loc 1 51 5 view .LVU127
+ 474 0058 F9E7     		b	.L22
+ 475              		.cfi_endproc
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s 			page 12
+
+
+ 476              	.LFE27:
+ 477              		.cantunwind
+ 478              		.fnend
+ 480              		.text
+ 481              	.Letext0:
+ 482              		.file 3 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/cstddef"
+ 483              		.file 4 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/cstring"
+ 484              		.file 5 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/c++/13.2.1/arm-none-eabi/thumb/v7e-m+fp/
+ 485              		.file 6 "C:/Tools/arm-gnu-toolchain/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h"
+ 486              		.file 7 "C:/Tools/arm-gnu-toolchain/arm-none-eabi/include/string.h"
+ARM GAS  C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s 			page 13
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 Maze.cpp
+C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s:21     .text._ZN4MazeC2Ejj:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s:27     .text._ZN4MazeC2Ejj:00000000 _ZN4MazeC2Ejj
+C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s:135    .text._ZN4MazeC2Ejj:00000058 $d
+    .ARM.exidx.text._ZN4MazeC2Ejj:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s:27     .text._ZN4MazeC2Ejj:00000000 _ZN4MazeC1Ejj
+C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s:143    .text._ZN4MazeD2Ev:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s:149    .text._ZN4MazeD2Ev:00000000 _ZN4MazeD2Ev
+     .ARM.exidx.text._ZN4MazeD2Ev:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s:149    .text._ZN4MazeD2Ev:00000000 _ZN4MazeD1Ev
+C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s:188    .text._ZN4Maze7setWallEjj13MazeDirectionb:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s:194    .text._ZN4Maze7setWallEjj13MazeDirectionb:00000000 _ZN4Maze7setWallEjj13MazeDirectionb
+C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s:240    .text._ZN4Maze7setWallEjj13MazeDirectionb:0000001e $d
+C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s:244    .text._ZN4Maze7setWallEjj13MazeDirectionb:00000022 $t
+.ARM.exidx.text._ZN4Maze7setWallEjj13MazeDirectionb:00000000 $d
+C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s:325    .text._ZNK4Maze7hasWallEjj13MazeDirection:00000000 $t
+C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s:331    .text._ZNK4Maze7hasWallEjj13MazeDirection:00000000 _ZNK4Maze7hasWallEjj13MazeDirection
+C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s:375    .text._ZNK4Maze7hasWallEjj13MazeDirection:0000001a $d
+C:\Users\hanaj\AppData\Local\Temp\cc0A7r0Q.s:379    .text._ZNK4Maze7hasWallEjj13MazeDirection:0000001e $t
+.ARM.exidx.text._ZNK4Maze7hasWallEjj13MazeDirection:00000000 $d
+
+UNDEFINED SYMBOLS
+_Znaj
+__cxa_throw_bad_array_new_length
+__aeabi_unwind_cpp_pr0
+_ZdaPv
